@@ -160,7 +160,15 @@ const App: React.FC = () => {
     setView("quiz");
     setTimeout(() => {
       const el = document.getElementById(`question-${index}`);
-      if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+      if (el) {
+        const headerOffset = 90; // ヘッダーの高さ分オフセット
+        const elementPosition = el.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth"
+        });
+      }
     }, 100);
   }, [pageSize]);
 

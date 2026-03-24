@@ -124,6 +124,88 @@ export const ScorePanel: React.FC<ScorePanelProps> = ({
         </div>
       </div>
 
+      {/* 任意の質問へジャンプ */}
+      <div
+        style={{
+          background: '#1e2130',
+          border: '1px solid #2e3248',
+          borderRadius: '16px',
+          padding: '16px',
+        }}
+      >
+        <label
+          htmlFor="jump-input"
+          style={{
+            fontSize: '12px',
+            fontWeight: 600,
+            color: '#94a3b8',
+            textTransform: 'uppercase',
+            letterSpacing: '0.1em',
+            marginBottom: '12px',
+            display: 'block',
+          }}
+        >
+          Jump to Question
+        </label>
+        <div className="flex gap-2">
+          <input
+            id="jump-input"
+            type="text"
+            inputMode="numeric"
+            pattern="[0-9]*"
+            placeholder={`1 - ${total}`}
+            style={{
+              flex: 1,
+              background: '#1a1d27',
+              border: '1px solid #3e4260',
+              borderRadius: '8px',
+              padding: '8px 12px',
+              color: '#fff',
+              outline: 'none',
+              fontSize: '14px',
+            }}
+            onKeyDown={(e) => {
+              if (e.key === 'Enter') {
+                const val = parseInt(e.currentTarget.value, 10);
+                if (!isNaN(val) && val >= 1 && val <= total) {
+                  onJumpToQuestion(val - 1);
+                  e.currentTarget.value = '';
+                }
+              }
+            }}
+          />
+          <button
+            onClick={(e) => {
+              const input = e.currentTarget.previousSibling as HTMLInputElement;
+              const val = parseInt(input.value, 10);
+              if (!isNaN(val) && val >= 1 && val <= total) {
+                onJumpToQuestion(val - 1);
+                input.value = '';
+              }
+            }}
+            style={{
+              background: 'linear-gradient(135deg, #6366f1, #8b5cf6)',
+              border: 'none',
+              borderRadius: '8px',
+              padding: '0 16px',
+              color: '#fff',
+              fontWeight: 600,
+              fontSize: '14px',
+              cursor: 'pointer',
+              transition: 'opacity 0.2s',
+            }}
+            onMouseEnter={(e) => {
+              (e.target as HTMLElement).style.opacity = '0.9';
+            }}
+            onMouseLeave={(e) => {
+              (e.target as HTMLElement).style.opacity = '1';
+            }}
+          >
+            Go
+          </button>
+        </div>
+      </div>
+
       {/* 復習ボタン */}
       {wrongIndices.length > 0 && (
         <button
