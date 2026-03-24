@@ -36,18 +36,36 @@ export const isCorrect = (
   return sortedCorrect.every((v, i) => v === sortedSelected[i]);
 };
 
-// 不正解インデックスをJSONファイルとしてダウンロード（data URLを使用）
-export const downloadWrongIndices = (indices: number[]): void => {
-  const data = JSON.stringify({ wrongQuestionIndices: indices }, null, 2);
-  // data: URLはブラウザがファイル名を必ず尊重する
-  const dataUrl =
-    "data:application/json;charset=utf-8," + encodeURIComponent(data);
+// 不正解問題をGeminiのCanvasプロンプト付きで書き出す
+export const exportWrongQuestionsForGemini = (
+  indices: number[],
+  allQuestions: QuizQuestion[],
+): void => {
+  const wrongQuestions = indices.map((idx) => allQuestions[idx]);
+
+  const prompt = `Bạn là một chuyên gia về ServiceNow CSA.
+Dưới đây là danh sách các câu hỏi tôi đã làm sai.
+Hãy sử dụng tính năng Artifacts hoặc Canvas của bạn để tạo ra một ứng dụng Quiz tương tác siêu đẹp (dùng React + Tailwind CSS).
+Yêu cầu cho ứng dụng:
+1. Hiển thị từng câu hỏi một (One by one), không hiển thị danh sách.
+2. Có nút cho tôi chọn các lựa chọn đáp án.
+3. Sau khi tôi nộp đáp án, lập tức báo ĐÚNG/SAI và đặc biệt: HIỂN THỊ GIẢI THÍCH CHI TIẾT vì sao đáp án đúng lại đúng, và vì sao các lựa chọn còn lại bị sai (hãy giải thích thật dễ hiểu).
+4. Có nút điều hướng "Next Question".
+5. Chỉ sử dụng dữ liệu JSON dưới đây làm nguồn câu hỏi duy 
+[DATA START]
+${JSON.stringify(wrongQuestions, null, 2)}
+[DATA END]
+`;
+
+  const blob = new Blob([prompt], { type: "text/plain;charset=utf-8" });
+  const dataUrl = URL.createObjectURL(blob);
   const a = document.createElement("a");
   a.href = dataUrl;
-  a.download = "wrong_questions.json";
+  a.download = "Gemini_Prompt_Wrong_Questions.txt";
   document.body.appendChild(a);
   a.click();
   document.body.removeChild(a);
+  URL.revokeObjectURL(dataUrl);
 };
 
 // ============================================================

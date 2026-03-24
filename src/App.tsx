@@ -5,7 +5,7 @@ import { QuestionCard } from "./components/QuestionCard";
 import { ScorePanel } from "./components/ScorePanel";
 import { ReviewPage } from "./ReviewPage";
 import {
-  downloadWrongIndices,
+  exportWrongQuestionsForGemini,
   saveProgress,
   loadProgress,
   clearProgress,
@@ -166,7 +166,7 @@ const App: React.FC = () => {
 
   // エクスポートハンドラ
   const handleExportWrong = useCallback(() => {
-    downloadWrongIndices(wrongIndices);
+    exportWrongQuestionsForGemini(wrongIndices, questions);
   }, [wrongIndices]);
 
   // 復習でクリアされた問題を削除
