@@ -38,3 +38,12 @@ body {
   background: var(--color-border);
   border-radius: 3px;
 }
+
+/* スクロールバー非表示用クラス */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}

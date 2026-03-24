@@ -272,8 +272,6 @@ export const ScorePanel: React.FC<ScorePanelProps> = ({
             border: '1px solid #2e3248',
             borderRadius: '16px',
             padding: '16px',
-            maxHeight: '300px',
-            overflowY: 'auto',
           }}
         >
           <h3

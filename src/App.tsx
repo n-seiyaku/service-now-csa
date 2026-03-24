@@ -630,10 +630,13 @@ const App: React.FC = () => {
 
         {/* スコアパネル（右サイドバー） - スクロール時に固定 */}
         <aside
+          className="scrollbar-hide"
           style={{
             position: "sticky",
             top: "100px",
             alignSelf: "start",
+            maxHeight: "calc(100vh - 120px)",
+            overflowY: "auto",
           }}
         >
           <ScorePanel
