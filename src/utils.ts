@@ -67,6 +67,8 @@ export interface SavedProgress {
   wrongIndices: number[];
   // 現在のページ
   page: number;
+  // ページあたり表示数
+  pageSize?: number;
   // 最終保存日時（ISO 8601）
   savedAt: string;
 }

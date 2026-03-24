@@ -15,8 +15,8 @@ import {
 // 問題データを型アサート
 const questions = questionsData as QuizQuestion[];
 
-// ページあたり表示数
-const PAGE_SIZE = 1;
+// デフォルトのページあたり表示数
+const DEFAULT_PAGE_SIZE = 1;
 
 // ビュー種別
 type View = "quiz" | "review";
@@ -32,6 +32,7 @@ const initFromStorage = () => {
       wrongCount: 0,
       wrongIndices: [] as number[],
       page: 0,
+      pageSize: DEFAULT_PAGE_SIZE,
       savedAt: null as string | null,
     };
   }
@@ -42,6 +43,7 @@ const initFromStorage = () => {
     wrongCount: saved.wrongCount,
     wrongIndices: saved.wrongIndices,
     page: saved.page,
+    pageSize: saved.pageSize ?? DEFAULT_PAGE_SIZE,
     savedAt: saved.savedAt,
   };
 };
@@ -65,6 +67,8 @@ const App: React.FC = () => {
   );
   // 現在のページ
   const [page, setPage] = useState(initial.page);
+  // 1ページあたりの表示数
+  const [pageSize, setPageSize] = useState(initial.pageSize);
   // 現在のビュー
   const [view, setView] = useState<View>("quiz");
   // 進捗の最終保存日時
@@ -79,10 +83,17 @@ const App: React.FC = () => {
   // デバウンスタイマー
   const saveTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
-  const totalPages = Math.ceil(questions.length / PAGE_SIZE);
-  const startIdx = page * PAGE_SIZE;
-  const endIdx = Math.min(startIdx + PAGE_SIZE, questions.length);
+  const totalPages = Math.ceil(questions.length / pageSize);
+  const startIdx = page * pageSize;
+  const endIdx = Math.min(startIdx + pageSize, questions.length);
   const currentPageQuestions = questions.slice(startIdx, endIdx);
+
+  // ページあたり表示数変更ハンドラ
+  const handlePageSizeChange = useCallback((newSize: number) => {
+    const currentStartIdx = page * pageSize;
+    setPageSize(newSize);
+    setPage(Math.floor(currentStartIdx / newSize));
+  }, [page, pageSize]);
 
   // 進捗を自動保存（500msデバウンス）
   useEffect(() => {
@@ -96,6 +107,7 @@ const App: React.FC = () => {
         wrongCount,
         wrongIndices,
         page,
+        pageSize,
         savedAt: now,
       });
       setSavedAt(now);
@@ -104,7 +116,7 @@ const App: React.FC = () => {
     return () => {
       if (saveTimer.current) clearTimeout(saveTimer.current);
     };
-  }, [userAnswers, checkedSet, correctCount, wrongCount, wrongIndices, page]);
+  }, [userAnswers, checkedSet, correctCount, wrongCount, wrongIndices, page, pageSize]);
 
   // 選択肢変更ハンドラ
   const handleSelectionChange = useCallback(
@@ -143,14 +155,14 @@ const App: React.FC = () => {
 
   // 特定の問題へジャンプ
   const handleJumpToQuestion = useCallback((index: number) => {
-    const targetPage = Math.floor(index / PAGE_SIZE);
+    const targetPage = Math.floor(index / pageSize);
     setPage(targetPage);
     setView("quiz");
     setTimeout(() => {
       const el = document.getElementById(`question-${index}`);
       if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
     }, 100);
-  }, []);
+  }, [pageSize]);
 
   // エクスポートハンドラ
   const handleExportWrong = useCallback(() => {
@@ -186,12 +198,13 @@ const App: React.FC = () => {
       wrongCount,
       wrongIndices,
       page,
+      pageSize,
       savedAt: now,
     });
     setSavedAt(now);
     setShowSavedToast(true);
     setTimeout(() => setShowSavedToast(false), 2500);
-  }, [userAnswers, checkedSet, correctCount, wrongCount, wrongIndices, page]);
+  }, [userAnswers, checkedSet, correctCount, wrongCount, wrongIndices, page, pageSize]);
 
   // 復習ページ表示
   if (view === "review") {
@@ -439,6 +452,29 @@ const App: React.FC = () => {
               </button>
             )}
 
+            {/* 表示件数切替 */}
+            <select
+              value={pageSize}
+              onChange={(e) => handlePageSizeChange(Number(e.target.value))}
+              style={{
+                background: "rgba(99,102,241,0.15)",
+                border: "1px solid rgba(99,102,241,0.3)",
+                borderRadius: "8px",
+                padding: "5px 12px",
+                color: "#a5b4fc",
+                fontWeight: 600,
+                fontSize: "13px",
+                cursor: "pointer",
+                outline: "none",
+              }}
+            >
+              <option value="1" style={{ background: "#1e2130" }}>1 Q/Page</option>
+              <option value="5" style={{ background: "#1e2130" }}>5 Q/Page</option>
+              <option value="10" style={{ background: "#1e2130" }}>10 Q/Page</option>
+              <option value="20" style={{ background: "#1e2130" }}>20 Q/Page</option>
+              <option value={questions.length} style={{ background: "#1e2130" }}>All ({questions.length})</option>
+            </select>
+
             <span
               style={{
                 background: "rgba(99,102,241,0.15)",
@@ -450,7 +486,7 @@ const App: React.FC = () => {
                 fontSize: "13px",
               }}
             >
-              {questions.length} Q
+              Total: {questions.length} Q
             </span>
           </div>
         </div>
