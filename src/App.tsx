@@ -16,7 +16,7 @@ import {
 const questions = questionsData as QuizQuestion[];
 
 // ページあたり表示数
-const PAGE_SIZE = 10;
+const PAGE_SIZE = 1;
 
 // ビュー種別
 type View = "quiz" | "review";
