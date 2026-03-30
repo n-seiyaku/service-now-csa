@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import type { QuizQuestion } from "../types";
 import { parseOptions, parseAnswers, extractLabel, isCorrect } from "../utils";
 
@@ -52,6 +52,31 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
     onCheck(correct);
   };
 
+  // コピー完了フラグ（UIフィードバック用）
+  const [isCopied, setIsCopied] = useState(false);
+
+  // クリップボードにコピーする関数
+  const copyToClipboard = useCallback(() => {
+    const textToCopy = `${question.Question}\n\n[Options]\n${options.join("\n")}`;
+    navigator.clipboard.writeText(textToCopy).then(() => {
+      setIsCopied(true);
+      setTimeout(() => setIsCopied(false), 2000);
+    });
+  }, [question, options]);
+
+  // 「c」キーでコピーするキーボードショートカット
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      const tag = (e.target as HTMLElement).tagName.toLowerCase();
+      if (tag === "input" || tag === "textarea") return;
+      if (e.key === "c" && !e.ctrlKey && !e.metaKey) {
+        copyToClipboard();
+      }
+    };
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [copyToClipboard]);
+
   // オプションのスタイルを取得
   const getOptionStyle = (label: string) => {
     const isSelected = userSelectedLabels.includes(label);
@@ -100,6 +125,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
     <div
       className="question-card"
       style={{
+        position: "relative",
         background: "linear-gradient(135deg, #1e2130 0%, #1a1d27 100%)",
         border: showResult
           ? currentIsCorrect
@@ -111,6 +137,31 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
         transition: "border-color 0.3s",
       }}
     >
+      {/* コピー完了トースト通知 */}
+      {isCopied && (
+        <div
+          style={{
+            position: "absolute",
+            top: "12px",
+            right: "12px",
+            background: "rgba(34, 197, 94, 0.15)",
+            border: "1px solid rgba(34, 197, 94, 0.4)",
+            borderRadius: "8px",
+            padding: "6px 14px",
+            fontSize: "12px",
+            fontWeight: 600,
+            color: "#22c55e",
+            display: "flex",
+            alignItems: "center",
+            gap: "6px",
+            animation: "fadeIn 0.15s ease",
+            zIndex: 10,
+          }}
+        >
+          Copied!
+        </div>
+      )}
+
       {/* ヘッダー: 問題番号 */}
       <div className="flex items-center gap-3 mb-5">
         <div
@@ -162,18 +213,78 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
         )}
       </div>
 
-      {/* 問題テキスト */}
-      <p
+      {/* 問題テキストとコピーボタン */}
+      <div
         style={{
-          fontSize: "15px",
-          lineHeight: "1.7",
-          color: "#e2e8f0",
+          display: "flex",
+          alignItems: "flex-start",
+          gap: "12px",
           marginBottom: "20px",
-          fontWeight: 500,
         }}
       >
-        {question.Question}
-      </p>
+        <p
+          style={{
+            flex: 1,
+            fontSize: "15px",
+            lineHeight: "1.7",
+            color: "#e2e8f0",
+            fontWeight: 500,
+            margin: 0,
+          }}
+        >
+          {question.Question}
+        </p>
+        <button
+          onClick={copyToClipboard}
+          style={{
+            background: isCopied ? "rgba(34, 197, 94, 0.15)" : "rgba(255, 255, 255, 0.05)",
+            border: isCopied ? "1px solid rgba(34, 197, 94, 0.4)" : "1px solid rgba(255, 255, 255, 0.1)",
+            borderRadius: "6px",
+            padding: "8px",
+            color: isCopied ? "#22c55e" : "#94a3b8",
+            cursor: "pointer",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            flexShrink: 0,
+            transition: "all 0.2s",
+          }}
+          title="Sao chép câu hỏi (C)"
+        >
+          {isCopied ? (
+            // コピー完了アイコン（チェックマーク）
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+          ) : (
+            // コピーアイコン
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+              <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+            </svg>
+          )}
+        </button>
+      </div>
 
       {/* 選択肢 */}
       <div className="flex flex-col gap-2 mb-5">
@@ -189,7 +300,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
               tabIndex={0}
               onClick={() => {
                 const selection = window.getSelection();
-                if (selection && selection.type === 'Range') {
+                if (selection && selection.type === "Range") {
                   return; // Don't trigger click if user is selecting text
                 }
                 handleOptionClick(label);

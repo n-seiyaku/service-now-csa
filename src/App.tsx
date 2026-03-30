@@ -3,6 +3,7 @@ import questionsData from "./Question.json";
 import type { QuizQuestion } from "./types";
 import { QuestionCard } from "./components/QuestionCard";
 import { ScorePanel } from "./components/ScorePanel";
+import { ShortcutInfo } from "./components/ShortcutInfo";
 import { ReviewPage } from "./ReviewPage";
 import {
   exportWrongQuestionsForGemini,
@@ -582,6 +583,9 @@ const App: React.FC = () => {
             >
               Total: {questions.length} Q
             </span>
+
+            {/* ショートカット情報ボタン */}
+            <ShortcutInfo />
           </div>
         </div>
       </header>
@@ -601,6 +605,7 @@ const App: React.FC = () => {
       >
         {/* 問題リスト */}
         <div className="flex flex-col gap-5">
+
           {currentPageQuestions.map((q, i) => {
             const globalIndex = startIdx + i;
             return (
