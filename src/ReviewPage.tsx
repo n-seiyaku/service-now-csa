@@ -1,10 +1,11 @@
 import React, { useState, useCallback } from "react";
-import questionsData from "./Question.json";
 import type { QuizQuestion } from "./types";
 import { QuestionCard } from "./components/QuestionCard";
 import { isCorrect } from "./utils";
 
 interface ReviewPageProps {
+  // すべての問題データー
+  questions: QuizQuestion[];
   // 間違えた問題のインデックスリスト
   wrongIndices: number[];
   // メインページへ戻るコールバック
@@ -13,10 +14,9 @@ interface ReviewPageProps {
   onClearWrong: (clearedIndex: number) => void;
 }
 
-const questions = questionsData as QuizQuestion[];
-
 // 復習ページコンポーネント
 export const ReviewPage: React.FC<ReviewPageProps> = ({
+  questions,
   wrongIndices,
   onBack,
   onClearWrong,
@@ -28,7 +28,7 @@ export const ReviewPage: React.FC<ReviewPageProps> = ({
   // 復習で正解した数
   const [masteredCount, setMasteredCount] = useState(0);
   // 正解済みインデックスセット（renderで使用するためrefではなくstate）
-  const [masteredSet, setMasteredSet] = useState<Set<number>>(new Set());;
+  const [masteredSet, setMasteredSet] = useState<Set<number>>(new Set());
 
   const handleSelectionChange = useCallback(
     (globalIndex: number, labels: string[]) => {
@@ -264,49 +264,50 @@ export const ReviewPage: React.FC<ReviewPageProps> = ({
             })}
 
             {/* 全問マスターバナー */}
-            {masteredCount === wrongIndices.length && wrongIndices.length > 0 && (
-              <div
-                style={{
-                  background:
-                    "linear-gradient(135deg, rgba(34,197,94,0.15), rgba(16,185,129,0.15))",
-                  border: "1px solid rgba(34,197,94,0.4)",
-                  borderRadius: "20px",
-                  padding: "32px",
-                  textAlign: "center",
-                }}
-              >
-                <p
+            {masteredCount === wrongIndices.length &&
+              wrongIndices.length > 0 && (
+                <div
                   style={{
-                    fontSize: "24px",
-                    fontWeight: 700,
-                    color: "#86efac",
-                    marginBottom: "8px",
+                    background:
+                      "linear-gradient(135deg, rgba(34,197,94,0.15), rgba(16,185,129,0.15))",
+                    border: "1px solid rgba(34,197,94,0.4)",
+                    borderRadius: "20px",
+                    padding: "32px",
+                    textAlign: "center",
                   }}
                 >
-                  All mastered!
-                </p>
-                <p style={{ color: "#94a3b8", fontSize: "14px" }}>
-                  You got all {wrongIndices.length} previously wrong questions
-                  correct.
-                </p>
-                <button
-                  onClick={onBack}
-                  style={{
-                    marginTop: "20px",
-                    background: "linear-gradient(135deg, #6366f1, #8b5cf6)",
-                    border: "none",
-                    borderRadius: "12px",
-                    padding: "12px 32px",
-                    color: "#fff",
-                    fontWeight: 600,
-                    fontSize: "15px",
-                    cursor: "pointer",
-                  }}
-                >
-                  Back to Quiz
-                </button>
-              </div>
-            )}
+                  <p
+                    style={{
+                      fontSize: "24px",
+                      fontWeight: 700,
+                      color: "#86efac",
+                      marginBottom: "8px",
+                    }}
+                  >
+                    All mastered!
+                  </p>
+                  <p style={{ color: "#94a3b8", fontSize: "14px" }}>
+                    You got all {wrongIndices.length} previously wrong questions
+                    correct.
+                  </p>
+                  <button
+                    onClick={onBack}
+                    style={{
+                      marginTop: "20px",
+                      background: "linear-gradient(135deg, #6366f1, #8b5cf6)",
+                      border: "none",
+                      borderRadius: "12px",
+                      padding: "12px 32px",
+                      color: "#fff",
+                      fontWeight: 600,
+                      fontSize: "15px",
+                      cursor: "pointer",
+                    }}
+                  >
+                    Back to Quiz
+                  </button>
+                </div>
+              )}
 
             {/* まだ間違っている問題 */}
             {checkedSet.size > 0 && remainingWrong.length > 0 && (

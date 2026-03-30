@@ -353,6 +353,7 @@ const QuizApp: React.FC<QuizAppProps> = ({ examId, questions, availableExams, on
   if (view === "review") {
     return (
       <ReviewPage
+        questions={questions}
         wrongIndices={wrongIndices}
         onBack={() => setView("quiz")}
         onClearWrong={handleClearWrong}
