@@ -98,6 +98,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
 
   return (
     <div
+      className="question-card"
       style={{
         background: "linear-gradient(135deg, #1e2130 0%, #1a1d27 100%)",
         border: showResult
@@ -184,6 +185,8 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
             <div
               key={i}
               id={`q${questionIndex}-opt-${label}`}
+              className="question-option"
+              tabIndex={0}
               onClick={() => {
                 const selection = window.getSelection();
                 if (selection && selection.type === 'Range') {
@@ -236,6 +239,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
       {!isChecked && (
         <button
           id={`check-btn-${questionIndex}`}
+          className="check-button"
           onClick={handleCheck}
           disabled={userSelectedLabels.length === 0}
           style={{

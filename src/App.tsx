@@ -118,6 +118,92 @@ const App: React.FC = () => {
     };
   }, [userAnswers, checkedSet, correctCount, wrongCount, wrongIndices, page, pageSize]);
 
+  // キーボード操作のサポート
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      // Input項目などで入力中の場合は無視
+      if (document.activeElement instanceof HTMLInputElement || document.activeElement instanceof HTMLTextAreaElement) {
+        return;
+      }
+
+      // Quizビューのみ: 左右キーでページ遷移
+      if (view === "quiz") {
+        if (e.key === "ArrowLeft") {
+          e.preventDefault();
+          setPage((p) => Math.max(0, p - 1));
+          window.scrollTo({ top: 0, behavior: "smooth" });
+          return;
+        } else if (e.key === "ArrowRight") {
+          e.preventDefault();
+          setPage((p) => Math.min(totalPages - 1, p + 1));
+          window.scrollTo({ top: 0, behavior: "smooth" });
+          return;
+        }
+      }
+
+      // 上下/Space/Enter: 選択肢とチェックの操作
+      if (["ArrowUp", "ArrowDown", " ", "Enter"].includes(e.key)) {
+        // マウスでテキスト選択中の場合は誤作動を防ぐ
+        const selection = window.getSelection();
+        if (selection && selection.type === "Range" && e.key !== "Enter") return;
+
+        const focusableElements = Array.from(
+          document.querySelectorAll(".question-option")
+        ) as HTMLElement[];
+
+        if (focusableElements.length === 0) return;
+
+        const activeIdx = focusableElements.findIndex(
+          (el) => el === document.activeElement
+        );
+
+        if (e.key === "ArrowUp") {
+          e.preventDefault();
+          const nextIdx =
+            activeIdx > 0 ? activeIdx - 1 : focusableElements.length - 1;
+          focusableElements[nextIdx].focus();
+        } else if (e.key === "ArrowDown") {
+          e.preventDefault();
+          const nextIdx =
+            activeIdx !== -1 && activeIdx < focusableElements.length - 1
+              ? activeIdx + 1
+              : 0;
+          focusableElements[nextIdx].focus();
+        } else if (e.key === " ") {
+          e.preventDefault();
+          if (document.activeElement?.classList.contains("question-option")) {
+            (document.activeElement as HTMLElement).click();
+          }
+        } else if (e.key === "Enter") {
+          e.preventDefault();
+          // アクティブな選択肢があれば、その問題のCheckボタンを押す
+          if (document.activeElement?.classList.contains("question-option")) {
+            const card = document.activeElement.closest(".question-card");
+            if (card) {
+              const checkBtn = card.querySelector(
+                ".check-button:not([disabled])"
+              ) as HTMLButtonElement | null;
+              if (checkBtn) {
+                checkBtn.click();
+              }
+            }
+          } else {
+            // そうでなければ、画面上の最初の有効なCheckボタンを押す
+            const checkBtns = document.querySelectorAll(
+              ".check-button:not([disabled])"
+            ) as NodeListOf<HTMLButtonElement>;
+            if (checkBtns.length > 0) {
+              checkBtns[0].click();
+            }
+          }
+        }
+      }
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [view, totalPages]);
+
   // 選択肢変更ハンドラ
   const handleSelectionChange = useCallback(
     (questionIndex: number, labels: string[]) => {
@@ -652,11 +738,15 @@ const App: React.FC = () => {
         </aside>
       </main>
 
-      {/* フェードインアニメーション */}
+      {/* フェードインアニメーションとフォーカススタイル */}
       <style>{`
         @keyframes fadeInUp {
           from { opacity: 0; transform: translate(-50%, 12px); }
           to   { opacity: 1; transform: translate(-50%, 0); }
+        }
+        .question-option:focus {
+          outline: 2px solid #818cf8;
+          outline-offset: 3px;
         }
       `}</style>
     </div>
