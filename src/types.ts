@@ -1,12 +1,21 @@
 // 問題データの型定義
 
 export interface QuizQuestion {
-  // 問題テキスト
-  Question: string;
-  // 選択肢文字列（パイプ区切り）
-  Option: string;
-  // 正解文字列（パイプ区切り）
-  Answer: string;
+  // 設問タイプ: "multiple-choice" or "multi-select"
+  assessment_type: "multiple-choice" | "multi-select";
+  // プロンプトオブジェクト
+  prompt: {
+    // 問題テキスト（HTMLタグを含む場合あり）
+    question: string;
+    // 各選択肢へのフィードバック（インデックス順）
+    feedbacks: string[];
+    // 選択肢テキスト配列
+    answers: string[];
+  };
+  // 正解ラベル配列（"a", "b", "c"...）
+  correct_response: string[];
+  // プレーンテキスト版の問題文
+  question_plain: string;
 }
 
 export interface QuizState {

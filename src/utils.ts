@@ -1,22 +1,28 @@
 import type { QuizQuestion } from "./types";
 
-// 問題オプションをパース（パイプ区切り -> 配列）
-export const parseOptions = (optionStr: string): string[] => {
-  return optionStr
-    .split("|")
-    .map((s) => s.trim())
-    .filter(Boolean);
+// ラベル（a, b, c...）からインデックスに変換
+const labelToIndex = (label: string): number => {
+  return label.toLowerCase().charCodeAt(0) - "a".charCodeAt(0);
 };
 
-// 正解をパース（パイプ区切り -> ラベル配列）
-export const parseAnswers = (answerStr: string): string[] => {
-  return answerStr
-    .split("|")
-    .map((s) => s.trim())
-    .filter(Boolean);
+// インデックスからラベルに変換
+const indexToLabel = (index: number): string => {
+  return String.fromCharCode("a".charCodeAt(0) + index);
 };
 
-// オプション文字列からラベル（a, b, c...またはA, B, C...）を抽出
+// 選択肢配列を取得（"a. テキスト" 形式で返す）
+export const parseOptions = (question: QuizQuestion): string[] => {
+  return question.prompt.answers.map(
+    (text, i) => `${indexToLabel(i)}. ${text}`
+  );
+};
+
+// 正解ラベル配列を取得（"a", "b", "c"...）
+export const parseAnswers = (question: QuizQuestion): string[] => {
+  return question.correct_response;
+};
+
+// オプション文字列からラベル（a, b, c...）を抽出
 export const extractLabel = (option: string): string => {
   const match = option.match(/^([a-zA-Z])\./);
   return match ? match[1].toLowerCase() : option.trim().toLowerCase();
@@ -25,21 +31,28 @@ export const extractLabel = (option: string): string => {
 // ユーザーの回答が正解かどうかを判定
 export const isCorrect = (
   question: QuizQuestion,
-  selectedLabels: string[],
+  selectedLabels: string[]
 ): boolean => {
-  const correctLabels = parseAnswers(question.Answer).map((a) =>
-    extractLabel(a),
-  );
+  const correctLabels = question.correct_response.map((l) => l.toLowerCase());
   if (correctLabels.length !== selectedLabels.length) return false;
   const sortedCorrect = [...correctLabels].sort();
   const sortedSelected = [...selectedLabels].sort();
   return sortedCorrect.every((v, i) => v === sortedSelected[i]);
 };
 
+// 選択肢ラベルに対応するフィードバックテキストを取得
+export const getFeedback = (
+  question: QuizQuestion,
+  label: string
+): string => {
+  const idx = labelToIndex(label);
+  return question.prompt.feedbacks[idx] ?? "";
+};
+
 // 不正解問題をGeminiのCanvasプロンプト付きで書き出す
 export const exportWrongQuestionsForGemini = (
   indices: number[],
-  allQuestions: QuizQuestion[],
+  allQuestions: QuizQuestion[]
 ): void => {
   const wrongQuestions = indices.map((idx) => allQuestions[idx]);
 
@@ -50,8 +63,8 @@ Yêu cầu cho ứng dụng:
 1. Hiển thị từng câu hỏi một (One by one), không hiển thị danh sách.
 2. Có nút cho tôi chọn các lựa chọn đáp án.
 3. Sau khi tôi nộp đáp án, lập tức báo ĐÚNG/SAI và đặc biệt: HIỂN THỊ GIẢI THÍCH CHI TIẾT vì sao đáp án đúng lại đúng, và vì sao các lựa chọn còn lại bị sai (hãy giải thích thật dễ hiểu).
-4. Có nút điều hướng "Next Question".
-5. Chỉ sử dụng dữ liệu JSON dưới đây làm nguồn câu hỏi duy 
+4. Có nút điều hướng 'Next Question'.
+5. Chỉ sử dụng dữ liệu JSON dưới đây làm nguồn câu hỏi duy nhất:
 [DATA START]
 ${JSON.stringify(wrongQuestions, null, 2)}
 [DATA END]
@@ -91,17 +104,20 @@ export interface SavedProgress {
   savedAt: string;
 }
 
-const PROGRESS_KEY = "csa_quiz_progress";
+const DEFAULT_PROGRESS_KEY = "csa_quiz_progress";
+
+const getProgressKey = (examId?: string) => 
+  examId ? `csa_quiz_progress_${examId}` : DEFAULT_PROGRESS_KEY;
 
 // 進捗をlocalStorageに保存
-export const saveProgress = (progress: SavedProgress): void => {
-  localStorage.setItem(PROGRESS_KEY, JSON.stringify(progress));
+export const saveProgress = (progress: SavedProgress, examId?: string): void => {
+  localStorage.setItem(getProgressKey(examId), JSON.stringify(progress));
 };
 
 // localStorageから進捗を読み込む
-export const loadProgress = (): SavedProgress | null => {
+export const loadProgress = (examId?: string): SavedProgress | null => {
   try {
-    const raw = localStorage.getItem(PROGRESS_KEY);
+    const raw = localStorage.getItem(getProgressKey(examId));
     if (!raw) return null;
     return JSON.parse(raw) as SavedProgress;
   } catch {
@@ -110,8 +126,8 @@ export const loadProgress = (): SavedProgress | null => {
 };
 
 // 進捗データをすべてクリア
-export const clearProgress = (): void => {
-  localStorage.removeItem(PROGRESS_KEY);
+export const clearProgress = (examId?: string): void => {
+  localStorage.removeItem(getProgressKey(examId));
 };
 
 // 保存日時を読みやすい形式に変換

@@ -1,6 +1,12 @@
-import React, { useCallback, useEffect, useState } from "react";
+import React, { useCallback } from "react";
 import type { QuizQuestion } from "../types";
-import { parseOptions, parseAnswers, extractLabel, isCorrect } from "../utils";
+import {
+  parseOptions,
+  parseAnswers,
+  extractLabel,
+  isCorrect,
+  getFeedback,
+} from "../utils";
 
 interface QuestionCardProps {
   question: QuizQuestion;
@@ -10,6 +16,9 @@ interface QuestionCardProps {
   isChecked: boolean;
   onSelectionChange: (labels: string[]) => void;
   onCheck: (correct: boolean) => void;
+  isCopied?: boolean;
+  onCopy?: () => void;
+  onActivate?: () => void;
 }
 
 // 問題カードコンポーネント
@@ -21,20 +30,25 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
   isChecked,
   onSelectionChange,
   onCheck,
+  isCopied = false,
+  onCopy,
+  onActivate,
 }) => {
-  const options = parseOptions(question.Option);
-  const correctAnswers = parseAnswers(question.Answer);
-  const correctLabels = correctAnswers.map(extractLabel);
+  // 新フォーマット: 選択肢オプション配列（"a. テキスト" 形式）
+  const options = parseOptions(question);
+  // 正解ラベル配列（"a", "b", "c"...）
+  const correctLabels = parseAnswers(question);
 
   // 複数選択かどうかの判定
   const isMultiple = correctLabels.length > 1;
 
-  // showResultはisCheckedから直接派生（stateを不要にする）
+  // showResultはisCheckedから直接派生
   const showResult = isChecked;
 
   // オプション選択ハンドラ
   const handleOptionClick = (label: string) => {
     if (isChecked) return;
+    onActivate?.();
     if (isMultiple) {
       const updated = userSelectedLabels.includes(label)
         ? userSelectedLabels.filter((l) => l !== label)
@@ -52,30 +66,14 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
     onCheck(correct);
   };
 
-  // コピー完了フラグ（UIフィードバック用）
-  const [isCopied, setIsCopied] = useState(false);
-
   // クリップボードにコピーする関数
   const copyToClipboard = useCallback(() => {
-    const textToCopy = `${question.Question}\n\n[Options]\n${options.join("\n")}`;
+    const optionsText = options.join("\n");
+    const textToCopy = `${question.question_plain}\n\n[Options]\n${optionsText}`;
     navigator.clipboard.writeText(textToCopy).then(() => {
-      setIsCopied(true);
-      setTimeout(() => setIsCopied(false), 2000);
+      if (onCopy) onCopy();
     });
-  }, [question, options]);
-
-  // 「c」キーでコピーするキーボードショートカット
-  useEffect(() => {
-    const handleKeyDown = (e: KeyboardEvent) => {
-      const tag = (e.target as HTMLElement).tagName.toLowerCase();
-      if (tag === "input" || tag === "textarea") return;
-      if (e.key === "c" && !e.ctrlKey && !e.metaKey) {
-        copyToClipboard();
-      }
-    };
-    window.addEventListener("keydown", handleKeyDown);
-    return () => window.removeEventListener("keydown", handleKeyDown);
-  }, [copyToClipboard]);
+  }, [question, options, onCopy]);
 
   // オプションのスタイルを取得
   const getOptionStyle = (label: string) => {
@@ -121,9 +119,13 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
 
   const currentIsCorrect = isCorrect(question, userSelectedLabels);
 
+  // 問題テキスト: HTMLタグを含む場合はdangerouslySetInnerHTMLで描画
+  const questionHasHtml = /<[a-z][\s\S]*>/i.test(question.prompt.question);
+
   return (
     <div
       className="question-card"
+      onMouseDown={() => onActivate?.()}
       style={{
         position: "relative",
         background: "linear-gradient(135deg, #1e2130 0%, #1a1d27 100%)",
@@ -222,23 +224,42 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
           marginBottom: "20px",
         }}
       >
-        <p
-          style={{
-            flex: 1,
-            fontSize: "15px",
-            lineHeight: "1.7",
-            color: "#e2e8f0",
-            fontWeight: 500,
-            margin: 0,
-          }}
-        >
-          {question.Question}
-        </p>
+        {questionHasHtml ? (
+          /* HTMLタグを含む問題テキストを描画 */
+          <div
+            style={{
+              flex: 1,
+              fontSize: "15px",
+              lineHeight: "1.7",
+              color: "#e2e8f0",
+              fontWeight: 500,
+              margin: 0,
+            }}
+            dangerouslySetInnerHTML={{ __html: question.prompt.question }}
+          />
+        ) : (
+          <p
+            style={{
+              flex: 1,
+              fontSize: "15px",
+              lineHeight: "1.7",
+              color: "#e2e8f0",
+              fontWeight: 500,
+              margin: 0,
+            }}
+          >
+            {question.prompt.question}
+          </p>
+        )}
         <button
           onClick={copyToClipboard}
           style={{
-            background: isCopied ? "rgba(34, 197, 94, 0.15)" : "rgba(255, 255, 255, 0.05)",
-            border: isCopied ? "1px solid rgba(34, 197, 94, 0.4)" : "1px solid rgba(255, 255, 255, 0.1)",
+            background: isCopied
+              ? "rgba(34, 197, 94, 0.15)"
+              : "rgba(255, 255, 255, 0.05)",
+            border: isCopied
+              ? "1px solid rgba(34, 197, 94, 0.4)"
+              : "1px solid rgba(255, 255, 255, 0.1)",
             borderRadius: "6px",
             padding: "8px",
             color: isCopied ? "#22c55e" : "#94a3b8",
@@ -292,55 +313,103 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
           const label = extractLabel(option);
           const style = getOptionStyle(label);
           const isSelected = userSelectedLabels.includes(label);
+          const isCorrectOption = correctLabels.includes(label);
+
+          const shouldShowFeedback = showResult;
+          const feedback = shouldShowFeedback
+            ? getFeedback(question, label)
+            : null;
+
           return (
-            <div
-              key={i}
-              id={`q${questionIndex}-opt-${label}`}
-              className="question-option"
-              tabIndex={0}
-              onClick={() => {
-                const selection = window.getSelection();
-                if (selection && selection.type === "Range") {
-                  return; // Don't trigger click if user is selecting text
-                }
-                handleOptionClick(label);
-              }}
-              style={{
-                ...style,
-                borderRadius: "12px",
-                padding: "12px 16px",
-                textAlign: "left",
-                fontSize: "14px",
-                lineHeight: "1.5",
-                cursor: isChecked ? "default" : "pointer",
-                transition: "all 0.2s",
-                width: "100%",
-                display: "flex",
-                alignItems: "flex-start",
-                gap: "10px",
-                userSelect: "text",
-              }}
-            >
-              {/* チェックインジケーター */}
-              <span
+            <div key={i} className="flex flex-col gap-2">
+              <div
+                id={`q${questionIndex}-opt-${label}`}
+                className="question-option"
+                tabIndex={0}
+                onClick={() => {
+                  const selection = window.getSelection();
+                  if (selection && selection.type === "Range") {
+                    return; // テキスト選択中はクリックを無視
+                  }
+                  handleOptionClick(label);
+                }}
                 style={{
-                  width: "20px",
-                  height: "20px",
-                  borderRadius: isMultiple ? "5px" : "50%",
-                  border: `2px solid ${style.color}`,
+                  ...style,
+                  borderRadius: "12px",
+                  padding: "12px 16px",
+                  textAlign: "left",
+                  fontSize: "14px",
+                  lineHeight: "1.5",
+                  cursor: isChecked ? "default" : "pointer",
+                  transition: "all 0.2s",
+                  width: "100%",
                   display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  flexShrink: 0,
-                  fontSize: "11px",
-                  fontWeight: 700,
-                  marginTop: "1px",
-                  color: style.color,
+                  alignItems: "flex-start",
+                  gap: "10px",
+                  userSelect: "text",
                 }}
               >
-                {isSelected ? "✓" : ""}
-              </span>
-              <span>{option}</span>
+                {/* チェックインジケーター */}
+                <span
+                  style={{
+                    width: "20px",
+                    height: "20px",
+                    borderRadius: isMultiple ? "5px" : "50%",
+                    border: `2px solid ${style.color}`,
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    flexShrink: 0,
+                    fontSize: "11px",
+                    fontWeight: 700,
+                    marginTop: "1px",
+                    color: style.color,
+                  }}
+                >
+                  {isSelected ? "✓" : ""}
+                </span>
+                <span dangerouslySetInnerHTML={{ __html: option }} />
+              </div>
+
+              {/* フィードバック表示（選択肢のすぐ下） */}
+              {feedback && (
+                <div
+                  style={{
+                    background: isCorrectOption
+                      ? "rgba(34, 197, 94, 0.06)"
+                      : "rgba(239, 68, 68, 0.06)",
+                    border: isCorrectOption
+                      ? "1px solid rgba(34, 197, 94, 0.2)"
+                      : "1px solid rgba(239, 68, 68, 0.2)",
+                    borderRadius: "10px",
+                    padding: "12px 14px",
+                    marginLeft: "30px", // 少しインデントして選択肢に属していることを強調
+                  }}
+                >
+                  <p
+                    style={{
+                      fontSize: "11px",
+                      fontWeight: 700,
+                      textTransform: "uppercase",
+                      letterSpacing: "0.05em",
+                      color: isCorrectOption ? "#22c55e" : "#ef4444",
+                      marginBottom: "4px",
+                    }}
+                  >
+                    {label.toUpperCase()}.{" "}
+                    {isCorrectOption ? "Correct" : "Wrong"}
+                  </p>
+                  <div
+                    style={{
+                      fontSize: "13px",
+                      color: "#94a3b8",
+                      lineHeight: "1.6",
+                      margin: 0,
+                    }}
+                    dangerouslySetInnerHTML={{ __html: feedback }}
+                  />
+                </div>
+              )}
             </div>
           );
         })}
@@ -374,40 +443,16 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
         </button>
       )}
 
-      {/* 正解表示（チェック後） */}
+      {/* 正解表示とフィードバック（チェック後） */}
       {showResult && (
         <div
           style={{
             marginTop: "16px",
-            background: "rgba(99, 102, 241, 0.08)",
-            border: "1px solid rgba(99, 102, 241, 0.2)",
-            borderRadius: "12px",
-            padding: "14px 16px",
+            display: "flex",
+            flexDirection: "column",
+            gap: "10px",
           }}
-        >
-          <p
-            style={{
-              fontSize: "12px",
-              color: "#94a3b8",
-              marginBottom: "6px",
-              fontWeight: 600,
-              textTransform: "uppercase",
-              letterSpacing: "0.05em",
-            }}
-          >
-            Correct Answer{correctLabels.length > 1 ? "s" : ""}:
-          </p>
-          <div className="flex flex-col gap-1">
-            {correctAnswers.map((ans, i) => (
-              <p
-                key={i}
-                style={{ fontSize: "14px", color: "#86efac", fontWeight: 500 }}
-              >
-                {ans}
-              </p>
-            ))}
-          </div>
-        </div>
+        />
       )}
     </div>
   );

@@ -1,0 +1,1186 @@
+[
+  {
+    "assessment_type": "multi-select",
+    "prompt": {
+      "question": "Many actions are included with flow designer, what are some frequently used core actions? (Choose four.)",
+      "feedbacks": [
+        "Look for Update is not a frequently used core action in flow designer. It is not commonly used for typical workflow automation tasks and is not among the essential actions for creating efficient workflows.",
+        "Create Record is a frequently used core action in flow designer as it allows users to create new records in the ServiceNow platform. This action is essential for automating processes that involve creating new data entries.",
+        "Ask for Approval is a commonly used core action in flow designer as it enables users to request approvals for specific tasks or processes. This action is crucial for implementing approval workflows and ensuring proper authorization in automated processes.",
+        "Look Up Record is a frequently used core action in flow designer as it allows users to search for and retrieve existing records from the ServiceNow platform. This action is essential for tasks that require accessing and referencing data from previously stored records.",
+        "Wait for Condition is a commonly used core action in flow designer as it enables users to pause the workflow execution until a specified condition is met. This action is crucial for creating conditional logic and ensuring that workflows progress based on specific criteria.",
+        "Wait for Match is not a frequently used core action in flow designer. It is not commonly used for typical workflow automation tasks and is not among the essential actions for creating efficient workflows."
+      ],
+      "answers": [
+        "Look for Update",
+        "Create Record",
+        "Ask for Approval",
+        "Look Up Record",
+        "Wait for Condition",
+        "Wait for Match"
+      ]
+    },
+    "correct_response": ["b", "c", "d", "e"],
+    "question_plain": "Many actions are included with flow designer, what are some frequently used core actions? (Choose four.)"
+  },
+  {
+    "assessment_type": "multiple-choice",
+    "prompt": {
+      "question": "What role enables someone to authorize a request, with no other permissions on the platform?",
+      "feedbacks": [
+        "Approval Group [approval_group] is a group of users responsible for approving or rejecting requests. They have the authority to make decisions based on the request but do not have the sole ability to authorize a request without other permissions on the platform.",
+        "Authorize [authorize_user] refers to a user who has the ability to grant permission or access to certain resources on the platform. While they have the authority to authorize access, they typically have additional permissions beyond just authorizing requests.",
+        "Reviewer [reviewer_user] is a user role responsible for reviewing requests or actions taken on the platform. They provide feedback or recommendations but do not have the sole authorization capability without other permissions.",
+        "Verification [verify_user] is a user role responsible for verifying information or actions on the platform. They ensure that the information provided is accurate or valid but do not have the authorization role to approve requests on their own.",
+        "Approver [approver_user] is the correct choice as it specifically refers to a user role that has the authority to authorize a request without needing any other permissions on the platform. They are solely responsible for approving requests and do not require additional roles or permissions for authorization."
+      ],
+      "answers": [
+        "Approval Group [approval_group]",
+        "Authorize [authorize_user]",
+        "Reviewer [reviewer_user]",
+        "Verification [verify_user]",
+        "Approver [approver_user]"
+      ]
+    },
+    "correct_response": ["e"],
+    "question_plain": "What role enables someone to authorize a request, with no other permissions on the platform?"
+  },
+  {
+    "assessment_type": "multiple-choice",
+    "prompt": {
+      "question": "On the knowledge base record, which tab would you use to define which users are not able to write articles to the knowledge base?",
+      "feedbacks": [
+        "The \"Can Contribute\" tab is used to define which users are allowed to contribute and write articles to the knowledge base. It does not specify which users are not able to write articles.",
+        "The \"Cannot Contribute\" tab is the correct choice as it is used to define which users are not able to write articles to the knowledge base. This tab restricts certain users from contributing content to the knowledge base.",
+        "The \"Can Read\" tab is used to define which users have read-only access to the knowledge base. It does not determine which users are unable to write articles.",
+        "The \"Can Write\" tab is used to define which users have permission to write and contribute articles to the knowledge base. It does not specify which users are restricted from writing articles.",
+        "The \"Can Author\" tab is used to define which users have authoring permissions in the knowledge base, allowing them to create and edit articles. It does not indicate which users are unable to write articles."
+      ],
+      "answers": [
+        "Can Contribute",
+        "<p>Cannot Contribute</p>",
+        "Can Read",
+        "Can Write",
+        "Can Author"
+      ]
+    },
+    "correct_response": ["b"],
+    "question_plain": "On the knowledge base record, which tab would you use to define which users are not able to write articles to the knowledge base?"
+  },
+  {
+    "assessment_type": "multi-select",
+    "prompt": {
+      "question": "What types of entities can receive task assignments, in ServiceNow? (Choose two.)",
+      "feedbacks": [
+        "Users in ServiceNow can receive task assignments as they are individual entities within the system who are responsible for completing specific tasks or actions. Assigning tasks to users allows for accountability and tracking of progress on assigned work items.",
+        "Departments in ServiceNow are not entities that can directly receive task assignments. Departments are typically used for organizational structure and grouping of users, but tasks are typically assigned to individual users or groups within the department.",
+        "Groups in ServiceNow can receive task assignments as they represent a collection of users with similar roles, responsibilities, or permissions. Assigning tasks to groups allows for efficient distribution of work and collaboration among group members to complete tasks.",
+        "Teams in ServiceNow are not entities that can directly receive task assignments. While teams may exist within the system for organizational purposes, tasks are typically assigned to individual users or groups within the team for better tracking and accountability."
+      ],
+      "answers": ["Users", "Departments", "Groups", "Teams"]
+    },
+    "correct_response": ["a", "c"],
+    "question_plain": "What types of entities can receive task assignments, in ServiceNow? (Choose two.)"
+  },
+  {
+    "assessment_type": "multiple-choice",
+    "prompt": {
+      "question": "The Report Designer contains different sections for configuring your report. Which section is used to adjust the look of your report, including colors, titles and legend layout?",
+      "feedbacks": [
+        "The Layout section in the Report Designer is primarily used to adjust the arrangement and positioning of report elements such as tables, charts, and text boxes. It focuses on the overall structure and organization of the report rather than the visual appearance and styling.",
+        "The Format section in the Report Designer is typically used to set the formatting options for data within the report, such as number formats, date formats, and column widths. It deals with how the data is displayed rather than the overall look and feel of the report.",
+        "The Configure section in the Report Designer is usually used to set up data sources, filters, and parameters for the report. It focuses on defining the data that will be included in the report and how it will be filtered and organized, rather than the visual styling of the report.",
+        "The Style section in the Report Designer is specifically dedicated to adjusting the visual appearance of the report. This includes options for customizing colors, fonts, titles, legends, and other visual elements to enhance the overall look and feel of the report. It is the section where you can make your report visually appealing and easy to understand for the end users."
+      ],
+      "answers": ["Layout", "Format", "Configure", "Style"]
+    },
+    "correct_response": ["d"],
+    "question_plain": "The Report Designer contains different sections for configuring your report. Which section is used to adjust the look of your report, including colors, titles and legend layout?"
+  },
+  {
+    "assessment_type": "multiple-choice",
+    "prompt": {
+      "question": "How would you distinguish between a Base Class table and a Parent Class table?",
+      "feedbacks": [
+        "This statement is incorrect. Extended tables can be extended from both Parent tables and Base tables in ServiceNow. There is no restriction on which type of table an extended table can be based on.",
+        "This statement is incorrect. Extended tables in ServiceNow can be extended from both Parent tables and Base tables. There is no limitation on extending tables from one type only.",
+        "This statement is incorrect. Both Base Class tables and Parent Class tables in ServiceNow can have tables extended from them. There is no distinction in terms of having tables extended from them.",
+        "This statement is correct. In ServiceNow, a Base Class table is not extended from another table, whereas a Parent Class table may be extended from another table. This is a key distinction between the two types of tables in the ServiceNow platform."
+      ],
+      "answers": [
+        "Extended tables are always extended from Parent tables. Extended tables are usually extended from Base tables.",
+        "Extended tables can be extended from Parent tables or Base tables; but they cannot be extended from both.",
+        "Base Class tables always have tables extended from them. Parent tables do not have tables extended from them.",
+        "Base Class table is not extended from another table, Parent class tables may be extended from another table."
+      ]
+    },
+    "correct_response": ["d"],
+    "question_plain": "How would you distinguish between a Base Class table and a Parent Class table?"
+  },
+  {
+    "assessment_type": "multi-select",
+    "prompt": {
+      "question": "When a custom table is created, which access control rules are automatically created? (Choose four.)",
+      "feedbacks": [
+        "The 'create' access control rule is automatically created when a custom table is created to control who has permission to create new records in the table.",
+        "The 'delete' access control rule is automatically created when a custom table is created to control who has permission to delete records in the table.",
+        "The 'execute' access control rule is not automatically created when a custom table is created. This rule is typically used for controlling access to script actions or business rules, not for basic table operations.",
+        "The 'update' access control rule is automatically created when a custom table is created to control who has permission to update or modify existing records in the table.",
+        "The 'read' access control rule is automatically created when a custom table is created to control who has permission to view or read records in the table.",
+        "The 'write' access control rule is automatically created when a custom table is created to control who has permission to write or modify records in the table."
+      ],
+      "answers": ["create", "delete", "execute", "update", "read", "write"]
+    },
+    "correct_response": ["a", "b", "e", "f"],
+    "question_plain": "When a custom table is created, which access control rules are automatically created? (Choose four.)"
+  },
+  {
+    "assessment_type": "multiple-choice",
+    "prompt": {
+      "question": "Which banner icon do you use to change your personal system settings, like your instance color scheme?",
+      "feedbacks": [
+        "The Magnifier icon is typically used for search functionality within the ServiceNow platform. It allows users to search for specific records, data, or information within the instance, but it does not provide access to personal system settings like changing the color scheme.",
+        "The Question mark icon is commonly associated with help or support features in ServiceNow. It is used to access help documentation, FAQs, or support resources within the platform, rather than for changing personal system settings such as the instance color scheme.",
+        "The Gear icon is the correct choice for changing personal system settings, including the instance color scheme, in ServiceNow. It typically represents settings or configuration options that users can customize to personalize their experience within the platform.",
+        "The Chat bubbles icon is typically used for accessing communication or messaging features within ServiceNow, such as live chat support or collaboration tools. It is not related to changing personal system settings like the instance color scheme."
+      ],
+      "answers": ["Magnifier", "Question mark", "Gear", "Chat bubbles"]
+    },
+    "correct_response": ["c"],
+    "question_plain": "Which banner icon do you use to change your personal system settings, like your instance color scheme?"
+  },
+  {
+    "assessment_type": "multiple-choice",
+    "prompt": {
+      "question": "On a form header, which icon would you click to access Template features?",
+      "feedbacks": [
+        "The Stamp icon is typically used for copying or duplicating information on a form. It is not related to accessing Template features in ServiceNow.",
+        "The Context Menu icon is used to display a list of actions or options that are specific to the context in which it is clicked. It does not directly lead to accessing Template features on a form header.",
+        "The More Options (...) icon typically provides a dropdown menu with additional actions and features that are not directly visible on the form header. Clicking on this icon would likely lead to accessing Template features in ServiceNow.",
+        "The Paper clip icon is commonly used to indicate attachments or files associated with a record. It is not the icon you would click to access Template features on a form header in ServiceNow."
+      ],
+      "answers": ["Stamp", "Context Menu", "More Options (...)", "Paper clip"]
+    },
+    "correct_response": ["c"],
+    "question_plain": "On a form header, which icon would you click to access Template features?"
+  },
+  {
+    "assessment_type": "multi-select",
+    "prompt": {
+      "question": "When building an extended table from a base table, which fields do you need to create? (Choose two.)",
+      "feedbacks": [
+        "When building an extended table from a base table, you need to create the fields that are not already present in the base table. This allows you to add new attributes and functionalities specific to the extended table without altering the base table's structure.",
+        "Creating the mandatory fields for the base table is not necessary when building an extended table. The mandatory fields for the base table do not need to be duplicated in the extended table as they are already defined in the base table.",
+        "It is essential to create the fields that are specific to the extended table when building an extended table from a base table. These specific fields will hold unique data related to the extended functionality or attributes of the extended table.",
+        "Creating the reference fields for the base table is not a requirement when building an extended table. Reference fields in the base table do not need to be recreated in the extended table unless there is a specific need for them in the extended functionality."
+      ],
+      "answers": [
+        "The fields that are not in the base table.",
+        "The mandatory fields for the base table.",
+        "The fields that are specific to the extended table.",
+        "The reference fields for the base table."
+      ]
+    },
+    "correct_response": ["a", "c"],
+    "question_plain": "When building an extended table from a base table, which fields do you need to create? (Choose two.)"
+  },
+  {
+    "assessment_type": "multi-select",
+    "prompt": {
+      "question": "While showing a customer their Incident form, they ask to change the Priority field title to display their internal terminology PValue. How would you do that? (Choose two.)",
+      "feedbacks": [
+        "By right-clicking on the Priority field and selecting Configure Label, you can change the display text of the field to show the customer's internal terminology, in this case, PValue. This action allows you to customize the label of the field without affecting the underlying data or functionality.",
+        "Right-clicking on the Priority field and selecting Configure Dictionary allows you to modify the dictionary entry for the field. By changing the dictionary entry, you can update the field's display name to reflect the customer's preferred terminology, such as PValue. This method ensures consistency across the platform for the field's name.",
+        "Right-clicking on the Priority field and selecting Configure Display Settings does not provide an option to change the field title to PValue. This action is typically used to adjust the display settings of the field, such as visibility, mandatory status, or default values, but it does not allow for renaming the field.",
+        "Right-clicking on the Priority field and selecting Configure Column does not offer the functionality to change the field title to PValue. This option is usually used to configure the column properties, such as width, alignment, or sorting options, but it does not provide a way to rename the field."
+      ],
+      "answers": [
+        "Right click on Priority and select Configure Label",
+        "Right click on Priority and select Configure Dictionary",
+        "Right click on Priority and select Configure Display Settings",
+        "Right click on Priority and select Configure Column"
+      ]
+    },
+    "correct_response": ["a", "b"],
+    "question_plain": "While showing a customer their Incident form, they ask to change the Priority field title to display their internal terminology PValue. How would you do that? (Choose two.)"
+  },
+  {
+    "assessment_type": "multiple-choice",
+    "prompt": {
+      "question": "As administrator, what must you do to access features of High Security Settings?",
+      "feedbacks": [
+        "Impersonating a Security Admin does not grant access to features of High Security Settings. Impersonation allows an administrator to temporarily assume the identity of another user for troubleshooting or testing purposes, but it does not provide access to elevated security settings.",
+        "Selecting Elevate Roles is the correct option to access features of High Security Settings. By elevating roles, an administrator can temporarily grant themselves additional permissions and access to restricted areas, such as High Security Settings, without permanently changing their user account's role assignments.",
+        "Adding the security_admin role to your user account may provide access to some security-related features, but it may not specifically grant access to the High Security Settings. Elevating roles is the recommended method for accessing these settings without permanently altering your role assignments.",
+        "Using the System Administration &gt; Elevate Roles module is not the typical way to access features of High Security Settings. While the Elevate Roles functionality is involved, it is usually accessed through the user interface by selecting the Elevate Roles option directly, rather than through a specific module in the System Administration section."
+      ],
+      "answers": [
+        "Impersonate Security Admin",
+        "Select Elevate Roles",
+        "Add security_admin role to your user account",
+        "Use System Administration &gt; Elevate Roles module"
+      ]
+    },
+    "correct_response": ["b"],
+    "question_plain": "As administrator, what must you do to access features of High Security Settings?"
+  },
+  {
+    "assessment_type": "multiple-choice",
+    "prompt": {
+      "question": "What section on the notes tab, shows the history of the work documented on the record?",
+      "feedbacks": [
+        "The Audit Log section on the notes tab in ServiceNow records provides a detailed history of all changes made to the record, including who made the changes, when they were made, and what the changes were. It is primarily used for tracking and auditing purposes rather than documenting work history.",
+        "The Timeline section on the notes tab in ServiceNow records displays a chronological list of events and activities related to the record, such as comments, updates, and attachments. While it provides a timeline view of activities, it may not specifically show the history of work documented on the record.",
+        "The Journal section on the notes tab in ServiceNow records allows users to add comments, notes, and updates related to the record. It serves as a collaborative space for documenting ongoing work and discussions, but it may not provide a comprehensive history of all work documented on the record.",
+        "The Diary section on the notes tab in ServiceNow records is not a standard feature in ServiceNow and does not exist as a default option for documenting work history on a record. Therefore, it is not the correct choice for the section that shows the history of work documented on the record.",
+        "The Activity Stream section on the notes tab in ServiceNow records displays a real-time feed of all activities and interactions related to the record, including comments, updates, attachments, and other events. It provides a comprehensive view of the history of work documented on the record, making it the correct choice for this question."
+      ],
+      "answers": [
+        "Audit Log",
+        "Timeline",
+        "Journal",
+        "Diary",
+        "Activity Stream"
+      ]
+    },
+    "correct_response": ["e"],
+    "question_plain": "What section on the notes tab, shows the history of the work documented on the record?"
+  },
+  {
+    "assessment_type": "multiple-choice",
+    "prompt": {
+      "question": "How would you navigate to the Schema map for a table?",
+      "feedbacks": [
+        "Navigating to the Schema map for a table in ServiceNow involves going to System Definition, selecting the desired table, and then clicking on the \"Show Schema Map\" option in the Related links section. This allows you to visually see the relationships and dependencies of the table within the schema.",
+        "The option to navigate to the Schema map for a table through System Dictionary and directly selecting the \"Show Schema Map\" option is not the correct path in ServiceNow. The correct path involves going through System Definition and accessing the Schema map from there.",
+        "Accessing the Schema map for a table by going through System Definition and selecting the table is the correct approach in ServiceNow. Clicking on \"Show Schema Map\" from this location allows you to view the schema relationships and dependencies for the selected table.",
+        "Going through System Definition, selecting the table, and then clicking on \"Show Schema Map\" from the Related links section is the correct way to navigate to the Schema map for a table in ServiceNow. Accessing it through the Dictionary or using the incorrect path will not lead you to the desired location."
+      ],
+      "answers": [
+        "System Definition &gt; Tables; Select Table; Go to Related links and click Show Schema Map",
+        "System Dictionary &gt; Show Schema Map; Select Table",
+        "System Definition &gt; Show Schema Map; Select Table",
+        "System Definition &gt; Dictionary; Select Table; Go to Related links and click Show Schema Map"
+      ]
+    },
+    "correct_response": ["a"],
+    "question_plain": "How would you navigate to the Schema map for a table?"
+  },
+  {
+    "assessment_type": "multiple-choice",
+    "prompt": {
+      "question": "Which is the base table of the configuration management database hierarchy?",
+      "feedbacks": [
+        "The 'cmdb_ci' table in ServiceNow is not the base table of the configuration management database hierarchy. It is a common table used for configuration items within the CMDB, but it is not the root or base table of the hierarchy.",
+        "The 'cmdb' table is the base table of the configuration management database hierarchy in ServiceNow. It serves as the foundational table that holds all configuration items and relationships within the CMDB structure, making it the correct choice for this question.",
+        "The 'cmdb_rel_ci' table in ServiceNow is not the base table of the configuration management database hierarchy. It is a table used for storing relationship information between configuration items, rather than being the root table of the CMDB hierarchy.",
+        "The 'ucmdb' table is not the base table of the configuration management database hierarchy in ServiceNow. It is not a standard table within the CMDB structure and is not directly related to the foundational hierarchy of configuration items."
+      ],
+      "answers": ["cmdb_ci", "cmdb", "cmdb_rel_ci", "ucmdb"]
+    },
+    "correct_response": ["b"],
+    "question_plain": "Which is the base table of the configuration management database hierarchy?"
+  },
+  {
+    "assessment_type": "multiple-choice",
+    "prompt": {
+      "question": "Which best describes a field in a ServiceNow table?",
+      "feedbacks": [
+        "A field in a ServiceNow table is not a table row. A table row represents a single record in the table, while a field is a specific attribute or piece of data stored within that record.",
+        "A field in a ServiceNow table is not an item that appears in a menu list. Fields are specific data points within a record, not menu items.",
+        "This is the correct explanation. In ServiceNow, a field is a table cell that stores data within a record. It represents a specific attribute or piece of information related to that record.",
+        "A field in a ServiceNow table is not a record in the table. Fields are components within a record that store specific data, while a record is a collection of fields that represent a single entity in the table."
+      ],
+      "answers": [
+        "A field is a table row.",
+        "A field is an item that appears in a menu list.",
+        "A field is a table cell that stores data.",
+        "A field is a record in a table."
+      ]
+    },
+    "correct_response": ["c"],
+    "question_plain": "Which best describes a field in a ServiceNow table?"
+  },
+  {
+    "assessment_type": "multi-select",
+    "prompt": {
+      "question": "What are examples of UI Actions relating to forms? (Choose three.)",
+      "feedbacks": [
+        "Form Columns are not examples of UI Actions relating to forms. Form Columns are used to define the fields that appear on a form, not to trigger actions or behaviors within the form itself.",
+        "Form View is not an example of a UI Action relating to forms. Form View refers to the layout and presentation of the form, not to specific actions or interactions that can be performed on the form.",
+        "Form Buttons are examples of UI Actions relating to forms. Form Buttons are used to trigger specific actions or functions within the form, such as submitting the form or triggering a workflow.",
+        "Form Context Menu is an example of a UI Action relating to forms. The Form Context Menu provides additional options or actions that can be accessed by right-clicking on a form field, allowing users to perform specific actions related to that field.",
+        "Form Links are examples of UI Actions relating to forms. Form Links can be used to navigate to related records, external websites, or trigger specific actions within the form, providing additional functionality and interactivity for users."
+      ],
+      "answers": [
+        "Form Columns",
+        "Form View",
+        "Form Buttons",
+        "Form Context Menu",
+        "Form Links"
+      ]
+    },
+    "correct_response": ["c", "d", "e"],
+    "question_plain": "What are examples of UI Actions relating to forms? (Choose three.)"
+  },
+  {
+    "assessment_type": "multiple-choice",
+    "prompt": {
+      "question": "<p>Here is an example of the criteria set for a knowledge base:</p><ul><li><p>Companies: ACME North America</p></li><li><p>Departments: HR</p></li><li><p>Groups: ACME Managers</p></li><li><p>Match All: Yes</p></li></ul><p>In this example, what users would have access to this knowledge base?</p>",
+      "feedbacks": [
+        "This choice correctly identifies the specific criteria set in the example, where users must be members of the ACME Manager group, HR Department, and ACME North America to have access to the knowledge base. It emphasizes the intersection of all criteria, ensuring that only users meeting all conditions can access the knowledge base.",
+        "This choice incorrectly broadens the access criteria by including all employees of ACME North America who are members of either HR Department or the ACME Managers group. It does not adhere to the specific criteria set in the example, which requires users to meet all three conditions to access the knowledge base.",
+        "This choice incorrectly expands the access criteria by allowing users who are members of any of the specified groups (ACME North America, HR Department, or ACME Managers group) to access the knowledge base. It does not consider the \"Match All: Yes\" condition, which requires users to meet all criteria simultaneously.",
+        "This choice incorrectly simplifies the access criteria by stating that only members of the ACME Managers group and HR Department, regardless of geography, would have access to the knowledge base. It overlooks the additional requirement of being part of ACME North America, as specified in the example criteria."
+      ],
+      "answers": [
+        "Members of the ACME Manager group, who are also members of HR Department and part of ACME North America",
+        "Employees of ACME North America, who are members of HR Department or the ACME Managers group",
+        "Users which are members of either ACME North America, or HR Department, or ACME Managers group",
+        "Members of the ACME Managers group, and HR department, regardless of geography"
+      ]
+    },
+    "correct_response": ["a"],
+    "question_plain": "Here is an example of the criteria set for a knowledge base:Companies: ACME North AmericaDepartments: HRGroups: ACME ManagersMatch All: YesIn this example, what users would have access to this knowledge base?"
+  },
+  {
+    "assessment_type": "multiple-choice",
+    "prompt": {
+      "question": "In Flow Designer, where is the data from an action stored so it can be used in subsequent actions in the flow?",
+      "feedbacks": [
+        "In Flow Designer, the data from an action is stored in a Data Pill. Data Pills are placeholders that store the output of an action, making it accessible for use in subsequent actions within the flow. This allows for seamless data transfer and manipulation throughout the flow.",
+        "Data Elements are not used to store data from actions in Flow Designer. Data Elements are typically used to define and manage data structures or schemas within the platform, rather than storing specific data outputs from actions in a flow.",
+        "Data Triggers are used to initiate actions or flows based on specific conditions or events, but they do not store data from actions for use in subsequent steps. Data Triggers are focused on triggering actions, not storing data outputs.",
+        "Field Values are specific data values associated with fields in records or forms within ServiceNow, but they are not used to store data from actions in Flow Designer. Field Values are typically used for displaying or capturing data within the platform.",
+        "Field Icons are visual representations used to enhance the user interface and provide visual cues within ServiceNow, but they do not store data from actions in Flow Designer. Field Icons are used for visual purposes and do not have a direct role in storing or transferring data between actions in a flow."
+      ],
+      "answers": [
+        "Data Pill",
+        "Data Element",
+        "Data Trigger",
+        "Field Value",
+        "Field Icon"
+      ]
+    },
+    "correct_response": ["a"],
+    "question_plain": "In Flow Designer, where is the data from an action stored so it can be used in subsequent actions in the flow?"
+  },
+  {
+    "assessment_type": "multiple-choice",
+    "prompt": {
+      "question": "<p>A customer has asked for the following updates to a form:</p><ul><li><p>Make Resolution code Mandatory, when state is changed to Resolved</p></li><li><p>Hide Major Incident check box, unless logged in user has Major Incident Manager role</p></li></ul><p>What type of rule(s) would you use to implement this requirement?</p>",
+      "feedbacks": [
+        "Form Constraint is not a valid option for making updates to a form in ServiceNow. Form Constraints are used to enforce data validation rules on form fields, not for making design or layout changes to a form.",
+        "UI Design is a broad term that encompasses the overall look and feel of the user interface, including colors, fonts, layout, and navigation. While UI Design may involve updating a form's appearance, it does not specifically address the functionality or behavior of form fields.",
+        "Field Limiter is not a standard feature in ServiceNow for making updates to a form. Field Limiters are typically used to restrict the number of records that can be accessed or displayed based on certain criteria, not for modifying form elements.",
+        "UI Policy in ServiceNow is used to dynamically change the behavior of form fields based on conditions. UI Policies can be used to make updates to a form by showing or hiding fields, making fields mandatory, or setting field values based on certain criteria. This makes UI Policy the correct choice for the requested updates to the form.",
+        "Dictionary Design in ServiceNow refers to the configuration of field attributes, such as data type, length, and display format. While Dictionary Design is important for defining the structure of form fields, it does not directly address the requested updates related to the form's behavior or appearance."
+      ],
+      "answers": [
+        "Form Constraint",
+        "UI Design",
+        "Field Limiter",
+        "UI Policy",
+        "Dictionary Design"
+      ]
+    },
+    "correct_response": ["d"],
+    "question_plain": "A customer has asked for the following updates to a form:Make Resolution code Mandatory, when state is changed to ResolvedHide Major Incident check box, unless logged in user has Major Incident Manager roleWhat type of rule(s) would you use to implement this requirement?"
+  },
+  {
+    "assessment_type": "multiple-choice",
+    "prompt": {
+      "question": "What setting allows users to view a Knowledge Base article even if they are not logged in?",
+      "feedbacks": [
+        "The Public setting in ServiceNow allows Knowledge Base articles to be viewed by users even if they are not logged in. This setting makes the article accessible to anyone, regardless of their login status, providing a way to share information publicly.",
+        "The View All setting in ServiceNow does not specifically allow users to view Knowledge Base articles without being logged in. This setting typically grants users the ability to view all records within a specific scope, but it does not override the login requirement for accessing Knowledge Base articles.",
+        "The ESS (Employee Self-Service) role in ServiceNow is not directly related to allowing users to view Knowledge Base articles without being logged in. This role typically provides access to self-service features for employees within the organization, but it does not control the visibility of articles to non-logged-in users.",
+        "The Allow All role is not a standard role or setting in ServiceNow. It does not have a direct correlation to allowing users to view Knowledge Base articles without being logged in. This choice does not align with the typical configurations for controlling article visibility in ServiceNow."
+      ],
+      "answers": [
+        "The Public setting",
+        "The View All setting",
+        "The ESS role",
+        "The Allow All role"
+      ]
+    },
+    "correct_response": ["a"],
+    "question_plain": "What setting allows users to view a Knowledge Base article even if they are not logged in?"
+  },
+  {
+    "assessment_type": "multi-select",
+    "prompt": {
+      "question": "When adding a related list to a form, you choose the related list from the list collector. What is an example of a related list you might see on the list collector? (Choose three.)",
+      "feedbacks": [
+        "Problem==Parent is not a typical example of a related list that you might see on the list collector. This format does not follow the standard naming convention for related lists in ServiceNow and may not represent a valid relationship between records.",
+        "HR Case-&gt;Parent is an example of a related list that you might see on the list collector. This format indicates a relationship between HR Cases and their parent records, allowing users to view and interact with related HR Cases from the parent record.",
+        "Catalog Task-&gt;Parent is an example of a related list that you might see on the list collector. This format represents a relationship between Catalog Tasks and their parent records, enabling users to access and manage related tasks from the parent record.",
+        "Outage-&gt;Task number is an example of a related list that you might see on the list collector. This format signifies a relationship between Outages and their associated Task numbers, providing users with visibility and control over related tasks within the Outage record.",
+        "Release Phase==Parent is not a typical example of a related list that you might see on the list collector. This format does not adhere to the standard naming convention for related lists in ServiceNow and may not accurately represent a valid relationship between records."
+      ],
+      "answers": [
+        "Problem==Parent",
+        "HR Case-&gt;Parent",
+        "Catalog Task-&gt;Parent",
+        "Outage-&gt;Task number",
+        "Release Phase==Parent"
+      ]
+    },
+    "correct_response": ["b", "c", "d"],
+    "question_plain": "When adding a related list to a form, you choose the related list from the list collector. What is an example of a related list you might see on the list collector? (Choose three.)"
+  },
+  {
+    "assessment_type": "multiple-choice",
+    "prompt": {
+      "question": "How is the ServiceNow platform set up so that Administrators can easily configure their instances to send an email at the end of an upgrade?",
+      "feedbacks": [
+        "Updating the email notification in the System Logs module is not the correct approach for configuring email notifications at the end of an upgrade. System Logs are typically used for tracking system events and errors, not for configuring email notifications.",
+        "The correct way to configure email notifications at the end of an upgrade is to update the email notification named \"System Upgraded\" in the Notifications module. This module is specifically designed for managing and customizing email notifications in ServiceNow, making it the appropriate choice for this task.",
+        "Writing a Client Script is not the recommended method for configuring email notifications at the end of an upgrade. Client Scripts are typically used for client-side form interactions and validations, not for triggering email notifications based on system events like upgrades.",
+        "Writing a Business Rule is not the ideal approach for configuring email notifications at the end of an upgrade. Business Rules are used for automating processes and enforcing data consistency, not specifically for managing email notifications related to system upgrades."
+      ],
+      "answers": [
+        "Administrators can update the email notification named &quot;System Upgraded&quot; in the System Logs module by adding the appropriate User to receive it.",
+        "Administrators can update the email notification named &quot;System Upgraded&quot; in the Notifications module by adding the appropriate User to receive it.",
+        "Administrators can write a Client Script to send out an email to the Administrator when an Update is",
+        "Administrators can write a Business Rule to send out an email to the Administrator when an Update is complete."
+      ]
+    },
+    "correct_response": ["b"],
+    "question_plain": "How is the ServiceNow platform set up so that Administrators can easily configure their instances to send an email at the end of an upgrade?"
+  },
+  {
+    "assessment_type": "multi-select",
+    "prompt": {
+      "question": "A customer wants to be able to identify and track components of their infrastructure that support their eCommerce service. What ServiceNow products could support this requirement? (Choose three.)",
+      "feedbacks": [
+        "Financial Management in ServiceNow focuses on managing financial aspects such as budgeting, forecasting, and cost analysis. While important for overall business operations, it does not directly support the identification and tracking of infrastructure components for eCommerce services.",
+        "Discovery in ServiceNow is a product that helps identify and map all the hardware and software assets in an organization's IT infrastructure. It can automatically discover and track components that support the eCommerce service, making it a suitable choice for this requirement.",
+        "Configuration Management Database (CMDB) in ServiceNow is a centralized repository that stores information about all the components in an organization's IT infrastructure. It helps in tracking relationships between components and can support the identification and tracking of infrastructure components for eCommerce services.",
+        "Service Mapping in ServiceNow is a product that automatically maps the relationships and dependencies between IT components. It helps in understanding how different components work together to deliver a service, making it a valuable tool for identifying and tracking components that support the eCommerce service.",
+        "Performance Analytics in ServiceNow focuses on analyzing and visualizing performance metrics to improve service delivery. While important for monitoring and optimizing service performance, it does not directly support the identification and tracking of infrastructure components for eCommerce services."
+      ],
+      "answers": [
+        "Financial Management",
+        "Discovery",
+        "Configuration Management (CMDB)",
+        "Service Mapping",
+        "Performance Analytics"
+      ]
+    },
+    "correct_response": ["b", "c", "d"],
+    "question_plain": "A customer wants to be able to identify and track components of their infrastructure that support their eCommerce service. What ServiceNow products could support this requirement? (Choose three.)"
+  },
+  {
+    "assessment_type": "multiple-choice",
+    "prompt": {
+      "question": "What capability allows users to create dashboards with widgets to visualize data over time in order to identify areas of improvement?",
+      "feedbacks": [
+        "Scheduled Reports allow users to generate and send reports on a regular schedule, but they do not provide the capability to create dashboards with widgets for visualizing data over time. They are more focused on automating the generation and distribution of reports at specific intervals.",
+        "Performance Analytics is the correct choice as it enables users to create dashboards with widgets that visualize data over time. This feature helps users identify trends, patterns, and areas of improvement by presenting data in a visually appealing and interactive way.",
+        "Analytics Reports provide users with the ability to generate detailed reports based on analytics data, but they do not specifically offer the functionality to create dashboards with widgets for visualizing data over time. They are more focused on generating structured reports rather than interactive dashboards.",
+        "Reporting tools in ServiceNow allow users to generate standard reports based on predefined criteria, but they do not offer the capability to create dashboards with widgets for visualizing data over time. Reporting tools are more suited for generating static reports rather than dynamic and interactive dashboards."
+      ],
+      "answers": [
+        "Scheduled Reports",
+        "Performance Analytics",
+        "Analytics Reports",
+        "Reporting"
+      ]
+    },
+    "correct_response": ["b"],
+    "question_plain": "What capability allows users to create dashboards with widgets to visualize data over time in order to identify areas of improvement?"
+  },
+  {
+    "assessment_type": "multiple-choice",
+    "prompt": {
+      "question": "Which type of ServiceNow script runs on the web browser?",
+      "feedbacks": [
+        "Server scripts run on the server-side of the ServiceNow platform and are used to perform operations on the server, such as data manipulation and business logic execution. These scripts are not executed on the web browser.",
+        "Database scripts are used to manipulate data in the ServiceNow database and are executed on the server-side. They are not designed to run on the web browser.",
+        "Client scripts are specifically designed to run on the web browser within the ServiceNow platform. They are used to enhance the user interface and provide dynamic functionality to users directly in their browsers.",
+        "Local scripts are not a standard type of script in the ServiceNow platform. They do not have a defined purpose or execution environment within the platform, and therefore do not run on the web browser."
+      ],
+      "answers": [
+        "Server script",
+        "Database script",
+        "Client script",
+        "Local script"
+      ]
+    },
+    "correct_response": ["c"],
+    "question_plain": "Which type of ServiceNow script runs on the web browser?"
+  },
+  {
+    "assessment_type": "multi-select",
+    "prompt": {
+      "question": "When selecting the Target table for an import, which tables can you select? (Choose three.)",
+      "feedbacks": [
+        "Tables outside of ServiceNow cannot be selected as the Target table for an import because the import functionality is limited to tables within the ServiceNow platform.",
+        "Tables within the global scope can be selected as the Target table for an import because they are accessible and can be used for importing data into ServiceNow.",
+        "Related tables, using Dot Walk, cannot be directly selected as the Target table for an import. Dot walking allows accessing related records, but the import process requires selecting a specific table as the target.",
+        "Tables which allow write access to other applications can be selected as the Target table for an import because they have the necessary permissions to receive imported data from external sources.",
+        "Tables within the existing application scope can be selected as the Target table for an import because they are part of the current application's data model and can be used to import data within the application's boundaries."
+      ],
+      "answers": [
+        "Tables outside of ServiceNow",
+        "Tables within the global scope",
+        "Related tables, using Dot Walk",
+        "Tables which allow write access to other applications",
+        "Tables within the existing application scope"
+      ]
+    },
+    "correct_response": ["b", "d", "e"],
+    "question_plain": "When selecting the Target table for an import, which tables can you select? (Choose three.)"
+  },
+  {
+    "assessment_type": "multi-select",
+    "prompt": {
+      "question": "On Access Control Definitions, what are ways you can set the permissions on a Table? (Choose three.)",
+      "feedbacks": [
+        "Conditional Expressions allow you to set permissions on a table based on specific conditions or criteria. This flexibility enables you to define complex access control rules that are dependent on various factors within the system.",
+        "Roles are a fundamental component of access control in ServiceNow. By assigning roles to users or groups, you can control their access to tables and determine the actions they can perform, such as read, write, delete, etc.",
+        "CRUD (Create, Read, Update, Delete) permissions define the basic operations that users can perform on a table. By setting CRUD permissions, you can control the level of access users have to the data within the table.",
+        "Using a script to set the answer variable to true or false allows for dynamic and custom permissions to be applied to a table. This method is useful when you need to implement more complex logic to determine access rights based on specific conditions or business rules.",
+        "Groups can also be used to set permissions on a table by assigning specific groups of users certain access rights. By organizing users into groups and defining permissions for those groups, you can streamline access control management and ensure that users with similar roles have consistent access levels."
+      ],
+      "answers": [
+        "Conditional Expressions",
+        "Roles",
+        "CRUD",
+        "Script that sets the answer variable to true or false",
+        "Groups"
+      ]
+    },
+    "correct_response": ["a", "b", "d"],
+    "question_plain": "On Access Control Definitions, what are ways you can set the permissions on a Table? (Choose three.)"
+  },
+  {
+    "assessment_type": "multiple-choice",
+    "prompt": {
+      "question": "What tool is used to import data from various data sources, and map that data into ServiceNow tables?",
+      "feedbacks": [
+        "Transform Set is used to transform data during import or export operations in ServiceNow. It is not specifically designed to import data from various sources and map it into ServiceNow tables.",
+        "Data Pack is a term not commonly used in ServiceNow and does not refer to a specific tool or feature for importing data from various sources and mapping it into ServiceNow tables.",
+        "Update Set is used to group customization changes that can be moved between instances in ServiceNow. It is not the tool specifically used to import data from various sources and map it into ServiceNow tables.",
+        "Import Set is the correct tool used to import data from various data sources and map that data into ServiceNow tables. It allows users to bring in external data and transform it into records within ServiceNow, making it the appropriate choice for this scenario."
+      ],
+      "answers": ["Transform Set", "Data Pack", "Update Set", "Import Set"]
+    },
+    "correct_response": ["d"],
+    "question_plain": "What tool is used to import data from various data sources, and map that data into ServiceNow tables?"
+  },
+  {
+    "assessment_type": "multiple-choice",
+    "prompt": {
+      "question": "When you set a policy that is applied to all data entered into the platform (UI, Import Sets, or Web Services), where does this policy run by default?",
+      "feedbacks": [
+        "Policies applied to all data entered into the platform do not run on the client side. The client side typically refers to the user's device or browser, where the user interacts with the platform's interface. Policies need to be enforced consistently across all data entry points, so running them on the client side would not be effective.",
+        "Policies applied to all data entered into the platform do not run on the network. The network is responsible for facilitating communication between different devices and systems, but it does not handle the enforcement of data entry policies. Policies need to be enforced at a more centralized location to ensure consistency and security.",
+        "Policies applied to all data entered into the platform do not run on the browser. The browser is the interface through which users interact with the platform, but it does not have the capability to enforce data entry policies. Policies need to be enforced at a higher level to ensure that all data entering the platform is subject to the specified rules and restrictions.",
+        "Policies that are applied to all data entered into the platform run by default on the server. The server is responsible for processing and managing data, making it the ideal location to enforce policies that need to be consistently applied to all data inputs. By running these policies on the server, you can ensure that all data entering the platform is subject to the specified rules and restrictions."
+      ],
+      "answers": ["Client", "Network", "Browser", "Server"]
+    },
+    "correct_response": ["d"],
+    "question_plain": "When you set a policy that is applied to all data entered into the platform (UI, Import Sets, or Web Services), where does this policy run by default?"
+  },
+  {
+    "assessment_type": "multiple-choice",
+    "prompt": {
+      "question": "On what part of the ServiceNow instance, would you find the option to Impersonate User?",
+      "feedbacks": [
+        "The option to Impersonate User can be found in the User Menu of the ServiceNow instance. This feature allows administrators to temporarily log in as another user to troubleshoot issues, test permissions, or provide support without needing the user's credentials.",
+        "The Content Frame in ServiceNow typically displays the content of the current page or application, and it does not contain the option to Impersonate User. This feature is usually accessed from the User Menu for security and user management purposes.",
+        "The Application Navigator in ServiceNow is used to navigate between different applications and modules within the instance. It does not contain the option to Impersonate User, as this functionality is specific to user management and access control, which is typically found in the User Menu.",
+        "Modules in ServiceNow represent different functional areas or applications within the instance. The option to Impersonate User is not typically found within a specific module, as it is a system-wide feature that allows administrators to manage user access and troubleshoot issues across the instance."
+      ],
+      "answers": [
+        "User Menu",
+        "Content Frame",
+        "Application Navigator",
+        "Module"
+      ]
+    },
+    "correct_response": ["a"],
+    "question_plain": "On what part of the ServiceNow instance, would you find the option to Impersonate User?"
+  },
+  {
+    "assessment_type": "multiple-choice",
+    "prompt": {
+      "question": "How would you describe the relationship between the Incident and Task table?",
+      "feedbacks": [
+        "The Incident table in ServiceNow typically has a one-to-many relationship with the Task table, where one incident can have multiple related tasks. This relationship allows for the organization and tracking of tasks associated with resolving an incident.",
+        "In ServiceNow, the Incident table is not extended from the Task table. Instead, incidents and tasks are separate tables with a relationship between them. The Incident table typically contains information specific to incidents, while the Task table is used for managing and tracking tasks related to incidents.",
+        "In ServiceNow, the relationship between the Incident and Task tables is often established through a unique identifier such as the INC number. This identifier helps link specific tasks to the corresponding incident, allowing for easy reference and tracking of tasks associated with resolving the incident.",
+        "The Incident table in ServiceNow usually does not have a many-to-many relationship with the Task table. Instead, it typically follows a one-to-many relationship, where one incident can have multiple related tasks. This structure helps in organizing and managing tasks associated with resolving incidents efficiently.",
+        "The Incident table in ServiceNow is not a database view of the Task table. Both tables serve distinct purposes, with the Incident table focusing on capturing and managing incident-related information, while the Task table is used for tracking and managing tasks associated with resolving incidents."
+      ],
+      "answers": [
+        "Incident table has a one to many relationship with the Task table",
+        "Incident table is extended from Task table",
+        "Incident table is related to the Task table via the INC number",
+        "Incident table has a many to many relationship with the Task table",
+        "Incident table is a database view of the Task table"
+      ]
+    },
+    "correct_response": ["b"],
+    "question_plain": "How would you describe the relationship between the Incident and Task table?"
+  },
+  {
+    "assessment_type": "multiple-choice",
+    "prompt": {
+      "question": "Which flow components allow you to specify when a flow should be run?",
+      "feedbacks": [
+        "The Trigger component in a flow allows you to specify the event or condition that initiates the flow to run. The Condition Pill component, on the other hand, allows you to define the criteria that must be met for the flow to continue executing. Together, these components determine when a flow should be run based on specific triggers and conditions.",
+        "The Condition component in a flow is used to define the criteria that must be met for the flow to proceed. The Table component is used to specify the data source or table on which the flow operates. While both components are important for the flow's functionality, they do not directly control when the flow should be run based on triggers or conditions.",
+        "The Trigger Criteria component in a flow allows you to set specific conditions or criteria that must be met for the flow to be triggered. The Clock component is used to schedule the flow to run at specific times or intervals. While these components are useful for defining when a flow should run, they are not the primary components for specifying triggers and conditions.",
+        "The Trigger component in a flow is responsible for initiating the flow based on specific events or conditions. The Condition component allows you to define the criteria that must be met for the flow to continue executing. Together, these components determine when a flow should be run based on triggers and conditions, making this choice correct.",
+        "The Scope component in a flow is used to define the scope or context in which the flow operates. The Trigger Condition component is used to specify the conditions that must be met for the flow to be triggered. While these components are important for the flow's functionality, they do not directly control when the flow should be run based on triggers or conditions."
+      ],
+      "answers": [
+        "Trigger and Condition Pill",
+        "Condition and Table",
+        "Trigger Criteria and Clock",
+        "Trigger and Condition",
+        "Scope and Trigger Condition"
+      ]
+    },
+    "correct_response": ["d"],
+    "question_plain": "Which flow components allow you to specify when a flow should be run?"
+  },
+  {
+    "assessment_type": "multiple-choice",
+    "prompt": {
+      "question": "Which feature helps to automatically allocate a critical, high-priority, service request to the appropriate assignment group or team member?",
+      "feedbacks": [
+        "Assignment Rule is the correct choice as it helps in automatically assigning critical, high-priority service requests to the appropriate assignment group or team member based on predefined criteria. This feature streamlines the process and ensures that urgent requests are handled promptly by the right individuals or teams.",
+        "User Policy is not the correct choice for automatically allocating critical, high-priority service requests to assignment groups or team members. User Policies are typically used to enforce specific user-related settings or restrictions, rather than automating assignment tasks.",
+        "Predictive Intelligence is not the correct choice for automatically allocating critical, high-priority service requests to assignment groups or team members. Predictive Intelligence is more focused on using data and analytics to predict outcomes and make recommendations, rather than directly assigning tasks.",
+        "UI Policy is not the correct choice for automatically allocating critical, high-priority service requests to assignment groups or team members. UI Policies are used to control the behavior of form elements on the user interface, such as making fields mandatory or read-only, and do not directly impact assignment rules."
+      ],
+      "answers": [
+        "Assignment Rule",
+        "User Policy",
+        "Predictive Intelligence",
+        "UI Policy"
+      ]
+    },
+    "correct_response": ["a"],
+    "question_plain": "Which feature helps to automatically allocate a critical, high-priority, service request to the appropriate assignment group or team member?"
+  },
+  {
+    "assessment_type": "multiple-choice",
+    "prompt": {
+      "question": "The Report Designer contains different sections for configuring your report. Which section is used to specify the name of the report, and the table or data source for the report?",
+      "feedbacks": [
+        "The Type section in the Report Designer is used to specify the type of report you are creating, such as a list report, pivot report, or visual task board report. It does not include options to specify the name of the report or the data source.",
+        "The Properties section in the Report Designer is used to configure various properties of the report, such as layout, filters, sorting, and visibility settings. It does not include options to specify the name of the report or the data source.",
+        "The Configure section in the Report Designer is used to customize the appearance and behavior of the report, such as adding columns, defining groupings, and setting up calculations. It does not include options to specify the name of the report or the data source.",
+        "The Sources section in the Report Designer is used to manage the data sources for the report, such as defining database connections, web service integrations, or import sets. It does not include options to specify the name of the report or the data source.",
+        "The Data section in the Report Designer is specifically used to specify the name of the report and the table or data source from which the report will pull information. This section is essential for setting the foundation of the report and determining where the data will be sourced from."
+      ],
+      "answers": ["Type", "Properties", "Configure", "Sources", "Data"]
+    },
+    "correct_response": ["e"],
+    "question_plain": "The Report Designer contains different sections for configuring your report. Which section is used to specify the name of the report, and the table or data source for the report?"
+  },
+  {
+    "assessment_type": "multiple-choice",
+    "prompt": {
+      "question": "<p><img src=\"https://img-c.udemycdn.com/redactor/raw/practice_test_question/2026-02-26_03-05-16-9aeb780a530ba44f24d6f452587c8971.jpg\"></p><p>You are editing a new incident record and would like the \"Save\" button to be located on the Form header. Which action would need to be taken for that button to appear?</p>",
+      "feedbacks": [
+        "Adding the \"Save\" button to the Form header would require modifying the Form design, not the Context Menu. This choice does not accurately address the action needed to place the button in the desired location.",
+        "Turning on the \"glide.ui.advanced\" property in UI Properties does not directly relate to adding the \"Save\" button to the Form header. This choice does not provide the correct action to achieve the desired outcome.",
+        "Turning on the \"Save\" button in the UI Properties is the correct action to make the \"Save\" button appear on the Form header. This choice accurately addresses the specific task mentioned in the question.",
+        "The action of adding the \"Save\" button to the Form Layout in the Context Menu does not align with the task of placing the button on the Form header. This choice does not provide the correct steps to achieve the desired result."
+      ],
+      "answers": [
+        "Context Menu &gt; Form Design &gt; add the “Save” button.",
+        "All &gt; System Properties &gt; UI Properties &gt; Turn on the “glide.ui.advanced” property.",
+        "All &gt; System Properties &gt; UI Properties &gt; Turn on the “Save” button.",
+        "Context Meru &gt; Form Layout &gt; add the “Save” button."
+      ]
+    },
+    "correct_response": ["c"],
+    "question_plain": "You are editing a new incident record and would like the \"Save\" button to be located on the Form header. Which action would need to be taken for that button to appear?"
+  },
+  {
+    "assessment_type": "multiple-choice",
+    "prompt": {
+      "question": "Which feature ensures data consistency while importing data using import sets and web services?",
+      "feedbacks": [
+        "UI Policy is used to control the visibility and mandatory nature of fields on a form. While it can help enforce data entry rules, it does not ensure data consistency during data imports using import sets and web services.",
+        "Data Policy is the correct choice as it ensures data consistency by enforcing data rules and constraints during data imports using import sets and web services. It helps maintain data integrity and accuracy by validating and transforming data before it is inserted into the system.",
+        "Business Rule is used to automate processes and enforce business logic in the system. While it can impact data consistency indirectly by triggering actions based on data changes, it is not specifically designed to ensure data consistency during data imports.",
+        "Client Script is used to add interactivity and customization to forms in the user interface. It does not directly impact data consistency during data imports using import sets and web services.",
+        "CSDM (Common Service Data Model) is a framework used to standardize and simplify the management of service-related data in ServiceNow. While it is important for data modeling and management, it is not directly related to ensuring data consistency during data imports."
+      ],
+      "answers": [
+        "UI Policy",
+        "Data Policy",
+        "Business Rule",
+        "Client Script",
+        "CSDM"
+      ]
+    },
+    "correct_response": ["b"],
+    "question_plain": "Which feature ensures data consistency while importing data using import sets and web services?"
+  },
+  {
+    "assessment_type": "multiple-choice",
+    "prompt": {
+      "question": "When using Flow Designer, what is the Flow Execution initiated by?",
+      "feedbacks": [
+        "Flow Execution in Flow Designer is not initiated by a flow logic itself. Flow logic defines the sequence of actions to be taken, but it does not directly trigger the execution of the flow.",
+        "An existing subflow is a reusable sequence of actions that can be called within a flow, but it does not initiate the Flow Execution itself. Subflows are used to modularize and simplify complex flows.",
+        "An execution data pill represents a data element within the flow that can be passed between actions, but it does not initiate the Flow Execution. Execution data pills are used to store and manipulate data during the flow execution.",
+        "A trigger is what initiates the Flow Execution in Flow Designer. Triggers are events or conditions that start the flow, such as a record being created or updated, a scheduled time, or an HTTP request. Triggers are essential for starting the flow and executing the defined actions."
+      ],
+      "answers": [
+        "A flow logic",
+        "An existing subflow",
+        "An execution data pill",
+        "A trigger"
+      ]
+    },
+    "correct_response": ["d"],
+    "question_plain": "When using Flow Designer, what is the Flow Execution initiated by?"
+  },
+  {
+    "assessment_type": "multiple-choice",
+    "prompt": {
+      "question": "What is the name of the string that displays filter criteria?",
+      "feedbacks": [
+        "The correct choice is 'Breadcrumb' because in ServiceNow, the breadcrumb string displays the filter criteria applied to a list or form view. It helps users understand the context of the data they are viewing by showing the path or steps taken to reach the current view.",
+        "Choice 'Choice' is incorrect as it does not accurately describe the string that displays filter criteria in ServiceNow. The term 'Choice' is not commonly used in ServiceNow to refer to the filter criteria display.",
+        "Choice 'Menu' is incorrect as it does not accurately describe the string that displays filter criteria in ServiceNow. The term 'Menu' typically refers to a list of options or actions available in a system, not the filter criteria display.",
+        "Choice 'Topic' is incorrect as it does not accurately describe the string that displays filter criteria in ServiceNow. The term 'Topic' is more commonly used to refer to a specific subject or area of discussion, not the filter criteria display."
+      ],
+      "answers": ["Breadcrumb", "Choice", "Menu", "Topic"]
+    },
+    "correct_response": ["a"],
+    "question_plain": "What is the name of the string that displays filter criteria?"
+  },
+  {
+    "assessment_type": "multiple-choice",
+    "prompt": {
+      "question": "Which system property is added and set to true in order to see impersonation events in the System Log?",
+      "feedbacks": [
+        "The system property glide.sys.all_impersonation does not control the visibility of impersonation events in the System Log. It is not the correct property to enable this feature.",
+        "The glide.user_setting system property is not related to controlling the visibility of impersonation events in the System Log. It does not enable the logging of impersonation events.",
+        "The glide.impersonation_setting system property does not exist in ServiceNow and is not used to enable the logging of impersonation events in the System Log. It is not a valid option for this purpose.",
+        "The glide.sys.log_impersonation system property is the correct property that needs to be added and set to true in order to see impersonation events in the System Log. Enabling this property allows the tracking and logging of impersonation events for auditing and monitoring purposes.",
+        "The glide.sys.admin_login system property is not relevant to controlling the visibility of impersonation events in the System Log. It does not enable the logging of impersonation events and is not the correct property for this specific requirement."
+      ],
+      "answers": [
+        "glide.sys.all_impersonation",
+        "glide.user_setting",
+        "glide.impersonation_setting",
+        "glide.sys.log_impersonation",
+        "glide.sys.admin_login"
+      ]
+    },
+    "correct_response": ["d"],
+    "question_plain": "Which system property is added and set to true in order to see impersonation events in the System Log?"
+  },
+  {
+    "assessment_type": "multiple-choice",
+    "prompt": {
+      "question": "What process allows users to create, categorize, review, approve and browse important information in a centralized location that is shared by the entire organization?",
+      "feedbacks": [
+        "Self Service Management typically refers to the process of allowing users to access and manage their own IT services without the need for intervention from IT staff. It is not directly related to creating, categorizing, reviewing, and approving important information in a centralized location shared by the entire organization.",
+        "Knowledge Management is the correct choice as it involves the process of creating, categorizing, reviewing, approving, and browsing important information in a centralized location that is shared by the entire organization. It focuses on capturing, storing, and sharing knowledge to improve efficiency and decision-making within the organization.",
+        "Business Information Management primarily focuses on managing and organizing business-related information to support decision-making processes and improve operational efficiency. While it involves managing information, it may not specifically address the collaborative and shared aspect of knowledge management within an organization.",
+        "Information Portal Management typically refers to the management and maintenance of information portals or websites within an organization. While it involves managing information in a centralized location, it may not necessarily encompass the collaborative and knowledge-sharing aspects of knowledge management.",
+        "Knowledge-Centered Management is a term that refers to a specific methodology for knowledge management that focuses on creating and maintaining knowledge articles to support customer service and support. While it involves knowledge creation and management, it may not cover the broader aspects of knowledge management that include categorization, review, approval, and browsing of information shared by the entire organization."
+      ],
+      "answers": [
+        "Self Service Management",
+        "Knowledge Management",
+        "Business Information Management",
+        "Information Portal Management",
+        "Knowledge-Centered Management"
+      ]
+    },
+    "correct_response": ["b"],
+    "question_plain": "What process allows users to create, categorize, review, approve and browse important information in a centralized location that is shared by the entire organization?"
+  },
+  {
+    "assessment_type": "multiple-choice",
+    "prompt": {
+      "question": "A colleague wants to rearrange the columns on their My Work List. Once the user has navigated to the list, where should they navigate to select and arrange the columns?",
+      "feedbacks": [
+        "Right-clicking on any column header and selecting 'Configure' from the context menu does not lead to the option to rearrange columns. This option is not the correct path to select and arrange columns on the My Work List.",
+        "Clicking on the List Context Menu and selecting 'Configure' does not provide the option to rearrange columns on the My Work List. This path does not lead to the correct menu for selecting and arranging columns.",
+        "Clicking on the List Context Menu and selecting 'Personalize List' does not lead to the option to rearrange columns on the My Work List. This path does not provide the correct menu for selecting and arranging columns.",
+        "Clicking on 'Personalize List' is the correct action to take in order to select and arrange columns on the My Work List. This option allows the user to customize the list layout and choose which columns to display and in what order."
+      ],
+      "answers": [
+        "Right click on any column header, Context Menu &gt; Configure &gt; List Layout",
+        "Click List Context Menu &gt; Configure &gt; List Layout",
+        "Click List Context Menu &gt; Personalize List",
+        "Click Personalize List"
+      ]
+    },
+    "correct_response": ["d"],
+    "question_plain": "A colleague wants to rearrange the columns on their My Work List. Once the user has navigated to the list, where should they navigate to select and arrange the columns?"
+  },
+  {
+    "assessment_type": "multiple-choice",
+    "prompt": {
+      "question": "You are looking at a list of Active Incidents. You want to exclude Incidents with the state of Resolved. How might you do that?",
+      "feedbacks": [
+        "This choice correctly explains the process of excluding Incidents with the state of Resolved by using the search functionality to filter out the Resolved state.",
+        "This choice incorrectly suggests using the column title to filter out the Resolved state, which is not the standard way to exclude specific values in ServiceNow.",
+        "This choice correctly describes the action of right-clicking on the Resolved value in the list of records and selecting the option to filter out, which effectively excludes Incidents with the state of Resolved.",
+        "This choice incorrectly suggests using the \"Exclude\" option after right-clicking on the Resolved value, which is not the standard way to filter out specific values in ServiceNow.",
+        "This choice incorrectly describes using the Funnel icon and AND operator to filter out the Resolved state, which is not the standard method for excluding specific values in ServiceNow."
+      ],
+      "answers": [
+        "On Search, select State, type not Resolved, press enter",
+        "On State column title, right-click, select Filter Out &gt; Resolved",
+        "On the list of records, locate and right-click on the Resolved value, select Filter Out",
+        "On the list of records, locate and right-click on the Resolved value, select Exclude",
+        "Click Funnel icon, click AND, Select Resolved, is Not, State, click Run"
+      ]
+    },
+    "correct_response": ["c"],
+    "question_plain": "You are looking at a list of Active Incidents. You want to exclude Incidents with the state of Resolved. How might you do that?"
+  },
+  {
+    "assessment_type": "multiple-choice",
+    "prompt": {
+      "question": "Roles can inherit permissions from other roles. Which role inherits all of the permissions of the catalog role, and the user_criteria_admin role, plus has permissions to create Items and Services?",
+      "feedbacks": [
+        "Sys Admin [sys_admin] is the highest-level role in ServiceNow and has full access to all platform features and data. While it can inherit permissions from other roles, it does not specifically inherit all the permissions of the catalog role, user_criteria_admin role, and the ability to create Items and Services.",
+        "Catalog Admin [catalog_admin] inherits all permissions of the catalog role, user_criteria_admin role, and also has the ability to create Items and Services. This role is specifically designed to manage catalog-related activities and services within ServiceNow.",
+        "Catalog Author [sn_catalog_write] is a role that has permissions to create and edit catalog items and categories but does not inherit all permissions of the catalog role, user_criteria_admin role, or have the ability to create Items and Services.",
+        "Item Admin [sn_item_admin] is a role that has permissions to manage items in the ServiceNow platform but does not inherit all permissions of the catalog role, user_criteria_admin role, or have the ability to create Items and Services as specified in the question."
+      ],
+      "answers": [
+        "Sys Admin [sys_admin]",
+        "Catalog Admin [catalog_admin]",
+        "Catalog Author [sn_catalog_write]",
+        "Item Admin [sn_item_admin]"
+      ]
+    },
+    "correct_response": ["b"],
+    "question_plain": "Roles can inherit permissions from other roles. Which role inherits all of the permissions of the catalog role, and the user_criteria_admin role, plus has permissions to create Items and Services?"
+  },
+  {
+    "assessment_type": "multiple-choice",
+    "prompt": {
+      "question": "What component of the ServiceNow infrastructure defines every table and field in the system?",
+      "feedbacks": [
+        "The Schema component in ServiceNow defines the structure of the database tables, including relationships between tables, fields, and data types. It helps in organizing and managing data within the system but does not specifically define every table and field in the system.",
+        "The Field Map in ServiceNow is a visual representation of the fields and their relationships within a table. It helps in understanding the data model and relationships but does not define every table and field in the system.",
+        "The Table Class Manager in ServiceNow is responsible for managing the classes and inheritance hierarchy of tables. It helps in organizing tables based on their functionality and relationships but does not define every table and field in the system.",
+        "The Dictionary component in ServiceNow is the correct choice as it defines every table and field in the system. It contains metadata information about tables, fields, data types, relationships, and other attributes that define the structure of the ServiceNow instance.",
+        "Data Atlas is not a component in the ServiceNow infrastructure. It is not related to defining tables and fields within the system."
+      ],
+      "answers": [
+        "Schema",
+        "Field Map",
+        "Table Class Manager",
+        "Dictionary",
+        "Data Atlas"
+      ]
+    },
+    "correct_response": ["d"],
+    "question_plain": "What component of the ServiceNow infrastructure defines every table and field in the system?"
+  },
+  {
+    "assessment_type": "multi-select",
+    "prompt": {
+      "question": "Which data consistency settings can be achieved using UI Policy? (Choose three.)",
+      "feedbacks": [
+        "UI Policy can be used to set fields to accept data in an expected format, ensuring consistency in the data entered by users. This helps maintain data integrity and accuracy within the ServiceNow platform.",
+        "Setting fields to accept data with a specific number of characters is typically achieved using Data Policies in ServiceNow, not UI Policies. UI Policies are more focused on controlling the visibility and behavior of fields based on certain conditions, rather than enforcing character limits.",
+        "UI Policy can be used to set fields as hidden based on certain conditions, which can help improve the user experience by showing or hiding fields dynamically. This can also help maintain data consistency by only displaying relevant fields to users when needed.",
+        "UI Policy can be used to set fields as read-only based on certain conditions, preventing users from editing specific fields. This can help enforce data consistency by ensuring that certain fields remain unchanged and accurate in the system.",
+        "UI Policy can be used to set fields as mandatory, requiring users to provide data for specific fields before submitting a form. This helps enforce data consistency by ensuring that essential information is always captured in the system."
+      ],
+      "answers": [
+        "Setting fields to accept the data in an expected format",
+        "Setting fields to accept the data with ‘n’ number of characters",
+        "Setting fields hidden",
+        "Settings fields read-only",
+        "Setting fields mandatory"
+      ]
+    },
+    "correct_response": ["c", "d", "e"],
+    "question_plain": "Which data consistency settings can be achieved using UI Policy? (Choose three.)"
+  },
+  {
+    "assessment_type": "multiple-choice",
+    "prompt": {
+      "question": "A customer wants to use a client script to validate things on a form in order to make sure the submission makes sense. What type of client script would you recommend to meet this requirement?",
+      "feedbacks": [
+        "The onSubmit() client script type is specifically designed to validate form data before submission. It allows you to check the values entered in the form fields and ensure that they meet the required criteria before the form is submitted. This is the most suitable option for validating form submissions in ServiceNow.",
+        "The onSubmission() client script type does not exist in ServiceNow. It is not a valid client script type and cannot be used to validate form data before submission.",
+        "The onUpdate() client script type is used to trigger actions when a record is updated, not specifically for validating form data before submission. It is not the appropriate choice for ensuring the submission makes sense.",
+        "The onLoad() client script type is used to perform actions when a form is loaded, not for validating form data before submission. It is not the recommended option for ensuring the submission makes sense in ServiceNow."
+      ],
+      "answers": ["onSubmit()", "onSubmission()", "onUpdate()", "onLoad()"]
+    },
+    "correct_response": ["a"],
+    "question_plain": "A customer wants to use a client script to validate things on a form in order to make sure the submission makes sense. What type of client script would you recommend to meet this requirement?"
+  },
+  {
+    "assessment_type": "multi-select",
+    "prompt": {
+      "question": "<p><img src=\"https://img-c.udemycdn.com/redactor/raw/practice_test_question/2026-02-26_03-06-16-3021ff9a31829c35284c759e496ac1fe.jpg\"></p><p>An order from the Service Catalog has been placed. Two records in the Platform are created as a result. Which two records are associated with this newly ordered item? (Choose two.)</p>",
+      "feedbacks": [
+        "A record of the sc_req_item table is created when an order is placed from the Service Catalog. This record represents the requested item and contains details such as the item name, quantity, and requested user information.",
+        "A record of the sc_task table is also created when an order is placed from the Service Catalog. This record represents the task associated with fulfilling the requested item and includes details such as assignment group, assigned to, and task status.",
+        "An incident record is not associated with a newly ordered item from the Service Catalog. Incidents are typically created for reporting and managing unplanned disruptions to services, not for catalog orders.",
+        "A change record is not associated with a newly ordered item from the Service Catalog. Change records are created to manage planned changes to the IT environment, such as software updates or infrastructure modifications.",
+        "A problem record is not associated with a newly ordered item from the Service Catalog. Problem records are created to investigate and resolve the root cause of recurring incidents, not for catalog orders."
+      ],
+      "answers": [
+        "A record of sc_req_item table",
+        "A record of sc_task",
+        "An incident record",
+        "A change record",
+        "A problem record"
+      ]
+    },
+    "correct_response": ["a", "b"],
+    "question_plain": "An order from the Service Catalog has been placed. Two records in the Platform are created as a result. Which two records are associated with this newly ordered item? (Choose two.)"
+  },
+  {
+    "assessment_type": "multiple-choice",
+    "prompt": {
+      "question": "What action will allow you to personalize layouts of columns in a list?",
+      "feedbacks": [
+        "This choice does not accurately describe the process of personalizing layouts of columns in a list in ServiceNow. The context menu typically does not have a direct option for personalizing column layouts.",
+        "Clicking on the gear icon in ServiceNow typically opens up a menu that includes options for personalizing the list view, including selecting and arranging columns. This is the correct way to personalize layouts of columns in a list.",
+        "This choice does not accurately describe the process of personalizing layouts of columns in a list in ServiceNow. Selecting a column and choosing options at the header is not the standard method for personalizing column layouts.",
+        "This choice does not accurately describe the process of personalizing layouts of columns in a list in ServiceNow. Clicking on an edit icon (pencil) for a column is typically used for editing the content of the column, not for personalizing the layout of columns in a list."
+      ],
+      "answers": [
+        "Context Menu &gt; View &gt; Personalize",
+        "Click Gear Icon &gt; Personalize window options &gt; Select the appropriate columns",
+        "Select the column to be personalized and right at the header &gt; Choose the options to personalize",
+        "Select the column to be personalized &gt; Click Edit icon (Pencil) &gt; Choose the options to personalize"
+      ]
+    },
+    "correct_response": ["b"],
+    "question_plain": "What action will allow you to personalize layouts of columns in a list?"
+  },
+  {
+    "assessment_type": "multiple-choice",
+    "prompt": {
+      "question": "An order for new office equipment has been placed through the Service Catalog. How would you view the lists of requests after the orders have been placed?",
+      "feedbacks": [
+        "Viewing the lists of requests after placing orders for new office equipment through the Service Catalog would not be found under \"All &gt; Tables and Columns &gt; Tasks.\" This path does not lead to the specific area where requests from the Service Catalog are managed.",
+        "Typing \"requests.list\" in the Navigation Filter and pressing Enter would not directly lead to viewing the lists of requests after placing orders through the Service Catalog. This is not the correct method to access the specific area where requests are managed.",
+        "Navigating to \"All &gt; Service Catalog &gt; Requests\" may seem like the correct path to view the lists of requests after placing orders, but this option does not lead to the specific area where the requests for new office equipment would be listed.",
+        "Accessing \"All &gt; Service Catalog &gt; Open Records &gt; Items\" is the correct path to view the lists of requests after placing orders for new office equipment through the Service Catalog. This option directs you to the specific area where the requests are managed, allowing you to see the status and details of the orders."
+      ],
+      "answers": [
+        "All &gt; Tables and Columns &gt; Tasks",
+        "In the Navigation Filter, type “requests.list&quot; and press the Enter key",
+        "All &gt; Service Catalog &gt; Requests",
+        "All &gt; Service Catalog &gt; Open Records &gt; Items"
+      ]
+    },
+    "correct_response": ["d"],
+    "question_plain": "An order for new office equipment has been placed through the Service Catalog. How would you view the lists of requests after the orders have been placed?"
+  },
+  {
+    "assessment_type": "multiple-choice",
+    "prompt": {
+      "question": "<p><img src=\"https://img-c.udemycdn.com/redactor/raw/practice_test_question/2026-02-26_03-07-07-8edad043b423a3e15a16934ed2cfb411.jpg\"></p><p>Which path would you take to access the table configuration page from a form?</p>",
+      "feedbacks": [
+        "The option \"The Form Context menu &gt; View &gt; Show Table\" is incorrect because there is no direct option to access the table configuration page from the form context menu by selecting \"Show Table\". This option does not lead to the desired page for table configuration.",
+        "The choice \"The Form Context menu &gt; View &gt; Table\" is incorrect as it does not provide a direct path to access the table configuration page from a form. Selecting \"Table\" from the view option in the form context menu does not lead to the table configuration settings.",
+        "The selection \"The Form Context menu &gt; Configure &gt; Dictionary\" is incorrect because it does not lead to the table configuration page from a form. The \"Dictionary\" option under the configure menu is related to field definitions and not the overall table configuration settings.",
+        "The correct choice is \"The Form Context menu &gt; Configure &gt; Table\" as it provides the direct path to access the table configuration page from a form. By selecting \"Table\" under the configure menu in the form context, users can easily navigate to the settings and configurations related to the specific table being viewed."
+      ],
+      "answers": [
+        "The Form Context menu &gt; View &gt; Show Table",
+        "The Form Context menu &gt; View &gt; Table",
+        "The Form Context menu &gt; Configure &gt; Dictionary",
+        "The Form Context menu &gt; Configure &gt; Table"
+      ]
+    },
+    "correct_response": ["d"],
+    "question_plain": "Which path would you take to access the table configuration page from a form?"
+  },
+  {
+    "assessment_type": "multiple-choice",
+    "prompt": {
+      "question": "Which admin role is required to make changes to High Security Settings?",
+      "feedbacks": [
+        "The 'high_sec_admin' role does not exist in the ServiceNow CSA roles and is not specifically designated for making changes to High Security Settings. It is not the correct role for this task.",
+        "The 'sn_acl_admin' role is related to Access Control Lists (ACLs) in ServiceNow and is not specifically designated for making changes to High Security Settings. It is not the correct role for this task.",
+        "The 'admin' role in ServiceNow provides a wide range of administrative privileges, but it does not specifically grant access to make changes to High Security Settings. It is not the correct role for this task.",
+        "The 'security_admin' role in ServiceNow is specifically designed to manage security-related settings, including High Security Settings. This role is required to make changes to High Security Settings in the system, making it the correct choice for this task."
+      ],
+      "answers": ["high_sec_admin", "sn_acl_admin", "admin", "security_admin"]
+    },
+    "correct_response": ["d"],
+    "question_plain": "Which admin role is required to make changes to High Security Settings?"
+  },
+  {
+    "assessment_type": "multiple-choice",
+    "prompt": {
+      "question": "What is the most common role that has access to almost all platform features, functions, and data?",
+      "feedbacks": [
+        "Super User [sn_super_user] is a role in ServiceNow that provides the highest level of access and control over the platform. While it has extensive privileges, it is not the most common role that has access to almost all platform features, functions, and data.",
+        "Security Admin [security_admin] is a role in ServiceNow that focuses on managing security-related configurations and policies within the platform. While important for ensuring data protection and compliance, it does not typically have access to all platform features, functions, and data.",
+        "System Administrator [admin] is the most common role in ServiceNow that has access to almost all platform features, functions, and data. This role is responsible for managing the overall system configuration, user access, and data within the platform.",
+        "Base Admin [base_admin] is a role in ServiceNow that provides administrative access to the base system tables and configurations. While it has significant privileges, it does not typically have access to all platform features, functions, and data.",
+        "System Manager [sys_manager] is a role in ServiceNow that focuses on managing system configurations and integrations. While it has broad access to system settings, it may not have access to all platform features, functions, and data like the System Administrator role does."
+      ],
+      "answers": [
+        "Super User [sn_super_user]",
+        "Security Admin [securty_admin]",
+        "System Administrator [admin]",
+        "Base Admin [base_admin]",
+        "System Manager [sys_manager]"
+      ]
+    },
+    "correct_response": ["c"],
+    "question_plain": "What is the most common role that has access to almost all platform features, functions, and data?"
+  },
+  {
+    "assessment_type": "multiple-choice",
+    "prompt": {
+      "question": "When moving multiple update sets at one time, what might you do to facilitate the move?",
+      "feedbacks": [
+        "Previewing the update sets before moving them allows you to review the changes that will be applied and ensure that everything is correct. This step helps in identifying any potential issues or conflicts that may arise during the move process.",
+        "Using the batch option to move multiple update sets at once can streamline the process and save time. It allows you to group related update sets together and move them as a single unit, reducing the risk of errors and ensuring consistency in the changes being applied.",
+        "Listing the update sets provides a visual representation of the sets that are available for moving. While it can be helpful for organization purposes, it does not directly facilitate the move process or make it more efficient.",
+        "Mapping update sets may involve creating a visual representation of the dependencies between different sets. While this can be useful for understanding the relationships between sets, it is not a direct action that facilitates the move of multiple update sets at once."
+      ],
+      "answers": ["Preview", "Batch", "List", "Map"]
+    },
+    "correct_response": ["b"],
+    "question_plain": "When moving multiple update sets at one time, what might you do to facilitate the move?"
+  },
+  {
+    "assessment_type": "multiple-choice",
+    "prompt": {
+      "question": "What do you click when you have made modifications to your report, and you want to see the results without saving?",
+      "feedbacks": [
+        "Preview allows you to see a preview of your report before saving any modifications. It is useful for reviewing changes without committing to them permanently.",
+        "Test is not the correct option for viewing modifications without saving in ServiceNow reports. It is typically used for testing functionalities or scenarios within the platform.",
+        "Run is the correct choice when you want to see the results of your modifications without saving them permanently. It allows you to execute the report and view the output without making any permanent changes.",
+        "Try It is not the appropriate option for viewing modifications without saving in ServiceNow reports. It is usually used for testing specific features or functionalities within the platform.",
+        "Execute is not the correct choice for viewing modifications without saving in ServiceNow reports. It is typically used for running specific actions or processes within the platform."
+      ],
+      "answers": ["Preview", "Test", "Run", "Try It", "Execute"]
+    },
+    "correct_response": ["c"],
+    "question_plain": "What do you click when you have made modifications to your report, and you want to see the results without saving?"
+  },
+  {
+    "assessment_type": "multiple-choice",
+    "prompt": {
+      "question": "Which framework can automatically populate values for the Priority and Category fields based on the Short description field value?",
+      "feedbacks": [
+        "Predictive Intelligence is the correct framework that can automatically populate values for the Priority and Category fields based on the Short description field value. It uses machine learning algorithms to predict and suggest values for these fields, improving efficiency and accuracy in categorizing and prioritizing incidents or requests.",
+        "Assignment Rule is not the correct framework for automatically populating values for the Priority and Category fields based on the Short description field value. Assignment Rules are used to assign tasks or incidents to specific groups or individuals based on predefined criteria, not for populating field values.",
+        "CSDM (Common Service Data Model) is not the correct framework for automatically populating values for the Priority and Category fields based on the Short description field value. CSDM is a data model that defines common data structures and relationships in ServiceNow, but it does not specifically handle field value population based on other field values.",
+        "Action is not the correct framework for automatically populating values for the Priority and Category fields based on the Short description field value. Actions in ServiceNow are used to automate specific tasks or processes, but they do not focus on dynamically populating field values based on other field values.",
+        "UI Policy is not the correct framework for automatically populating values for the Priority and Category fields based on the Short description field value. UI Policies are used to dynamically change the behavior or visibility of form elements based on specified conditions, but they do not handle automatic field value population based on other field values."
+      ],
+      "answers": [
+        "Predictive Intelligence",
+        "Assignment Rule",
+        "CSDM",
+        "Action",
+        "UI Policy"
+      ]
+    },
+    "correct_response": ["a"],
+    "question_plain": "Which framework can automatically populate values for the Priority and Category fields based on the Short description field value?"
+  },
+  {
+    "assessment_type": "multiple-choice",
+    "prompt": {
+      "question": "Which testing framework is used to test ServiceNow Applications?",
+      "feedbacks": [
+        "Test Driven Framework (TDF) is not the testing framework used to test ServiceNow Applications. TDF is a development approach where tests are written before the code, ensuring that the code meets the specified requirements.",
+        "Junit is a popular testing framework for Java applications, but it is not specifically used to test ServiceNow Applications. ServiceNow has its own testing framework tailored for testing its applications.",
+        "Selenium is a widely used tool for automated testing of web applications, including ServiceNow applications. However, it is not the dedicated testing framework provided by ServiceNow for testing its applications.",
+        "Automated Test Framework (ATF) is the testing framework provided by ServiceNow specifically designed for testing ServiceNow Applications. It allows users to create and run automated tests to ensure the functionality and quality of ServiceNow applications."
+      ],
+      "answers": [
+        "Test Driven Framework (TDF)",
+        "Junit",
+        "Selenium",
+        "Automated Test Framework (ATF)"
+      ]
+    },
+    "correct_response": ["d"],
+    "question_plain": "Which testing framework is used to test ServiceNow Applications?"
+  },
+  {
+    "assessment_type": "multiple-choice",
+    "prompt": {
+      "question": "Which allows the creation of a task-based record from Service Catalog?",
+      "feedbacks": [
+        "Assignment Rule is not directly related to creating task-based records from the Service Catalog. It is used to automatically assign tasks or incidents to specific users or groups based on predefined criteria, but it does not create records in the Service Catalog.",
+        "Flow Designer is a tool used to automate processes and workflows within ServiceNow, but it is not specifically designed for creating task-based records in the Service Catalog. It focuses more on workflow automation and integration between different applications.",
+        "UI Builder is used to create custom user interfaces and applications within ServiceNow, but it is not the tool used for creating task-based records from the Service Catalog. UI Builder focuses on designing user interfaces and experiences, not on record creation.",
+        "Record Producers are specifically designed in ServiceNow to allow the creation of task-based records from the Service Catalog. They enable users to submit requests for services or items through the Service Catalog, which then generates a corresponding record in the system for fulfillment."
+      ],
+      "answers": [
+        "Assignment Rule",
+        "Flow Designer",
+        "UI Builder",
+        "Record Producers"
+      ]
+    },
+    "correct_response": ["d"],
+    "question_plain": "Which allows the creation of a task-based record from Service Catalog?"
+  },
+  {
+    "assessment_type": "multiple-choice",
+    "prompt": {
+      "question": "What module do you use to access the reports that are available to you?",
+      "feedbacks": [
+        "Self-Service &gt; My Reports is not the correct module to access the reports available to you. This module is typically used for accessing personal reports that you have created or saved for your own use, rather than accessing all available reports.",
+        "Self-Service &gt; My Dashboards is not the correct module to access the reports available to you. This module is usually used for accessing personal dashboards that you have created or saved for your own use, rather than accessing all available reports.",
+        "Reports &gt; View / Run is the correct module to access the reports that are available to you. This module allows you to view and run reports that have been shared with you or are accessible based on your permissions within the ServiceNow platform.",
+        "Reports &gt; Homepage is not the correct module to access the reports available to you. The Homepage module typically provides an overview of various features and functionalities within the ServiceNow platform, but it is not specifically designed for accessing reports.",
+        "Reports &gt; Overview is not the correct module to access the reports available to you. The Overview module may provide a summary or high-level view of reports, but it is not the primary module for accessing and running reports within the ServiceNow platform."
+      ],
+      "answers": [
+        "Self-Service &gt; My Reports",
+        "Self-Service &gt; My Dashboards",
+        "Reports &gt; View / Run",
+        "Reports &gt; Homepage",
+        "Reports &gt; Overview"
+      ]
+    },
+    "correct_response": ["c"],
+    "question_plain": "What module do you use to access the reports that are available to you?"
+  },
+  {
+    "assessment_type": "multiple-choice",
+    "prompt": {
+      "question": "Security rules are defined to restrict the permissions of users from viewing and interacting with data. What are these security rules called?",
+      "feedbacks": [
+        "CRUD Rules typically refer to Create, Read, Update, and Delete rules that define the basic operations that can be performed on data. While these rules are related to data manipulation, they are not specifically focused on restricting user permissions like security rules do.",
+        "Access Control Rules are the correct choice as they are specifically designed to restrict the permissions of users from viewing and interacting with data. These rules define who can access what data and what actions they can perform, ensuring data security and compliance within the system.",
+        "Role Assignment Rules are used to assign roles to users based on their responsibilities and access needs within the system. While roles play a crucial part in defining user permissions, they are not the same as security rules that directly control data access restrictions.",
+        "Scripted User Rules are not a standard term in the context of ServiceNow security rules. While scripts can be used to enforce security measures, they are typically part of Access Control Rules or other security configurations rather than being a separate type of rule.",
+        "User Authentication Rules are primarily focused on verifying the identity of users during the login process. These rules ensure that users are who they claim to be before granting them access to the system, but they do not directly control the permissions or restrictions on data access like security rules do."
+      ],
+      "answers": [
+        "CRUD Rules",
+        "Access Control Rules",
+        "Role Assignment Rules",
+        "Scripted User Rules",
+        "User Authentication Rules"
+      ]
+    },
+    "correct_response": ["b"],
+    "question_plain": "Security rules are defined to restrict the permissions of users from viewing and interacting with data. What are these security rules called?"
+  }
+]

@@ -1,11 +1,11 @@
 import React, { useState, useCallback, useEffect, useRef } from "react";
-import questionsData from "./Question.json";
 import type { QuizQuestion } from "./types";
 import { QuestionCard } from "./components/QuestionCard";
 import { ScorePanel } from "./components/ScorePanel";
 import { ShortcutInfo } from "./components/ShortcutInfo";
 import { ReviewPage } from "./ReviewPage";
 import {
+  parseOptions,
   exportWrongQuestionsForGemini,
   saveProgress,
   loadProgress,
@@ -13,8 +13,19 @@ import {
   formatSavedAt,
 } from "./utils";
 
-// 問題データを型アサート
-const questions = questionsData as QuizQuestion[];
+// Load all assessments
+const assessmentModules = import.meta.glob("./assessments/*.json", { eager: true });
+const assessmentsMap: Record<string, QuizQuestion[]> = {};
+
+for (const path in assessmentModules) {
+  const match = path.match(/\/([^/]+)\.json$/);
+  if (match) {
+    const examId = match[1];
+    assessmentsMap[examId] = (assessmentModules[path] as { default: QuizQuestion[] }).default;
+  }
+}
+
+const availableExams = Object.keys(assessmentsMap).sort();
 
 // デフォルトのページあたり表示数
 const DEFAULT_PAGE_SIZE = 1;
@@ -23,8 +34,8 @@ const DEFAULT_PAGE_SIZE = 1;
 type View = "quiz" | "review";
 
 // 保存済み進捗から初期状態を復元するヘルパー
-const initFromStorage = () => {
-  const saved = loadProgress();
+const initFromStorage = (examId: string) => {
+  const saved = loadProgress(examId);
   if (!saved) {
     return {
       userAnswers: {} as Record<number, string[]>,
@@ -49,8 +60,15 @@ const initFromStorage = () => {
   };
 };
 
-const App: React.FC = () => {
-  const initial = initFromStorage();
+interface QuizAppProps {
+  examId: string;
+  questions: QuizQuestion[];
+  availableExams: string[];
+  onExamChange: (id: string) => void;
+}
+
+const QuizApp: React.FC<QuizAppProps> = ({ examId, questions, availableExams, onExamChange }) => {
+  const initial = initFromStorage(examId);
 
   // ユーザーの回答状態（インデックス -> 選択ラベル配列）
   const [userAnswers, setUserAnswers] = useState<Record<number, string[]>>(
@@ -78,6 +96,11 @@ const App: React.FC = () => {
   const [showResetConfirm, setShowResetConfirm] = useState(false);
   // 保存トースト表示フラグ
   const [showSavedToast, setShowSavedToast] = useState(false);
+  // コピー済み問題インデックス（Cキー用フィードバック）
+  const [copiedIndex, setCopiedIndex] = useState<number | null>(null);
+  const copiedTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  // 最後にインタラクションした問題インデックス（Cキーコピー対象）
+  const activeQuestionRef = useRef<number>(0);
 
   // 二重カウント防止
   const checkedResults = useRef<Record<number, boolean>>({});
@@ -110,14 +133,14 @@ const App: React.FC = () => {
         page,
         pageSize,
         savedAt: now,
-      });
+      }, examId);
       setSavedAt(now);
     }, 500);
 
     return () => {
       if (saveTimer.current) clearTimeout(saveTimer.current);
     };
-  }, [userAnswers, checkedSet, correctCount, wrongCount, wrongIndices, page, pageSize]);
+  }, [userAnswers, checkedSet, correctCount, wrongCount, wrongIndices, page, pageSize, examId]);
 
   // キーボード操作のサポート
   useEffect(() => {
@@ -205,6 +228,31 @@ const App: React.FC = () => {
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, [view, totalPages]);
 
+  // 「c」キー: 最後にインタラクションした問題をコピー
+  useEffect(() => {
+    const handleCopyKey = (e: KeyboardEvent) => {
+      if (e.key !== "c" || e.ctrlKey || e.metaKey) return;
+      if (
+        document.activeElement instanceof HTMLInputElement ||
+        document.activeElement instanceof HTMLTextAreaElement
+      ) return;
+
+      const targetIndex = activeQuestionRef.current;
+      const q = questions[targetIndex];
+      // 新フォーマット: question_plainとprompt.answersを使用
+      const opts = parseOptions(q);
+      const textToCopy = `${q.question_plain}\n\n[Options]\n${opts.join("\n")}`;
+      navigator.clipboard.writeText(textToCopy).then(() => {
+        if (copiedTimer.current) clearTimeout(copiedTimer.current);
+        setCopiedIndex(targetIndex);
+        copiedTimer.current = setTimeout(() => setCopiedIndex(null), 2000);
+      });
+    };
+
+    window.addEventListener("keydown", handleCopyKey);
+    return () => window.removeEventListener("keydown", handleCopyKey);
+  }, [questions]);
+
   // 選択肢変更ハンドラ
   const handleSelectionChange = useCallback(
     (questionIndex: number, labels: string[]) => {
@@ -262,7 +310,7 @@ const App: React.FC = () => {
   // エクスポートハンドラ
   const handleExportWrong = useCallback(() => {
     exportWrongQuestionsForGemini(wrongIndices, questions);
-  }, [wrongIndices]);
+  }, [wrongIndices, questions]);
 
   // 復習でクリアされた問題を削除
   const handleClearWrong = useCallback((clearedIndex: number) => {
@@ -271,7 +319,7 @@ const App: React.FC = () => {
 
   // リセット実行
   const handleReset = useCallback(() => {
-    clearProgress();
+    clearProgress(examId);
     setUserAnswers({});
     setCheckedSet(new Set());
     setCorrectCount(0);
@@ -281,7 +329,7 @@ const App: React.FC = () => {
     setSavedAt(null);
     setShowResetConfirm(false);
     checkedResults.current = {};
-  }, []);
+  }, [examId]);
 
   // 手動保存（トースト表示）
   const handleManualSave = useCallback(() => {
@@ -295,11 +343,11 @@ const App: React.FC = () => {
       page,
       pageSize,
       savedAt: now,
-    });
+    }, examId);
     setSavedAt(now);
     setShowSavedToast(true);
     setTimeout(() => setShowSavedToast(false), 2500);
-  }, [userAnswers, checkedSet, correctCount, wrongCount, wrongIndices, page, pageSize]);
+  }, [userAnswers, checkedSet, correctCount, wrongCount, wrongIndices, page, pageSize, examId]);
 
   // 復習ページ表示
   if (view === "review") {
@@ -457,12 +505,36 @@ const App: React.FC = () => {
             >
               CSA Quiz Practice
             </h1>
-            {/* 最終保存日時 */}
-            {savedAt && (
-              <p style={{ fontSize: "11px", color: "#475569", marginTop: "2px" }}>
-                Auto-saved: {formatSavedAt(savedAt)}
-              </p>
-            )}
+            <div style={{ display: "flex", alignItems: "center", gap: "12px", marginTop: "4px" }}>
+              <select
+                value={examId}
+                onChange={(e) => onExamChange(e.target.value)}
+                style={{
+                  background: "rgba(255,255,255,0.1)",
+                  border: "1px solid rgba(255,255,255,0.2)",
+                  borderRadius: "6px",
+                  padding: "4px 8px",
+                  color: "#fff",
+                  fontSize: "12px",
+                  outline: "none",
+                  cursor: "pointer",
+                }}
+              >
+                {availableExams.map((exam) => {
+                  const displayName = exam.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+                  return (
+                    <option key={exam} value={exam} style={{ background: "#1e2130", color: "#fff" }}>
+                      {displayName}
+                    </option>
+                  );
+                })}
+              </select>
+              {savedAt && (
+                <span style={{ fontSize: "11px", color: "#475569" }}>
+                  Auto-saved: {formatSavedAt(savedAt)}
+                </span>
+              )}
+            </div>
           </div>
 
           <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
@@ -616,6 +688,13 @@ const App: React.FC = () => {
                   total={questions.length}
                   userSelectedLabels={userAnswers[globalIndex] ?? []}
                   isChecked={checkedSet.has(globalIndex)}
+                  isCopied={copiedIndex === globalIndex}
+                  onCopy={() => {
+                    if (copiedTimer.current) clearTimeout(copiedTimer.current);
+                    setCopiedIndex(globalIndex);
+                    copiedTimer.current = setTimeout(() => setCopiedIndex(null), 2000);
+                  }}
+                  onActivate={() => { activeQuestionRef.current = globalIndex; }}
                   onSelectionChange={(labels) =>
                     handleSelectionChange(globalIndex, labels)
                   }
@@ -758,4 +837,26 @@ const App: React.FC = () => {
   );
 };
 
-export default App;
+export default function App() {
+  const [examId, setExamId] = useState<string>(availableExams[0] || "");
+  
+  if (!examId) {
+    return (
+      <div style={{ padding: "40px", color: "white", textAlign: "center", background: "#0f1117", minHeight: "100vh" }}>
+        <h2>No assessments found</h2>
+        <p>Please place JSON files in the src/assessments/ directory.</p>
+      </div>
+    );
+  }
+  
+  const questions = assessmentsMap[examId];
+  return (
+    <QuizApp
+      key={examId}
+      examId={examId}
+      questions={questions}
+      availableExams={availableExams}
+      onExamChange={setExamId}
+    />
+  );
+}

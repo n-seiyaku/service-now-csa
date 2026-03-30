@@ -1,0 +1,1157 @@
+[
+  {
+    "assessment_type": "multiple-choice",
+    "prompt": {
+      "question": "A Service Catalog may include which of the following components?",
+      "feedbacks": [
+        "Order Guides, Exchange Rates, and Calendars are not typically included in a Service Catalog. Exchange Rates and Calendars are more related to financial and scheduling aspects, rather than service offerings.",
+        "Interceptors are not commonly found in a Service Catalog. Order Guides and Catalog Items are more commonly used to define and request services within the catalog.",
+        "Asset Contracts and Task Surveys are not standard components of a Service Catalog. Catalog Items are used to define the services offered, but Asset Contracts and Task Surveys are not typically part of the catalog structure.",
+        "Record Producers, Order Guides, and Catalog Items are commonly included components in a Service Catalog. Record Producers are used to create new records, Order Guides help users navigate through the catalog, and Catalog Items represent the services available for request."
+      ],
+      "answers": [
+        "Order Guides, Exchange Rates, Calendars",
+        "Order Guides, Catalog Items, and Interceptors",
+        "Catalog Items, Asset Contracts, Task Surveys",
+        "Record Producers, Order Guides, and Catalog Items"
+      ]
+    },
+    "correct_response": ["d"],
+    "question_plain": "A Service Catalog may include which of the following components?"
+  },
+  {
+    "assessment_type": "multiple-choice",
+    "prompt": {
+      "question": "Which one of the following statements applies to a set of fields when they are coalesced during an import?",
+      "feedbacks": [
+        "When a match is found using the coalesce fields during an import, the existing record in the system is updated with the information being imported. This ensures that the data is synchronized and up-to-date without creating duplicate records.",
+        "If a match is not found using the coalesce fields, it does not affect the creation of a Transform Map. The Transform Map is used to define the field mappings between the source data and the target table in the import process, regardless of the coalesce fields.",
+        "When a match is found using the coalesce fields, the system does not create a new record. Instead, it updates the existing record with the imported information to maintain data integrity and prevent duplication.",
+        "If a match is not found using the coalesce fields during an import, the system does not update the existing record with the information being imported. Instead, it may create a new record if the import process allows for record creation in such cases."
+      ],
+      "answers": [
+        "If a match is found using the coalesce fields, the existing record is updated with the information being imported",
+        "If a match is not found using the coalesce fields, the system does not create a Transform Map",
+        "If a match is found using the coalesce fields, the system creates a new record",
+        "If a match is not found using the coalesce fields, the existing record is updated with the information being imported"
+      ]
+    },
+    "correct_response": ["a"],
+    "question_plain": "Which one of the following statements applies to a set of fields when they are coalesced during an import?"
+  },
+  {
+    "assessment_type": "multiple-choice",
+    "prompt": {
+      "question": "As it relates to ServiceNow reporting, which of the following statements describes what a metric can do?",
+      "feedbacks": [
+        "In the context of ServiceNow reporting, metrics serve a different purpose than being a report gauge on homepages for real-time data display. Metrics are used to provide insights into the performance and efficiency of IT service management processes.",
+        "While time measurements are essential for assessing workflows and SLAs, a metric in ServiceNow reporting goes beyond just time-based evaluations. It focuses on quantifying and analyzing the effectiveness of IT service management processes as a whole.",
+        "This statement correctly highlights the role of a metric in ServiceNow reporting. Metrics are crucial tools for measuring and assessing the efficiency and success of IT service management processes, enabling organizations to track performance and make informed decisions.",
+        "The description of a metric as a comparative measurement for evaluating flows and SLAs is not entirely accurate in the context of ServiceNow reporting. Metrics are primarily used to assess and analyze the effectiveness of IT service management processes, providing valuable insights for improvement and decision-making."
+      ],
+      "answers": [
+        "A metric is a report gauge used on homepages to display real-time data",
+        "A metric is a time measurement used to report the effectiveness of workflows and SLAs",
+        "A metric is used to measure and evaluate the effectiveness of IT service management processes",
+        "A metric is a comparative measurement used to report the effectiveness of flows and SLAs."
+      ]
+    },
+    "correct_response": ["c"],
+    "question_plain": "As it relates to ServiceNow reporting, which of the following statements describes what a metric can do?"
+  },
+  {
+    "assessment_type": "multiple-choice",
+    "prompt": {
+      "question": "The display sequence is controlled in a Service Catalog Item using which of the following?",
+      "feedbacks": [
+        "The Default Value field in the Catalog Item form is used to set a default value for a variable in the Service Catalog Item. It does not control the display sequence of the items in the catalog.",
+        "The Sequence field in the Catalog Item form is used to set the order in which the catalog items are displayed in the catalog, but it does not control the display sequence of variables within a specific catalog item.",
+        "The Order field in the Variable form is used to control the display sequence of variables within a Service Catalog Item. By setting the order value for each variable, you can determine the sequence in which they appear to the end-users.",
+        "The Choice field in the Variable form is used to define the available choices for a variable, such as dropdown options or checkboxes. It does not control the display sequence of the variables within the catalog item."
+      ],
+      "answers": [
+        "The Default Value field in the Catalog Item form",
+        "The Sequence field in the Catalog Item form",
+        "The Order field in the Variable form",
+        "The Choice field in the Variable form"
+      ]
+    },
+    "correct_response": ["c"],
+    "question_plain": "The display sequence is controlled in a Service Catalog Item using which of the following?"
+  },
+  {
+    "assessment_type": "multi-select",
+    "prompt": {
+      "question": "Reports can be created from which different places in the platform? (Choose two.)",
+      "feedbacks": [
+        "Reports can be created from the List column heading in the platform, allowing users to generate reports based on the data displayed in the list view. This feature provides a quick and convenient way to create reports directly from the list interface.",
+        "The Metrics module in the platform is not a location where reports can be created. This module is typically used for tracking and analyzing key performance indicators (KPIs) and metrics, rather than generating detailed reports.",
+        "The Statistics module in the platform is not a location where reports can be created. This module is usually used for displaying statistical data and visualizations, rather than creating comprehensive reports.",
+        "Reports can be created from the View / Run module in the platform, allowing users to generate detailed reports based on specific views or queries. This module provides a flexible and customizable way to create and run reports within the platform."
+      ],
+      "answers": [
+        "List column heading",
+        "Metrics module",
+        "Statistics module",
+        "View / Run module"
+      ]
+    },
+    "correct_response": ["a", "d"],
+    "question_plain": "Reports can be created from which different places in the platform? (Choose two.)"
+  },
+  {
+    "assessment_type": "multi-select",
+    "prompt": {
+      "question": "Knowledge Base Search results can be sorted by which of the following? (Choose three.)",
+      "feedbacks": ["", "", "", "", ""],
+      "answers": [
+        "Most recent update",
+        "Popularity",
+        "Relevancy",
+        "Manager assignment",
+        "Number of views"
+      ]
+    },
+    "correct_response": ["a", "c", "e"],
+    "question_plain": "Knowledge Base Search results can be sorted by which of the following? (Choose three.)"
+  },
+  {
+    "assessment_type": "multiple-choice",
+    "prompt": {
+      "question": "What is the path an Administrator could take to view the fulfillment stage task list for an order placed by a user?",
+      "feedbacks": [
+        "This path starts with the Request Item (RITM) number, then moves to the Request (REQ) number, and finally to the PROCUREMENT stage. However, it does not lead to the fulfillment stage task list for an order placed by a user.",
+        "This path starts with the Request (REQ) number, then moves to the Request Item (RITM) number, and finally to the PROCUREMENT stage. It does not lead to the fulfillment stage task list for an order placed by a user.",
+        "This path starts with the Request (REQ) number, then moves to the Request Item (RITM) number, and finally to the TASK stage. This is the correct path an Administrator could take to view the fulfillment stage task list for an order placed by a user.",
+        "This path starts with the FULFILLMENT stage number, then moves to the Request Item (RITM) number, and finally to the TASK stage. It does not lead to the fulfillment stage task list for an order placed by a user."
+      ],
+      "answers": [
+        "RITM (Number)&gt;REQ (Number)&gt;PROCUREMENT (Number)",
+        "REQ (Number)&gt;RITM (Number)&gt;PROCUREMENT (Number)",
+        "REQ (Number)&gt;RITM (Number)&gt;TASK (Number)",
+        "FULFILLMENT (Number)&gt;RITM (Number)&gt;TASK (Number)"
+      ]
+    },
+    "correct_response": ["c"],
+    "question_plain": "What is the path an Administrator could take to view the fulfillment stage task list for an order placed by a user?"
+  },
+  {
+    "assessment_type": "multiple-choice",
+    "prompt": {
+      "question": "Which term refers to application menus and modules which you may want to access quickly and often?",
+      "feedbacks": ["", "", "", ""],
+      "answers": ["Breadcrumb", "Favorite", "Tag", "Bookmark"]
+    },
+    "correct_response": ["b"],
+    "question_plain": "Which term refers to application menus and modules which you may want to access quickly and often?"
+  },
+  {
+    "assessment_type": "multiple-choice",
+    "prompt": {
+      "question": "What is generated from the Service Catalog once a user places an order for an item or service?",
+      "feedbacks": [
+        "A change request is typically generated when there is a need to modify or change an existing configuration item or service. It is not directly related to the action of placing an order from the Service Catalog.",
+        "An Order Guide is a collection of items or services that users can order together as a bundle. It is not specifically generated when a user places an order for a single item or service from the Service Catalog.",
+        "A request is generated from the Service Catalog once a user places an order for an item or service. This request triggers the workflow for fulfilling the order and ensures that the necessary actions are taken to deliver the requested item or service.",
+        "An SLA (Service Level Agreement) is a commitment between a service provider and a customer that defines the level of service expected. It is not directly generated from the Service Catalog when a user places an order."
+      ],
+      "answers": ["A change request", "An Order Guide", "A request", "An SLA"]
+    },
+    "correct_response": ["c"],
+    "question_plain": "What is generated from the Service Catalog once a user places an order for an item or service?"
+  },
+  {
+    "assessment_type": "multi-select",
+    "prompt": {
+      "question": "From the User menu, which actions can a user select? (Choose three.)",
+      "feedbacks": [
+        "Sending notifications is not typically an action that a user can select from the User menu in ServiceNow. This action is usually associated with specific roles or permissions within the platform and is not a standard user menu option.",
+        "Logging out of ServiceNow is a common action that users can select from the User menu. It allows users to securely log out of their current session and protect their account information.",
+        "Elevating roles is a feature that allows users with the necessary permissions to temporarily increase their access rights within ServiceNow. This can be useful for troubleshooting or performing specific tasks that require elevated privileges.",
+        "Impersonating users is a functionality that allows authorized users to temporarily assume the identity of another user within ServiceNow. This can be helpful for troubleshooting issues, testing user-specific features, or providing support.",
+        "Ordering from the Service Catalog is typically not an action that a user can select from the User menu. This functionality is usually accessed through the Service Catalog module or specific catalog items within ServiceNow.",
+        "Approving records is not a standard action that a user can select from the User menu in ServiceNow. This functionality is usually associated with specific roles or permissions related to approval processes within the platform."
+      ],
+      "answers": [
+        "Send Notifications",
+        "Log Out ServiceNow",
+        "Elevate Roles",
+        "Impersonate Users",
+        "Order from Service Catalog",
+        "Approve Records"
+      ]
+    },
+    "correct_response": ["b", "c", "d"],
+    "question_plain": "From the User menu, which actions can a user select? (Choose three.)"
+  },
+  {
+    "assessment_type": "multiple-choice",
+    "prompt": {
+      "question": "Buttons, form links, and context menu items are all examples of what type of functionality?",
+      "feedbacks": [
+        "Business Rules in ServiceNow are used to automate processes and enforce data integrity on the server-side. They are not directly related to the creation of buttons, form links, or context menu items on the user interface.",
+        "UI Actions in ServiceNow allow users to perform specific actions like opening a related record or running a script when interacting with buttons, form links, or context menu items. They enhance user experience and provide additional functionality in the ServiceNow interface.",
+        "Client Scripts in ServiceNow are used to add client-side logic to forms, such as field validation or dynamic behavior. While they enhance the user interface experience, they are not specifically responsible for creating buttons, form links, or context menu items.",
+        "UI Policies in ServiceNow are used to control the visibility and read/write access of form fields based on specified conditions. They are not directly involved in creating buttons, form links, or context menu items, which are functionalities typically associated with UI Actions in ServiceNow."
+      ],
+      "answers": ["Business Rule", "UI Action", "Client Script", "UI Policy"]
+    },
+    "correct_response": ["b"],
+    "question_plain": "Buttons, form links, and context menu items are all examples of what type of functionality?"
+  },
+  {
+    "assessment_type": "multiple-choice",
+    "prompt": {
+      "question": "Which of the following is true of Service Catalog Items in relation to the Service Catalog?",
+      "feedbacks": [
+        "Service Catalog Items are not hidden or running behind the scenes; they are visible and accessible components within the Service Catalog that users interact with to request services or products.",
+        "Service Catalog Items are indeed the building blocks of the Service Catalog. They represent individual services, products, or offerings that users can request through the catalog, making them essential components of the overall catalog structure.",
+        "Service Catalog Items are not optional; they are essential components of the Service Catalog that define the services or products available for users to request. Without these items, the catalog would not be functional or useful.",
+        "While Service Catalog Items do provide options for users to choose from when requesting services, their primary function is to represent specific services or products within the catalog rather than solely providing options."
+      ],
+      "answers": [
+        "They run behind the scenes.",
+        "They are the building blocks.",
+        "They are optional.",
+        "They provide options."
+      ]
+    },
+    "correct_response": ["b"],
+    "question_plain": "Which of the following is true of Service Catalog Items in relation to the Service Catalog?"
+  },
+  {
+    "assessment_type": "multiple-choice",
+    "prompt": {
+      "question": "Table Access Control rules are processed in the following order:",
+      "feedbacks": [
+        "This order is incorrect as it starts with a wildcard for any table name, which would not provide specific control over individual tables. It should follow a more specific to general hierarchy.",
+        "This order is correct as it starts with the specific table name, followed by the parent table name, and then allows for any table name (wildcard) at the end. This sequence ensures that access control rules are applied in a structured and hierarchical manner.",
+        "This order is incorrect as it starts with the parent table name, which may not provide the necessary granularity for controlling access to specific tables. It should begin with the specific table name for more precise control.",
+        "This order is incorrect as it starts with a wildcard for any table name, which does not provide a specific starting point for access control rules. It should begin with the specific table name to ensure targeted control over table access."
+      ],
+      "answers": [
+        "any table name (wildcard), parent table name, table name",
+        "table name, parent table name, any table name (wildcard)",
+        "parent table name, table name, any table name (wildcard)",
+        "any table name (wildcard), table name, parent table name"
+      ]
+    },
+    "correct_response": ["b"],
+    "question_plain": "Table Access Control rules are processed in the following order:"
+  },
+  {
+    "assessment_type": "multiple-choice",
+    "prompt": {
+      "question": "What is the platform name for the User table?",
+      "feedbacks": [
+        "The platform name for the User table is not \"u_users.\" This naming convention is not standard in ServiceNow and does not correspond to the actual table name for users.",
+        "The platform name for the User table is not \"sys_users.\" While this choice includes the correct prefix \"sys_\" commonly used in ServiceNow table names, it does not represent the specific table for users.",
+        "The platform name for the User table is not \"x_users.\" The prefix \"x_\" is typically used for custom tables in ServiceNow, and the standard User table does not follow this naming convention.",
+        "The platform name for the User table is \"sys_user.\" This is the correct naming convention for the User table in ServiceNow, following the standard prefix \"sys_\" for system tables and the specific \"user\" identifier for the User table."
+      ],
+      "answers": ["u_users", "sys_users", "x_users", "sys_user"]
+    },
+    "correct_response": ["d"],
+    "question_plain": "What is the platform name for the User table?"
+  },
+  {
+    "assessment_type": "multiple-choice",
+    "prompt": {
+      "question": "A REQ number in the Service Catalog represents…",
+      "feedbacks": [
+        "The REQ number in the Service Catalog serves as a unique identifier for each order placed by a user. It helps in tracking and managing the specific requests made through the catalog system.",
+        "The stage in the Service Catalog indicates the current status or phase of the request, such as approval, fulfillment, or closure. It is distinct from the REQ number, which is specifically assigned to each order for reference purposes.",
+        "The task to complete in the Service Catalog refers to the specific actions or activities required to fulfill a user's request. The REQ number, on the other hand, is used to distinguish between different orders and does not represent individual tasks.",
+        "The individual item in the order refers to the specific service or product requested by the user within a single order. While each item may have its own details and specifications, the REQ number is used to identify and manage the entire order as a whole."
+      ],
+      "answers": [
+        "the order number.",
+        "the stage.",
+        "the task to complete.",
+        "the individual item in the order."
+      ]
+    },
+    "correct_response": ["a"],
+    "question_plain": "A REQ number in the Service Catalog represents…"
+  },
+  {
+    "assessment_type": "multiple-choice",
+    "prompt": {
+      "question": "Which would NOT appear in the History section of the Application Navigator?",
+      "feedbacks": [
+        "Records would appear in the History section of the Application Navigator as they represent data entries or instances within the application that have been accessed or modified.",
+        "UI Pages would NOT appear in the History section of the Application Navigator as they are used for designing the user interface and are not directly related to data entries or instances that would be tracked in the history.",
+        "Lists would appear in the History section of the Application Navigator as they represent collections of records or data entries that have been accessed or modified.",
+        "Forms would appear in the History section of the Application Navigator as they are used for displaying and capturing data related to records within the application."
+      ],
+      "answers": ["Records", "UI Pages", "Lists", "Forms"]
+    },
+    "correct_response": ["b"],
+    "question_plain": "Which would NOT appear in the History section of the Application Navigator?"
+  },
+  {
+    "assessment_type": "multiple-choice",
+    "prompt": {
+      "question": "Which one of the following statements is a recommendation from ServiceNow about Update Sets?",
+      "feedbacks": [
+        "ServiceNow recommends avoiding using the Default Update Set for moving customizations between instances because it is a system-generated update set that can cause conflicts and issues when transferring customizations. It is best practice to create a new update set specifically for the customizations being moved.",
+        "ServiceNow does not require both instances to be different versions before moving customizations with Update Sets. Update Sets can be used to transfer customizations between instances regardless of their versions, as long as the customizations are compatible.",
+        "The Baseline Update Set is not used to store the contents of items after they are changed for the first time. It is used as a reference point to compare changes made in subsequent update sets, but it does not store the contents of items permanently.",
+        "Once an Update Set is closed as \"Complete,\" it should not be changed back to \"In Progress\" unless there are additional changes or updates to be made. Changing the status back to \"In Progress\" after closing it can lead to confusion and potential issues during the update set application process."
+      ],
+      "answers": [
+        "Avoid using the Default Update set as an Update Set for moving customizations from instance to instance",
+        "Before moving customizations from instance to instance with Update Sets, ensure that both instances are different versions",
+        "Use the Baseline Update Set to store the contents of items after they are changed the first time",
+        "Once an Update Set is closed as “Complete”, change it back to “In Progress” until it is applied to another instance"
+      ]
+    },
+    "correct_response": ["a"],
+    "question_plain": "Which one of the following statements is a recommendation from ServiceNow about Update Sets?"
+  },
+  {
+    "assessment_type": "multiple-choice",
+    "prompt": {
+      "question": "Which of the following is used to initiate a flow?",
+      "feedbacks": [
+        "A Trigger is used to initiate a flow in ServiceNow. Triggers are defined conditions that start the flow when they are met, such as a specific event or data change.",
+        "Core Action refers to the actions that are performed within a flow, such as creating records, sending notifications, or updating data. Core Actions are not used to initiate a flow but rather to perform specific tasks within the flow.",
+        "A spoke in ServiceNow is a term used to refer to an integration with an external system or application. Spokes are not used to initiate a flow but rather to facilitate communication and data exchange between ServiceNow and external systems.",
+        "An Event in ServiceNow represents an occurrence or incident that triggers specific actions or processes. While events can be used as part of a flow to respond to certain conditions, they are not specifically used to initiate a flow like a Trigger would be."
+      ],
+      "answers": ["A Trigger", "Core Action", "A spoke", "An Event"]
+    },
+    "correct_response": ["a"],
+    "question_plain": "Which of the following is used to initiate a flow?"
+  },
+  {
+    "assessment_type": "multiple-choice",
+    "prompt": {
+      "question": "For Administrators creating new Service Catalog items, what is a characteristic they should know about Service Catalog variables?",
+      "feedbacks": [
+        "Service Catalog variables can be used in both Record Producers and Order Guides, not limited to just one of them. They provide flexibility in capturing and processing user input for various types of catalog items.",
+        "Service Catalog variables are not restricted to only being used in Order Guides. They can also be utilized in Record Producers to gather information from users during the request submission process.",
+        "Service Catalog variables can have an impact on the order price based on the configurations set by the administrator. They can be used to calculate costs, apply discounts, or adjust pricing dynamically based on user input.",
+        "Service Catalog variables are global by default, meaning they can be accessed and used across different catalog items and categories within the Service Catalog. This global nature allows for reusability and consistency in collecting user input."
+      ],
+      "answers": [
+        "Service Catalog variables can only be used in Record Producers",
+        "Service Catalog variables can only be used in Order Guides",
+        "Service Catalog variables cannot affect the order price",
+        "Service Catalog variables are global by default"
+      ]
+    },
+    "correct_response": ["d"],
+    "question_plain": "For Administrators creating new Service Catalog items, what is a characteristic they should know about Service Catalog variables?"
+  },
+  {
+    "assessment_type": "multiple-choice",
+    "prompt": {
+      "question": "Which one of the following statements is true about Column Context Menus?",
+      "feedbacks": [
+        "Column Context Menus typically display actions that are related to managing the data displayed in a list. This includes options like creating quick reports, configuring the list layout, and exporting data for further analysis. These actions are focused on manipulating the data within the list itself.",
+        "Column Context Menus are not typically used for filtering options, assigning tags, or conducting searches. These actions are usually related to the overall list management or individual record management, rather than the specific column context.",
+        "While Column Context Menus may include actions for viewing and filtering the list, they are more focused on the actions that can be performed on the data within the columns themselves. Actions related to the entire list as a whole are usually found in other parts of the user interface.",
+        "Actions like viewing a form, related tasks, or adding relationships are more related to individual record management rather than column context. Column Context Menus are specifically designed to provide actions that are relevant to the data displayed in the columns of a list."
+      ],
+      "answers": [
+        "It displays actions such as creating quick reports, configuring the list, and exporting data",
+        "It displays actions related to filtering options, assigning tags, and search",
+        "It displays actions related to viewing and filtering the entire list",
+        "It displays actions such as view form, view related task, and add relationship"
+      ]
+    },
+    "correct_response": ["a"],
+    "question_plain": "Which one of the following statements is true about Column Context Menus?"
+  },
+  {
+    "assessment_type": "multi-select",
+    "prompt": {
+      "question": "Which ServiceNow products can be used to discover and populate the CMDB? (Choose two.)",
+      "feedbacks": [
+        "Discovery is a ServiceNow product specifically designed for discovering and populating the CMDB by identifying and mapping IT assets and configuration items within an organization's infrastructure. It automates the process of collecting data and maintaining accurate information in the CMDB.",
+        "IntegrationHub ETL is another ServiceNow product that can be used to discover and populate the CMDB. It allows for data integration and transformation processes to extract, transform, and load data from various sources into the CMDB, ensuring data accuracy and consistency.",
+        "Finder is not a ServiceNow product that is used for discovering and populating the CMDB. It does not have the functionality or capabilities to perform automated discovery and mapping of IT assets and configuration items.",
+        "CMDB Plug-in is not a ServiceNow product specifically designed for discovering and populating the CMDB. It does not have the functionality to automate the process of collecting data and maintaining accurate information in the CMDB.",
+        "CMDB Integration Dashboard is not a ServiceNow product that is used for discovering and populating the CMDB. It does not have the capabilities to automate the process of identifying and mapping IT assets and configuration items within an organization's infrastructure."
+      ],
+      "answers": [
+        "Discovery",
+        "IntegrationHub ETL",
+        "Finder",
+        "CMDB Plug-in",
+        "CMDB Integration Dashboard"
+      ]
+    },
+    "correct_response": ["a", "b"],
+    "question_plain": "Which ServiceNow products can be used to discover and populate the CMDB? (Choose two.)"
+  },
+  {
+    "assessment_type": "multiple-choice",
+    "prompt": {
+      "question": "When using the Load Data and Transform Map process, what is the Mapping Assist used for?",
+      "feedbacks": [
+        "Mapping fields using the Import Log is not a valid use case for the Mapping Assist feature in the Load Data and Transform Map process. The Import Log is used to track the import process and any errors that may have occurred during data loading, not for mapping fields.",
+        "Mapping fields using Transform History is not a valid use case for the Mapping Assist feature in the Load Data and Transform Map process. The Transform History is used to track the history of transformations applied to data, not for mapping fields.",
+        "Mapping fields using an SLA (Service Level Agreement) is not a valid use case for the Mapping Assist feature in the Load Data and Transform Map process. SLAs are used to define the level of service expected from a vendor, not for mapping fields during data loading.",
+        "Mapping fields using a Field Map is the correct use case for the Mapping Assist feature in the Load Data and Transform Map process. The Field Map allows users to define how fields from the source data map to fields in the target table, ensuring accurate data transformation during the import process."
+      ],
+      "answers": [
+        "Mapping fields using the Import Log",
+        "Mapping fields using Transform History",
+        "Mapping fields using an SLA",
+        "Mapping fields using a Field Map"
+      ]
+    },
+    "correct_response": ["d"],
+    "question_plain": "When using the Load Data and Transform Map process, what is the Mapping Assist used for?"
+  },
+  {
+    "assessment_type": "multiple-choice",
+    "prompt": {
+      "question": "Which one of the following statements describes the contents of the Configuration Management Database (CMDB)?",
+      "feedbacks": [
+        "The CMDB contains data about both tangible assets, such as hardware and software, and intangible assets, such as relationships between assets, dependencies, and configurations. It serves as a centralized repository for all configuration items and their relationships within an organization.",
+        "The Business Rules are not stored in the CMDB. Business Rules are typically defined in the ServiceNow platform to automate processes and enforce policies. The CMDB focuses on storing configuration item data rather than rules.",
+        "The CMDB does not specifically archive Service Management PaaS equipment metadata and usage statistics. While it may contain information about PaaS equipment as configuration items, its primary purpose is to store configuration data rather than usage statistics.",
+        "The CMDB does not solely contain ITIL process data related to configuration items. While ITIL processes may be associated with configuration items stored in the CMDB, the primary function of the CMDB is to store configuration item data and their relationships within the organization."
+      ],
+      "answers": [
+        "The CMDB contains data about tangible and intangible business assets",
+        "The CMDB contains the Business Rules that direct the intangible, configurable assets used by a company",
+        "The CMDB archives all Service Management PaaS equipment metadata and usage statistics",
+        "The CMDB contains ITIL process data pertaining to configuration items"
+      ]
+    },
+    "correct_response": ["a"],
+    "question_plain": "Which one of the following statements describes the contents of the Configuration Management Database (CMDB)?"
+  },
+  {
+    "assessment_type": "multiple-choice",
+    "prompt": {
+      "question": "In what order should filter elements be specified?",
+      "feedbacks": [
+        "In ServiceNow, when specifying filter elements, it is important to first identify the field on which the filter will be applied, followed by the operator that defines the relationship between the field and the value being compared, and finally the specific value that the field should match or be compared against. This order ensures that the filter is accurately defined and effectively filters the desired records.",
+        "In ServiceNow, the correct order for specifying filter elements is to first identify the field, then the operator that defines the relationship between the field and the value, and finally the condition that determines how the filter will be applied. The condition comes after the operator and is used to further refine the filter criteria.",
+        "The order for specifying filter elements in ServiceNow is to first identify the operator that defines the relationship between the field and the value being compared, followed by the condition that determines how the filter will be applied, and finally the specific value that the field should match or be compared against. This order may lead to inaccuracies in filtering records as the field is not specified first.",
+        "In ServiceNow, specifying filter elements in the order of value, operator, and then field is not the correct approach. The field should be identified first to determine the context of the filter, followed by the operator that defines the relationship, and finally the specific value that the field should match or be compared against. This order ensures that the filter criteria are correctly defined and applied."
+      ],
+      "answers": [
+        "Field, Operator, then Value",
+        "Field, Operator, then Condition",
+        "Operator, Condition, then Value",
+        "Value, Operator, then Field"
+      ]
+    },
+    "correct_response": ["a"],
+    "question_plain": "In what order should filter elements be specified?"
+  },
+  {
+    "assessment_type": "multiple-choice",
+    "prompt": {
+      "question": "Which statement is true about business rules?",
+      "feedbacks": [
+        "This statement is incorrect. A business rule in ServiceNow can run before or after a database action occurs, depending on the configuration and requirements of the rule. It is not mandatory for a business rule to run before a database action.",
+        "This statement is correct. In ServiceNow, a business rule can be written in JavaScript. Business rules are used to define automated actions that should occur when a record is inserted, updated, deleted, displayed, or queried in a table.",
+        "This statement is incorrect. As mentioned earlier, a business rule in ServiceNow can run before or after a database action occurs. The timing of when a business rule should run is configurable based on the specific business logic and requirements.",
+        "This statement is incorrect. While a business rule in ServiceNow can monitor fields on a form and trigger actions based on field changes, it is not limited to just monitoring fields. Business rules can also be triggered by database actions, conditions, or other events in the system."
+      ],
+      "answers": [
+        "A business rule must run before a database action occurs",
+        "A business rule can be a piece of Javascript",
+        "A business rule must not run before a database action occurs",
+        "A business rule monitors fields on a form"
+      ]
+    },
+    "correct_response": ["b"],
+    "question_plain": "Which statement is true about business rules?"
+  },
+  {
+    "assessment_type": "multi-select",
+    "prompt": {
+      "question": "Which of the following are a type of client scripts supported in ServiceNow? (Choose four.)",
+      "feedbacks": [
+        "The onSubmit client script in ServiceNow is triggered when a form is submitted. It is commonly used to validate form data before submission and prevent invalid data from being saved.",
+        "The onUpdate client script in ServiceNow is triggered when a record is updated. It is used to perform actions or validations when a record is modified.",
+        "The onCellEdit client script in ServiceNow is triggered when a cell in a list is edited. It allows for custom actions to be performed when a cell value is changed.",
+        "The onLoad client script in ServiceNow is triggered when a form or record is loaded. It is commonly used to set default field values, perform calculations, or display messages when a record is opened.",
+        "The onEdit client script is not a supported client script type in ServiceNow. It is not a valid option for customizing behavior in ServiceNow forms or records.",
+        "The onChange client script in ServiceNow is triggered when a field value is changed. It allows for dynamic behavior based on user input and is commonly used for field validation and dependent field updates."
+      ],
+      "answers": [
+        "onSubmit",
+        "onUpdate",
+        "onCellEdit",
+        "onLoad",
+        "onEdit",
+        "onChange"
+      ]
+    },
+    "correct_response": ["a", "c", "d", "f"],
+    "question_plain": "Which of the following are a type of client scripts supported in ServiceNow? (Choose four.)"
+  },
+  {
+    "assessment_type": "multiple-choice",
+    "prompt": {
+      "question": "Which type of tables may be extended by other tables, but do not extend another table?",
+      "feedbacks": [
+        "Base Tables are the foundational tables in ServiceNow that can be extended by other tables to inherit their fields and functionalities. However, Base Tables themselves do not extend any other tables, making them the starting point for table extensions in ServiceNow.",
+        "Core Tables are the tables that come pre-defined in ServiceNow and are essential for the platform's functionality. They serve as the backbone of the system but do not necessarily extend other tables or get extended by custom tables.",
+        "Extended Tables are tables that inherit fields and functionalities from other tables, including Base Tables. While Extended Tables can be extended further by other tables, they themselves are not the starting point for table extensions and do not extend other tables directly.",
+        "Custom Tables are tables created by users to store specific data unique to their organization or requirements. While Custom Tables can extend Base Tables or other tables, they are not limited to only extending tables and can also be extended by other tables."
+      ],
+      "answers": [
+        "Base Tables",
+        "Core Tables",
+        "Extended Tables",
+        "Custom Tables"
+      ]
+    },
+    "correct_response": ["a"],
+    "question_plain": "Which type of tables may be extended by other tables, but do not extend another table?"
+  },
+  {
+    "assessment_type": "multiple-choice",
+    "prompt": {
+      "question": "Which of the following statement describes the purpose of an Order Guide?",
+      "feedbacks": [
+        "Order Guides do not restrict the number of items in an order to only one item per request. They actually provide the ability to order multiple items as one request, simplifying the ordering process for users.",
+        "Order Guides do not provide a list of guidelines for Administrators on how to set up item variables. They are used to streamline the ordering process by allowing users to order multiple related items together.",
+        "This statement correctly describes the purpose of an Order Guide. Order Guides provide the ability to order multiple, related items as one request, making it easier for users to request multiple items at once.",
+        "Order Guides do not take the user directly to the checkout without prompting for information. They help users select and order multiple related items together, but the checkout process still requires necessary information before completing the order."
+      ],
+      "answers": [
+        "Order Guides restrict the number of items in an order to only one item per request",
+        "Order Guide provide a list of guidelines for Administrators on how to set up item variables",
+        "Order Guide provide the ability to order multiple, related items as one request",
+        "Order Guides take the user directly to the checkout without prompting for information"
+      ]
+    },
+    "correct_response": ["c"],
+    "question_plain": "Which of the following statement describes the purpose of an Order Guide?"
+  },
+  {
+    "assessment_type": "multiple-choice",
+    "prompt": {
+      "question": "Which tool is used to have conversations with logged-in users in real-time?",
+      "feedbacks": [
+        "Connect Chat is the correct choice as it is the tool used in ServiceNow to have real-time conversations with logged-in users. It allows users to communicate instantly, share information, and collaborate efficiently within the platform.",
+        "Now Messenger is not the tool used for real-time conversations with logged-in users in ServiceNow. It is primarily used for notifications, alerts, and updates, rather than interactive chat functionality.",
+        "User Presence is not the tool used for real-time conversations with logged-in users in ServiceNow. It is a feature that indicates whether a user is currently active or online within the platform, but it does not provide chat functionality.",
+        "Comments are not the tool used for real-time conversations with logged-in users in ServiceNow. Comments are typically used for adding notes, feedback, or context to records or tasks within the platform, rather than for direct communication between users in real-time."
+      ],
+      "answers": ["Connect Chat", "Now Messenger", "User Presence", "Comments"]
+    },
+    "correct_response": ["a"],
+    "question_plain": "Which tool is used to have conversations with logged-in users in real-time?"
+  },
+  {
+    "assessment_type": "multi-select",
+    "prompt": {
+      "question": "Which of the following concepts are associated with the ServiceNow CMDB? (Choose four.)",
+      "feedbacks": [
+        "<p>Service Processes are closely associated with the ServiceNow CMDB as they help define and manage the lifecycle of services within the configuration management database. They provide a structured approach to managing services and their relationships within the CMDB.</p>",
+        "<p>User Permissions, while important for controlling access to the ServiceNow platform, are not directly associated with the CMDB itself. User permissions are more related to security and access control within the platform rather than the configuration management database.</p>",
+        "<p>Tables and Fields are fundamental components of the ServiceNow CMDB. Tables define the structure of data stored in the CMDB, while fields represent the attributes of the configuration items. Understanding and managing tables and fields is essential for effective configuration management.</p>",
+        "<p>The ServiceNow CMDB is essentially a database that stores configuration items and their relationships. It serves as a central repository of information about the IT environment, enabling organizations to track, manage, and analyze configuration data. Understanding the database structure is crucial for effective CMDB management.</p>",
+        "<p>The Dependency View is a feature within the ServiceNow CMDB that allows users to visualize and understand the relationships between configuration items. It provides a graphical representation of dependencies, helping users identify the impact of changes and make informed decisions about IT services and infrastructure.</p>"
+      ],
+      "answers": [
+        "Service Processes",
+        "User Permissions",
+        "Tables and Fields",
+        "A Database",
+        "The Dependency View"
+      ]
+    },
+    "correct_response": ["a", "c", "d", "e"],
+    "question_plain": "Which of the following concepts are associated with the ServiceNow CMDB? (Choose four.)"
+  },
+  {
+    "assessment_type": "multiple-choice",
+    "prompt": {
+      "question": "What is a formatter? Select one of the following.",
+      "feedbacks": [
+        "This choice is incorrect because a formatter is not used to configure applications on your instance. Formatters are specifically related to displaying information in a specific way within forms.",
+        "This choice is correct because a formatter is indeed a form element used to display information that is not a field in the record. It allows for customization of how data is presented on the form.",
+        "This choice is incorrect because formatters do not directly populate fields automatically. They are used for displaying information in a specific format rather than populating fields.",
+        "This choice is incorrect because a formatter is not a set of conditions applied to a table to help find and work with data. Formatters are focused on the presentation of data within forms, not on the retrieval or manipulation of data."
+      ],
+      "answers": [
+        "A formatter allows you to configure applications on your instance",
+        "A formatter is a form element used to display information that is not a field in the record",
+        "A formatter allows you to populate fields automatically",
+        "A formatter is a set of conditions applied to a table to help find and work with data"
+      ]
+    },
+    "correct_response": ["b"],
+    "question_plain": "What is a formatter? Select one of the following."
+  },
+  {
+    "assessment_type": "multi-select",
+    "prompt": {
+      "question": "When searching using the App Navigator search field, what can be returned? (Choose four.)",
+      "feedbacks": [
+        "Names of Applications and Modules can be returned when searching using the App Navigator search field. This allows users to quickly access specific applications and modules within the ServiceNow platform.",
+        "Names of Modules can be returned in the search results when using the App Navigator search field. This helps users locate and navigate to specific modules within the platform.",
+        "Names of Applications can be returned in the search results when using the App Navigator search field. This feature enables users to easily find and access different applications available in the ServiceNow environment.",
+        "Favorites can be returned in the search results when using the App Navigator search field. This allows users to quickly access their preferred or frequently used items within the platform.",
+        "History Records are not typically returned in the search results when using the App Navigator search field. The search field is primarily designed to help users find specific applications, modules, and favorites, rather than historical records.",
+        "Titles of Dashboard Gauges are not typically returned in the search results when using the App Navigator search field. The search field is focused on locating applications, modules, and favorites within the ServiceNow platform, rather than dashboard components."
+      ],
+      "answers": [
+        "Names of Applications and Modules",
+        "Names of Modules",
+        "Names of Applications",
+        "Favorites",
+        "History Records",
+        "Titles of Dashboard Gauges"
+      ]
+    },
+    "correct_response": ["a", "b", "c", "d"],
+    "question_plain": "When searching using the App Navigator search field, what can be returned? (Choose four.)"
+  },
+  {
+    "assessment_type": "multiple-choice",
+    "prompt": {
+      "question": "Which technique is used to get information from a series of referenced fields from different tables?",
+      "feedbacks": [
+        "Table-Walking is not the correct technique for getting information from referenced fields from different tables. Table-Walking refers to the process of traversing related records within the same table, not across different tables.",
+        "Sys_ID Pulling is not a recognized technique in ServiceNow for getting information from referenced fields from different tables. Sys_IDs are unique identifiers for records in ServiceNow but are not specifically used for retrieving information from referenced fields.",
+        "Dot-Walking is the correct technique used in ServiceNow to access information from referenced fields across different tables. By using dot-walking notation (e.g., table.field), you can easily navigate through related records and retrieve the desired information.",
+        "Record-Hopping is not a valid term or technique in ServiceNow for accessing information from referenced fields from different tables. It does not describe the process of traversing relationships between tables to gather data."
+      ],
+      "answers": [
+        "Table-Walking",
+        "Sys_ID Pulling",
+        "Dot-Walking",
+        "Record-Hopping"
+      ]
+    },
+    "correct_response": ["c"],
+    "question_plain": "Which technique is used to get information from a series of referenced fields from different tables?"
+  },
+  {
+    "assessment_type": "multiple-choice",
+    "prompt": {
+      "question": "What is a schema map?",
+      "feedbacks": [
+        "A schema map is not specifically related to defining records from specific tables as trouble sources for Configuration Items. This functionality is more aligned with other ServiceNow features rather than the purpose of a schema map.",
+        "A schema map does not organize visual task boards for the CMDB. Visual task boards are typically used for tracking and managing tasks, while a schema map focuses on displaying database schema details.",
+        "While a schema map may display Configuration Items related to a business service, its primary function is not to graphically represent these relationships. The main purpose of a schema map is to visually display table details and relationships within the database schema.",
+        "This explanation correctly describes what a schema map is in the context of ServiceNow. It provides a visual representation of tables and their relationships, helping administrators navigate and understand the database schema more effectively."
+      ],
+      "answers": [
+        "A schema map enables administrators to define records from specific tables as trouble sources for Configuration Items",
+        "A schema map graphically organizes the visual task boards for the CMDB",
+        "A schema map graphically displays the Configuration Items that support a business service",
+        "A schema map displays the details of tables and their relationships in a visual manner, allowing administrators to view and easily access different parts of the database schema"
+      ]
+    },
+    "correct_response": ["d"],
+    "question_plain": "What is a schema map?"
+  },
+  {
+    "assessment_type": "multiple-choice",
+    "prompt": {
+      "question": "Which one of the following statements best describes the purpose of an Update Set?",
+      "feedbacks": [
+        "An Update Set in ServiceNow allows administrators to bundle together a series of changes, such as configurations, customizations, and developments, into a named set. This set can then be moved as a unit to other instances, making it easier to manage and deploy changes across different environments.",
+        "While an Update Set can include customizations, Business Rules, and homepages, it is not the primary purpose of an Update Set. The main purpose is to group changes and move them as a unit to other systems, rather than specifying default inclusions.",
+        "An Update Set is typically used to move changes from Development to Production, not the other way around. It allows administrators to package customizations and configurations made in a development instance and deploy them to a production instance.",
+        "Changes included in an Update Set are visible in the instance to which they are applied, not restricted to being visible only in that instance. Update Sets are used to move changes between instances, allowing the changes to be visible and applied in the target instance."
+      ],
+      "answers": [
+        "An Update Set allows administrators to group a series of changes into a named set and then move this set as a unit to other systems",
+        "By default, an Update Set includes customizations, Business Rules, and homepages",
+        "An Update Set is a group of customizations that is moved from Production to Development",
+        "By default, the changes included in an Update Set are visible only in the instance to which they are applied"
+      ]
+    },
+    "correct_response": ["a"],
+    "question_plain": "Which one of the following statements best describes the purpose of an Update Set?"
+  },
+  {
+    "assessment_type": "multi-select",
+    "prompt": {
+      "question": "Which of the following can be customized through the Basic Configuration UI 16 module? (Choose three.)",
+      "feedbacks": [
+        "The Banner Image can be customized through the Basic Configuration UI 16 module, allowing users to personalize the appearance of their ServiceNow instance by adding a custom banner image.",
+        "Record Number Format cannot be customized through the Basic Configuration UI 16 module. This setting is typically managed through the System Properties or Record Producer settings in ServiceNow.",
+        "The Browser Tab Title can be customized through the Basic Configuration UI 16 module, enabling users to change the title that appears on the browser tab when accessing the ServiceNow instance.",
+        "The System Date Format can be customized through the Basic Configuration UI 16 module, giving users the ability to define how dates are displayed throughout the ServiceNow platform.",
+        "Form Header Size cannot be customized through the Basic Configuration UI 16 module. This setting is usually controlled through the Form Layout settings or CSS customization in ServiceNow."
+      ],
+      "answers": [
+        "Banner Image",
+        "Record Number Format",
+        "Browser Tab Title",
+        "System Date Format",
+        "Form Header Size"
+      ]
+    },
+    "correct_response": ["a", "c", "d"],
+    "question_plain": "Which of the following can be customized through the Basic Configuration UI 16 module? (Choose three.)"
+  },
+  {
+    "assessment_type": "multiple-choice",
+    "prompt": {
+      "question": "What is the function of user impersonation?",
+      "feedbacks": [
+        "User impersonation allows an administrator to test and troubleshoot user-specific issues by temporarily assuming the identity of another user. It helps in understanding and resolving problems related to user access, permissions, and visibility within the ServiceNow platform.",
+        "Activating verbose logging is not the function of user impersonation. Verbose logging is used to provide detailed and extensive logs for debugging purposes, but it is not directly related to user impersonation and its functionalities.",
+        "Viewing custom perspectives is not the primary function of user impersonation. Custom perspectives are personalized views or configurations within the ServiceNow platform that are specific to individual users, but user impersonation is more focused on testing and visibility aspects.",
+        "Unlocking the Application master list is not related to user impersonation. The Application master list typically refers to a list of all applications or modules within the ServiceNow platform, and user impersonation does not involve unlocking or managing this list."
+      ],
+      "answers": [
+        "Testing and visibility",
+        "Activate verbose logging",
+        "View custom perspectives",
+        "Unlock Application master list"
+      ]
+    },
+    "correct_response": ["a"],
+    "question_plain": "What is the function of user impersonation?"
+  },
+  {
+    "assessment_type": "multiple-choice",
+    "prompt": {
+      "question": "What information does the System Dictionary contain?",
+      "feedbacks": [
+        "The System Dictionary does not contain human-readable labels and language settings. These are typically managed in the UI or configuration settings of the ServiceNow platform.",
+        "The System Dictionary contains the definition for each table and column in the ServiceNow platform. It is a centralized repository for managing metadata about tables and their columns.",
+        "The System Dictionary does not contain information on how tables relate to each other. Table relationships are typically defined in the database schema or through relationships established in the platform.",
+        "The System Dictionary does not contain the language dictionary used for spell checking. Language dictionaries are separate components that handle language-specific functionalities like spell checking in ServiceNow."
+      ],
+      "answers": [
+        "The human-readable labels and language settings",
+        "The definition for each table and column",
+        "The information on how tables relate to each other",
+        "The language dictionary used for spell checking"
+      ]
+    },
+    "correct_response": ["b"],
+    "question_plain": "What information does the System Dictionary contain?"
+  },
+  {
+    "assessment_type": "multiple-choice",
+    "prompt": {
+      "question": "When working on a form, what is the difference between Insert and Update operations?",
+      "feedbacks": [
+        "Insert and Update operations have distinct purposes when working on a form. Insert specifically creates a new record in the database, while Update saves changes to an existing record. Both operations typically exit the form after completing their respective tasks, allowing the user to continue with other actions.",
+        "The correct choice is B because Insert operation is used to create a new record in the database, and Update operation is used to save changes to an existing record. Both operations usually exit the form after their tasks are completed, providing a clear separation between creating new records and updating existing ones.",
+        "This choice is incorrect because it inaccurately describes the differences between Insert and Update operations. Insert is specifically used to create a new record, not to save changes, and Update is used to save changes to an existing record. Both operations typically exit the form after completion, regardless of the changes made.",
+        "This choice is incorrect because it incorrectly describes the differences between Insert and Update operations. Insert is used to create a new record and typically exits the form after completion, while Update is used to save changes to an existing record and usually exits the form as well."
+      ],
+      "answers": [
+        "Insert creates a new record and Update saves changes, both remain on the form",
+        "Insert creates a new record and Update saves changes, both exit the form",
+        "Insert saves changes and exits the form, Update saves changes and remains on the form",
+        "Insert saves changes and remains on the form, Update saves changes and exits the form"
+      ]
+    },
+    "correct_response": ["b"],
+    "question_plain": "When working on a form, what is the difference between Insert and Update operations?"
+  },
+  {
+    "assessment_type": "multiple-choice",
+    "prompt": {
+      "question": "How is the Event Log different from the Event Registry?",
+      "feedbacks": [
+        "The Event Log contains the actual generated events that have occurred, such as system events or user actions, while the Event Registry is a table that stores definitions of different events that can be triggered. The Event Log is a record of what has happened, while the Event Registry is a reference for what events can be triggered in the system.",
+        "The Event Log and Event Registry serve different purposes. The Event Log is a chronological record of events in a log format, showing when events occurred and what they were, while the Event Registry is a structured table displaying various fields related to event definitions, such as event name, description, and conditions for triggering the event.",
+        "The Event Log captures events that have been generated by integrations, system processes, or user actions, providing a historical record of events. On the other hand, the Event Registry is a repository of predefined event definitions that can be triggered based on specific conditions or criteria, regardless of when they occur during the day.",
+        "The Event Log and Event Registry are distinct entities in the ServiceNow system. The Event Log records actual events that have taken place, while the Event Registry stores definitions of events that can be triggered. They serve different purposes and contain different types of information related to events within the system."
+      ],
+      "answers": [
+        "Event Log contains generated Events, the Event Registry is a table of Event definitions",
+        "Event Log is formatted in the Log style, the Event Registry displays different fields",
+        "Event Log lists Events that were triggered by integrations, the Event Registry lists the Events that were triggered during the day (24-hour period)",
+        "Event Log is the same as the Event Registry"
+      ]
+    },
+    "correct_response": ["a"],
+    "question_plain": "How is the Event Log different from the Event Registry?"
+  },
+  {
+    "assessment_type": "multiple-choice",
+    "prompt": {
+      "question": "What is a Dictionary Override?",
+      "feedbacks": [
+        "This choice does not accurately define what a Dictionary Override is in the context of ServiceNow. A Dictionary Override is not specifically related to incoming customer updates in an Update Set.",
+        "This choice describes a broader concept of changes that could impact IT services, which is not specifically related to what a Dictionary Override is in the ServiceNow context.",
+        "This choice describes a task within a flow that requests an action, which is not related to the concept of a Dictionary Override in ServiceNow.",
+        "This choice correctly defines a Dictionary Override in the context of ServiceNow. It specifically refers to setting field properties in extended tables, which is a common use case for Dictionary Overrides in ServiceNow configurations."
+      ],
+      "answers": [
+        "A Dictionary Override is an incoming customer update in an Update Set which applies to the same objects as a newer local customer update",
+        "A Dictionary Override is the addition, modification, or removal of anything that could have an effect on IT services",
+        "A Dictionary Override is a task within a flow that requests an action before the flow can continue",
+        "A Dictionary Override sets field properties in extended tables"
+      ]
+    },
+    "correct_response": ["d"],
+    "question_plain": "What is a Dictionary Override?"
+  },
+  {
+    "assessment_type": "multiple-choice",
+    "prompt": {
+      "question": "Which group of permissions is used to control Application and Module access?",
+      "feedbacks": [
+        "Access Control Rules are used to control access to specific records and fields within ServiceNow, not to control application and module access. They are more granular and focused on data access rather than overall application access.",
+        "UI Policies are used to dynamically change the behavior of fields on forms based on certain conditions, such as making fields mandatory or read-only. They are not used to control application and module access.",
+        "Roles in ServiceNow are used to control application and module access by defining what actions users with that role can perform within the system. Roles determine the permissions and access levels for users, making them the correct choice for controlling application and module access.",
+        "Assignment Rules are used to automatically assign records to users or groups based on certain criteria, such as category or priority. They are not used to control application and module access in ServiceNow."
+      ],
+      "answers": [
+        "Access Control Rules",
+        "UI Policies",
+        "Roles",
+        "Assignment Rules"
+      ]
+    },
+    "correct_response": ["c"],
+    "question_plain": "Which group of permissions is used to control Application and Module access?"
+  },
+  {
+    "assessment_type": "multiple-choice",
+    "prompt": {
+      "question": "What is a Record Producer?",
+      "feedbacks": [
+        "A Record Producer is not limited to requests only; it can also be used for services. It allows users to create task-based records, not just requests.",
+        "A Record Producer does not create user records; it allows users to create task-based records from the Service Catalog.",
+        "While a Record Producer does provide easy ordering by bundling requests, it is not limited to just requests; it also includes task-based records.",
+        "A Record Producer is a type of Catalog Item that specifically enables users to create task-based records from the Service Catalog. It allows users to input specific information and create records based on predefined templates or workflows."
+      ],
+      "answers": [
+        "A Record Producer is a type of Catalog Item that is used for Requests, not Services",
+        "A Record Producer creates user records",
+        "A Record Producer is a type of Catalog Item that provides easy ordering by bundling requests",
+        "A Record Producer is a type of a Catalog Item that allows users to create task-based records from the Service Catalog"
+      ]
+    },
+    "correct_response": ["d"],
+    "question_plain": "What is a Record Producer?"
+  },
+  {
+    "assessment_type": "multiple-choice",
+    "prompt": {
+      "question": "Create Incident, Password Reset, and Report outage: what do these services in the Service Catalog have in common?",
+      "feedbacks": [
+        "These services in the Service Catalog have in common that they direct the user to a record producer. A record producer is a type of catalog item that allows users to create records in tables through a guided process, making it suitable for services like creating incidents, resetting passwords, and reporting outages.",
+        "They do not direct the user to a catalog property. Catalog properties are used to define the behavior and appearance of catalog items, not to direct users to specific services like creating incidents, password resets, or reporting outages.",
+        "They do not direct the user to a catalog UI policy. Catalog UI policies are used to dynamically change the behavior of catalog items based on conditions, but they do not directly relate to directing users to specific services like creating incidents, password resets, or reporting outages.",
+        "They do not direct the user to a catalog client script. Catalog client scripts are used to customize the behavior of catalog items based on client-side conditions, but they do not directly relate to directing users to specific services like creating incidents, password resets, or reporting outages."
+      ],
+      "answers": [
+        "They direct the user to a record producer",
+        "They direct the user to a catalog property",
+        "They direct the user to a catalog UI policy",
+        "They direct the user to a catalog client script"
+      ]
+    },
+    "correct_response": ["a"],
+    "question_plain": "Create Incident, Password Reset, and Report outage: what do these services in the Service Catalog have in common?"
+  },
+  {
+    "assessment_type": "multiple-choice",
+    "prompt": {
+      "question": "What is the Import Set Table?",
+      "feedbacks": ["", "", "", ""],
+      "answers": [
+        "A table where data will be placed, post-transformation",
+        "A table that determines relationships",
+        "A staging area for imported records",
+        "A repository for Update Set information"
+      ]
+    },
+    "correct_response": ["c"],
+    "question_plain": "What is the Import Set Table?"
+  },
+  {
+    "assessment_type": "multiple-choice",
+    "prompt": {
+      "question": "What is a characteristic of importing data into ServiceNow?",
+      "feedbacks": [
+        "Using an existing Transform Map multiple times on the same import set is a common practice in ServiceNow to map and transform data consistently. This allows for reusability and efficiency in data import processes.",
+        "Coalesce fields are typically configured before running the Transform Map. They are used to identify duplicate records during the import process and merge them based on specified criteria. Coalesce fields are an essential part of data import configuration in ServiceNow.",
+        "Not every user in ServiceNow has the ability to manage and set up import sets. Access to import functionality is usually restricted to users with specific roles and permissions, ensuring data integrity and security within the platform.",
+        "An existing Transform Map can indeed be used multiple times on the same import set in ServiceNow. This feature enables users to apply the same data mapping and transformation rules to different sets of imported data, enhancing consistency and streamlining the import process."
+      ],
+      "answers": [
+        "An existing Transform Map can be used one time on the same import set",
+        "Coalesce fields are used only after running Transform",
+        "Any user can manage and set up import sets",
+        "An existing Transform Map can be used multiple times on the same import set"
+      ]
+    },
+    "correct_response": ["d"],
+    "question_plain": "What is a characteristic of importing data into ServiceNow?"
+  },
+  {
+    "assessment_type": "multiple-choice",
+    "prompt": {
+      "question": "What module in the Service Catalog application does an Administrator access to begin creating a new item?",
+      "feedbacks": [
+        "Maintain Categories in the Service Catalog application is used to manage and organize the categories under which items are grouped. It is not the module where an Administrator would access to begin creating a new item.",
+        "Maintain Items is the correct module in the Service Catalog application where an Administrator would access to start creating a new item. This module allows the Administrator to define and configure the details of the new item to be added to the catalog.",
+        "Content Items in the Service Catalog application typically refer to the actual items or services that are available for users to request. It is not the module where an Administrator would access to create a new item.",
+        "Items is a generic term that may refer to the items listed in the Service Catalog, but it is not the specific module where an Administrator would access to begin creating a new item. The correct module for this task is Maintain Items."
+      ],
+      "answers": [
+        "Maintain Categories",
+        "Maintain Items",
+        "Content Items",
+        "Items"
+      ]
+    },
+    "correct_response": ["b"],
+    "question_plain": "What module in the Service Catalog application does an Administrator access to begin creating a new item?"
+  },
+  {
+    "assessment_type": "multiple-choice",
+    "prompt": {
+      "question": "Which of the following allows a user to edit field values in a list without opening the form?",
+      "feedbacks": [
+        "Data Editor is not the correct choice for allowing a user to edit field values in a list without opening the form. The Data Editor is typically used for managing records and their fields within a form, not for editing values directly in a list view.",
+        "Edit Menu does not allow a user to edit field values in a list without opening the form. The Edit Menu usually provides options for editing the form layout or record details, but it does not enable direct editing of field values in a list view.",
+        "List Editor is the correct choice as it allows a user to edit field values directly in a list without having to open the form. This feature is useful for quickly updating multiple records without the need to navigate to each individual record.",
+        "Form Designer is not the correct choice for editing field values in a list without opening the form. The Form Designer is typically used for customizing the layout and design of forms, not for editing field values in a list view."
+      ],
+      "answers": ["Data Editor", "Edit Menu", "List Editor", "Form Designer"]
+    },
+    "correct_response": ["c"],
+    "question_plain": "Which of the following allows a user to edit field values in a list without opening the form?"
+  },
+  {
+    "assessment_type": "multiple-choice",
+    "prompt": {
+      "question": "Which three Variable Types can be added to a Service Catalog Item?",
+      "feedbacks": [
+        "True/False, Multiple Choice, and Ordered are not variable types that can be added to a Service Catalog Item in ServiceNow. These types are not typically used for capturing user input in a catalog item.",
+        "True/False, Checkbox, and Number List are not variable types that can be added to a Service Catalog Item in ServiceNow. These types are not commonly used for capturing user input in a catalog item.",
+        "Number List, Single Line Text, and Reference are not variable types that can be added to a Service Catalog Item in ServiceNow. These types are not typically used for capturing user input in a catalog item.",
+        "Multiple Choice, Select Box, and Checkbox are valid variable types that can be added to a Service Catalog Item in ServiceNow. These types are commonly used for presenting options and capturing user selections in a catalog item."
+      ],
+      "answers": [
+        "True/False, Multiple Choice, and Ordered",
+        "True/False, Checkbox, and Number List",
+        "Number List, Single Line Text, and Reference",
+        "Multiple Choice, Select Box, and Checkbox"
+      ]
+    },
+    "correct_response": ["d"],
+    "question_plain": "Which three Variable Types can be added to a Service Catalog Item?"
+  },
+  {
+    "assessment_type": "multiple-choice",
+    "prompt": {
+      "question": "How are Workflows moved between instances?",
+      "feedbacks": [
+        "Workflows are moved between instances using Update Sets in ServiceNow. Update Sets allow developers to package customization changes, including workflows, and move them from one instance to another, ensuring consistency and efficiency in workflow management across different environments.",
+        "Transform Maps are used in ServiceNow for data imports and exports, mapping fields between tables. They are not used for moving workflows between instances, as their primary function is to facilitate data transformation and integration processes.",
+        "Application Sets in ServiceNow are used to group applications and configuration data to be moved between instances. While they can help with application management, they are not specifically designed for moving workflows between instances.",
+        "Workflows can indeed be moved between instances in ServiceNow using Update Sets. This process allows for the seamless transfer of workflow configurations and definitions to maintain consistency and streamline workflow management across different ServiceNow instances."
+      ],
+      "answers": [
+        "Workflows are moved using Update Sets",
+        "Workflows are moved using Transform Maps",
+        "Workflows are moved using Application Sets",
+        "Workflows cannot be moved between instances"
+      ]
+    },
+    "correct_response": ["a"],
+    "question_plain": "How are Workflows moved between instances?"
+  },
+  {
+    "assessment_type": "multiple-choice",
+    "prompt": {
+      "question": "The baseline Service Catalog homepage contains links to which of the following components?",
+      "feedbacks": [
+        "The baseline Service Catalog homepage typically includes links to Record Producers, Order Guides, and Catalog Items. These components are essential for users to request services, navigate through available options, and submit their requests efficiently.",
+        "While Order Guides and Item Variables are important components of the Service Catalog, flows are not typically included in the baseline Service Catalog homepage. Flows are used to automate processes and guide users through complex service requests, but they are not commonly displayed on the homepage.",
+        "Order Guides and Catalog Items are commonly featured on the Service Catalog homepage, but flows are usually not included in the baseline layout. Flows are used to streamline and automate service request processes, but they are not typically part of the initial homepage view.",
+        "Record Producers, Order Guides, and Item Variables are all important components of the Service Catalog, but Item Variables are not usually displayed on the baseline Service Catalog homepage. Record Producers allow users to create new records, Order Guides help users navigate service options, and Item Variables customize service requests, but they are not all typically visible on the homepage."
+      ],
+      "answers": [
+        "Record Producers, Order Guides, and Catalog Items",
+        "Order Guides, Item Variables, and flows",
+        "Order Guides, Catalog Items, and flows",
+        "Record Producers, Order Guides, and Item Variables"
+      ]
+    },
+    "correct_response": ["a"],
+    "question_plain": "The baseline Service Catalog homepage contains links to which of the following components?"
+  },
+  {
+    "assessment_type": "multiple-choice",
+    "prompt": {
+      "question": "Which of the following statements is true when a new table is created by extending another table?",
+      "feedbacks": [
+        "This statement is incorrect. When a new table is created by extending another table, it does not archive the parent table or assume its roles in the database. Each table maintains its own data and structure independently.",
+        "This statement is incorrect. While the new table inherits some characteristics like Business Rules, Client Scripts, and UI Policies from the parent table, it also inherits all of the existing fields of the parent table. It does not exclude the existing fields.",
+        "This statement is correct. When a new table is created by extending another table, it inherits all of the fields of the parent table. Additionally, the new table can have its own unique fields in addition to the inherited ones.",
+        "This statement is incorrect. The new table created by extending another table inherits all of the fields from the parent table, including Access Control rules, Client Scripts, and UI Policies. It does not exclude these elements from inheritance."
+      ],
+      "answers": [
+        "The new table archives the parent table and assumed its roles in the database",
+        "The new table inherits all of the Business Rules, Client Scripts, and UI Policies of the parent table, but none of the existing fields",
+        "The new table inherits all of the fields of the parent table and can also contain new fields unique to itself",
+        "The new table inherits all of the fields, but does not inherit Access Control rules, Client Scripts, and UI Policies of the parent table"
+      ]
+    },
+    "correct_response": ["c"],
+    "question_plain": "Which of the following statements is true when a new table is created by extending another table?"
+  },
+  {
+    "assessment_type": "multiple-choice",
+    "prompt": {
+      "question": "Where can Admins check which release is running on an ServiceNow instance?",
+      "feedbacks": [
+        "The Memory Stats module in ServiceNow provides information related to memory usage and statistics, but it does not display the current release running on the instance. It is not the correct location for Admins to check the ServiceNow release.",
+        "The Stats module in ServiceNow is where Admins can check which release is currently running on the instance. This module provides detailed information about the instance, including the version and release details, making it the correct choice for this task.",
+        "The System.upgraded table in ServiceNow stores information about upgrades and changes made to the instance, but it does not specifically display the current release running on the instance. Admins would not typically check the release version in this table.",
+        "The Transactions log in ServiceNow records transactional data related to activities and operations performed on the instance, but it does not provide information about the current release running on the instance. Admins would not find the release version in the Transactions log."
+      ],
+      "answers": [
+        "Memory Stats module",
+        "Stats module",
+        "System.upgraded table",
+        "Transactions log"
+      ]
+    },
+    "correct_response": ["b"],
+    "question_plain": "Where can Admins check which release is running on an ServiceNow instance?"
+  },
+  {
+    "assessment_type": "multiple-choice",
+    "prompt": {
+      "question": "A knowledge article must be which of the following states to display to a user?",
+      "feedbacks": [
+        "A knowledge article must be in the \"Published\" state to be displayed to a user. This state indicates that the article has been reviewed, approved, and made available for users to access and read.",
+        "The \"Drafted\" state is used for knowledge articles that are still being worked on and are not yet ready for publication. Articles in this state are not visible to users until they are finalized and published.",
+        "The \"Retired\" state is used for knowledge articles that are no longer relevant or accurate and need to be removed from user view. Articles in this state are not displayed to users as they are considered outdated.",
+        "The \"Reviewed\" state is typically used as an intermediate step in the article approval process. Articles in this state may have been reviewed for accuracy and completeness but are not yet ready for publication and user access."
+      ],
+      "answers": ["Published", "Drafted", "Retired", "Reviewed"]
+    },
+    "correct_response": ["a"],
+    "question_plain": "A knowledge article must be which of the following states to display to a user?"
+  },
+  {
+    "assessment_type": "multiple-choice",
+    "prompt": {
+      "question": "What is the name of the conversational bot platform that provides assistance to help users obtain information, make decisions, and perform common tasks?",
+      "feedbacks": [
+        "Answer Agent is not the correct name for the conversational bot platform in the ServiceNow ecosystem. This choice does not align with the platform that provides assistance to users in obtaining information, making decisions, and performing common tasks.",
+        "Live Feed is not the correct name for the conversational bot platform in the ServiceNow ecosystem. This choice does not align with the platform that provides assistance to users in obtaining information, making decisions, and performing common tasks.",
+        "Virtual Agent is the correct choice as it is the name of the conversational bot platform in the ServiceNow ecosystem. Virtual Agent provides assistance to users in obtaining information, making decisions, and performing common tasks, making it the suitable option for this question.",
+        "Connect Chat is not the correct name for the conversational bot platform in the ServiceNow ecosystem. This choice does not align with the platform that provides assistance to users in obtaining information, making decisions, and performing common tasks."
+      ],
+      "answers": ["Answer Agent", "live Feed", "Virtual Agent", "Connect Chat"]
+    },
+    "correct_response": ["c"],
+    "question_plain": "What is the name of the conversational bot platform that provides assistance to help users obtain information, make decisions, and perform common tasks?"
+  },
+  {
+    "assessment_type": "multiple-choice",
+    "prompt": {
+      "question": "What is the purpose of a Related List?",
+      "feedbacks": [
+        "Creating a one-to-many relationship is typically done through reference fields in ServiceNow, not through a Related List. Related Lists are used to display records that are related to the current record, rather than establishing relationships between tables.",
+        "Dot-walking to a core table involves navigating through related tables using reference fields, not through a Related List. Related Lists are used to display related records, not for navigating to core tables.",
+        "Related Lists are used to present fields from related records, not just related fields. They provide a way to view and interact with data from related records directly on the current record form.",
+        "The main purpose of a Related List in ServiceNow is to present related records that are associated with the current record. This allows users to easily view, access, and manage related data without leaving the current record form."
+      ],
+      "answers": [
+        "To create a one-to-many relationship",
+        "To dot-walk to a core table",
+        "To present related fields",
+        "To present related records"
+      ]
+    },
+    "correct_response": ["d"],
+    "question_plain": "What is the purpose of a Related List?"
+  },
+  {
+    "assessment_type": "multiple-choice",
+    "prompt": {
+      "question": "Which one of the following statements describes the purpose of a Service Catalog flow?",
+      "feedbacks": [
+        "This statement is incorrect. A Service Catalog flow does not generate item variable types, tasks, and approvals. These components are typically associated with catalog items and their fulfillment, not the flow itself.",
+        "This statement is incorrect. A Service Catalog flow can indeed send notifications as part of the fulfillment process. It is designed to drive complex fulfillment processes, including sending notifications to relevant users or groups.",
+        "This statement is correct. A Service Catalog flow is specifically used to drive complex fulfillment processes within the ServiceNow platform. It allows for the automation of tasks, approvals, and notifications to ensure a seamless service delivery experience.",
+        "This statement is incorrect. While a Service Catalog flow can include tasks and notifications, it does not generate item variable types. Item variable types are typically defined within catalog items to capture specific information during the request process."
+      ],
+      "answers": [
+        "A Service Catalog flow generates three basic components: item variable types, tasks, and approvals",
+        "Although a Service Catalog flow cannot send notifications, the flow drives complex fulfillment processes",
+        "A Service Catalog flow is used to drive complex fulfillment processes and sends notifications to defined users or groups",
+        "A Service Catalog flow generates three basic components: item variable types, tasks, and notifications"
+      ]
+    },
+    "correct_response": ["c"],
+    "question_plain": "Which one of the following statements describes the purpose of a Service Catalog flow?"
+  },
+  {
+    "assessment_type": "multiple-choice",
+    "prompt": {
+      "question": "Which term best describes something that is created, has worked performed upon it, and is eventually moved to a state of closed?",
+      "feedbacks": [
+        "A report is a document that presents information in an organized format. It is not typically something that goes through a process of being created, worked upon, and then moved to a closed state.",
+        "A flow refers to the sequence of steps or actions in a process. While a flow can involve creating, performing work, and completing tasks, it is not specifically related to the concept of moving something to a closed state.",
+        "An event is an occurrence or incident that triggers a response or action. Events are not typically entities that are created, worked upon, and then closed.",
+        "A task is an entity that is created, assigned work to be performed, and eventually moved to a closed state upon completion. Tasks are commonly used in service management processes to track and manage work items from creation to closure."
+      ],
+      "answers": ["report", "flow", "event", "task"]
+    },
+    "correct_response": ["d"],
+    "question_plain": "Which term best describes something that is created, has worked performed upon it, and is eventually moved to a state of closed?"
+  },
+  {
+    "assessment_type": "multi-select",
+    "prompt": {
+      "question": "Which are valid Service Now User Authentication Methods? (Choose three.)",
+      "feedbacks": [
+        "XML feed is not a valid ServiceNow User Authentication Method. It is used for data exchange and integration, not for authenticating users in the system.",
+        "Local database is a valid ServiceNow User Authentication Method. It allows users to authenticate directly against the ServiceNow instance's local database.",
+        "LDAP (Lightweight Directory Access Protocol) is a valid ServiceNow User Authentication Method. It enables users to authenticate against an external LDAP server for centralized user management.",
+        "SSO (Single Sign-On) is a valid ServiceNow User Authentication Method. It allows users to log in once and access multiple applications without the need to log in again.",
+        "FTP authentication is not a valid ServiceNow User Authentication Method. FTP (File Transfer Protocol) is used for transferring files, not for authenticating users in the system."
+      ],
+      "answers": [
+        "XML feed",
+        "Local database",
+        "LDAP",
+        "SSO",
+        "FTP authentication"
+      ]
+    },
+    "correct_response": ["b", "c", "d"],
+    "question_plain": "Which are valid Service Now User Authentication Methods? (Choose three.)"
+  },
+  {
+    "assessment_type": "multi-select",
+    "prompt": {
+      "question": "Access Control rules may be defined with which of the following permission requirements? (Choose three.)",
+      "feedbacks": [
+        "Access Control rules can be defined based on roles, which allow specific permissions to be granted or restricted to users based on their assigned roles within the system. Roles play a crucial role in determining access rights and restrictions for different users.",
+        "Conditional expressions can be used to define access control rules based on specific conditions or criteria. This allows for more dynamic and flexible permission requirements that can be tailored to different scenarios or user attributes.",
+        "Assignment rules are not typically used to define permission requirements in Access Control rules. They are more commonly used to automate the assignment of tasks or records to users based on predefined criteria, rather than determining access permissions.",
+        "Scripts can be utilized to define complex permission requirements in Access Control rules. By using scripts, administrators can implement custom logic to determine access rights based on various factors, providing a high level of customization and control over permissions.",
+        "User criteria is not typically used to define permission requirements in Access Control rules. While user criteria may be considered in determining access rights, it is not a primary method for defining permission requirements in Access Control rules.",
+        "Groups can be used to define access control rules based on the membership of users in specific groups. By assigning permissions to groups, administrators can easily manage access rights for multiple users at once, simplifying the permission management process."
+      ],
+      "answers": [
+        "Roles",
+        "Conditional Expressions",
+        "Assignment Rules",
+        "Scripts",
+        "User Criteria",
+        "Groups"
+      ]
+    },
+    "correct_response": ["a", "b", "d"],
+    "question_plain": "Access Control rules may be defined with which of the following permission requirements? (Choose three.)"
+  }
+]

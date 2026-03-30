@@ -6,7 +6,7 @@ const SHORTCUTS = [
   { keys: ["↑", "↓"], label: "Move between options" },
   { keys: ["Space"], label: "Select option" },
   { keys: ["Enter"], label: "Check answer" },
-  { keys: ["C"], label: "Copy question text" },
+  { keys: ["C"], label: "Copy question text (last interacted)" },
 ];
 
 // ショートカット情報ボタンコンポーネント
