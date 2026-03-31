@@ -839,7 +839,19 @@ const QuizApp: React.FC<QuizAppProps> = ({ examId, questions, availableExams, on
 };
 
 export default function App() {
-  const [examId, setExamId] = useState<string>(availableExams[0] || "");
+  const [examId, setExamId] = useState<string>(() => {
+    const savedExam = localStorage.getItem("csa-current-exam");
+    if (savedExam && availableExams.includes(savedExam)) {
+      return savedExam;
+    }
+    return availableExams[0] || "";
+  });
+
+  useEffect(() => {
+    if (examId) {
+      localStorage.setItem("csa-current-exam", examId);
+    }
+  }, [examId]);
   
   if (!examId) {
     return (
