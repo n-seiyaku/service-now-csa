@@ -119,8 +119,10 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
 
   const currentIsCorrect = isCorrect(question, userSelectedLabels);
 
-  // 問題テキスト: HTMLタグを含む場合はdangerouslySetInnerHTMLで描画
-  const questionHasHtml = /<[a-z][\s\S]*>/i.test(question.prompt.question);
+  // 問題テキスト: HTMLタグまたはHTMLエンティティを含む場合はdangerouslySetInnerHTMLで描画
+  const questionHasHtml =
+    /<[a-z][\s\S]*>/i.test(question.prompt.question) ||
+    /&(?:[a-z]+|#\d+|#x[\da-f]+);/i.test(question.prompt.question);
 
   return (
     <div
