@@ -39,6 +39,8 @@ export interface ScorePanelProps {
   total: number;
   checkedCount: number;
   wrongIndices: number[];
+  // チェック済み問題インデックスセット
+  checkedSet: Set<number>;
   onExportWrong: () => void;
   onJumpToQuestion: (index: number) => void;
   // 復習ページへの遷移コールバック

@@ -816,6 +816,7 @@ const QuizApp: React.FC<QuizAppProps> = ({ examId, questions, availableExams, on
             total={questions.length}
             checkedCount={checkedSet.size}
             wrongIndices={wrongIndices}
+            checkedSet={checkedSet}
             onExportWrong={handleExportWrong}
             onJumpToQuestion={handleJumpToQuestion}
             onReview={() => setView("review")}
