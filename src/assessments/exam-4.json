@@ -754,7 +754,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "<p>A Service Catalog project will involve building 80 catalog items. For each of the catalog items, the following fields will be mandatory on the forms:</p><ul><li><p>Requested for</p></li><li><p>Requested by</p></li><li><p>Approving manager</p></li><li><p>Delivery instructions</p></li></ul><p>All of the other variables will be specific to the individual catalog item. What features would you use when</p><p>designing the catalog item form?</p>",
+      "question": "<p>A Service Catalog project will involve building 80 catalog items. For each of the catalog items, the following fields will be mandatory on the forms:</p><ul><li><p>Requested for</p></li><li><p>Requested by</p></li><li><p>Approving manager</p></li><li><p>Delivery instructions</p></li></ul><p>All of the other variables will be specific to the individual catalog item. What features would you use when designing the catalog item form?</p>",
       "feedbacks": [
         "Creating a Variable Set Template and applying it to all 80 catalog items would not be the most efficient approach in this scenario. Since only four fields are mandatory for each catalog item, using a Variable Set Template for all variables may lead to unnecessary complexity and confusion.",
         "Creating one Variable Set specifically for the four mandatory fields and adding that Variable Set to each of the 80 catalog items is the most appropriate choice in this situation. This approach ensures consistency and simplifies the management of mandatory fields across all catalog items.",
@@ -771,7 +771,7 @@
       ]
     },
     "correct_response": ["b"],
-    "question_plain": "A Service Catalog project will involve building 80 catalog items. For each of the catalog items, the following fields will be mandatory on the forms:Requested forRequested byApproving managerDelivery instructionsAll of the other variables will be specific to the individual catalog item. What features would you use whendesigning the catalog item form?"
+    "question_plain": "A Service Catalog project will involve building 80 catalog items. For each of the catalog items, the following fields will be mandatory on the forms:Requested forRequested byApproving managerDelivery instructionsAll of the other variables will be specific to the individual catalog item. What features would you use when designing the catalog item form?"
   },
   {
     "assessment_type": "multiple-choice",
