@@ -1,4 +1,11 @@
 import React, { useState, useCallback, useEffect, useRef } from "react";
+import {
+  Save,
+  RotateCcw,
+  BookOpen,
+  ChevronLeft,
+  ChevronRight,
+} from "lucide-react";
 import type { QuizQuestion } from "./types";
 import { QuestionCard } from "./components/QuestionCard";
 import { ScorePanel } from "./components/ScorePanel";
@@ -14,14 +21,18 @@ import {
 } from "./utils";
 
 // Load all assessments
-const assessmentModules = import.meta.glob("./assessments/*.json", { eager: true });
+const assessmentModules = import.meta.glob("./assessments/*.json", {
+  eager: true,
+});
 const assessmentsMap: Record<string, QuizQuestion[]> = {};
 
 for (const path in assessmentModules) {
   const match = path.match(/\/([^/]+)\.json$/);
   if (match) {
     const examId = match[1];
-    assessmentsMap[examId] = (assessmentModules[path] as { default: QuizQuestion[] }).default;
+    assessmentsMap[examId] = (
+      assessmentModules[path] as { default: QuizQuestion[] }
+    ).default;
   }
 }
 
@@ -67,7 +78,12 @@ interface QuizAppProps {
   onExamChange: (id: string) => void;
 }
 
-const QuizApp: React.FC<QuizAppProps> = ({ examId, questions, availableExams, onExamChange }) => {
+const QuizApp: React.FC<QuizAppProps> = ({
+  examId,
+  questions,
+  availableExams,
+  onExamChange,
+}) => {
   const initial = initFromStorage(examId);
 
   // ユーザーの回答状態（インデックス -> 選択ラベル配列）
@@ -113,40 +129,58 @@ const QuizApp: React.FC<QuizAppProps> = ({ examId, questions, availableExams, on
   const currentPageQuestions = questions.slice(startIdx, endIdx);
 
   // ページあたり表示数変更ハンドラ
-  const handlePageSizeChange = useCallback((newSize: number) => {
-    const currentStartIdx = page * pageSize;
-    setPageSize(newSize);
-    setPage(Math.floor(currentStartIdx / newSize));
-  }, [page, pageSize]);
+  const handlePageSizeChange = useCallback(
+    (newSize: number) => {
+      const currentStartIdx = page * pageSize;
+      setPageSize(newSize);
+      setPage(Math.floor(currentStartIdx / newSize));
+    },
+    [page, pageSize],
+  );
 
   // 進捗を自動保存（500msデバウンス）
   useEffect(() => {
     if (saveTimer.current) clearTimeout(saveTimer.current);
     saveTimer.current = setTimeout(() => {
       const now = new Date().toISOString();
-      saveProgress({
-        userAnswers,
-        checkedIndices: Array.from(checkedSet),
-        correctCount,
-        wrongCount,
-        wrongIndices,
-        page,
-        pageSize,
-        savedAt: now,
-      }, examId);
+      saveProgress(
+        {
+          userAnswers,
+          checkedIndices: Array.from(checkedSet),
+          correctCount,
+          wrongCount,
+          wrongIndices,
+          page,
+          pageSize,
+          savedAt: now,
+        },
+        examId,
+      );
       setSavedAt(now);
     }, 500);
 
     return () => {
       if (saveTimer.current) clearTimeout(saveTimer.current);
     };
-  }, [userAnswers, checkedSet, correctCount, wrongCount, wrongIndices, page, pageSize, examId]);
+  }, [
+    userAnswers,
+    checkedSet,
+    correctCount,
+    wrongCount,
+    wrongIndices,
+    page,
+    pageSize,
+    examId,
+  ]);
 
   // キーボード操作のサポート
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       // Input項目などで入力中の場合は無視
-      if (document.activeElement instanceof HTMLInputElement || document.activeElement instanceof HTMLTextAreaElement) {
+      if (
+        document.activeElement instanceof HTMLInputElement ||
+        document.activeElement instanceof HTMLTextAreaElement
+      ) {
         return;
       }
 
@@ -169,16 +203,17 @@ const QuizApp: React.FC<QuizAppProps> = ({ examId, questions, availableExams, on
       if (["ArrowUp", "ArrowDown", " ", "Enter"].includes(e.key)) {
         // マウスでテキスト選択中の場合は誤作動を防ぐ
         const selection = window.getSelection();
-        if (selection && selection.type === "Range" && e.key !== "Enter") return;
+        if (selection && selection.type === "Range" && e.key !== "Enter")
+          return;
 
         const focusableElements = Array.from(
-          document.querySelectorAll(".question-option")
+          document.querySelectorAll(".question-option"),
         ) as HTMLElement[];
 
         if (focusableElements.length === 0) return;
 
         const activeIdx = focusableElements.findIndex(
-          (el) => el === document.activeElement
+          (el) => el === document.activeElement,
         );
 
         if (e.key === "ArrowUp") {
@@ -205,7 +240,7 @@ const QuizApp: React.FC<QuizAppProps> = ({ examId, questions, availableExams, on
             const card = document.activeElement.closest(".question-card");
             if (card) {
               const checkBtn = card.querySelector(
-                ".check-button:not([disabled])"
+                ".check-button:not([disabled])",
               ) as HTMLButtonElement | null;
               if (checkBtn) {
                 checkBtn.click();
@@ -214,7 +249,7 @@ const QuizApp: React.FC<QuizAppProps> = ({ examId, questions, availableExams, on
           } else {
             // そうでなければ、画面上の最初の有効なCheckボタンを押す
             const checkBtns = document.querySelectorAll(
-              ".check-button:not([disabled])"
+              ".check-button:not([disabled])",
             ) as NodeListOf<HTMLButtonElement>;
             if (checkBtns.length > 0) {
               checkBtns[0].click();
@@ -235,7 +270,8 @@ const QuizApp: React.FC<QuizAppProps> = ({ examId, questions, availableExams, on
       if (
         document.activeElement instanceof HTMLInputElement ||
         document.activeElement instanceof HTMLTextAreaElement
-      ) return;
+      )
+        return;
 
       const targetIndex = activeQuestionRef.current;
       const q = questions[targetIndex];
@@ -289,23 +325,27 @@ const QuizApp: React.FC<QuizAppProps> = ({ examId, questions, availableExams, on
   );
 
   // 特定の問題へジャンプ
-  const handleJumpToQuestion = useCallback((index: number) => {
-    const targetPage = Math.floor(index / pageSize);
-    setPage(targetPage);
-    setView("quiz");
-    setTimeout(() => {
-      const el = document.getElementById(`question-${index}`);
-      if (el) {
-        const headerOffset = 90; // ヘッダーの高さ分オフセット
-        const elementPosition = el.getBoundingClientRect().top;
-        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-        window.scrollTo({
-          top: offsetPosition,
-          behavior: "smooth"
-        });
-      }
-    }, 100);
-  }, [pageSize]);
+  const handleJumpToQuestion = useCallback(
+    (index: number) => {
+      const targetPage = Math.floor(index / pageSize);
+      setPage(targetPage);
+      setView("quiz");
+      setTimeout(() => {
+        const el = document.getElementById(`question-${index}`);
+        if (el) {
+          const headerOffset = 90; // ヘッダーの高さ分オフセット
+          const elementPosition = el.getBoundingClientRect().top;
+          const offsetPosition =
+            elementPosition + window.pageYOffset - headerOffset;
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: "smooth",
+          });
+        }
+      }, 100);
+    },
+    [pageSize],
+  );
 
   // エクスポートハンドラ
   const handleExportWrong = useCallback(() => {
@@ -334,20 +374,32 @@ const QuizApp: React.FC<QuizAppProps> = ({ examId, questions, availableExams, on
   // 手動保存（トースト表示）
   const handleManualSave = useCallback(() => {
     const now = new Date().toISOString();
-    saveProgress({
-      userAnswers,
-      checkedIndices: Array.from(checkedSet),
-      correctCount,
-      wrongCount,
-      wrongIndices,
-      page,
-      pageSize,
-      savedAt: now,
-    }, examId);
+    saveProgress(
+      {
+        userAnswers,
+        checkedIndices: Array.from(checkedSet),
+        correctCount,
+        wrongCount,
+        wrongIndices,
+        page,
+        pageSize,
+        savedAt: now,
+      },
+      examId,
+    );
     setSavedAt(now);
     setShowSavedToast(true);
     setTimeout(() => setShowSavedToast(false), 2500);
-  }, [userAnswers, checkedSet, correctCount, wrongCount, wrongIndices, page, pageSize, examId]);
+  }, [
+    userAnswers,
+    checkedSet,
+    correctCount,
+    wrongCount,
+    wrongIndices,
+    page,
+    pageSize,
+    examId,
+  ]);
 
   // 復習ページ表示
   if (view === "review") {
@@ -431,7 +483,8 @@ const QuizApp: React.FC<QuizAppProps> = ({ examId, questions, availableExams, on
                 lineHeight: "1.6",
               }}
             >
-              All answers, scores, and wrong question data will be erased. This cannot be undone.
+              All answers, scores, and wrong question data will be erased. This
+              cannot be undone.
             </p>
             <div
               style={{ display: "flex", gap: "12px", justifyContent: "center" }}
@@ -506,7 +559,14 @@ const QuizApp: React.FC<QuizAppProps> = ({ examId, questions, availableExams, on
             >
               CSA Quiz Practice
             </h1>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", marginTop: "4px" }}>
+            <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+                gap: "12px",
+                marginTop: "4px",
+              }}
+            >
               <select
                 value={examId}
                 onChange={(e) => onExamChange(e.target.value)}
@@ -522,9 +582,15 @@ const QuizApp: React.FC<QuizAppProps> = ({ examId, questions, availableExams, on
                 }}
               >
                 {availableExams.map((exam) => {
-                  const displayName = exam.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+                  const displayName = exam
+                    .replace(/-/g, " ")
+                    .replace(/\b\w/g, (c) => c.toUpperCase());
                   return (
-                    <option key={exam} value={exam} style={{ background: "#1e2130", color: "#fff" }}>
+                    <option
+                      key={exam}
+                      value={exam}
+                      style={{ background: "#1e2130", color: "#fff" }}
+                    >
                       {displayName}
                     </option>
                   );
@@ -554,14 +620,20 @@ const QuizApp: React.FC<QuizAppProps> = ({ examId, questions, availableExams, on
                 fontSize: "13px",
                 cursor: "pointer",
                 transition: "all 0.2s",
+                display: "flex",
+                alignItems: "center",
+                gap: "6px",
               }}
               onMouseEnter={(e) => {
-                (e.currentTarget as HTMLElement).style.background = "rgba(34,197,94,0.25)";
+                (e.currentTarget as HTMLElement).style.background =
+                  "rgba(34,197,94,0.25)";
               }}
               onMouseLeave={(e) => {
-                (e.currentTarget as HTMLElement).style.background = "rgba(34,197,94,0.15)";
+                (e.currentTarget as HTMLElement).style.background =
+                  "rgba(34,197,94,0.15)";
               }}
             >
+              <Save size={14} />
               Save
             </button>
 
@@ -580,14 +652,20 @@ const QuizApp: React.FC<QuizAppProps> = ({ examId, questions, availableExams, on
                 fontSize: "13px",
                 cursor: "pointer",
                 transition: "all 0.2s",
+                display: "flex",
+                alignItems: "center",
+                gap: "6px",
               }}
               onMouseEnter={(e) => {
-                (e.currentTarget as HTMLElement).style.background = "rgba(239,68,68,0.2)";
+                (e.currentTarget as HTMLElement).style.background =
+                  "rgba(239,68,68,0.2)";
               }}
               onMouseLeave={(e) => {
-                (e.currentTarget as HTMLElement).style.background = "rgba(239,68,68,0.1)";
+                (e.currentTarget as HTMLElement).style.background =
+                  "rgba(239,68,68,0.1)";
               }}
             >
+              <RotateCcw size={14} />
               Reset
             </button>
 
@@ -606,16 +684,22 @@ const QuizApp: React.FC<QuizAppProps> = ({ examId, questions, availableExams, on
                   fontSize: "13px",
                   cursor: "pointer",
                   transition: "opacity 0.2s, transform 0.1s",
+                  display: "flex",
+                  alignItems: "center",
+                  gap: "6px",
                 }}
                 onMouseEnter={(e) => {
                   (e.currentTarget as HTMLElement).style.opacity = "0.9";
-                  (e.currentTarget as HTMLElement).style.transform = "translateY(-1px)";
+                  (e.currentTarget as HTMLElement).style.transform =
+                    "translateY(-1px)";
                 }}
                 onMouseLeave={(e) => {
                   (e.currentTarget as HTMLElement).style.opacity = "1";
-                  (e.currentTarget as HTMLElement).style.transform = "translateY(0)";
+                  (e.currentTarget as HTMLElement).style.transform =
+                    "translateY(0)";
                 }}
               >
+                <BookOpen size={14} />
                 Review ({wrongIndices.length})
               </button>
             )}
@@ -636,11 +720,24 @@ const QuizApp: React.FC<QuizAppProps> = ({ examId, questions, availableExams, on
                 outline: "none",
               }}
             >
-              <option value="1" style={{ background: "#1e2130" }}>1 Q/Page</option>
-              <option value="5" style={{ background: "#1e2130" }}>5 Q/Page</option>
-              <option value="10" style={{ background: "#1e2130" }}>10 Q/Page</option>
-              <option value="20" style={{ background: "#1e2130" }}>20 Q/Page</option>
-              <option value={questions.length} style={{ background: "#1e2130" }}>All ({questions.length})</option>
+              <option value="1" style={{ background: "#1e2130" }}>
+                1 Q/Page
+              </option>
+              <option value="5" style={{ background: "#1e2130" }}>
+                5 Q/Page
+              </option>
+              <option value="10" style={{ background: "#1e2130" }}>
+                10 Q/Page
+              </option>
+              <option value="20" style={{ background: "#1e2130" }}>
+                20 Q/Page
+              </option>
+              <option
+                value={questions.length}
+                style={{ background: "#1e2130" }}
+              >
+                All ({questions.length})
+              </option>
             </select>
 
             <span
@@ -678,7 +775,6 @@ const QuizApp: React.FC<QuizAppProps> = ({ examId, questions, availableExams, on
       >
         {/* 問題リスト */}
         <div className="flex flex-col gap-5">
-
           {currentPageQuestions.map((q, i) => {
             const globalIndex = startIdx + i;
             return (
@@ -693,9 +789,14 @@ const QuizApp: React.FC<QuizAppProps> = ({ examId, questions, availableExams, on
                   onCopy={() => {
                     if (copiedTimer.current) clearTimeout(copiedTimer.current);
                     setCopiedIndex(globalIndex);
-                    copiedTimer.current = setTimeout(() => setCopiedIndex(null), 2000);
+                    copiedTimer.current = setTimeout(
+                      () => setCopiedIndex(null),
+                      2000,
+                    );
                   }}
-                  onActivate={() => { activeQuestionRef.current = globalIndex; }}
+                  onActivate={() => {
+                    activeQuestionRef.current = globalIndex;
+                  }}
                   onSelectionChange={(labels) =>
                     handleSelectionChange(globalIndex, labels)
                   }
@@ -731,8 +832,12 @@ const QuizApp: React.FC<QuizAppProps> = ({ examId, questions, availableExams, on
                 fontWeight: 600,
                 fontSize: "14px",
                 cursor: page === 0 ? "not-allowed" : "pointer",
+                display: "flex",
+                alignItems: "center",
+                gap: "4px",
               }}
             >
+              <ChevronLeft size={16} />
               Prev
             </button>
 
@@ -792,9 +897,13 @@ const QuizApp: React.FC<QuizAppProps> = ({ examId, questions, availableExams, on
                 fontWeight: 600,
                 fontSize: "14px",
                 cursor: page === totalPages - 1 ? "not-allowed" : "pointer",
+                display: "flex",
+                alignItems: "center",
+                gap: "4px",
               }}
             >
               Next
+              <ChevronRight size={16} />
             </button>
           </div>
         </div>
@@ -853,16 +962,24 @@ export default function App() {
       localStorage.setItem("csa-current-exam", examId);
     }
   }, [examId]);
-  
+
   if (!examId) {
     return (
-      <div style={{ padding: "40px", color: "white", textAlign: "center", background: "#0f1117", minHeight: "100vh" }}>
+      <div
+        style={{
+          padding: "40px",
+          color: "white",
+          textAlign: "center",
+          background: "#0f1117",
+          minHeight: "100vh",
+        }}
+      >
         <h2>No assessments found</h2>
         <p>Please place JSON files in the src/assessments/ directory.</p>
       </div>
     );
   }
-  
+
   const questions = assessmentsMap[examId];
   return (
     <QuizApp

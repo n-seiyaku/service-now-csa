@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
+import { Info } from "lucide-react";
 
 // キーボードショートカット一覧
 const SHORTCUTS = [
@@ -52,7 +53,7 @@ export const ShortcutInfo: React.FC = () => {
           flexShrink: 0,
         }}
       >
-        i
+        <Info size={14} />
       </button>
 
       {/* ショートカットポップアップパネル */}

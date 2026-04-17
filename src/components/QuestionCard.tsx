@@ -1,4 +1,5 @@
 import React, { useCallback } from "react";
+import { Copy, Check } from "lucide-react";
 import type { QuizQuestion } from "../types";
 import {
   parseOptions,
@@ -224,6 +225,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
           alignItems: "flex-start",
           gap: "12px",
           marginBottom: "20px",
+          marginTop: "10px",
         }}
       >
         {questionHasHtml ? (
@@ -272,39 +274,14 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
             flexShrink: 0,
             transition: "all 0.2s",
           }}
-          title="Sao chép câu hỏi (C)"
+          title="Copy (C)"
         >
           {isCopied ? (
-            // コピー完了アイコン（チェックマーク）
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2.5"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            >
-              <polyline points="20 6 9 17 4 12"></polyline>
-            </svg>
+            // コピー完了アイコン
+            <Check size={16} />
           ) : (
             // コピーアイコン
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            >
-              <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
-              <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
-            </svg>
+            <Copy size={16} />
           )}
         </button>
       </div>
@@ -356,19 +333,28 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
                   style={{
                     width: "20px",
                     height: "20px",
-                    borderRadius: isMultiple ? "5px" : "50%",
-                    border: `2px solid ${style.color}`,
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "center",
                     flexShrink: 0,
-                    fontSize: "11px",
-                    fontWeight: 700,
                     marginTop: "1px",
                     color: style.color,
                   }}
                 >
-                  {isSelected ? "✓" : ""}
+                  {isSelected ? (
+                    <Check size={16} strokeWidth={2.5} />
+                  ) : (
+                    <span
+                      style={{
+                        width: "16px",
+                        height: "16px",
+                        borderRadius: isMultiple ? "4px" : "50%",
+                        border: `2px solid ${style.color}`,
+                        display: "inline-block",
+                        flexShrink: 0,
+                      }}
+                    />
+                  )}
                 </span>
                 <span dangerouslySetInnerHTML={{ __html: option }} />
               </div>
