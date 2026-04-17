@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { ChevronUp, RotateCcw, FileDown } from "lucide-react";
 import type { ScorePanelProps } from "../types";
 
@@ -14,8 +14,14 @@ export const ScorePanel: React.FC<ScorePanelProps> = ({
   onJumpToQuestion,
   onReview,
 }) => {
-  // 最小化状態を管理
-  const [isMinimized, setIsMinimized] = useState(false);
+  // 最小化状態を管理（localStorageで維持）
+  const [isMinimized, setIsMinimized] = useState(() => {
+    return localStorage.getItem("scorePanelMinimized") === "true";
+  });
+
+  useEffect(() => {
+    localStorage.setItem("scorePanelMinimized", String(isMinimized));
+  }, [isMinimized]);
 
   const accuracy =
     checkedCount > 0 ? Math.round((correctCount / checkedCount) * 100) : 0;
@@ -88,7 +94,9 @@ export const ScorePanel: React.FC<ScorePanelProps> = ({
             <div style={{ padding: "0 24px 24px" }}>
               {/* 正解数 */}
               <div className="flex items-center justify-between mb-3">
-                <span style={{ color: "#94a3b8", fontSize: "14px" }}>Correct</span>
+                <span style={{ color: "#94a3b8", fontSize: "14px" }}>
+                  Correct
+                </span>
                 <span
                   style={{
                     color: "#22c55e",
@@ -103,7 +111,9 @@ export const ScorePanel: React.FC<ScorePanelProps> = ({
 
               {/* 不正解数 */}
               <div className="flex items-center justify-between mb-3">
-                <span style={{ color: "#94a3b8", fontSize: "14px" }}>Wrong</span>
+                <span style={{ color: "#94a3b8", fontSize: "14px" }}>
+                  Wrong
+                </span>
                 <span
                   style={{
                     color: "#ef4444",
@@ -118,7 +128,9 @@ export const ScorePanel: React.FC<ScorePanelProps> = ({
 
               {/* チェック済み / 全体 */}
               <div className="flex items-center justify-between mb-4">
-                <span style={{ color: "#94a3b8", fontSize: "14px" }}>Answered</span>
+                <span style={{ color: "#94a3b8", fontSize: "14px" }}>
+                  Answered
+                </span>
                 <span
                   style={{
                     color: "#e2e8f0",
@@ -134,7 +146,9 @@ export const ScorePanel: React.FC<ScorePanelProps> = ({
               {/* 精度バー */}
               <div>
                 <div className="flex justify-between mb-1">
-                  <span style={{ color: "#94a3b8", fontSize: "12px" }}>Accuracy</span>
+                  <span style={{ color: "#94a3b8", fontSize: "12px" }}>
+                    Accuracy
+                  </span>
                   <span
                     style={{
                       color:
@@ -180,7 +194,7 @@ export const ScorePanel: React.FC<ScorePanelProps> = ({
       </div>
 
       {/* 全問題ステータス概要 */}
-      {(
+      {
         <div
           style={{
             background: "#1e2130",
@@ -258,7 +272,8 @@ export const ScorePanel: React.FC<ScorePanelProps> = ({
                       "scale(1.08)";
                   }}
                   onMouseLeave={(e) => {
-                    (e.currentTarget as HTMLElement).style.transform = "scale(1)";
+                    (e.currentTarget as HTMLElement).style.transform =
+                      "scale(1)";
                   }}
                 >
                   {idx + 1}
@@ -276,18 +291,24 @@ export const ScorePanel: React.FC<ScorePanelProps> = ({
               borderTop: "1px solid #2e3248",
             }}
           >
-            <span style={{ fontSize: "10px", color: "#22c55e", fontWeight: 600 }}>
+            <span
+              style={{ fontSize: "10px", color: "#22c55e", fontWeight: 600 }}
+            >
               Correct: {correctCount}
             </span>
-            <span style={{ fontSize: "10px", color: "#ef4444", fontWeight: 600 }}>
+            <span
+              style={{ fontSize: "10px", color: "#ef4444", fontWeight: 600 }}
+            >
               Wrong: {wrongCount}
             </span>
-            <span style={{ fontSize: "10px", color: "#475569", fontWeight: 600 }}>
+            <span
+              style={{ fontSize: "10px", color: "#475569", fontWeight: 600 }}
+            >
               Left: {total - checkedCount}
             </span>
           </div>
         </div>
-      )}
+      }
 
       {/* 復習ボタン */}
       {wrongIndices.length > 0 && (

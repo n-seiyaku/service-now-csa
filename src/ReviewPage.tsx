@@ -366,10 +366,7 @@ export const ReviewPage: React.FC<ReviewPageProps> = ({
               checkedSet.has(globalIndex) &&
               isCorrect(questions[globalIndex], userAnswers[globalIndex] ?? []);
             return (
-              <div
-                key={globalIndex}
-                id={`review-question-${globalIndex}`}
-              >
+              <div key={globalIndex} id={`review-question-${globalIndex}`}>
                 {isMastered && (
                   <div
                     style={{
