@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from "react";
+import React, { useState, useCallback, useEffect } from "react";
 import type { QuizQuestion } from "./types";
 import { QuestionCard } from "./components/QuestionCard";
 import { isCorrect } from "./utils";
@@ -113,6 +113,30 @@ export const ReviewPage: React.FC<ReviewPageProps> = ({
       return next;
     });
   }, [masteredSet]);
+
+  useEffect(() => {
+    const handleKey = (e: KeyboardEvent) => {
+      // Input項目などで入力中の場合は無視
+      if (
+        document.activeElement instanceof HTMLInputElement ||
+        document.activeElement instanceof HTMLTextAreaElement
+      ) {
+        return;
+      }
+
+      if (e.key === "r" || e.key === "R") {
+        const hasUnmasteredChecked = Array.from(checkedSet).some(
+          (id) => !masteredSet.has(id),
+        );
+        if (hasUnmasteredChecked) {
+          e.preventDefault();
+          handleResetStillWrong();
+        }
+      }
+    };
+    window.addEventListener("keydown", handleKey);
+    return () => window.removeEventListener("keydown", handleKey);
+  }, [handleResetStillWrong, checkedSet, masteredSet]);
 
   const remainingWrong = wrongIndices.filter((idx) => !masteredSet.has(idx));
 

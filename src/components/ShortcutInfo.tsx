@@ -8,6 +8,7 @@ const SHORTCUTS = [
   { keys: ["Space"], label: "Select option" },
   { keys: ["Enter"], label: "Check answer" },
   { keys: ["C"], label: "Copy question text (last interacted)" },
+  { keys: ["R"], label: "Reset still wrong answers (Review)" },
 ];
 
 // ショートカット情報ボタンコンポーネント
