@@ -102,6 +102,10 @@ export interface SavedProgress {
   pageSize?: number;
   // 最終保存日時（ISO 8601）
   savedAt: string;
+  // 復習モードで正解したインデックスの配列
+  reviewMasteredIndices?: number[];
+  // 復習モードでの回答（インデックス -> ラベル配列）
+  reviewUserAnswers?: Record<number, string[]>;
 }
 
 const DEFAULT_PROGRESS_KEY = "csa_quiz_progress";

@@ -1,4 +1,10 @@
-import React, { useState, useCallback, useEffect, useRef } from "react";
+import React, {
+  useState,
+  useCallback,
+  useEffect,
+  useRef,
+  useMemo,
+} from "react";
 import {
   Save,
   RotateCcw,
@@ -57,6 +63,8 @@ const initFromStorage = (examId: string) => {
       page: 0,
       pageSize: DEFAULT_PAGE_SIZE,
       savedAt: null as string | null,
+      reviewMasteredIndices: [] as number[],
+      reviewUserAnswers: {} as Record<number, string[]>,
     };
   }
   return {
@@ -68,6 +76,8 @@ const initFromStorage = (examId: string) => {
     page: saved.page,
     pageSize: saved.pageSize ?? DEFAULT_PAGE_SIZE,
     savedAt: saved.savedAt,
+    reviewMasteredIndices: saved.reviewMasteredIndices ?? [],
+    reviewUserAnswers: saved.reviewUserAnswers ?? {},
   };
 };
 
@@ -102,12 +112,26 @@ const QuizApp: React.FC<QuizAppProps> = ({
   );
   // 現在のページ
   const [page, setPage] = useState(initial.page);
+  // 復習の現在のページ
+  const [reviewPage, setReviewPage] = useState(0);
   // 1ページあたりの表示数
   const [pageSize, setPageSize] = useState(initial.pageSize);
   // 現在のビュー
   const [view, setView] = useState<View>("quiz");
   // 進捗の最終保存日時
   const [savedAt, setSavedAt] = useState<string | null>(initial.savedAt);
+  // 復習モードで正解したインデックスの配列
+  const [reviewMasteredIndices, setReviewMasteredIndices] = useState<number[]>(
+    initial.reviewMasteredIndices,
+  );
+  // 復習のフィルター状態
+  const [reviewFilter, setReviewFilter] = useState<
+    "all" | "mastered" | "unmastered"
+  >("unmastered");
+  // 復習モードでの回答
+  const [reviewUserAnswers, setReviewUserAnswers] = useState<
+    Record<number, string[]>
+  >(initial.reviewUserAnswers);
   // リセット確認ダイアログ表示フラグ
   const [showResetConfirm, setShowResetConfirm] = useState(false);
   // 保存トースト表示フラグ
@@ -128,14 +152,26 @@ const QuizApp: React.FC<QuizAppProps> = ({
   const endIdx = Math.min(startIdx + pageSize, questions.length);
   const currentPageQuestions = questions.slice(startIdx, endIdx);
 
+  // 復習のフィルター後の表示件数
+  const filteredReviewCount = useMemo(() => {
+    if (reviewFilter === "all") return wrongIndices.length;
+    if (reviewFilter === "mastered") {
+      return wrongIndices.filter((idx) => reviewMasteredIndices.includes(idx))
+        .length;
+    }
+    return wrongIndices.filter((idx) => !reviewMasteredIndices.includes(idx))
+      .length;
+  }, [wrongIndices, reviewMasteredIndices, reviewFilter]);
+
   // ページあたり表示数変更ハンドラ
   const handlePageSizeChange = useCallback(
     (newSize: number) => {
       const currentStartIdx = page * pageSize;
       setPageSize(newSize);
       setPage(Math.floor(currentStartIdx / newSize));
+      setReviewPage(Math.floor((reviewPage * pageSize) / newSize));
     },
-    [page, pageSize],
+    [page, reviewPage, pageSize],
   );
 
   // 進捗を自動保存（500msデバウンス）
@@ -153,6 +189,8 @@ const QuizApp: React.FC<QuizAppProps> = ({
           page,
           pageSize,
           savedAt: now,
+          reviewMasteredIndices,
+          reviewUserAnswers,
         },
         examId,
       );
@@ -171,6 +209,8 @@ const QuizApp: React.FC<QuizAppProps> = ({
     page,
     pageSize,
     examId,
+    reviewMasteredIndices,
+    reviewUserAnswers,
   ]);
 
   // キーボード操作のサポート
@@ -184,7 +224,7 @@ const QuizApp: React.FC<QuizAppProps> = ({
         return;
       }
 
-      // Quizビューのみ: 左右キーでページ遷移
+      // 左右キーでページ遷移
       if (view === "quiz") {
         if (e.key === "ArrowLeft") {
           e.preventDefault();
@@ -194,6 +234,21 @@ const QuizApp: React.FC<QuizAppProps> = ({
         } else if (e.key === "ArrowRight") {
           e.preventDefault();
           setPage((p) => Math.min(totalPages - 1, p + 1));
+          window.scrollTo({ top: 0, behavior: "smooth" });
+          return;
+        }
+      } else if (view === "review") {
+        if (e.key === "ArrowLeft") {
+          e.preventDefault();
+          setReviewPage((p) => Math.max(0, p - 1));
+          window.scrollTo({ top: 0, behavior: "smooth" });
+          return;
+        } else if (e.key === "ArrowRight") {
+          e.preventDefault();
+          const totalReviewPages = Math.ceil(filteredReviewCount / pageSize);
+          setReviewPage((p) =>
+            Math.min(Math.max(0, totalReviewPages - 1), p + 1),
+          );
           window.scrollTo({ top: 0, behavior: "smooth" });
           return;
         }
@@ -261,7 +316,7 @@ const QuizApp: React.FC<QuizAppProps> = ({
 
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
-  }, [view, totalPages]);
+  }, [view, totalPages, filteredReviewCount, pageSize]);
 
   // 「c」キー: 最後にインタラクションした問題をコピー
   useEffect(() => {
@@ -352,11 +407,6 @@ const QuizApp: React.FC<QuizAppProps> = ({
     exportWrongQuestionsForGemini(wrongIndices, questions);
   }, [wrongIndices, questions]);
 
-  // 復習でクリアされた問題を削除
-  const handleClearWrong = useCallback((clearedIndex: number) => {
-    setWrongIndices((prev) => prev.filter((i) => i !== clearedIndex));
-  }, []);
-
   // リセット実行
   const handleReset = useCallback(() => {
     clearProgress(examId);
@@ -366,9 +416,12 @@ const QuizApp: React.FC<QuizAppProps> = ({
     setWrongCount(0);
     setWrongIndices([]);
     setPage(0);
+    setReviewPage(0);
     setSavedAt(null);
     setShowResetConfirm(false);
     checkedResults.current = {};
+    setReviewMasteredIndices([]);
+    setReviewUserAnswers({});
   }, [examId]);
 
   // 手動保存（トースト表示）
@@ -384,6 +437,8 @@ const QuizApp: React.FC<QuizAppProps> = ({
         page,
         pageSize,
         savedAt: now,
+        reviewMasteredIndices,
+        reviewUserAnswers,
       },
       examId,
     );
@@ -399,19 +454,20 @@ const QuizApp: React.FC<QuizAppProps> = ({
     page,
     pageSize,
     examId,
+    reviewMasteredIndices,
+    reviewUserAnswers,
   ]);
 
-  // 復習ページ表示
-  if (view === "review") {
-    return (
-      <ReviewPage
-        questions={questions}
-        wrongIndices={wrongIndices}
-        onBack={() => setView("quiz")}
-        onClearWrong={handleClearWrong}
-      />
-    );
-  }
+  // 復習での正解を記録
+  const handleReviewMastered = useCallback(
+    (globalIndex: number, answers: string[]) => {
+      setReviewMasteredIndices((prev) =>
+        prev.includes(globalIndex) ? prev : [...prev, globalIndex],
+      );
+      setReviewUserAnswers((prev) => ({ ...prev, [globalIndex]: answers }));
+    },
+    [],
+  );
 
   return (
     <div style={{ minHeight: "100vh", background: "#0f1117" }}>
@@ -773,140 +829,181 @@ const QuizApp: React.FC<QuizAppProps> = ({
         }}
         className="lg:grid-cols-[1fr_300px] md:grid-cols-1"
       >
-        {/* 問題リスト */}
-        <div className="flex flex-col gap-5">
-          {currentPageQuestions.map((q, i) => {
-            const globalIndex = startIdx + i;
-            return (
-              <div id={`question-${globalIndex}`} key={globalIndex}>
-                <QuestionCard
-                  question={q}
-                  questionIndex={globalIndex}
-                  total={questions.length}
-                  userSelectedLabels={userAnswers[globalIndex] ?? []}
-                  isChecked={checkedSet.has(globalIndex)}
-                  isCopied={copiedIndex === globalIndex}
-                  onCopy={() => {
-                    if (copiedTimer.current) clearTimeout(copiedTimer.current);
-                    setCopiedIndex(globalIndex);
-                    copiedTimer.current = setTimeout(
-                      () => setCopiedIndex(null),
-                      2000,
-                    );
-                  }}
-                  onActivate={() => {
-                    activeQuestionRef.current = globalIndex;
-                  }}
-                  onSelectionChange={(labels) =>
-                    handleSelectionChange(globalIndex, labels)
-                  }
-                  onCheck={(correct) => handleCheck(globalIndex, correct)}
-                />
-              </div>
-            );
-          })}
-
-          {/* ページネーション */}
-          <div
-            style={{
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              gap: "8px",
-              padding: "16px 0",
+        {/* メインの左側コンテンツ（問題リストまたは復習） */}
+        {view === "review" ? (
+          <ReviewPage
+            questions={questions}
+            wrongIndices={wrongIndices}
+            initialMasteredIndices={reviewMasteredIndices}
+            initialUserAnswers={reviewUserAnswers}
+            onBack={() => setView("quiz")}
+            onMastered={handleReviewMastered}
+            page={reviewPage}
+            pageSize={pageSize}
+            setPage={setReviewPage}
+            filter={reviewFilter}
+            setFilter={setReviewFilter}
+            copiedIndex={copiedIndex}
+            onCopy={(idx) => {
+              if (copiedTimer.current) clearTimeout(copiedTimer.current);
+              setCopiedIndex(idx);
+              copiedTimer.current = setTimeout(
+                () => setCopiedIndex(null),
+                2000,
+              );
             }}
-          >
-            <button
-              onClick={() => {
-                setPage((p) => Math.max(0, p - 1));
-                window.scrollTo({ top: 0, behavior: "smooth" });
-              }}
-              disabled={page === 0}
-              style={{
-                background: page === 0 ? "#1e2130" : "rgba(99,102,241,0.2)",
-                border: "1px solid",
-                borderColor: page === 0 ? "#2e3248" : "rgba(99,102,241,0.4)",
-                borderRadius: "10px",
-                padding: "8px 16px",
-                color: page === 0 ? "#475569" : "#a5b4fc",
-                fontWeight: 600,
-                fontSize: "14px",
-                cursor: page === 0 ? "not-allowed" : "pointer",
-                display: "flex",
-                alignItems: "center",
-                gap: "4px",
-              }}
-            >
-              <ChevronLeft size={16} />
-              Prev
-            </button>
-
-            {Array.from({ length: totalPages }, (_, i) => i).map((p) => {
-              if (p === 0 || p === totalPages - 1 || Math.abs(p - page) <= 2) {
-                return (
-                  <button
-                    key={p}
-                    onClick={() => {
-                      setPage(p);
-                      window.scrollTo({ top: 0, behavior: "smooth" });
+            onActivate={(idx) => {
+              activeQuestionRef.current = idx;
+            }}
+          />
+        ) : (
+          <div className="flex flex-col gap-5">
+            {/* 問題リスト */}
+            {currentPageQuestions.map((q, i) => {
+              const globalIndex = startIdx + i;
+              return (
+                <div id={`question-${globalIndex}`} key={globalIndex}>
+                  <QuestionCard
+                    question={q}
+                    questionIndex={globalIndex}
+                    total={questions.length}
+                    userSelectedLabels={userAnswers[globalIndex] ?? []}
+                    isChecked={checkedSet.has(globalIndex)}
+                    isCopied={copiedIndex === globalIndex}
+                    onCopy={() => {
+                      if (copiedTimer.current)
+                        clearTimeout(copiedTimer.current);
+                      setCopiedIndex(globalIndex);
+                      copiedTimer.current = setTimeout(
+                        () => setCopiedIndex(null),
+                        2000,
+                      );
                     }}
-                    style={{
-                      background:
-                        p === page
-                          ? "linear-gradient(135deg, #6366f1, #8b5cf6)"
-                          : "#1e2130",
-                      border: "1px solid",
-                      borderColor: p === page ? "#6366f1" : "#2e3248",
-                      borderRadius: "10px",
-                      padding: "8px 14px",
-                      color: p === page ? "#fff" : "#94a3b8",
-                      fontWeight: 600,
-                      fontSize: "14px",
-                      cursor: "pointer",
+                    onActivate={() => {
+                      activeQuestionRef.current = globalIndex;
                     }}
-                  >
-                    {p + 1}
-                  </button>
-                );
-              }
-              if (Math.abs(p - page) === 3) {
-                return (
-                  <span key={p} style={{ color: "#475569", fontSize: "14px" }}>
-                    ...
-                  </span>
-                );
-              }
-              return null;
+                    onSelectionChange={(labels) =>
+                      handleSelectionChange(globalIndex, labels)
+                    }
+                    onCheck={(correct) => handleCheck(globalIndex, correct)}
+                  />
+                </div>
+              );
             })}
 
-            <button
-              onClick={() => {
-                setPage((p) => Math.min(totalPages - 1, p + 1));
-                window.scrollTo({ top: 0, behavior: "smooth" });
-              }}
-              disabled={page === totalPages - 1}
+            {/* ページネーション */}
+            <div
               style={{
-                background:
-                  page === totalPages - 1 ? "#1e2130" : "rgba(99,102,241,0.2)",
-                border: "1px solid",
-                borderColor:
-                  page === totalPages - 1 ? "#2e3248" : "rgba(99,102,241,0.4)",
-                borderRadius: "10px",
-                padding: "8px 16px",
-                color: page === totalPages - 1 ? "#475569" : "#a5b4fc",
-                fontWeight: 600,
-                fontSize: "14px",
-                cursor: page === totalPages - 1 ? "not-allowed" : "pointer",
                 display: "flex",
                 alignItems: "center",
-                gap: "4px",
+                justifyContent: "center",
+                gap: "8px",
+                padding: "16px 0",
               }}
             >
-              Next
-              <ChevronRight size={16} />
-            </button>
+              <button
+                onClick={() => {
+                  setPage((p) => Math.max(0, p - 1));
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
+                disabled={page === 0}
+                style={{
+                  background: page === 0 ? "#1e2130" : "rgba(99,102,241,0.2)",
+                  border: "1px solid",
+                  borderColor: page === 0 ? "#2e3248" : "rgba(99,102,241,0.4)",
+                  borderRadius: "10px",
+                  padding: "8px 16px",
+                  color: page === 0 ? "#475569" : "#a5b4fc",
+                  fontWeight: 600,
+                  fontSize: "14px",
+                  cursor: page === 0 ? "not-allowed" : "pointer",
+                  display: "flex",
+                  alignItems: "center",
+                  gap: "4px",
+                }}
+              >
+                <ChevronLeft size={16} />
+                Prev
+              </button>
+
+              {Array.from({ length: totalPages }, (_, i) => i).map((p) => {
+                if (
+                  p === 0 ||
+                  p === totalPages - 1 ||
+                  Math.abs(p - page) <= 2
+                ) {
+                  return (
+                    <button
+                      key={p}
+                      onClick={() => {
+                        setPage(p);
+                        window.scrollTo({ top: 0, behavior: "smooth" });
+                      }}
+                      style={{
+                        background:
+                          p === page
+                            ? "linear-gradient(135deg, #6366f1, #8b5cf6)"
+                            : "#1e2130",
+                        border: "1px solid",
+                        borderColor: p === page ? "#6366f1" : "#2e3248",
+                        borderRadius: "10px",
+                        padding: "8px 14px",
+                        color: p === page ? "#fff" : "#94a3b8",
+                        fontWeight: 600,
+                        fontSize: "14px",
+                        cursor: "pointer",
+                      }}
+                    >
+                      {p + 1}
+                    </button>
+                  );
+                }
+                if (Math.abs(p - page) === 3) {
+                  return (
+                    <span
+                      key={p}
+                      style={{ color: "#475569", fontSize: "14px" }}
+                    >
+                      ...
+                    </span>
+                  );
+                }
+                return null;
+              })}
+
+              <button
+                onClick={() => {
+                  setPage((p) => Math.min(totalPages - 1, p + 1));
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
+                disabled={page === totalPages - 1}
+                style={{
+                  background:
+                    page === totalPages - 1
+                      ? "#1e2130"
+                      : "rgba(99,102,241,0.2)",
+                  border: "1px solid",
+                  borderColor:
+                    page === totalPages - 1
+                      ? "#2e3248"
+                      : "rgba(99,102,241,0.4)",
+                  borderRadius: "10px",
+                  padding: "8px 16px",
+                  color: page === totalPages - 1 ? "#475569" : "#a5b4fc",
+                  fontWeight: 600,
+                  fontSize: "14px",
+                  cursor: page === totalPages - 1 ? "not-allowed" : "pointer",
+                  display: "flex",
+                  alignItems: "center",
+                  gap: "4px",
+                }}
+              >
+                Next
+                <ChevronRight size={16} />
+              </button>
+            </div>
           </div>
-        </div>
+        )}
 
         {/* スコアパネル（右サイドバー） - スクロール時に固定 */}
         <aside
