@@ -43,7 +43,7 @@
         "Select the form for the Application, then right-click, Configure > Form Designer"
       ]
     },
-    "correct_response": ["c", "d"],
+    "correct_response": ["a", "c"],
     "question_plain": "Which actions would you take to edit the title on an application menu? (Choose two.)"
   },
   {
@@ -890,7 +890,8 @@
         "Dashboards",
         "Global",
         "Admin",
-        "Analytics"
+        "Analytics",
+        "All"
       ]
     },
     "correct_response": ["a", "c", "f", "i"],
@@ -1225,7 +1226,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "Which collaboration tool is available from the banner, using the bubble icon?\n//IMG//",
+      "question": "<p>Which collaboration tool is available from the banner, using the bubble icon?\n</p><p><img src=\"https://www.examtopics.com/assets/media/exam-media/04221/0006200002.png\"></p>",
       "feedbacks": [],
       "answers": [
         "Now Messenger",
@@ -1236,7 +1237,7 @@
       ]
     },
     "correct_response": ["c"],
-    "question_plain": "Which collaboration tool is available from the banner, using the bubble icon?\n//IMG//"
+    "question_plain": "Which collaboration tool is available from the banner, using the bubble icon?\n"
   },
   {
     "assessment_type": "multiple-choice",
@@ -2245,7 +2246,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "An IT manager is responsible for the Network and Hardware assignment groups, each group contains 5 team members. These team members are working on many tasks, but the manager cannot see any tasks on the Service Desk > My Groups Work list. What could explain this?\n//IMG//",
+      "question": "<p>An IT manager is responsible for the Network and Hardware assignment groups, each group contains 5 team members. These team members are working on many tasks, but the manager cannot see any tasks on the Service Desk > My Groups Work list. What could explain this?\n</p><p><img src=\"https://www.examtopics.com/assets/media/exam-media/04221/0003600001.png\"></p>",
       "feedbacks": [],
       "answers": [
         "The Service Desk > My Groups Work list shows active work tasks that are not yet assigned.",
@@ -2256,7 +2257,7 @@
       ]
     },
     "correct_response": ["a"],
-    "question_plain": "An IT manager is responsible for the Network and Hardware assignment groups, each group contains 5 team members. These team members are working on many tasks, but the manager cannot see any tasks on the Service Desk > My Groups Work list. What could explain this?\n//IMG//"
+    "question_plain": "An IT manager is responsible for the Network and Hardware assignment groups, each group contains 5 team members. These team members are working on many tasks, but the manager cannot see any tasks on the Service Desk > My Groups Work list. What could explain this?\n"
   },
   {
     "assessment_type": "multiple-choice",
@@ -2599,7 +2600,7 @@
   {
     "assessment_type": "multi-select",
     "prompt": {
-      "question": "//IMG//\nAn order from the Service Catalog has been placed. Two records in the Platform are created as a result. Which two records are associated with this newly ordered item? (Choose two.)",
+      "question": "<p>\nAn order from the Service Catalog has been placed. Two records in the Platform are created as a result. Which two records are associated with this newly ordered item? (Choose two.)</p><p><img src=\"https://img.examtopics.com/csa/image3.png\"></p>",
       "feedbacks": [],
       "answers": [
         "A record of sc_req_item table",
@@ -2610,7 +2611,7 @@
       ]
     },
     "correct_response": ["a", "b"],
-    "question_plain": "//IMG//\nAn order from the Service Catalog has been placed. Two records in the Platform are created as a result. Which two records are associated with this newly ordered item? (Choose two.)"
+    "question_plain": "\nAn order from the Service Catalog has been placed. Two records in the Platform are created as a result. Which two records are associated with this newly ordered item? (Choose two.)"
   },
   {
     "assessment_type": "multiple-choice",
@@ -3042,7 +3043,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "On a form, which type of field has this icon which can be clicked, to see a preview of the associated record?\n\n//IMG//",
+      "question": "<p>On a form, which type of field has this icon which can be clicked, to see a preview of the associated record?\n\n</p><p><img src=\"https://img.examtopics.com/csa/image1.png\"></p>",
       "feedbacks": [],
       "answers": [
         "Lookup",
@@ -3054,7 +3055,7 @@
       ]
     },
     "correct_response": ["c"],
-    "question_plain": "On a form, which type of field has this icon which can be clicked, to see a preview of the associated record?\n\n//IMG//"
+    "question_plain": "On a form, which type of field has this icon which can be clicked, to see a preview of the associated record?\n\n"
   },
   {
     "assessment_type": "multi-select",
@@ -3807,12 +3808,12 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "Which icon would you double click, to expand and collapse the list of all Applications and Modules?\n//IMG//",
+      "question": "<p>Which icon would you double click, to expand and collapse the list of all Applications and Modules?\n</p><p><img src=\"https://www.examtopics.com/assets/media/exam-media/04221/0005200002.jpg\"></p>",
       "feedbacks": [],
       "answers": ["Star", "Clock", "Application", "Funnel"]
     },
     "correct_response": ["c"],
-    "question_plain": "Which icon would you double click, to expand and collapse the list of all Applications and Modules?\n//IMG//"
+    "question_plain": "Which icon would you double click, to expand and collapse the list of all Applications and Modules?\n"
   },
   {
     "assessment_type": "multiple-choice",
@@ -4492,7 +4493,8 @@
         "Schedules",
         "Database changes",
         "Related Lists",
-        "Report Definitions"
+        "Report Definitions",
+        "All"
       ]
     },
     "correct_response": ["a", "b", "e", "i"],
@@ -4579,7 +4581,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "//IMG//\nWhich path would you take to access the table configuration page from a form?",
+      "question": "<p>\nWhich path would you take to access the table configuration page from a form?</p><p><img src=\"https://img.examtopics.com/csa/image4.png\"></p>",
       "feedbacks": [],
       "answers": [
         "The Form Context menu > View > Show Table",
@@ -4589,7 +4591,7 @@
       ]
     },
     "correct_response": ["d"],
-    "question_plain": "//IMG//\nWhich path would you take to access the table configuration page from a form?"
+    "question_plain": "\nWhich path would you take to access the table configuration page from a form?"
   },
   {
     "assessment_type": "multiple-choice",
@@ -5250,7 +5252,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "//IMG//\nYou are editing a new incident record and would like the \"Save\" button to be located on the Form header. Which action would need to be taken for that button to appear?",
+      "question": "<p>\nYou are editing a new incident record and would like the \"Save\" button to be located on the Form header. Which action would need to be taken for that button to appear?</p><p><img src=\"https://img.examtopics.com/csa/image2.png\"></p>",
       "feedbacks": [],
       "answers": [
         "Context Menu > Form Design > add the “Save” button.",
@@ -5260,7 +5262,7 @@
       ]
     },
     "correct_response": ["c"],
-    "question_plain": "//IMG//\nYou are editing a new incident record and would like the \"Save\" button to be located on the Form header. Which action would need to be taken for that button to appear?"
+    "question_plain": "\nYou are editing a new incident record and would like the \"Save\" button to be located on the Form header. Which action would need to be taken for that button to appear?"
   },
   {
     "assessment_type": "multiple-choice",
