@@ -2,7 +2,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "In a Knowledge Base record, where can an administrator find the User Criteria for who can read the articles?",
+      "question": "<p>In a Knowledge Base record, where can an administrator find the User Criteria for who can read the articles?</p>",
       "feedbacks": [],
       "answers": [
         "From the Accessible to tab",
@@ -17,7 +17,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "When importing data from a spreadsheet, which step defines where the incoming data columns will be written in the receiving table?",
+      "question": "<p>When importing data from a spreadsheet, which step defines where the incoming data columns will be written in the receiving table?</p>",
       "feedbacks": [],
       "answers": [
         "Select Data Source",
@@ -33,7 +33,7 @@
   {
     "assessment_type": "multi-select",
     "prompt": {
-      "question": "Which actions would you take to edit the title on an application menu? (Choose two.)",
+      "question": "<p>Which actions would you take to edit the title on an application menu? (Choose two.)</p>",
       "feedbacks": [],
       "answers": [
         "Select the Application name on the Navigator, then select the pencil icon",
@@ -49,7 +49,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "Which ServiceNow capability provides assistance to help users obtain information, make decisions, and perform common work tasks via a messaging interface?",
+      "question": "<p>Which ServiceNow capability provides assistance to help users obtain information, make decisions, and perform common work tasks via a messaging interface?</p>",
       "feedbacks": [],
       "answers": [
         "Agent Workspace",
@@ -65,7 +65,7 @@
   {
     "assessment_type": "multi-select",
     "prompt": {
-      "question": "Which tables are available by default in a ServiceNow instance? (Choose three.)",
+      "question": "<p>Which tables are available by default in a ServiceNow instance? (Choose three.)</p>",
       "feedbacks": [],
       "answers": ["User", "Issue", "Incident", "Project", "Task", "Item"]
     },
@@ -75,7 +75,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "What is a key difference between Reporting and Performance Analytics?",
+      "question": "<p>What is a key difference between Reporting and Performance Analytics?</p>",
       "feedbacks": [],
       "answers": [
         "Performance Analytics contains snapshots of data taken over time; Reporting shows only the data as it is, at the moment the report is run.",
@@ -91,7 +91,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "Which of the following is used to initiate a flow?",
+      "question": "<p>Which of the following is used to initiate a flow?</p>",
       "feedbacks": [],
       "answers": ["A Trigger", "Core Action", "A spoke", "An Event"]
     },
@@ -101,7 +101,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "Which ServiceNow capability provides assistance to help users obtain information, make decisions, and perform common work tasks via a messaging interface?",
+      "question": "<p>Which ServiceNow capability provides assistance to help users obtain information, make decisions, and perform common work tasks via a messaging interface?</p>",
       "feedbacks": [],
       "answers": [
         "Now Support",
@@ -117,7 +117,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "Which would NOT appear in the History section of the Application Navigator?",
+      "question": "<p>Which would NOT appear in the History section of the Application Navigator?</p>",
       "feedbacks": [],
       "answers": ["Records", "UI Pages", "Lists", "Forms"]
     },
@@ -127,7 +127,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "What setting allows users to view a Knowledge Base article even if they are not logged in?",
+      "question": "<p>What setting allows users to view a Knowledge Base article even if they are not logged in?</p>",
       "feedbacks": [],
       "answers": [
         "The Public setting",
@@ -142,7 +142,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "A new service catalog item is being developed, but should only be visible to managers inside the HR Department. What method would you use to fulfill this requirement?",
+      "question": "<p>A new service catalog item is being developed, but should only be visible to managers inside the HR Department. What method would you use to fulfill this requirement?</p>",
       "feedbacks": [],
       "answers": [
         "Specify the Dept_Mgr role on the catalog content block",
@@ -158,7 +158,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "Which type of tables may be extended by other tables, but do not extend another table?",
+      "question": "<p>Which type of tables may be extended by other tables, but do not extend another table?</p>",
       "feedbacks": [],
       "answers": [
         "Base Tables",
@@ -173,7 +173,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "Which system property is added and set to true in order to see impersonation events in the System Log?",
+      "question": "<p>Which system property is added and set to true in order to see impersonation events in the System Log?</p>",
       "feedbacks": [],
       "answers": [
         "glide.sys.all_impersonation",
@@ -189,7 +189,7 @@
   {
     "assessment_type": "multi-select",
     "prompt": {
-      "question": "What are the options that can be set to determine when a Business Rule executes? (Choose four.)",
+      "question": "<p>What are the options that can be set to determine when a Business Rule executes? (Choose four.)</p>",
       "feedbacks": [],
       "answers": [
         "Async",
@@ -208,7 +208,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "Which feature can be used to give users the choice to easily populate the most-used fields for a specific table?",
+      "question": "<p>Which feature can be used to give users the choice to easily populate the most-used fields for a specific table?</p>",
       "feedbacks": [],
       "answers": ["Tags", "Formatter", "Template", "Reference type fields"]
     },
@@ -218,7 +218,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "Which group of permissions is used to control Application and Module access?",
+      "question": "<p>Which group of permissions is used to control Application and Module access?</p>",
       "feedbacks": [],
       "answers": [
         "Access Control Rules",
@@ -233,7 +233,7 @@
   {
     "assessment_type": "multi-select",
     "prompt": {
-      "question": "What are different types of Data Sources, which may be imported into ServiceNow? (Choose four.)",
+      "question": "<p>What are different types of Data Sources, which may be imported into ServiceNow? (Choose four.)</p>",
       "feedbacks": [],
       "answers": [
         "Local Sources (i.e. XML, CSV, Excel)",
@@ -250,7 +250,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "How would you define an Access Control, to allow a user with itil role to have permission to create incident records?",
+      "question": "<p>How would you define an Access Control, to allow a user with itil role to have permission to create incident records?</p>",
       "feedbacks": [],
       "answers": [
         "Name: incident.None; Operation: create; Role: itil",
@@ -266,7 +266,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "Which ServiceNow utility provides a modern interactive graphical interface to visualize configuration items and their relationships?",
+      "question": "<p>Which ServiceNow utility provides a modern interactive graphical interface to visualize configuration items and their relationships?</p>",
       "feedbacks": [],
       "answers": [
         "Dependency View",
@@ -281,7 +281,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "While on an Incident record, how would you add a Tag for \"Special Handling\" to the record?",
+      "question": "<p>While on an Incident record, how would you add a Tag for \"Special Handling\" to the record?</p>",
       "feedbacks": [],
       "answers": [
         "Click on the Context menu, select Add Tag, type Special Handling, press enter",
@@ -296,7 +296,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "Which field (or fields) is used as a unique key during imports?",
+      "question": "<p>Which field (or fields) is used as a unique key during imports?</p>",
       "feedbacks": [],
       "answers": ["Match Fields", "Coalesce Fields", "Key Fields", "Sys IDs"]
     },
@@ -306,7 +306,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "What is generated from the Service Catalog once a user places an order for an item or service?",
+      "question": "<p>What is generated from the Service Catalog once a user places an order for an item or service?</p>",
       "feedbacks": [],
       "answers": ["A change request", "An Order Guide", "A request", "An SLA"]
     },
@@ -316,7 +316,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "On a list, what does each row show?",
+      "question": "<p>On a list, what does each row show?</p>",
       "feedbacks": [],
       "answers": ["A filter", "A record", "A table", "A field"]
     },
@@ -326,7 +326,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "Which framework can automatically populate values for the Priority and Category fields based on the Short description field value?",
+      "question": "<p>Which framework can automatically populate values for the Priority and Category fields based on the Short description field value?</p>",
       "feedbacks": [],
       "answers": [
         "Predictive Intelligence",
@@ -342,7 +342,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "What is the platform name for the Group table?",
+      "question": "<p>What is the platform name for the Group table?</p>",
       "feedbacks": [],
       "answers": ["sys_groups", "group", "sys_user_group", "sys_group"]
     },
@@ -352,7 +352,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "How would you describe the relationship between the Incident and Task table?",
+      "question": "<p>How would you describe the relationship between the Incident and Task table?</p>",
       "feedbacks": [],
       "answers": [
         "Incident table has a one to many relationship with the Task table",
@@ -368,7 +368,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "Roles can inherit permissions from other roles. Which role inherits all of the permissions of the catalog role, and the user_criteria_admin role, plus has permissions to create Items and Services?",
+      "question": "<p>Roles can inherit permissions from other roles. Which role inherits all of the permissions of the catalog role, and the user_criteria_admin role, plus has permissions to create Items and Services?</p>",
       "feedbacks": [],
       "answers": [
         "Sys Admin [sys_admin]",
@@ -383,7 +383,7 @@
   {
     "assessment_type": "multi-select",
     "prompt": {
-      "question": "Categories in the knowledge base, by default, can be created and edited by which knowledge workers? (Choose two.)",
+      "question": "<p>Categories in the knowledge base, by default, can be created and edited by which knowledge workers? (Choose two.)</p>",
       "feedbacks": [],
       "answers": [
         "Knowledge Authors",
@@ -402,7 +402,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "Which one statement correctly describes Access Control rule evaluation?",
+      "question": "<p>Which one statement correctly describes Access Control rule evaluation?</p>",
       "feedbacks": [],
       "answers": [
         "Table access rules are evaluated from the general to the specific",
@@ -417,7 +417,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "A task worker asks how they can monitor any updates occurring to records assigned to him, like responses from customers. What do you suggest?",
+      "question": "<p>A task worker asks how they can monitor any updates occurring to records assigned to him, like responses from customers. What do you suggest?</p>",
       "feedbacks": [],
       "answers": [
         "On My Work list, select the Activity Stream icon to show a frame with live updates",
@@ -432,7 +432,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "On a filter condition, which component is always a choice list?",
+      "question": "<p>On a filter condition, which component is always a choice list?</p>",
       "feedbacks": [],
       "answers": ["Operator", "Filter Criteria", "Operation", "Match Criteria"]
     },
@@ -442,7 +442,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "Which term best describes something that is created, has worked performed upon it, and is eventually moved to a state of closed?",
+      "question": "<p>Which term best describes something that is created, has worked performed upon it, and is eventually moved to a state of closed?</p>",
       "feedbacks": [],
       "answers": ["report", "flow", "event", "task"]
     },
@@ -452,7 +452,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "Which allows the creation of a task-based record from Service Catalog?",
+      "question": "<p>Which allows the creation of a task-based record from Service Catalog?</p>",
       "feedbacks": [],
       "answers": [
         "Record Producers",
@@ -468,7 +468,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "A customer has asked for the following updates to a form:\n• Make Resolution code Mandatory, when state is changed to Resolved\n• Hide Major Incident check box, unless logged in user has Major Incident Manager role\n\nWhat type of rule(s) would you use to implement this requirement?",
+      "question": "<p>A customer has asked for the following updates to a form:</p><ul><li><p>Make Resolution code Mandatory, when state is changed to Resolved</p></li><li><p>Hide Major Incident check box, unless logged in user has Major Incident Manager role</p></li></ul><p>What type of rule(s) would you use to implement this requirement?</p>",
       "feedbacks": [],
       "answers": [
         "Form Constraint",
@@ -479,12 +479,12 @@
       ]
     },
     "correct_response": ["d"],
-    "question_plain": "A customer has asked for the following updates to a form:\n• Make Resolution code Mandatory, when state is changed to Resolved\n• Hide Major Incident check box, unless logged in user has Major Incident Manager role\n\nWhat type of rule(s) would you use to implement this requirement?"
+    "question_plain": "A customer has asked for the following updates to a form: • Make Resolution code Mandatory, when state is changed to Resolved • Hide Major Incident check box, unless logged in user has Major Incident Manager role What type of rule(s) would you use to implement this requirement?"
   },
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "When moving a homepage or dashboard between instances, what must you remember?",
+      "question": "<p>When moving a homepage or dashboard between instances, what must you remember?</p>",
       "feedbacks": [],
       "answers": [
         "Manually add them to the update set",
@@ -499,7 +499,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "Which module is used to access the knowledge bases which are available to you?",
+      "question": "<p>Which module is used to access the knowledge bases which are available to you?</p>",
       "feedbacks": [],
       "answers": [
         "Knowledge > Home",
@@ -515,7 +515,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "On what part of the ServiceNow instance, would you find the option to access applications, like Incident Management?",
+      "question": "<p>On what part of the ServiceNow instance, would you find the option to access applications, like Incident Management?</p>",
       "feedbacks": [],
       "answers": [
         "Application Navigator",
@@ -530,7 +530,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "An order for new office equipment has been placed through the Service Catalog. How would you view the lists of requests after the orders have been placed?",
+      "question": "<p>An order for new office equipment has been placed through the Service Catalog. How would you view the lists of requests after the orders have been placed?</p>",
       "feedbacks": [],
       "answers": [
         "All > Tables and Columns > Tasks",
@@ -545,7 +545,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "Which collaboration tool opens a sidebar and allows you to create new conversations with other ServiceNow users?",
+      "question": "<p>Which collaboration tool opens a sidebar and allows you to create new conversations with other ServiceNow users?</p>",
       "feedbacks": [],
       "answers": [
         "Skype Now",
@@ -561,7 +561,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "What is a quick way to create a report from a list view?",
+      "question": "<p>What is a quick way to create a report from a list view?</p>",
       "feedbacks": [],
       "answers": [
         "Click on filter breadcrumb, drag and drop on the Report > Create New module",
@@ -577,7 +577,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "What section on a task record would you use to see the most recent update made to a record?",
+      "question": "<p>What section on a task record would you use to see the most recent update made to a record?</p>",
       "feedbacks": [],
       "answers": ["Audit Log", "Timeline", "Activity", "Journal"]
     },
@@ -587,7 +587,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "The customer has asked that you change the default layout of the Task list. They would like these columns, in this order:\n\n• Number\n• Task Type\n• Parent\n• Short Description\n• Assignment Group\n• Assignee\n• Updated\n\nAfter navigating to the list, where would you click, to meet this requirement?",
+      "question": "<p>The customer has asked that you change the default layout of the Task list. They would like these columns, in this order:</p><ul><li><p>Number</p></li><li><p>Task Type</p></li><li><p>Parent</p></li><li><p>Short Description</p></li><li><p>Assignment Group</p></li><li><p>Assignee</p></li><li><p>Updated</p></li></ul><p>After navigating to the list, where would you click, to meet this requirement?</p>",
       "feedbacks": [],
       "answers": [
         "Click List Context Menu > Personalize List",
@@ -597,12 +597,12 @@
       ]
     },
     "correct_response": ["d"],
-    "question_plain": "The customer has asked that you change the default layout of the Task list. They would like these columns, in this order:\n\n• Number\n• Task Type\n• Parent\n• Short Description\n• Assignment Group\n• Assignee\n• Updated\n\nAfter navigating to the list, where would you click, to meet this requirement?"
+    "question_plain": "The customer has asked that you change the default layout of the Task list. They would like these columns, in this order: • Number • Task Type • Parent • Short Description • Assignment Group • Assignee • Updated After navigating to the list, where would you click, to meet this requirement?"
   },
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "What type of field has a drop down list, from which you can pick from pre-defined options?",
+      "question": "<p>What type of field has a drop down list, from which you can pick from pre-defined options?</p>",
       "feedbacks": [],
       "answers": ["Choice", "Picker", "Drop down", "Option"]
     },
@@ -612,7 +612,7 @@
   {
     "assessment_type": "multi-select",
     "prompt": {
-      "question": "What would you do, on a list, if you wanted to show the records in groups, based on the column category? (Choose two.)",
+      "question": "<p>What would you do, on a list, if you wanted to show the records in groups, based on the column category? (Choose two.)</p>",
       "feedbacks": [],
       "answers": [
         "On list Context Menu, select Group By > Category",
@@ -628,7 +628,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "What icon do you use to change the icon and color on a Favorite?",
+      "question": "<p>What icon do you use to change the icon and color on a Favorite?</p>",
       "feedbacks": [],
       "answers": ["Clock", "Pencil", "Triangle", "Star"]
     },
@@ -638,7 +638,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "What module enables an administrator to define destinations for imported data on any ServiceNow table?",
+      "question": "<p>What module enables an administrator to define destinations for imported data on any ServiceNow table?</p>",
       "feedbacks": [],
       "answers": [
         "Field Transform",
@@ -653,7 +653,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "How would you navigate to the Schema map for a table?",
+      "question": "<p>How would you navigate to the Schema map for a table?</p>",
       "feedbacks": [],
       "answers": [
         "System Definition > Tables; Select Table; Go to Related links and click Show Schema Map",
@@ -668,7 +668,7 @@
   {
     "assessment_type": "multi-select",
     "prompt": {
-      "question": "An IT user calls the service desk because they need to work on task records. All they can see is Self Service on their homepage when they login to the ServiceNow instance. What issue could explain this? (Choose two.)",
+      "question": "<p>An IT user calls the service desk because they need to work on task records. All they can see is Self Service on their homepage when they login to the ServiceNow instance. What issue could explain this? (Choose two.)</p>",
       "feedbacks": [],
       "answers": [
         "Their user account does not have itil role",
@@ -684,7 +684,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "What type of field allows you to look up values from one other table?",
+      "question": "<p>What type of field allows you to look up values from one other table?</p>",
       "feedbacks": [],
       "answers": [
         "Reference",
@@ -701,7 +701,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "How is the Event Log different from the Event Registry?",
+      "question": "<p>How is the Event Log different from the Event Registry?</p>",
       "feedbacks": [],
       "answers": [
         "Event Log contains generated Events, the Event Registry is a table of Event definitions",
@@ -716,7 +716,7 @@
   {
     "assessment_type": "multi-select",
     "prompt": {
-      "question": "Which tables are children of the Task table and come with the base system? (Choose three.)",
+      "question": "<p>Which tables are children of the Task table and come with the base system? (Choose three.)</p>",
       "feedbacks": [],
       "answers": [
         "Config",
@@ -733,7 +733,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "When a flow runs an action, it generates a runtime value, which stays the same for the duration of the flow. What is the name of this runtime value?",
+      "question": "<p>When a flow runs an action, it generates a runtime value, which stays the same for the duration of the flow. What is the name of this runtime value?</p>",
       "feedbacks": [],
       "answers": [
         "Trigger runtime value",
@@ -749,7 +749,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "Which one of the following statements describes the contents of the Configuration Management Database (CMDB)?",
+      "question": "<p>Which one of the following statements describes the contents of the Configuration Management Database (CMDB)?</p>",
       "feedbacks": [],
       "answers": [
         "The CMDB contains data about tangible and intangible business assets",
@@ -764,7 +764,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "Which one of the following statements is true about Column Context Menus?",
+      "question": "<p>Which one of the following statements is true about Column Context Menus?</p>",
       "feedbacks": [],
       "answers": [
         "It displays actions such as creating quick reports, configuring the list, and exporting data",
@@ -779,7 +779,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "Where should an administrator navigate to add the \"Save\" button in the form header?",
+      "question": "<p>Where should an administrator navigate to add the \"Save\" button in the form header?</p>",
       "feedbacks": [],
       "answers": [
         "Context Menu > Form Design",
@@ -794,7 +794,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "The display sequence is controlled in a Service Catalog Item using which of the following?",
+      "question": "<p>The display sequence is controlled in a Service Catalog Item using which of the following?</p>",
       "feedbacks": [],
       "answers": [
         "The Default Value field in the Catalog Item form",
@@ -809,7 +809,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "Which section of the ServiceNow UI allows you to perform a global search?",
+      "question": "<p>Which section of the ServiceNow UI allows you to perform a global search?</p>",
       "feedbacks": [],
       "answers": [
         "Application Navigator",
@@ -824,7 +824,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "Which sequence of actions applies an update set to an instance?",
+      "question": "<p>Which sequence of actions applies an update set to an instance?</p>",
       "feedbacks": [],
       "answers": [
         "Preview, Save, Commit",
@@ -839,7 +839,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "On the Form header, which icon do you use to access form templates?",
+      "question": "<p>On the Form header, which icon do you use to access form templates?</p>",
       "feedbacks": [],
       "answers": ["Stamp", "Pages", "More Options (...)", "Paperclip"]
     },
@@ -849,7 +849,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "What feature do you use to specify which users are able to access a Service Catalog Item?",
+      "question": "<p>What feature do you use to specify which users are able to access a Service Catalog Item?</p>",
       "feedbacks": [],
       "answers": [
         "Can Read Role",
@@ -864,7 +864,7 @@
   {
     "assessment_type": "multi-select",
     "prompt": {
-      "question": "What are the main components of the Form Design interface? (Choose three.)",
+      "question": "<p>What are the main components of the Form Design interface? (Choose three.)</p>",
       "feedbacks": [],
       "answers": [
         "Field Layout",
@@ -880,7 +880,7 @@
   {
     "assessment_type": "multi-select",
     "prompt": {
-      "question": "On the Reports page, what sections allow you to see which reports are visible to different audiences? (Choose four.)",
+      "question": "<p>On the Reports page, what sections allow you to see which reports are visible to different audiences? (Choose four.)</p>",
       "feedbacks": [],
       "answers": [
         "Group",
@@ -900,7 +900,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "What is a role in ServiceNow?",
+      "question": "<p>What is a role in ServiceNow?</p>",
       "feedbacks": [],
       "answers": [
         "A role is one record in the Role [user_sys_role] table",
@@ -915,7 +915,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "Which feature allows you to automate business logic for a particular application or process such as approvals, tasks notifications, and record operations?",
+      "question": "<p>Which feature allows you to automate business logic for a particular application or process such as approvals, tasks notifications, and record operations?</p>",
       "feedbacks": [],
       "answers": [
         "Flows",
@@ -931,7 +931,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "You have been asked to create a way for users to order a new iPhone, but only if they get two levels of approval. The approvers and users should be automatically notified at each approval level. What feature would you use to manage the approvals and notifications?",
+      "question": "<p>You have been asked to create a way for users to order a new iPhone, but only if they get two levels of approval. The approvers and users should be automatically notified at each approval level. What feature would you use to manage the approvals and notifications?</p>",
       "feedbacks": [],
       "answers": [
         "Approval Chains",
@@ -947,7 +947,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "Which banner icon do you use to change your personal system settings, like your instance color scheme?",
+      "question": "<p>Which banner icon do you use to change your personal system settings, like your instance color scheme?</p>",
       "feedbacks": [],
       "answers": ["Magnifier", "Question mark", "Gear", "Chat bubbles"]
     },
@@ -957,7 +957,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "Which admin role is required to make changes to High Security Settings?",
+      "question": "<p>Which admin role is required to make changes to High Security Settings?</p>",
       "feedbacks": [],
       "answers": ["high_sec_admin", "sn_acl_admin", "admin", "security_admin"]
     },
@@ -967,7 +967,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "Which access control rule applies to every field in the incident table?",
+      "question": "<p>Which access control rule applies to every field in the incident table?</p>",
       "feedbacks": [],
       "answers": ["incident<=>*", "incident.all", "incident.*", "incident||*"]
     },
@@ -977,7 +977,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "Which technique is used to get information from a series of referenced fields from different tables?",
+      "question": "<p>Which technique is used to get information from a series of referenced fields from different tables?</p>",
       "feedbacks": [],
       "answers": [
         "Table-Walking",
@@ -992,7 +992,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "Which one of the following is an accurate list of changes that are captured in an Update Set?",
+      "question": "<p>Which one of the following is an accurate list of changes that are captured in an Update Set?</p>",
       "feedbacks": [],
       "answers": [
         "Changes made to: tables, forms, schedules, and client scripts",
@@ -1007,7 +1007,7 @@
   {
     "assessment_type": "multi-select",
     "prompt": {
-      "question": "What are benefits of assigning work tasks to a group, rather than to an individual? (Choose four.)",
+      "question": "<p>What are benefits of assigning work tasks to a group, rather than to an individual? (Choose four.)</p>",
       "feedbacks": [],
       "answers": [
         "Group members can choose their tasks from My Groups Work",
@@ -1024,7 +1024,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "A manager wants to view a snapshot of month-end Sales performance data, as compared to Sales targets. In addition, the manager wants to be able to see those monthly numbers trended over time, and forecasted into the future. What capability do you suggest for this manager?",
+      "question": "<p>A manager wants to view a snapshot of month-end Sales performance data, as compared to Sales targets. In addition, the manager wants to be able to see those monthly numbers trended over time, and forecasted into the future. What capability do you suggest for this manager?</p>",
       "feedbacks": [],
       "answers": [
         "Scheduled Reports, a custom snapshot table, and a Trend report",
@@ -1040,7 +1040,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "Which type of ServiceNow script runs on the web browser?",
+      "question": "<p>Which type of ServiceNow script runs on the web browser?</p>",
       "feedbacks": [],
       "answers": [
         "Server script",
@@ -1055,7 +1055,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "Which one of the following describes the primary operations performed against tables in the ServiceNow platform?",
+      "question": "<p>Which one of the following describes the primary operations performed against tables in the ServiceNow platform?</p>",
       "feedbacks": [],
       "answers": [
         "Create, Read, Upload, Delete",
@@ -1070,7 +1070,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "Which statement correctly describes the differences between a Client Script and a Business Rule?",
+      "question": "<p>Which statement correctly describes the differences between a Client Script and a Business Rule?</p>",
       "feedbacks": [],
       "answers": [
         "A Client Script executes before a record is loaded and a Business Rule executes after a record is loaded",
@@ -1085,7 +1085,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "In Flow Designer, where is the data from an action stored so it can be used in subsequent actions in the flow?",
+      "question": "<p>In Flow Designer, where is the data from an action stored so it can be used in subsequent actions in the flow?</p>",
       "feedbacks": [],
       "answers": [
         "Data Pill",
@@ -1101,7 +1101,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "After finishing your work on High Security Settings, what is a possible way to return to normal admin security levels?",
+      "question": "<p>After finishing your work on High Security Settings, what is a possible way to return to normal admin security levels?</p>",
       "feedbacks": [],
       "answers": [
         "Select Global Update Set",
@@ -1117,7 +1117,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "When importing spreadsheet data into ServiceNow, what is the first step in the process?",
+      "question": "<p>When importing spreadsheet data into ServiceNow, what is the first step in the process?</p>",
       "feedbacks": [],
       "answers": [
         "Run Data Scrubber",
@@ -1133,7 +1133,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "What do you call any component that needs to be managed in order to deliver services?",
+      "question": "<p>What do you call any component that needs to be managed in order to deliver services?</p>",
       "feedbacks": [],
       "answers": [
         "CSDM Items",
@@ -1149,7 +1149,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "To apply a UI Policy to all views, which field should be set to true in its definition record?",
+      "question": "<p>To apply a UI Policy to all views, which field should be set to true in its definition record?</p>",
       "feedbacks": [],
       "answers": ["Global", "Reverse if false", "On load", "Inherit"]
     },
@@ -1159,7 +1159,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "Your customer would like to create a new template to notify users who are affected by network outages at their site. Which module would you use to create a new notification?",
+      "question": "<p>Your customer would like to create a new template to notify users who are affected by network outages at their site. Which module would you use to create a new notification?</p>",
       "feedbacks": [],
       "answers": [
         "System Notification > Email > Notifications",
@@ -1175,7 +1175,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "While using the CMDB, what do you call the component that needs to be managed in order to deliver services?",
+      "question": "<p>While using the CMDB, what do you call the component that needs to be managed in order to deliver services?</p>",
       "feedbacks": [],
       "answers": [
         "Configuration Item",
@@ -1191,7 +1191,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "From a related list, what would a user click to personalize the layout of the columns?",
+      "question": "<p>From a related list, what would a user click to personalize the layout of the columns?</p>",
       "feedbacks": [],
       "answers": ["Gear", "Context Menu", "Pencil", "Magnifier"]
     },
@@ -1201,7 +1201,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "When moving multiple update sets at one time, what might you do to facilitate the move?",
+      "question": "<p>When moving multiple update sets at one time, what might you do to facilitate the move?</p>",
       "feedbacks": [],
       "answers": ["Preview", "Batch", "List", "Map"]
     },
@@ -1211,7 +1211,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "Create Incident, Password Reset, and Report outage: what do these services in the Service Catalog have in common?",
+      "question": "<p>Create Incident, Password Reset, and Report outage: what do these services in the Service Catalog have in common?</p>",
       "feedbacks": [],
       "answers": [
         "They direct the user to a record producer",
@@ -1226,7 +1226,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "<p>Which collaboration tool is available from the banner, using the bubble icon?\n</p><p><img src=\"https://www.examtopics.com/assets/media/exam-media/04221/0006200002.png\"></p>",
+      "question": "<p>Which collaboration tool is available from the banner, using the bubble icon?</p><p><img src=\"https://www.examtopics.com/assets/media/exam-media/04221/0006200002.png\"></p>",
       "feedbacks": [],
       "answers": [
         "Now Messenger",
@@ -1237,12 +1237,12 @@
       ]
     },
     "correct_response": ["c"],
-    "question_plain": "Which collaboration tool is available from the banner, using the bubble icon?\n"
+    "question_plain": "Which collaboration tool is available from the banner, using the bubble icon?"
   },
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "What are the steps for importing data using an import set?",
+      "question": "<p>What are the steps for importing data using an import set?</p>",
       "feedbacks": [],
       "answers": [
         "Select source file; Run automap; Transform data; Clean up target table",
@@ -1257,7 +1257,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "On the knowledge base record, which tab would you use to define which users are not able to write articles to the knowledge base?",
+      "question": "<p>On the knowledge base record, which tab would you use to define which users are not able to write articles to the knowledge base?</p>",
       "feedbacks": [],
       "answers": [
         "Can Contribute",
@@ -1273,7 +1273,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "What resource can you use to view details of the tables and configuration items (CIs) associated with a particular use case?",
+      "question": "<p>What resource can you use to view details of the tables and configuration items (CIs) associated with a particular use case?</p>",
       "feedbacks": [],
       "answers": [
         "Scenario Dashboard",
@@ -1288,7 +1288,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "What type of field is Boolean and appears as a check box?",
+      "question": "<p>What type of field is Boolean and appears as a check box?</p>",
       "feedbacks": [],
       "answers": ["Yes/No", "True/False", "On/Off", "Binary", "0/1"]
     },
@@ -1298,7 +1298,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "What icon do you use to change the label on a Favorite?",
+      "question": "<p>What icon do you use to change the label on a Favorite?</p>",
       "feedbacks": [],
       "answers": [
         "Clock",
@@ -1315,7 +1315,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "On the knowledge base record, which tab would you use to define which users are able to write articles to the knowledge base?",
+      "question": "<p>On the knowledge base record, which tab would you use to define which users are able to write articles to the knowledge base?</p>",
       "feedbacks": [],
       "answers": [
         "Can Contribute",
@@ -1331,7 +1331,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "Which module in the Service Catalog application is used to create a new catalog item?",
+      "question": "<p>Which module in the Service Catalog application is used to create a new catalog item?</p>",
       "feedbacks": [],
       "answers": [
         "Configuration Items",
@@ -1346,7 +1346,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "Which component of a table contains a piece of data for one record?",
+      "question": "<p>Which component of a table contains a piece of data for one record?</p>",
       "feedbacks": [],
       "answers": ["Factor", "Field", "Datapoint", "Element", "Item"]
     },
@@ -1356,7 +1356,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "Group records are stored in which table?",
+      "question": "<p>Group records are stored in which table?</p>",
       "feedbacks": [],
       "answers": [
         "Group [sn_user_group]",
@@ -1371,7 +1371,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "Which module is used as the first step for importing data?",
+      "question": "<p>Which module is used as the first step for importing data?</p>",
       "feedbacks": [],
       "answers": ["Coalesce Data", "Transform Data", "Import Data", "Load Data"]
     },
@@ -1381,7 +1381,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "When impersonating a user for testing purposes, what is the best way to return the instance, logged in with your user account?",
+      "question": "<p>When impersonating a user for testing purposes, what is the best way to return the instance, logged in with your user account?</p>",
       "feedbacks": [],
       "answers": [
         "Turn your computer off and on again",
@@ -1396,7 +1396,7 @@
   {
     "assessment_type": "multi-select",
     "prompt": {
-      "question": "You have been asked to configure a form so an employee could order tablet and select the standard accessory options to purchase with it. These standard options are: carrying case, screen cleaner, tablet stand, and screen protector. What approach would you take? (Choose three.)",
+      "question": "<p>You have been asked to configure a form so an employee could order tablet and select the standard accessory options to purchase with it. These standard options are: carrying case, screen cleaner, tablet stand, and screen protector. What approach would you take? (Choose three.)</p>",
       "feedbacks": [],
       "answers": [
         "Create Catalog Item for the Tablet, and add a variable set to the form, for the accessory options.",
@@ -1412,7 +1412,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "What role enables someone to authorize a request, with no other permissions on the platform?",
+      "question": "<p>What role enables someone to authorize a request, with no other permissions on the platform?</p>",
       "feedbacks": [],
       "answers": [
         "Approval Group [approval_group]",
@@ -1428,7 +1428,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "On a form header, what icon would you click to access Template features?",
+      "question": "<p>On a form header, what icon would you click to access Template features?</p>",
       "feedbacks": [],
       "answers": ["Context Menu", "Paper clip", "Stamp", "More options (...)"]
     },
@@ -1438,7 +1438,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "What are the steps for applying an update set to an instance?",
+      "question": "<p>What are the steps for applying an update set to an instance?</p>",
       "feedbacks": [],
       "answers": [
         "Retrieve, Preview, Commit",
@@ -1454,7 +1454,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "The baseline Service Catalog homepage contains links to which of the following components?",
+      "question": "<p>The baseline Service Catalog homepage contains links to which of the following components?</p>",
       "feedbacks": [],
       "answers": [
         "Record Producers, Order Guides, and Catalog Items",
@@ -1469,7 +1469,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "What section on the notes tab, shows the history of the work documented on the record?",
+      "question": "<p>What section on the notes tab, shows the history of the work documented on the record?</p>",
       "feedbacks": [],
       "answers": ["Audit Log", "Timeline", "Journal", "Diary", "Activity"]
     },
@@ -1479,7 +1479,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "When moving multiple update sets at one time, what might you do to facilitate the move?",
+      "question": "<p>When moving multiple update sets at one time, what might you do to facilitate the move?</p>",
       "feedbacks": [],
       "answers": ["Batch", "Verify", "Test", "Preview"]
     },
@@ -1489,7 +1489,7 @@
   {
     "assessment_type": "multi-select",
     "prompt": {
-      "question": "Which role(s) are required to impersonate a user? (Choose two.)",
+      "question": "<p>Which role(s) are required to impersonate a user? (Choose two.)</p>",
       "feedbacks": [],
       "answers": [
         "security_admin",
@@ -1505,7 +1505,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "When an administrator sets a policy that is applied to all data entered into the Platform (UI, Import Sets, or Web Services), where does this policy run by default?",
+      "question": "<p>When an administrator sets a policy that is applied to all data entered into the Platform (UI, Import Sets, or Web Services), where does this policy run by default?</p>",
       "feedbacks": [],
       "answers": ["Network", "Server", "Client", "Browser"]
     },
@@ -1515,7 +1515,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "Which tool is used to have conversations with logged-in users in real-time?",
+      "question": "<p>Which tool is used to have conversations with logged-in users in real-time?</p>",
       "feedbacks": [],
       "answers": ["Connect Chat", "Now Messenger", "User Presence", "Comments"]
     },
@@ -1525,7 +1525,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "The testing team needs to be able to perform activities in the test instance, as though they are a member of the Service Desk group. What role would they need to be able to switch between user accounts, without logging out and back in?",
+      "question": "<p>The testing team needs to be able to perform activities in the test instance, as though they are a member of the Service Desk group. What role would they need to be able to switch between user accounts, without logging out and back in?</p>",
       "feedbacks": [],
       "answers": ["service_desk", "impersonator", "admin", "incognito"]
     },
@@ -1535,7 +1535,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "A REQ number in the Service Catalog represents`¦",
+      "question": "<p>A REQ number in the Service Catalog represents`¦</p>",
       "feedbacks": [],
       "answers": [
         "the order number.",
@@ -1550,7 +1550,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "What is a sys_id?",
+      "question": "<p>What is a sys_id?</p>",
       "feedbacks": [],
       "answers": [
         "Unique 32-character identifier that is assigned to every record",
@@ -1565,7 +1565,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "A user wants to create a set of filter conditions, where they want to show records which satisfy two conditions:\n✑ Incidents where the state is Closed\n✑ Incidents where Assignment Group is Network\nAfter clicking the Funnel icon, what should the user do?",
+      "question": "<p>A user wants to create a set of filter conditions, where they want to show records which satisfy two conditions:</p><ul><li><p>Incidents where the state is Closed</p></li><li><p>Incidents where Assignment Group is Network</p></li></ul><p>After clicking the Funnel icon, what should the user do?</p>",
       "feedbacks": [],
       "answers": [
         "Define the first condition; click AND button; define second condition; click Run",
@@ -1576,12 +1576,12 @@
       ]
     },
     "correct_response": ["a"],
-    "question_plain": "A user wants to create a set of filter conditions, where they want to show records which satisfy two conditions:\n✑ Incidents where the state is Closed\n✑ Incidents where Assignment Group is Network\nAfter clicking the Funnel icon, what should the user do?"
+    "question_plain": "A user wants to create a set of filter conditions, where they want to show records which satisfy two conditions: ✑ Incidents where the state is Closed ✑ Incidents where Assignment Group is Network After clicking the Funnel icon, what should the user do?"
   },
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "Your customer requires that they be able to monitor which users are performing impersonations in their instance. What would you do to meet that requirement?",
+      "question": "<p>Your customer requires that they be able to monitor which users are performing impersonations in their instance. What would you do to meet that requirement?</p>",
       "feedbacks": [],
       "answers": [
         "Add the role Log Write [sn_log_write] to the Impersonator Group",
@@ -1597,7 +1597,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "What is the most common role that has access to almost all platform features, functions, and data?",
+      "question": "<p>What is the most common role that has access to almost all platform features, functions, and data?</p>",
       "feedbacks": [],
       "answers": [
         "Super User [sn_super_user]",
@@ -1613,7 +1613,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "How is a user defined in ServiceNow?",
+      "question": "<p>How is a user defined in ServiceNow?</p>",
       "feedbacks": [],
       "answers": [
         "A user is a record stored in the Profile [sys_user_profile] table",
@@ -1628,7 +1628,7 @@
   {
     "assessment_type": "multi-select",
     "prompt": {
-      "question": "A new employee joins the IT department and needs to perform work assigned to Network and Hardware groups. How would you set up their access? (Choose three.)",
+      "question": "<p>A new employee joins the IT department and needs to perform work assigned to Network and Hardware groups. How would you set up their access? (Choose three.)</p>",
       "feedbacks": [],
       "answers": [
         "Add User Account to Hardware group",
@@ -1645,7 +1645,7 @@
   {
     "assessment_type": "multi-select",
     "prompt": {
-      "question": "Which of the following can be customized through the Basic Configuration UI 16 module? (Choose three.)",
+      "question": "<p>Which of the following can be customized through the Basic Configuration UI 16 module? (Choose three.)</p>",
       "feedbacks": [],
       "answers": [
         "Banner Image",
@@ -1661,7 +1661,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "How are Workflows moved between instances?",
+      "question": "<p>How are Workflows moved between instances?</p>",
       "feedbacks": [],
       "answers": [
         "Workflows are moved using Update Sets",
@@ -1676,7 +1676,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "Where can Admins check which release is running on an ServiceNow instance?",
+      "question": "<p>Where can Admins check which release is running on an ServiceNow instance?</p>",
       "feedbacks": [],
       "answers": [
         "Memory Stats module",
@@ -1691,7 +1691,7 @@
   {
     "assessment_type": "multi-select",
     "prompt": {
-      "question": "What attributes can you manage, using System Properties > Basic Configuration UI16? (Choose five.)",
+      "question": "<p>What attributes can you manage, using System Properties > Basic Configuration UI16? (Choose five.)</p>",
       "feedbacks": [],
       "answers": [
         "Browser tab title",
@@ -1710,7 +1710,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "Which tool is used to define relationships between fields in an import set table and a target table?",
+      "question": "<p>Which tool is used to define relationships between fields in an import set table and a target table?</p>",
       "feedbacks": [],
       "answers": [
         "Transform Schema",
@@ -1727,7 +1727,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "As it relates to ServiceNow reporting, which of the following statements describes what a metric can do?",
+      "question": "<p>As it relates to ServiceNow reporting, which of the following statements describes what a metric can do?</p>",
       "feedbacks": [],
       "answers": [
         "A metric is a report gauge used on homepages to display real-time data",
@@ -1742,7 +1742,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "An administrator creates “customer_table_admin” and “customer_table_user” roles for the newly created \"Customer Table”. Which ACL rule would grant access to all rows and all fields to both the customer_table_admin and customer_table_user roles?",
+      "question": "<p>An administrator creates “customer_table_admin” and “customer_table_user” roles for the newly created \"Customer Table”. Which ACL rule would grant access to all rows and all fields to both the customer_table_admin and customer_table_user roles?</p>",
       "feedbacks": [],
       "answers": [
         "customer.none",
@@ -1757,7 +1757,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "What are the steps to retrieve an Update Set?",
+      "question": "<p>What are the steps to retrieve an Update Set?</p>",
       "feedbacks": [],
       "answers": [
         "Verify Update Set is Complete, Retrieve, Preview, Apply",
@@ -1772,7 +1772,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "When creating a global custom table named `abc`, what is the table name that is automatically assigned by the platform?",
+      "question": "<p>When creating a global custom table named `abc`, what is the table name that is automatically assigned by the platform?</p>",
       "feedbacks": [],
       "answers": ["snc_abc", "abc", "u_abc", "sys_abc"]
     },
@@ -1782,7 +1782,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "What is a Record Producer?",
+      "question": "<p>What is a Record Producer?</p>",
       "feedbacks": [],
       "answers": [
         "A Record Producer is a type of Catalog Item that is used for Requests, not Services",
@@ -1797,7 +1797,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "On the Form header, which element you to access form templates?",
+      "question": "<p>On the Form header, which element you to access form templates?</p>",
       "feedbacks": [],
       "answers": ["Stamp", "More Options (...)", "Pages", "Paperclip"]
     },
@@ -1807,7 +1807,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "Here is an example of the criteria set for a knowledge base:\n• Companies: ACME North America\n• Departments: HR\n• Groups: ACME Managers\n• Match All: Yes\n\nIn this example, what users would have access to this knowledge base?",
+      "question": "<p>Here is an example of the criteria set for a knowledge base:</p><ul><li><p>Companies: ACME North America</p></li><li><p>Departments: HR</p></li><li><p>Groups: ACME Managers</p></li><li><p>Match All: Yes</p></li></ul><p>In this example, what users would have access to this knowledge base?</p>",
       "feedbacks": [],
       "answers": [
         "Members of the ACME Manager group, who are also members of HR Department and part of ACME North America",
@@ -1817,12 +1817,12 @@
       ]
     },
     "correct_response": ["a"],
-    "question_plain": "Here is an example of the criteria set for a knowledge base:\n• Companies: ACME North America\n• Departments: HR\n• Groups: ACME Managers\n• Match All: Yes\n\nIn this example, what users would have access to this knowledge base?"
+    "question_plain": "Here is an example of the criteria set for a knowledge base: • Companies: ACME North America • Departments: HR • Groups: ACME Managers • Match All: Yes In this example, what users would have access to this knowledge base?"
   },
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "What is used frequently to move customizations from one instance to another?",
+      "question": "<p>What is used frequently to move customizations from one instance to another?</p>",
       "feedbacks": [],
       "answers": [
         "Update Sets",
@@ -1840,7 +1840,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "ServiceNow contains a resource which provides the following:\n✑ A standard and shared set of service related definitions across ServiceNow products and platform that will enable and support true service level reporting.\n✑ A CMDB framework across our products and platform that will enable and support multiple configuration strategies.\nWhat resource do these statements describe?",
+      "question": "<p>ServiceNow contains a resource which provides the following:</p><ul><li><p>A standard and shared set of service related definitions across ServiceNow products and platform that will enable and support true service level reporting.</p></li><li><p>A CMDB framework across our products and platform that will enable and support multiple configuration strategies.</p></li></ul><p>What resource do these statements describe?</p>",
       "feedbacks": [],
       "answers": [
         "Common Services Data Model (CSDM)",
@@ -1850,12 +1850,12 @@
       ]
     },
     "correct_response": ["a"],
-    "question_plain": "ServiceNow contains a resource which provides the following:\n✑ A standard and shared set of service related definitions across ServiceNow products and platform that will enable and support true service level reporting.\n✑ A CMDB framework across our products and platform that will enable and support multiple configuration strategies.\nWhat resource do these statements describe?"
+    "question_plain": "ServiceNow contains a resource which provides the following: ✑ A standard and shared set of service related definitions across ServiceNow products and platform that will enable and support true service level reporting. ✑ A CMDB framework across our products and platform that will enable and support multiple configuration strategies. What resource do these statements describe?"
   },
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "Which statement is true about business rules?",
+      "question": "<p>Which statement is true about business rules?</p>",
       "feedbacks": [],
       "answers": [
         "A business rule must run before a database action occurs",
@@ -1870,7 +1870,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "How do you make a list filter available to everyone?",
+      "question": "<p>How do you make a list filter available to everyone?</p>",
       "feedbacks": [],
       "answers": [
         "Make active, assign a name, and save",
@@ -1885,7 +1885,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "What ServiceNow feature allows you to include data from a secondary related table on a report?",
+      "question": "<p>What ServiceNow feature allows you to include data from a secondary related table on a report?</p>",
       "feedbacks": [],
       "answers": ["SQL", "Dot Walking", "Outer Join", "Joins"]
     },
@@ -1895,7 +1895,7 @@
   {
     "assessment_type": "multi-select",
     "prompt": {
-      "question": "From a form, what would you click to add additional fields to the form? (Choose two.)",
+      "question": "<p>From a form, what would you click to add additional fields to the form? (Choose two.)</p>",
       "feedbacks": [],
       "answers": [
         "Context Menu > Form > Layout",
@@ -1912,7 +1912,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "What is the definition of a group?",
+      "question": "<p>What is the definition of a group?</p>",
       "feedbacks": [],
       "answers": [
         "A collection of subject matter experts",
@@ -1928,7 +1928,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "Table Access Control rules are processed in the following order:",
+      "question": "<p>Table Access Control rules are processed in the following order:</p>",
       "feedbacks": [],
       "answers": [
         "any table name (wildcard), parent table name, table name",
@@ -1943,7 +1943,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "What section on a task record is used to see the most recent updates made to a record?",
+      "question": "<p>What section on a task record is used to see the most recent updates made to a record?</p>",
       "feedbacks": [],
       "answers": ["Timeline", "Related List", "Activity Stream", "Audit Log"]
     },
@@ -1953,7 +1953,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "Which three Variable Types can be added to a Service Catalog Item?",
+      "question": "<p>Which three Variable Types can be added to a Service Catalog Item?</p>",
       "feedbacks": [],
       "answers": [
         "True/False, Multiple Choice, and Ordered",
@@ -1968,7 +1968,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "When you need to orchestrate business processes across services with little technical user knowledge, which utility would you use?",
+      "question": "<p>When you need to orchestrate business processes across services with little technical user knowledge, which utility would you use?</p>",
       "feedbacks": [],
       "answers": [
         "Flow Manager",
@@ -1984,7 +1984,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "What field contains a record's 32-character, unique identifier?",
+      "question": "<p>What field contains a record's 32-character, unique identifier?</p>",
       "feedbacks": [],
       "answers": [
         "sn_rec_id",
@@ -2002,7 +2002,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "What is the primary application used to load data into ServiceNow?",
+      "question": "<p>What is the primary application used to load data into ServiceNow?</p>",
       "feedbacks": [],
       "answers": [
         "Service Level Management",
@@ -2017,7 +2017,7 @@
   {
     "assessment_type": "multi-select",
     "prompt": {
-      "question": "What are the different Notification methods that can be used to alert users when events that concern them have occurred? (Choose three.)",
+      "question": "<p>What are the different Notification methods that can be used to alert users when events that concern them have occurred? (Choose three.)</p>",
       "feedbacks": [],
       "answers": [
         "Meeting Invitation",
@@ -2033,7 +2033,7 @@
   {
     "assessment_type": "multi-select",
     "prompt": {
-      "question": "What are examples of UI Actions, relating to Lists? (Choose four.)",
+      "question": "<p>What are examples of UI Actions, relating to Lists? (Choose four.)</p>",
       "feedbacks": [],
       "answers": [
         "List Links",
@@ -2050,7 +2050,7 @@
   {
     "assessment_type": "multi-select",
     "prompt": {
-      "question": "Reports can be created from which different places in the platform? (Choose two.)",
+      "question": "<p>Reports can be created from which different places in the platform? (Choose two.)</p>",
       "feedbacks": [],
       "answers": [
         "List column heading",
@@ -2065,7 +2065,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "Which module would you use to create a new automation of business logic such as approvals, tasks, and notifications?",
+      "question": "<p>Which module would you use to create a new automation of business logic such as approvals, tasks, and notifications?</p>",
       "feedbacks": [],
       "answers": [
         "Process Automation > Flow Designer",
@@ -2081,7 +2081,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "Which role can manage multiple knowledge bases?",
+      "question": "<p>Which role can manage multiple knowledge bases?</p>",
       "feedbacks": [],
       "answers": [
         "knowledge_base_admin",
@@ -2096,7 +2096,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "Your customer wants to update a notification so it is sent to the Caller's Manager.\n\nWhich action supports this requirement?",
+      "question": "<p>Your customer wants to update a notification so it is sent to the Caller's Manager.</p><p>Which action supports this requirement?</p>",
       "feedbacks": [],
       "answers": [
         "On the 'Who will receive' tab on the Notification record add the Caller field, then dot walk to the Caller's Manager field to add it.",
@@ -2106,12 +2106,12 @@
       ]
     },
     "correct_response": ["a"],
-    "question_plain": "Your customer wants to update a notification so it is sent to the Caller's Manager.\n\nWhich action supports this requirement?"
+    "question_plain": "Your customer wants to update a notification so it is sent to the Caller's Manager. Which action supports this requirement?"
   },
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "When importing data, what happens to imported rows, if no coalesce field is specified?",
+      "question": "<p>When importing data, what happens to imported rows, if no coalesce field is specified?</p>",
       "feedbacks": [],
       "answers": [
         "All rows are rejected from the import, as coalesce field is required.",
@@ -2126,7 +2126,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "What is a Dictionary Override?",
+      "question": "<p>What is a Dictionary Override?</p>",
       "feedbacks": [],
       "answers": [
         "A Dictionary Override is an incoming customer update in an Update Set which applies to the same objects as a newer local customer update",
@@ -2141,7 +2141,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "Which action enables personalization in a form for the admin role, only?",
+      "question": "<p>Which action enables personalization in a form for the admin role, only?</p>",
       "feedbacks": [],
       "answers": [
         "Navigate to sys_form_properties.list and set the property glide.ui.enable_personalize_form.admin to true.",
@@ -2156,7 +2156,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "When looking at a long list of records, you want to quickly filter, to show only those which have Short Description containing email. How might you do that?",
+      "question": "<p>When looking at a long list of records, you want to quickly filter, to show only those which have Short Description containing email. How might you do that?</p>",
       "feedbacks": [],
       "answers": [
         "Click List Magnifier to expand column search, on Short Description, type email, click enter",
@@ -2171,7 +2171,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "What is a schema map?",
+      "question": "<p>What is a schema map?</p>",
       "feedbacks": [],
       "answers": [
         "A schema map enables administrators to define records from specific tables as trouble sources for Configuration Items",
@@ -2186,7 +2186,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "Which tool graphically displays an infrastructure view for a configuration item (CI) and its relationship with other CIs?",
+      "question": "<p>Which tool graphically displays an infrastructure view for a configuration item (CI) and its relationship with other CIs?</p>",
       "feedbacks": [],
       "answers": [
         "Schema Map",
@@ -2201,7 +2201,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "What is the language used for scripting in ServiceNow?",
+      "question": "<p>What is the language used for scripting in ServiceNow?</p>",
       "feedbacks": [],
       "answers": ["C++", "JavaScript", "PHP", "Python"]
     },
@@ -2211,7 +2211,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "What feature allows you to limit who is able to contribute or read knowledge within a knowledge base?",
+      "question": "<p>What feature allows you to limit who is able to contribute or read knowledge within a knowledge base?</p>",
       "feedbacks": [],
       "answers": ["Roles", "Groups", "User Criteria", "Categories"]
     },
@@ -2221,7 +2221,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "Which tool is used to define relationships between fields in an import set table and a target table?",
+      "question": "<p>Which tool is used to define relationships between fields in an import set table and a target table?</p>",
       "feedbacks": [],
       "answers": [
         "Schema Map",
@@ -2236,7 +2236,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "A customer wants to use a client script to validate things on a form in order to make sure the submission makes sense. What type of client script would you recommend to meet this requirement?",
+      "question": "<p>A customer wants to use a client script to validate things on a form in order to make sure the submission makes sense. What type of client script would you recommend to meet this requirement?</p>",
       "feedbacks": [],
       "answers": ["onSubmit()", "onSubmission()", "onUpdate()", "onLoad()"]
     },
@@ -2246,7 +2246,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "<p>An IT manager is responsible for the Network and Hardware assignment groups, each group contains 5 team members. These team members are working on many tasks, but the manager cannot see any tasks on the Service Desk > My Groups Work list. What could explain this?\n</p><p><img src=\"https://www.examtopics.com/assets/media/exam-media/04221/0003600001.png\"></p>",
+      "question": "<p>An IT manager is responsible for the Network and Hardware assignment groups, each group contains 5 team members. These team members are working on many tasks, but the manager cannot see any tasks on the Service Desk > My Groups Work list. What could explain this?</p><p><img src=\"https://www.examtopics.com/assets/media/exam-media/04221/0003600001.png\"></p>",
       "feedbacks": [],
       "answers": [
         "The Service Desk > My Groups Work list shows active work tasks that are not yet assigned.",
@@ -2257,12 +2257,12 @@
       ]
     },
     "correct_response": ["a"],
-    "question_plain": "An IT manager is responsible for the Network and Hardware assignment groups, each group contains 5 team members. These team members are working on many tasks, but the manager cannot see any tasks on the Service Desk > My Groups Work list. What could explain this?\n"
+    "question_plain": "An IT manager is responsible for the Network and Hardware assignment groups, each group contains 5 team members. These team members are working on many tasks, but the manager cannot see any tasks on the Service Desk > My Groups Work list. What could explain this?"
   },
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "Which of the following statement describes the purpose of an Order Guide?",
+      "question": "<p>Which of the following statement describes the purpose of an Order Guide?</p>",
       "feedbacks": [],
       "answers": [
         "Order Guides restrict the number of items in an order to only one item per request",
@@ -2277,7 +2277,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "In what order are Access Controls evaluated?",
+      "question": "<p>In what order are Access Controls evaluated?</p>",
       "feedbacks": [],
       "answers": [
         "Field-level - most specific to most general; then Table-level - most specific to most general",
@@ -2292,7 +2292,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "The Employee On-boarding team has asked for a way for managers to order computers, monitors, business cards, and cell phones for new employees. How would you proceed to meet this requirement?",
+      "question": "<p>The Employee On-boarding team has asked for a way for managers to order computers, monitors, business cards, and cell phones for new employees. How would you proceed to meet this requirement?</p>",
       "feedbacks": [],
       "answers": [
         "Create Requested Item",
@@ -2307,7 +2307,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "How is the ServiceNow platform set up so that Administrators can easily configure their instances to send an email at the end of an upgrade?",
+      "question": "<p>How is the ServiceNow platform set up so that Administrators can easily configure their instances to send an email at the end of an upgrade?</p>",
       "feedbacks": [],
       "answers": [
         "Administrators can update the email notification named \"System Upgraded\" in the System Logs module by adding the appropriate User to receive it.",
@@ -2322,7 +2322,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "Which element is used to track items not saved with a field, in a record?",
+      "question": "<p>Which element is used to track items not saved with a field, in a record?</p>",
       "feedbacks": [],
       "answers": ["Sidebar", "List Editor", "Activity formatter", "Dictionary"]
     },
@@ -2332,7 +2332,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "What is the result of the order in which access controls are evaluated?",
+      "question": "<p>What is the result of the order in which access controls are evaluated?</p>",
       "feedbacks": [],
       "answers": [
         "Ensures user has access to the fields in a table, before considering their access to the table",
@@ -2347,7 +2347,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "What component causes a flow to run after a record has been created or updated?",
+      "question": "<p>What component causes a flow to run after a record has been created or updated?</p>",
       "feedbacks": [],
       "answers": [
         "Date-based trigger",
@@ -2363,7 +2363,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "What instance resource allows you to access guided tours, information about actions, and instructions on how to use inputs and outputs in your flow?",
+      "question": "<p>What instance resource allows you to access guided tours, information about actions, and instructions on how to use inputs and outputs in your flow?</p>",
       "feedbacks": [],
       "answers": [
         "Docs",
@@ -2378,7 +2378,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "Access Control rules are applied to a specific table, like the Incident table. What is the object name for a rule that applies to the entire Incident table (all rows and fields)?",
+      "question": "<p>Access Control rules are applied to a specific table, like the Incident table. What is the object name for a rule that applies to the entire Incident table (all rows and fields)?</p>",
       "feedbacks": [],
       "answers": ["incident.*", "incident.all", "incident.!", "incident.None"]
     },
@@ -2388,7 +2388,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "Which of the following allows a user to edit field values in a list without opening the form?",
+      "question": "<p>Which of the following allows a user to edit field values in a list without opening the form?</p>",
       "feedbacks": [],
       "answers": ["Data Editor", "Edit Menu", "List Editor", "Form Designer"]
     },
@@ -2398,7 +2398,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "Which banner icon do you use to change your personal system settings, like your instance color scheme?",
+      "question": "<p>Which banner icon do you use to change your personal system settings, like your instance color scheme?</p>",
       "feedbacks": [],
       "answers": ["Magnifier", "Question mark", "Gear", "Chat bubbles"]
     },
@@ -2408,7 +2408,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "What is a no-code approach to control the mandatory or read-only state of a form field?",
+      "question": "<p>What is a no-code approach to control the mandatory or read-only state of a form field?</p>",
       "feedbacks": [],
       "answers": [
         "UI Action",
@@ -2424,7 +2424,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "A manager is complaining that they can't get the data they need on a report, because the data resides in two different tables. This data is used for many different reports in their department. You have checked to see if dot-walking will meet the requirement, and it is not possible. What else might you try to help this manager?",
+      "question": "<p>A manager is complaining that they can't get the data they need on a report, because the data resides in two different tables. This data is used for many different reports in their department. You have checked to see if dot-walking will meet the requirement, and it is not possible. What else might you try to help this manager?</p>",
       "feedbacks": [],
       "answers": [
         "Export the tables to spreadsheet",
@@ -2440,7 +2440,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "What is the Import Set Table?",
+      "question": "<p>What is the Import Set Table?</p>",
       "feedbacks": [],
       "answers": [
         "A table where data will be placed, post-transformation",
@@ -2455,7 +2455,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "On a Catalog Task record, how would an administrator change the priority choice options?",
+      "question": "<p>On a Catalog Task record, how would an administrator change the priority choice options?</p>",
       "feedbacks": [],
       "answers": [
         "In the Context menu of the form, select Configure Options",
@@ -2470,7 +2470,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "A user is complaining that they are seeing a blank page, when they click Create New, from your custom Inventory application. You have confirmed that they can see the Inventory application, and the Create New module on the application navigator. What could be the cause of this issue?",
+      "question": "<p>A user is complaining that they are seeing a blank page, when they click Create New, from your custom Inventory application. You have confirmed that they can see the Inventory application, and the Create New module on the application navigator. What could be the cause of this issue?</p>",
       "feedbacks": [],
       "answers": [
         "Create New module has a broken link",
@@ -2486,7 +2486,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "What do you need to do before you can use an Application-based trigger in your flow?",
+      "question": "<p>What do you need to do before you can use an Application-based trigger in your flow?</p>",
       "feedbacks": [],
       "answers": [
         "Activate application trigger spoke",
@@ -2502,7 +2502,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "Which database provides a logical model of your company infrastructure by identifying, controlling, maintaining and verifying CIs that exist?",
+      "question": "<p>Which database provides a logical model of your company infrastructure by identifying, controlling, maintaining and verifying CIs that exist?</p>",
       "feedbacks": [],
       "answers": ["IMDB", "ITSM", "CSDM", "CMDB", "LDAP"]
     },
@@ -2512,7 +2512,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "A department manager asks an analyst to build some reports. Where do you recommend the analyst start?",
+      "question": "<p>A department manager asks an analyst to build some reports. Where do you recommend the analyst start?</p>",
       "feedbacks": [],
       "answers": [
         "Report Dashboard > Create New",
@@ -2528,7 +2528,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "Which ServiceNow resource is a framework that ensures the data your ServiceNow application requires maps correctly to the appropriate CMDB tables?",
+      "question": "<p>Which ServiceNow resource is a framework that ensures the data your ServiceNow application requires maps correctly to the appropriate CMDB tables?</p>",
       "feedbacks": [],
       "answers": [
         "Common Service Data Model (CSDM)",
@@ -2544,7 +2544,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "On the CI Dependency View, what enables you to trace from an infrastructure item, like a Server, to the Services that are dependent on that Server?",
+      "question": "<p>On the CI Dependency View, what enables you to trace from an infrastructure item, like a Server, to the Services that are dependent on that Server?</p>",
       "feedbacks": [],
       "answers": [
         "Automapping Utility",
@@ -2559,7 +2559,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "What Service Catalog feature do you use to organize items into logical groups?",
+      "question": "<p>What Service Catalog feature do you use to organize items into logical groups?</p>",
       "feedbacks": [],
       "answers": ["Categories", "Variable Sets", "Sections", "Catalog items"]
     },
@@ -2569,7 +2569,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "Which tool should be used to populate commonly used fields in a form?",
+      "question": "<p>Which tool should be used to populate commonly used fields in a form?</p>",
       "feedbacks": [],
       "answers": [
         "Template",
@@ -2584,7 +2584,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "What module do you use to access the reports that are available to you?",
+      "question": "<p>What module do you use to access the reports that are available to you?</p>",
       "feedbacks": [],
       "answers": [
         "Self-Service > My Reports",
@@ -2600,7 +2600,7 @@
   {
     "assessment_type": "multi-select",
     "prompt": {
-      "question": "<p>\nAn order from the Service Catalog has been placed. Two records in the Platform are created as a result. Which two records are associated with this newly ordered item? (Choose two.)</p><p><img src=\"https://img.examtopics.com/csa/image3.png\"></p>",
+      "question": "<p>An order from the Service Catalog has been placed. Two records in the Platform are created as a result. Which two records are associated with this newly ordered item? (Choose two.)</p><p><img src=\"https://img.examtopics.com/csa/image3.png\"></p>",
       "feedbacks": [],
       "answers": [
         "A record of sc_req_item table",
@@ -2611,12 +2611,12 @@
       ]
     },
     "correct_response": ["a", "b"],
-    "question_plain": "\nAn order from the Service Catalog has been placed. Two records in the Platform are created as a result. Which two records are associated with this newly ordered item? (Choose two.)"
+    "question_plain": "An order from the Service Catalog has been placed. Two records in the Platform are created as a result. Which two records are associated with this newly ordered item? (Choose two.)"
   },
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "What is used to determine user access to knowledge bases or a knowledge article?",
+      "question": "<p>What is used to determine user access to knowledge bases or a knowledge article?</p>",
       "feedbacks": [],
       "answers": [
         "sn_kb_read, sn_article_read",
@@ -2631,7 +2631,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "On the knowledge base record, which tab would you use to define which users are not able to write articles to the knowledge base?",
+      "question": "<p>On the knowledge base record, which tab would you use to define which users are not able to write articles to the knowledge base?</p>",
       "feedbacks": [],
       "answers": [
         "Can Contribute",
@@ -2647,7 +2647,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "User records are stored in which table?",
+      "question": "<p>User records are stored in which table?</p>",
       "feedbacks": [],
       "answers": [
         "User [sys_user]",
@@ -2662,7 +2662,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "Which one of the following statements applies to a set of fields when they are coalesced during an import?",
+      "question": "<p>Which one of the following statements applies to a set of fields when they are coalesced during an import?</p>",
       "feedbacks": [],
       "answers": [
         "If a match is found using the coalesce fields, the existing record is updated with the information being imported",
@@ -2677,7 +2677,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "While showing a customer their incident form, they ask to change the Priority values to display their internal terminology P1, P2, P3, P4. They want it to be consistent across all Tasks. How would you do that?\nRight click on Priority and select what?",
+      "question": "<p>While showing a customer their incident form, they ask to change the Priority values to display their internal terminology P1, P2, P3, P4. They want it to be consistent across all Tasks. How would you do that?</p><p>Right click on Priority and select what?</p>",
       "feedbacks": [],
       "answers": [
         "Configure Lists",
@@ -2689,12 +2689,12 @@
       ]
     },
     "correct_response": ["e"],
-    "question_plain": "While showing a customer their incident form, they ask to change the Priority values to display their internal terminology P1, P2, P3, P4. They want it to be consistent across all Tasks. How would you do that?\nRight click on Priority and select what?"
+    "question_plain": "While showing a customer their incident form, they ask to change the Priority values to display their internal terminology P1, P2, P3, P4. They want it to be consistent across all Tasks. How would you do that? Right click on Priority and select what?"
   },
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "In what order should filter elements be specified?",
+      "question": "<p>In what order should filter elements be specified?</p>",
       "feedbacks": [],
       "answers": [
         "Field, Operator, then Value",
@@ -2709,7 +2709,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "For Administrators creating new Service Catalog items, what is a characteristic they should know about Service Catalog variables?",
+      "question": "<p>For Administrators creating new Service Catalog items, what is a characteristic they should know about Service Catalog variables?</p>",
       "feedbacks": [],
       "answers": [
         "Service Catalog variables can only be used in Record Producers",
@@ -2724,7 +2724,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "Which storefront is a single location for accessing pre-built spokes, to quickly integrate with third party services to build and share content?",
+      "question": "<p>Which storefront is a single location for accessing pre-built spokes, to quickly integrate with third party services to build and share content?</p>",
       "feedbacks": [],
       "answers": [
         "ServiceNow Store",
@@ -2739,7 +2739,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "What are examples of Core tables in the ServiceNow platform?",
+      "question": "<p>What are examples of Core tables in the ServiceNow platform?</p>",
       "feedbacks": [],
       "answers": [
         "Configuration, Connect, Chat",
@@ -2754,7 +2754,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "The Report Designer contains different sections for configuring your report. Which section is used to specify grouping and calculations to be run against the data?",
+      "question": "<p>The Report Designer contains different sections for configuring your report. Which section is used to specify grouping and calculations to be run against the data?</p>",
       "feedbacks": [],
       "answers": ["Style", "Group by", "Configure", "Format", "Data"]
     },
@@ -2764,7 +2764,7 @@
   {
     "assessment_type": "multi-select",
     "prompt": {
-      "question": "When a custom table is created, which access control rules are automatically created? (Choose four.)",
+      "question": "<p>When a custom table is created, which access control rules are automatically created? (Choose four.)</p>",
       "feedbacks": [],
       "answers": ["create", "delete", "execute", "update", "read", "write"]
     },
@@ -2774,7 +2774,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "When looking at a long list of records, you want to quickly filter, to show only those which have Category of Hardware. How might you do that?",
+      "question": "<p>When looking at a long list of records, you want to quickly filter, to show only those which have Category of Hardware. How might you do that?</p>",
       "feedbacks": [],
       "answers": [
         "On the Category column header, right click and select Show > Hardware",
@@ -2790,7 +2790,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "What protects applications by restricting access to data in another application, in the same instance?",
+      "question": "<p>What protects applications by restricting access to data in another application, in the same instance?</p>",
       "feedbacks": [],
       "answers": [
         "Admin Center",
@@ -2805,7 +2805,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "What catalog tool would you use to create a catalog item or record producer?",
+      "question": "<p>What catalog tool would you use to create a catalog item or record producer?</p>",
       "feedbacks": [],
       "answers": [
         "Catalog Builder",
@@ -2820,7 +2820,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "What is the best practice related to using the Default Update Set for moving customizations between instances?",
+      "question": "<p>What is the best practice related to using the Default Update Set for moving customizations between instances?</p>",
       "feedbacks": [],
       "answers": [
         "Merge Default update sets before moving between instances",
@@ -2835,7 +2835,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "A customer requests the following data quality measures be added:\n✑ Incident numbers should be read only, on all lists and forms, for all users.\n✑ Short Description field should be mandatory, on all records, across all applications, on Insert.\nWhich type of policy would you use to meet this requirement?",
+      "question": "<p>A customer requests the following data quality measures be added:</p><ul><li><p>Incident numbers should be read only, on all lists and forms, for all users.</p></li><li><p>Short Description field should be mandatory, on all records, across all applications, on Insert.</p></li></ul><p>Which type of policy would you use to meet this requirement?</p>",
       "feedbacks": [],
       "answers": [
         "Data Quality Policy",
@@ -2847,12 +2847,12 @@
       ]
     },
     "correct_response": ["f"],
-    "question_plain": "A customer requests the following data quality measures be added:\n✑ Incident numbers should be read only, on all lists and forms, for all users.\n✑ Short Description field should be mandatory, on all records, across all applications, on Insert.\nWhich type of policy would you use to meet this requirement?"
+    "question_plain": "A customer requests the following data quality measures be added: ✑ Incident numbers should be read only, on all lists and forms, for all users. ✑ Short Description field should be mandatory, on all records, across all applications, on Insert. Which type of policy would you use to meet this requirement?"
   },
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "Which features ensures data consistency while importing data using import sets and web services?",
+      "question": "<p>Which features ensures data consistency while importing data using import sets and web services?</p>",
       "feedbacks": [],
       "answers": [
         "UI Policy",
@@ -2868,7 +2868,7 @@
   {
     "assessment_type": "multi-select",
     "prompt": {
-      "question": "What needs to be specified, when creating a Business Rule? (Choose four.)",
+      "question": "<p>What needs to be specified, when creating a Business Rule? (Choose four.)</p>",
       "feedbacks": [],
       "answers": [
         "UI action",
@@ -2887,7 +2887,7 @@
   {
     "assessment_type": "multi-select",
     "prompt": {
-      "question": "You are showing your customer a new form that you have created for their new application. They would like to add a field to the form. Where could you do that?\n(Choose two.)",
+      "question": "<p>You are showing your customer a new form that you have created for their new application. They would like to add a field to the form. Where could you do that?</p><p>(Choose two.)</p>",
       "feedbacks": [],
       "answers": [
         "Select Fields and Columns module",
@@ -2897,12 +2897,12 @@
       ]
     },
     "correct_response": ["b", "c"],
-    "question_plain": "You are showing your customer a new form that you have created for their new application. They would like to add a field to the form. Where could you do that?\n(Choose two.)"
+    "question_plain": "You are showing your customer a new form that you have created for their new application. They would like to add a field to the form. Where could you do that? (Choose two.)"
   },
   {
     "assessment_type": "multi-select",
     "prompt": {
-      "question": "What are the components that make up a filter condition? (Choose three.)",
+      "question": "<p>What are the components that make up a filter condition? (Choose three.)</p>",
       "feedbacks": [],
       "answers": ["Operator", "Match Criteria", "Value", "Column", "Field"]
     },
@@ -2912,7 +2912,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "If a user is on an Incident form and is alerted when they change the value of the Priority field, which type of script executes in the Platform?",
+      "question": "<p>If a user is on an Incident form and is alerted when they change the value of the Priority field, which type of script executes in the Platform?</p>",
       "feedbacks": [],
       "answers": [
         "A server script",
@@ -2927,7 +2927,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "What is the difference between a UI Policy and Data Policy?",
+      "question": "<p>What is the difference between a UI Policy and Data Policy?</p>",
       "feedbacks": [],
       "answers": [
         "Data Policies run when data is entered through the form, by an Import Set, or by web services, while UI Policies are set only by web services",
@@ -2942,7 +2942,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "Which form element displays the list of activities, or history, on a task form?",
+      "question": "<p>Which form element displays the list of activities, or history, on a task form?</p>",
       "feedbacks": [],
       "answers": [
         "Action Formatter",
@@ -2957,7 +2957,7 @@
   {
     "assessment_type": "multi-select",
     "prompt": {
-      "question": "Which are valid Service Now User Authentication Methods? (Choose three.)",
+      "question": "<p>Which are valid Service Now User Authentication Methods? (Choose three.)</p>",
       "feedbacks": [],
       "answers": [
         "XML feed",
@@ -2973,7 +2973,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "The Report Designer contains different sections for configuring your report. Which section is used to specify the name of the report, and the table or data source for the report?",
+      "question": "<p>The Report Designer contains different sections for configuring your report. Which section is used to specify the name of the report, and the table or data source for the report?</p>",
       "feedbacks": [],
       "answers": ["Type", "Properties", "Configure", "Sources", "Data"]
     },
@@ -2983,7 +2983,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "Which tool is used for creating dependencies between configuration items in the CMDB?",
+      "question": "<p>Which tool is used for creating dependencies between configuration items in the CMDB?</p>",
       "feedbacks": [],
       "answers": [
         "CI Relationship Editor",
@@ -2998,7 +2998,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "When working on a form, what is the difference between Insert and Update operations?",
+      "question": "<p>When working on a form, what is the difference between Insert and Update operations?</p>",
       "feedbacks": [],
       "answers": [
         "Insert creates a new record and Update saves changes, both remain on the form",
@@ -3013,7 +3013,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "Which ServiceNow capability allows you to provide knowledge articles, via a conversational messaging interface?",
+      "question": "<p>Which ServiceNow capability allows you to provide knowledge articles, via a conversational messaging interface?</p>",
       "feedbacks": [],
       "answers": [
         "Agent Assist",
@@ -3028,7 +3028,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "What access does a user need to be able to import articles to a knowledge base?",
+      "question": "<p>What access does a user need to be able to import articles to a knowledge base?</p>",
       "feedbacks": [],
       "answers": [
         "sn_knowledge_import",
@@ -3043,7 +3043,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "<p>On a form, which type of field has this icon which can be clicked, to see a preview of the associated record?\n\n</p><p><img src=\"https://img.examtopics.com/csa/image1.png\"></p>",
+      "question": "<p>On a form, which type of field has this icon which can be clicked, to see a preview of the associated record?</p><p><img src=\"https://img.examtopics.com/csa/image1.png\"></p>",
       "feedbacks": [],
       "answers": [
         "Lookup",
@@ -3055,12 +3055,12 @@
       ]
     },
     "correct_response": ["c"],
-    "question_plain": "On a form, which type of field has this icon which can be clicked, to see a preview of the associated record?\n\n"
+    "question_plain": "On a form, which type of field has this icon which can be clicked, to see a preview of the associated record?"
   },
   {
     "assessment_type": "multi-select",
     "prompt": {
-      "question": "When testing a catalog item, having a manager approval flows, which of these best practices would you follow? (Choose three.)",
+      "question": "<p>When testing a catalog item, having a manager approval flows, which of these best practices would you follow? (Choose three.)</p>",
       "feedbacks": [],
       "answers": [
         "Make sure the latest flows are activated.",
@@ -3077,7 +3077,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "What process allows users to create, categorize, review, approve and browse important information in a centralized location that is shared by the entire organization?",
+      "question": "<p>What process allows users to create, categorize, review, approve and browse important information in a centralized location that is shared by the entire organization?</p>",
       "feedbacks": [],
       "answers": [
         "Self Service Management",
@@ -3093,7 +3093,7 @@
   {
     "assessment_type": "multi-select",
     "prompt": {
-      "question": "Which ServiceNow products can be used to discover and populate the CMDB? (Choose two.)",
+      "question": "<p>Which ServiceNow products can be used to discover and populate the CMDB? (Choose two.)</p>",
       "feedbacks": [],
       "answers": [
         "Discovery",
@@ -3109,7 +3109,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "What are the steps for importing data using an import set?",
+      "question": "<p>What are the steps for importing data using an import set?</p>",
       "feedbacks": [],
       "answers": [
         "Create Import Set; Create transform map; Transform data; Clean up import table",
@@ -3124,7 +3124,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "What action helps to see which modules are visible to a user?",
+      "question": "<p>What action helps to see which modules are visible to a user?</p>",
       "feedbacks": [],
       "answers": [
         "Install the Bomgar plug-in",
@@ -3139,7 +3139,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "What instance resource allows you to access guided tours, information about actions, and instructions on how to use inputs and outputs in your flow?",
+      "question": "<p>What instance resource allows you to access guided tours, information about actions, and instructions on how to use inputs and outputs in your flow?</p>",
       "feedbacks": [],
       "answers": [
         "Now Support",
@@ -3154,7 +3154,7 @@
   {
     "assessment_type": "multi-select",
     "prompt": {
-      "question": "What are two ways to generate an Event? (Choose two.)",
+      "question": "<p>What are two ways to generate an Event? (Choose two.)</p>",
       "feedbacks": [],
       "answers": [
         "Business Rule",
@@ -3169,7 +3169,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "What icon do you use to change the label on a Favorite?",
+      "question": "<p>What icon do you use to change the label on a Favorite?</p>",
       "feedbacks": [],
       "answers": ["Star", "Clock", "Triangle", "Pencil"]
     },
@@ -3179,7 +3179,7 @@
   {
     "assessment_type": "multi-select",
     "prompt": {
-      "question": "If users would like to locate and assign a task to themselves in the Platform, what action could they perform from the list view to make the assignment? (Choose two.)",
+      "question": "<p>If users would like to locate and assign a task to themselves in the Platform, what action could they perform from the list view to make the assignment? (Choose two.)</p>",
       "feedbacks": [],
       "answers": [
         "Select the record using the check box, then select the Person icon",
@@ -3195,7 +3195,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "Access Control rules may provide access security for which of the following database objects?",
+      "question": "<p>Access Control rules may provide access security for which of the following database objects?</p>",
       "feedbacks": [],
       "answers": [
         "For a specific role, group, or user",
@@ -3210,7 +3210,7 @@
   {
     "assessment_type": "multi-select",
     "prompt": {
-      "question": "When managing tags, you can adjust who is able to see it. What are the visibility options? (Choose three.)",
+      "question": "<p>When managing tags, you can adjust who is able to see it. What are the visibility options? (Choose three.)</p>",
       "feedbacks": [],
       "answers": [
         "Groups and Users",
@@ -3226,7 +3226,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "The Report Designer contains different sections for configuring your report. Which section is used to adjust the look of your report, including colors, titles and legend layout?",
+      "question": "<p>The Report Designer contains different sections for configuring your report. Which section is used to adjust the look of your report, including colors, titles and legend layout?</p>",
       "feedbacks": [],
       "answers": ["Layout", "Format", "Configure", "Style"]
     },
@@ -3236,7 +3236,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "Tables may be set up with Many to Many relationships. What is a classic example of a scenario where the tables would have many to many relationships?",
+      "question": "<p>Tables may be set up with Many to Many relationships. What is a classic example of a scenario where the tables would have many to many relationships?</p>",
       "feedbacks": [],
       "answers": [
         "Vendors can sell multiple products; and products can be sold by multiple vendors.",
@@ -3251,7 +3251,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "What is a Notification?",
+      "question": "<p>What is a Notification?</p>",
       "feedbacks": [],
       "answers": [
         "A new Knowledge article created by a Business Rule",
@@ -3266,7 +3266,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "When using the Load Data and Transform Map process, what is the Mapping Assist used for?",
+      "question": "<p>When using the Load Data and Transform Map process, what is the Mapping Assist used for?</p>",
       "feedbacks": [],
       "answers": [
         "Mapping fields using the Import Log",
@@ -3281,7 +3281,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "When using Flow Designer, what is the Flow Execution initiated by?",
+      "question": "<p>When using Flow Designer, what is the Flow Execution initiated by?</p>",
       "feedbacks": [],
       "answers": [
         "A flow logic",
@@ -3296,7 +3296,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "What function do you use to add buttons, links, and context menu items on forms and lists?",
+      "question": "<p>What function do you use to add buttons, links, and context menu items on forms and lists?</p>",
       "feedbacks": [],
       "answers": ["UI Policies", "UI Settings", "UI Actions", "UI Config"]
     },
@@ -3306,7 +3306,7 @@
   {
     "assessment_type": "multi-select",
     "prompt": {
-      "question": "Which of the following concepts are associated with the ServiceNow CMDB? (Choose four.)",
+      "question": "<p>Which of the following concepts are associated with the ServiceNow CMDB? (Choose four.)</p>",
       "feedbacks": [],
       "answers": [
         "Service Processes",
@@ -3322,7 +3322,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "What is the name of the conversational bot platform that provides assistance to help users obtain information, make decisions, and perform common tasks?",
+      "question": "<p>What is the name of the conversational bot platform that provides assistance to help users obtain information, make decisions, and perform common tasks?</p>",
       "feedbacks": [],
       "answers": ["Answer Agent", "live Feed", "Virtual Agent", "Connect Chat"]
     },
@@ -3332,7 +3332,7 @@
   {
     "assessment_type": "multi-select",
     "prompt": {
-      "question": "What types of entities can receive task assignments, in ServiceNow? (Choose two.)",
+      "question": "<p>What types of entities can receive task assignments, in ServiceNow? (Choose two.)</p>",
       "feedbacks": [],
       "answers": ["Users", "Departments", "Groups", "Teams"]
     },
@@ -3342,7 +3342,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "Which feature enables business process owners to organize Flow Designer content into unified and digitized cross-enterprise processes via a digitized task board interface?",
+      "question": "<p>Which feature enables business process owners to organize Flow Designer content into unified and digitized cross-enterprise processes via a digitized task board interface?</p>",
       "feedbacks": [],
       "answers": [
         "Flow Designer",
@@ -3357,7 +3357,7 @@
   {
     "assessment_type": "multi-select",
     "prompt": {
-      "question": "When creating a new notification, what must you define? (Choose three.)",
+      "question": "<p>When creating a new notification, what must you define? (Choose three.)</p>",
       "feedbacks": [],
       "answers": [
         "The associated knowledge base",
@@ -3373,7 +3373,7 @@
   {
     "assessment_type": "multi-select",
     "prompt": {
-      "question": "What are the benefits of building flows using Flow Designer? (Choose three.)",
+      "question": "<p>What are the benefits of building flows using Flow Designer? (Choose three.)</p>",
       "feedbacks": [],
       "answers": [
         "Provides IDE for complicated scripting",
@@ -3390,7 +3390,7 @@
   {
     "assessment_type": "multi-select",
     "prompt": {
-      "question": "The ServiceNow platform includes which types of interfaces? (Choose three.)",
+      "question": "<p>The ServiceNow platform includes which types of interfaces? (Choose three.)</p>",
       "feedbacks": [],
       "answers": [
         "Now Mobile Apps",
@@ -3407,7 +3407,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "Which one of the following statements is a recommendation from ServiceNow about Update Sets?",
+      "question": "<p>Which one of the following statements is a recommendation from ServiceNow about Update Sets?</p>",
       "feedbacks": [],
       "answers": [
         "Avoid using the Default Update set as an Update Set for moving customizations from instance to instance",
@@ -3422,7 +3422,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "Which type of scripts run in the browser?",
+      "question": "<p>Which type of scripts run in the browser?</p>",
       "feedbacks": [],
       "answers": [
         "UI Policies",
@@ -3437,7 +3437,7 @@
   {
     "assessment_type": "multi-select",
     "prompt": {
-      "question": "Knowledge Base Search results can be sorted by which of the following? (Choose three.)",
+      "question": "<p>Knowledge Base Search results can be sorted by which of the following? (Choose three.)</p>",
       "feedbacks": [],
       "answers": [
         "Most recent update",
@@ -3453,7 +3453,7 @@
   {
     "assessment_type": "multi-select",
     "prompt": {
-      "question": "What are the three key tables in an enterprise CMDB? (Choose three.)",
+      "question": "<p>What are the three key tables in an enterprise CMDB? (Choose three.)</p>",
       "feedbacks": [],
       "answers": [
         "cmdb",
@@ -3471,7 +3471,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "When designing a flow, how do you reference data from a record, in that flow?",
+      "question": "<p>When designing a flow, how do you reference data from a record, in that flow?</p>",
       "feedbacks": [],
       "answers": [
         "Drag the table icon onto the flow definition",
@@ -3487,7 +3487,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "What feature can track the amount of time that a task has been open, to ensure that tasks are completed within an allotted time?",
+      "question": "<p>What feature can track the amount of time that a task has been open, to ensure that tasks are completed within an allotted time?</p>",
       "feedbacks": [],
       "answers": [
         "Task Escalation Clock",
@@ -3503,7 +3503,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "When a user reports that they are not able to see modules on the application navigator, what can you do, to see what modules are visible to them?",
+      "question": "<p>When a user reports that they are not able to see modules on the application navigator, what can you do, to see what modules are visible to them?</p>",
       "feedbacks": [],
       "answers": [
         "Look up their password, so you can login with their account",
@@ -3519,7 +3519,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "As an IT employee what interface would you use, if you wanted to browse internal IT documentation, like troubleshooting scripts and FAQs?",
+      "question": "<p>As an IT employee what interface would you use, if you wanted to browse internal IT documentation, like troubleshooting scripts and FAQs?</p>",
       "feedbacks": [],
       "answers": [
         "Knowledge",
@@ -3535,7 +3535,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "On a Business Rule, the When setting determines at what point the rule executes. What are the options for specifying that timing?",
+      "question": "<p>On a Business Rule, the When setting determines at what point the rule executes. What are the options for specifying that timing?</p>",
       "feedbacks": [],
       "answers": [
         "Before, After, Async, Display",
@@ -3550,7 +3550,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "What is the name of the table relationship, where two or more tables are related in a bi-directional relationship, so that the related records are visible from both tables in a related list?",
+      "question": "<p>What is the name of the table relationship, where two or more tables are related in a bi-directional relationship, so that the related records are visible from both tables in a related list?</p>",
       "feedbacks": [],
       "answers": ["Database View", "Many to Many", "One to Many", "Extended"]
     },
@@ -3560,7 +3560,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "As administrator, what must you do to access features of High Security Settings?",
+      "question": "<p>As administrator, what must you do to access features of High Security Settings?</p>",
       "feedbacks": [],
       "answers": [
         "Impersonate Security Admin",
@@ -3575,7 +3575,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "Which of the following steps can be used to import new data into ServiceNow from a spreadsheet?",
+      "question": "<p>Which of the following steps can be used to import new data into ServiceNow from a spreadsheet?</p>",
       "feedbacks": [],
       "answers": [
         "Select Data Source, Schedule Transform",
@@ -3590,7 +3590,7 @@
   {
     "assessment_type": "multi-select",
     "prompt": {
-      "question": "Which data consistency settings can be achieved using UI Policy? (Choose three.)",
+      "question": "<p>Which data consistency settings can be achieved using UI Policy? (Choose three.)</p>",
       "feedbacks": [],
       "answers": [
         "Setting fields to accept the data in an expected format",
@@ -3606,7 +3606,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "When moving a homepage or dashboard between instances, what must you remember?",
+      "question": "<p>When moving a homepage or dashboard between instances, what must you remember?</p>",
       "feedbacks": [],
       "answers": [
         "Download both as PDF and XML files",
@@ -3621,7 +3621,7 @@
   {
     "assessment_type": "multi-select",
     "prompt": {
-      "question": "On the Reports page, what sections allow you to see which reports are visible to different audiences? (Choose four.)",
+      "question": "<p>On the Reports page, what sections allow you to see which reports are visible to different audiences? (Choose four.)</p>",
       "feedbacks": [],
       "answers": ["Group", "Department", "My reports", "Team", "Global", "All"]
     },
@@ -3631,7 +3631,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "The wait time for end users is based on the round-trip between the client and the server. What activities are included in the round-trips?",
+      "question": "<p>The wait time for end users is based on the round-trip between the client and the server. What activities are included in the round-trips?</p>",
       "feedbacks": [],
       "answers": [
         "Request + Response",
@@ -3647,7 +3647,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "Which one of the following statements describes the purpose of a Service Catalog flow?",
+      "question": "<p>Which one of the following statements describes the purpose of a Service Catalog flow?</p>",
       "feedbacks": [],
       "answers": [
         "A Service Catalog flow generates three basic components: item variable types, tasks, and approvals",
@@ -3662,7 +3662,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "What is the platform name for the User table?",
+      "question": "<p>What is the platform name for the User table?</p>",
       "feedbacks": [],
       "answers": ["u_users", "sys_users", "x_users", "sys_user"]
     },
@@ -3672,7 +3672,7 @@
   {
     "assessment_type": "multi-select",
     "prompt": {
-      "question": "What module would you use if you wanted to view a list of all of the fields on the Incident table? (Choose two.)",
+      "question": "<p>What module would you use if you wanted to view a list of all of the fields on the Incident table? (Choose two.)</p>",
       "feedbacks": [],
       "answers": [
         "Tables & Columns",
@@ -3689,7 +3689,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "Which testing framework is used to test ServiceNow Applications?",
+      "question": "<p>Which testing framework is used to test ServiceNow Applications?</p>",
       "feedbacks": [],
       "answers": [
         "Test Driven Framework (TDF)",
@@ -3704,7 +3704,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "A Service Catalog may include which of the following components?",
+      "question": "<p>A Service Catalog may include which of the following components?</p>",
       "feedbacks": [],
       "answers": [
         "Order Guides, Exchange Rates, Calendars",
@@ -3719,7 +3719,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "On a filter condition, there is an element, which is based on the table, the user access rights, and columns on the table. What is this element called?",
+      "question": "<p>On a filter condition, there is an element, which is based on the table, the user access rights, and columns on the table. What is this element called?</p>",
       "feedbacks": [],
       "answers": ["Label", "Column", "Data Element", "Field", "Attribute"]
     },
@@ -3729,7 +3729,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "A Service Catalog project will involve building 80 catalog items. For each of the catalog items, the following fields will be mandatory on the forms:\n• Requested for\n• Requested by\n• Approving manager\n• Delivery instructions\n\nAll of the other variables will be specific to the individual catalog item. What features would you use when designing the catalog item form?",
+      "question": "<p>A Service Catalog project will involve building 80 catalog items. For each of the catalog items, the following fields will be mandatory on the forms:</p><ul><li><p>Requested for</p></li><li><p>Requested by</p></li><li><p>Approving manager</p></li><li><p>Delivery instructions</p></li></ul><p>All of the other variables will be specific to the individual catalog item. What features would you use when designing the catalog item form?</p>",
       "feedbacks": [],
       "answers": [
         "Create a Variable Set Template, then apply to all of the catalog items.",
@@ -3740,12 +3740,12 @@
       ]
     },
     "correct_response": ["b"],
-    "question_plain": "A Service Catalog project will involve building 80 catalog items. For each of the catalog items, the following fields will be mandatory on the forms:\n• Requested for\n• Requested by\n• Approving manager\n• Delivery instructions\n\nAll of the other variables will be specific to the individual catalog item. What features would you use when designing the catalog item form?"
+    "question_plain": "A Service Catalog project will involve building 80 catalog items. For each of the catalog items, the following fields will be mandatory on the forms: • Requested for • Requested by • Approving manager • Delivery instructions All of the other variables will be specific to the individual catalog item. What features would you use when designing the catalog item form?"
   },
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "What module in the Service Catalog application does an Administrator access to begin creating a new item?",
+      "question": "<p>What module in the Service Catalog application does an Administrator access to begin creating a new item?</p>",
       "feedbacks": [],
       "answers": [
         "Maintain Categories",
@@ -3760,7 +3760,7 @@
   {
     "assessment_type": "multi-select",
     "prompt": {
-      "question": "Many actions are included with flow designer, what are some frequently used core actions? (Choose four.)",
+      "question": "<p>Many actions are included with flow designer, what are some frequently used core actions? (Choose four.)</p>",
       "feedbacks": [],
       "answers": [
         "Look for Update",
@@ -3777,7 +3777,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "What is the function of user impersonation?",
+      "question": "<p>What is the function of user impersonation?</p>",
       "feedbacks": [],
       "answers": [
         "Testing and visibility",
@@ -3792,7 +3792,7 @@
   {
     "assessment_type": "multi-select",
     "prompt": {
-      "question": "Tables may have a One to Many relationships. From the Service Catalog, what are examples of tables having a one to many relationships? (Choose three.)",
+      "question": "<p>Tables may have a One to Many relationships. From the Service Catalog, what are examples of tables having a one to many relationships? (Choose three.)</p>",
       "feedbacks": [],
       "answers": [
         "One Approval can have many Requests",
@@ -3808,17 +3808,17 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "<p>Which icon would you double click, to expand and collapse the list of all Applications and Modules?\n</p><p><img src=\"https://www.examtopics.com/assets/media/exam-media/04221/0005200002.jpg\"></p>",
+      "question": "<p>Which icon would you double click, to expand and collapse the list of all Applications and Modules?</p><p><img src=\"https://www.examtopics.com/assets/media/exam-media/04221/0005200002.jpg\"></p>",
       "feedbacks": [],
       "answers": ["Star", "Clock", "Application", "Funnel"]
     },
     "correct_response": ["c"],
-    "question_plain": "Which icon would you double click, to expand and collapse the list of all Applications and Modules?\n"
+    "question_plain": "Which icon would you double click, to expand and collapse the list of all Applications and Modules?"
   },
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "Which tab on the knowledge base record, would you use to identify the sets of users who are able to read articles in that knowledge base?",
+      "question": "<p>Which tab on the knowledge base record, would you use to identify the sets of users who are able to read articles in that knowledge base?</p>",
       "feedbacks": [],
       "answers": ["Access List", "Can Access", "Accessible to", "Can Read"]
     },
@@ -3828,7 +3828,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "IntegrationHub enables execution of third-party APIs as a part of a flow. These integrations are referred to as",
+      "question": "<p>IntegrationHub enables execution of third-party APIs as a part of a flow. These integrations are referred to as</p>",
       "feedbacks": [],
       "answers": ["an action", "a spoke", "a connection", "an integration step"]
     },
@@ -3838,7 +3838,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "You are asked to create an option in the Service Catalog, which will allow a user to click Get Help and describe the issue they are having. These forms should create incident records, which are automatically routed to the Service Desk. Which method would you use?",
+      "question": "<p>You are asked to create an option in the Service Catalog, which will allow a user to click Get Help and describe the issue they are having. These forms should create incident records, which are automatically routed to the Service Desk. Which method would you use?</p>",
       "feedbacks": [],
       "answers": [
         "Create Record Producer",
@@ -3853,7 +3853,7 @@
   {
     "assessment_type": "multi-select",
     "prompt": {
-      "question": "The ServiceNow platform supports a wide variety of plug-and-play applications. You can choose from the included workflows of build your own workflow: Which of these workflows are included in the platform? (Choose three.)",
+      "question": "<p>The ServiceNow platform supports a wide variety of plug-and-play applications. You can choose from the included workflows of build your own workflow: Which of these workflows are included in the platform? (Choose three.)</p>",
       "feedbacks": [],
       "answers": [
         "Federal Workflows",
@@ -3870,7 +3870,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "What helps to define the structure of a catalog item form that is displayed to the customer?",
+      "question": "<p>What helps to define the structure of a catalog item form that is displayed to the customer?</p>",
       "feedbacks": [],
       "answers": [
         "Variables",
@@ -3885,7 +3885,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "Which of the following statements is true when a new table is created by extending another table?",
+      "question": "<p>Which of the following statements is true when a new table is created by extending another table?</p>",
       "feedbacks": [],
       "answers": [
         "The new table archives the parent table and assumed its roles in the database",
@@ -3900,7 +3900,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "What do you activate when you want to add applications or functionality within your development instance?",
+      "question": "<p>What do you activate when you want to add applications or functionality within your development instance?</p>",
       "feedbacks": [],
       "answers": [
         "App Package",
@@ -3916,7 +3916,7 @@
   {
     "assessment_type": "multi-select",
     "prompt": {
-      "question": "From the User menu, which actions can a user select? (Choose three.)",
+      "question": "<p>From the User menu, which actions can a user select? (Choose three.)</p>",
       "feedbacks": [],
       "answers": [
         "Send Notifications",
@@ -3933,7 +3933,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "What module enables an administrator to define destinations for imported data on any ServiceNow table?",
+      "question": "<p>What module enables an administrator to define destinations for imported data on any ServiceNow table?</p>",
       "feedbacks": [],
       "answers": ["Load Data", "Field Transform", "Schema Map", "Transform Map"]
     },
@@ -3943,7 +3943,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "What controls the publishing and retiring process for knowledge articles?",
+      "question": "<p>What controls the publishing and retiring process for knowledge articles?</p>",
       "feedbacks": [],
       "answers": [
         "Approval Policies",
@@ -3959,7 +3959,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "What is specified in an Access Control rule?",
+      "question": "<p>What is specified in an Access Control rule?</p>",
       "feedbacks": [],
       "answers": [
         "Groups, Conditional Expressions and Workflows",
@@ -3974,7 +3974,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "Which is the base table of the configuration management database hierarchy?",
+      "question": "<p>Which is the base table of the configuration management database hierarchy?</p>",
       "feedbacks": [],
       "answers": ["cmdb_ci", "cmdb", "cmdb_rel_ci", "ucmdb"]
     },
@@ -3984,7 +3984,7 @@
   {
     "assessment_type": "multi-select",
     "prompt": {
-      "question": "While showing a customer their Incident form, they ask to change the Priority field title to display their internal terminology PValue. How would you do that? (Choose two.)",
+      "question": "<p>While showing a customer their Incident form, they ask to change the Priority field title to display their internal terminology PValue. How would you do that? (Choose two.)</p>",
       "feedbacks": [],
       "answers": [
         "Right click on Priority and select Configure Label",
@@ -3999,7 +3999,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "You are creating a catalog item for ordering a new desktop computer. The computers have these options:\n\n\nColor: Black or Silver -\n\nRAM: 32 MB or 64MB -\n\nKeyboard: Standard or Ergonomic -\n\nMonitor: 24 inch or 32 inch -\n\nHow would you add these options to the catalog item form?",
+      "question": "<p>You are creating a catalog item for ordering a new desktop computer. The computers have these options:</p><p>Color: Black or Silver -</p><p>RAM: 32 MB or 64MB -</p><p>Keyboard: Standard or Ergonomic -</p><p>Monitor: 24 inch or 32 inch -</p><p>How would you add these options to the catalog item form?</p>",
       "feedbacks": [],
       "answers": [
         "Add choices",
@@ -4009,12 +4009,12 @@
       ]
     },
     "correct_response": ["b"],
-    "question_plain": "You are creating a catalog item for ordering a new desktop computer. The computers have these options:\n\n\nColor: Black or Silver -\n\nRAM: 32 MB or 64MB -\n\nKeyboard: Standard or Ergonomic -\n\nMonitor: 24 inch or 32 inch -\n\nHow would you add these options to the catalog item form?"
+    "question_plain": "You are creating a catalog item for ordering a new desktop computer. The computers have these options: Color: Black or Silver - RAM: 32 MB or 64MB - Keyboard: Standard or Ergonomic - Monitor: 24 inch or 32 inch - How would you add these options to the catalog item form?"
   },
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "You are looking at a list of Active Incidents. You want to exclude Incidents with the state of Resolved. How might you do that?",
+      "question": "<p>You are looking at a list of Active Incidents. You want to exclude Incidents with the state of Resolved. How might you do that?</p>",
       "feedbacks": [],
       "answers": [
         "On Search, select State, type not Resolved, press enter",
@@ -4030,7 +4030,7 @@
   {
     "assessment_type": "multi-select",
     "prompt": {
-      "question": "When adding a related list to a form, you choose the related list from the list collector. What is an example of a related list you might see on the list collector? (Choose three.)",
+      "question": "<p>When adding a related list to a form, you choose the related list from the list collector. What is an example of a related list you might see on the list collector? (Choose three.)</p>",
       "feedbacks": [],
       "answers": [
         "Problem==Parent",
@@ -4046,7 +4046,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "What is a characteristic of importing data into ServiceNow?",
+      "question": "<p>What is a characteristic of importing data into ServiceNow?</p>",
       "feedbacks": [],
       "answers": [
         "An existing Transform Map can be used one time on the same import set",
@@ -4061,7 +4061,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "What type of query allows you to filter list data using normal words, instead of the condition builder?",
+      "question": "<p>What type of query allows you to filter list data using normal words, instead of the condition builder?</p>",
       "feedbacks": [],
       "answers": [
         "Natural Language Query",
@@ -4077,7 +4077,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "What type of user (persona) has clearly defined paths and workflows in the platform and have one or more roles (ie itil and approver_user)?",
+      "question": "<p>What type of user (persona) has clearly defined paths and workflows in the platform and have one or more roles (ie itil and approver_user)?</p>",
       "feedbacks": [],
       "answers": [
         "Workflow User",
@@ -4094,7 +4094,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "When importing spreadsheet data into ServiceNow, in which step does the data get written to the receiving table?",
+      "question": "<p>When importing spreadsheet data into ServiceNow, in which step does the data get written to the receiving table?</p>",
       "feedbacks": [],
       "answers": [
         "Run Transform",
@@ -4110,7 +4110,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "What are the steps to apply an update set retrieved from another instance?",
+      "question": "<p>What are the steps to apply an update set retrieved from another instance?</p>",
       "feedbacks": [],
       "answers": [
         "Load the Update Set > Import the Update Set > Install",
@@ -4125,7 +4125,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "If a knowledge base has no access details specified, what users are able to read articles in that knowledge base?",
+      "question": "<p>If a knowledge base has no access details specified, what users are able to read articles in that knowledge base?</p>",
       "feedbacks": [],
       "answers": [
         "itil users",
@@ -4141,7 +4141,7 @@
   {
     "assessment_type": "multi-select",
     "prompt": {
-      "question": "Which modules can you use to create a new table? (Choose two.)",
+      "question": "<p>Which modules can you use to create a new table? (Choose two.)</p>",
       "feedbacks": [],
       "answers": ["Dictionary", "Schema Map", "Tables", "Tables & Columns"]
     },
@@ -4151,7 +4151,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "A new Service Desk employee in Latin America complains that the create dates and times are incorrect on their Incident list. What would you suggest to fix this issue?",
+      "question": "<p>A new Service Desk employee in Latin America complains that the create dates and times are incorrect on their Incident list. What would you suggest to fix this issue?</p>",
       "feedbacks": [],
       "answers": [
         "Have them clear their cache.",
@@ -4167,7 +4167,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "After finishing your work on High Security Settings, what do you do to return to normal admin security levels?",
+      "question": "<p>After finishing your work on High Security Settings, what do you do to return to normal admin security levels?</p>",
       "feedbacks": [],
       "answers": [
         "Select Normal role",
@@ -4183,7 +4183,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "How is a group defined in ServiceNow?",
+      "question": "<p>How is a group defined in ServiceNow?</p>",
       "feedbacks": [],
       "answers": [
         "A group is one record stored in the Group Type [sys_user_group_type] table",
@@ -4198,7 +4198,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "What is a formatter? Select one of the following.",
+      "question": "<p>What is a formatter? Select one of the following.</p>",
       "feedbacks": [],
       "answers": [
         "A formatter allows you to configure applications on your instance",
@@ -4213,7 +4213,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "Which of the following statements describes how data is organized in a table?",
+      "question": "<p>Which of the following statements describes how data is organized in a table?</p>",
       "feedbacks": [],
       "answers": [
         "A column is a field in the database and a record is one user",
@@ -4228,7 +4228,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "Which of the following is true of Service Catalog Items in relation to the Service Catalog?",
+      "question": "<p>Which of the following is true of Service Catalog Items in relation to the Service Catalog?</p>",
       "feedbacks": [],
       "answers": [
         "They run behind the scenes.",
@@ -4243,7 +4243,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "What information does the System Dictionary contain?",
+      "question": "<p>What information does the System Dictionary contain?</p>",
       "feedbacks": [],
       "answers": [
         "The human-readable labels and language settings",
@@ -4258,7 +4258,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "Groups are stored in what table?",
+      "question": "<p>Groups are stored in what table?</p>",
       "feedbacks": [],
       "answers": [
         "User Group [user_groups]",
@@ -4274,7 +4274,7 @@
   {
     "assessment_type": "multi-select",
     "prompt": {
-      "question": "When selecting the Target table for an import, which tables can you select? (Choose three.)",
+      "question": "<p>When selecting the Target table for an import, which tables can you select? (Choose three.)</p>",
       "feedbacks": [],
       "answers": [
         "Tables outside of ServiceNow",
@@ -4290,7 +4290,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "What does ServiceNow recommend as a best practice regarding data imports?",
+      "question": "<p>What does ServiceNow recommend as a best practice regarding data imports?</p>",
       "feedbacks": [],
       "answers": [
         "Adjust your Transform maps, after the data is loaded into the target table.",
@@ -4306,17 +4306,17 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "A customer asks you to make the following updates to a form:\n\n1. When Caller field is populated, automatically look up caller location and load it in the Location field.\n2. Add notice at the top of the page when the record is submitted.\n\nWhat type of script would you use to meet this requirement?",
+      "question": "<p>A customer asks you to make the following updates to a form:</p><p>1. When Caller field is populated, automatically look up caller location and load it in the Location field.</p><p>2. Add notice at the top of the page when the record is submitted.</p><p>What type of script would you use to meet this requirement?</p>",
       "feedbacks": [],
       "answers": ["UI script", "Server script", "JavaScript", "Client script"]
     },
     "correct_response": ["d"],
-    "question_plain": "A customer asks you to make the following updates to a form:\n\n1. When Caller field is populated, automatically look up caller location and load it in the Location field.\n2. Add notice at the top of the page when the record is submitted.\n\nWhat type of script would you use to meet this requirement?"
+    "question_plain": "A customer asks you to make the following updates to a form: 1. When Caller field is populated, automatically look up caller location and load it in the Location field. 2. Add notice at the top of the page when the record is submitted. What type of script would you use to meet this requirement?"
   },
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "Your company is giving all first line workers a special T-shirt as a recognition for their hard work. Management team wants a way for employees to order the T- shirt, with the ability to specify the preferred size and color. How would you ensure that only first line workers (non-managers) can submit the order?",
+      "question": "<p>Your company is giving all first line workers a special T-shirt as a recognition for their hard work. Management team wants a way for employees to order the T- shirt, with the ability to specify the preferred size and color. How would you ensure that only first line workers (non-managers) can submit the order?</p>",
       "feedbacks": [],
       "answers": [
         "Create Record Producer and use the Available For list to specify First Line [sn_first_line] role",
@@ -4331,7 +4331,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "What ServiceNow feature can be triggered by events, and is used to inform users about activities or updates in ServiceNow?",
+      "question": "<p>What ServiceNow feature can be triggered by events, and is used to inform users about activities or updates in ServiceNow?</p>",
       "feedbacks": [],
       "answers": ["Notifications", "Alerts", "Texts", "Events", "Emails"]
     },
@@ -4341,7 +4341,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "Which application is used primarily to load data into ServiceNow?",
+      "question": "<p>Which application is used primarily to load data into ServiceNow?</p>",
       "feedbacks": [],
       "answers": [
         "Import Hub",
@@ -4356,7 +4356,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "Which feature can be used to categorize a set of records from a list and make them visible to other users?",
+      "question": "<p>Which feature can be used to categorize a set of records from a list and make them visible to other users?</p>",
       "feedbacks": [],
       "answers": ["Tags", "History", "Favorites", "Activity Formatter"]
     },
@@ -4366,7 +4366,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "Which allows the creation of a task-based record from Service Catalog?",
+      "question": "<p>Which allows the creation of a task-based record from Service Catalog?</p>",
       "feedbacks": [],
       "answers": [
         "Assignment Rule",
@@ -4381,7 +4381,7 @@
   {
     "assessment_type": "multi-select",
     "prompt": {
-      "question": "What is (are) best practice(s) regarding users/groups/roles? (Choose two.)",
+      "question": "<p>What is (are) best practice(s) regarding users/groups/roles? (Choose two.)</p>",
       "feedbacks": [],
       "answers": [
         "You should never assign roles to groups.",
@@ -4396,7 +4396,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "What enables you to trace the connection from an infrastructure item, like a Server, to the Services that are dependent on that Server?",
+      "question": "<p>What enables you to trace the connection from an infrastructure item, like a Server, to the Services that are dependent on that Server?</p>",
       "feedbacks": [],
       "answers": [
         "Automapping Utility",
@@ -4411,7 +4411,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "What tool is used to import data from various data sources, and map that data into ServiceNow tables?",
+      "question": "<p>What tool is used to import data from various data sources, and map that data into ServiceNow tables?</p>",
       "feedbacks": [],
       "answers": ["Transform Set", "Data Pack", "Update Set", "Import Set"]
     },
@@ -4421,7 +4421,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "When importing data from a spreadsheet, which step defines where the incoming data columns will be written in the receiving table?",
+      "question": "<p>When importing data from a spreadsheet, which step defines where the incoming data columns will be written in the receiving table?</p>",
       "feedbacks": [],
       "answers": [
         "Schedule Transform",
@@ -4437,7 +4437,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "An IT manager is responsible for the Network and Hardware assignment groups, each group contains 5 team members. These team members are working on many tasks, but the manager cannot see any tasks on the Service Desk > My Groups Work list. What could explain this?",
+      "question": "<p>An IT manager is responsible for the Network and Hardware assignment groups, each group contains 5 team members. These team members are working on many tasks, but the manager cannot see any tasks on the Service Desk > My Groups Work list. What could explain this?</p>",
       "feedbacks": [],
       "answers": [
         "The Assignment Group manager field is empty.",
@@ -4452,7 +4452,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "What is the path an Administrator could take to view the fulfillment stage task list for an order placed by a user?",
+      "question": "<p>What is the path an Administrator could take to view the fulfillment stage task list for an order placed by a user?</p>",
       "feedbacks": [],
       "answers": [
         "RITM (Number)>REQ (Number)>PROCUREMENT (Number)",
@@ -4467,7 +4467,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "Access Control rules are applied to a specific table, like the Incident table. What is the object name for a rule that is specific to the Incident table and the Major\nIncident field?",
+      "question": "<p>Access Control rules are applied to a specific table, like the Incident table. What is the object name for a rule that is specific to the Incident table and the Major</p><p>Incident field?</p>",
       "feedbacks": [],
       "answers": [
         "Incident.Major_Incident",
@@ -4478,12 +4478,12 @@
       ]
     },
     "correct_response": ["e"],
-    "question_plain": "Access Control rules are applied to a specific table, like the Incident table. What is the object name for a rule that is specific to the Incident table and the Major\nIncident field?"
+    "question_plain": "Access Control rules are applied to a specific table, like the Incident table. What is the object name for a rule that is specific to the Incident table and the Major Incident field?"
   },
   {
     "assessment_type": "multi-select",
     "prompt": {
-      "question": "Which of the following are not included in an Update Set, by default? (Choose four.)",
+      "question": "<p>Which of the following are not included in an Update Set, by default? (Choose four.)</p>",
       "feedbacks": [],
       "answers": [
         "Homepages",
@@ -4503,7 +4503,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "Where do Ul Policies run?",
+      "question": "<p>Where do Ul Policies run?</p>",
       "feedbacks": [],
       "answers": [
         "Client-side (browser)",
@@ -4518,7 +4518,7 @@
   {
     "assessment_type": "multi-select",
     "prompt": {
-      "question": "Which of the following are a type of client scripts supported in ServiceNow? (Choose four.)",
+      "question": "<p>Which of the following are a type of client scripts supported in ServiceNow? (Choose four.)</p>",
       "feedbacks": [],
       "answers": [
         "onSubmit",
@@ -4536,7 +4536,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "On a Form header, what is the three bar icon called?",
+      "question": "<p>On a Form header, what is the three bar icon called?</p>",
       "feedbacks": [],
       "answers": [
         "Pancake icon",
@@ -4551,7 +4551,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "Which core table in the ServiceNow platform provides a series of standard fields used on each of the tables that extend it, such as the Incident [incident] and\nProblem [problem] tables?",
+      "question": "<p>Which core table in the ServiceNow platform provides a series of standard fields used on each of the tables that extend it, such as the Incident [incident] and</p><p>Problem [problem] tables?</p>",
       "feedbacks": [],
       "answers": [
         "Task [task]",
@@ -4561,12 +4561,12 @@
       ]
     },
     "correct_response": ["a"],
-    "question_plain": "Which core table in the ServiceNow platform provides a series of standard fields used on each of the tables that extend it, such as the Incident [incident] and\nProblem [problem] tables?"
+    "question_plain": "Which core table in the ServiceNow platform provides a series of standard fields used on each of the tables that extend it, such as the Incident [incident] and Problem [problem] tables?"
   },
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "You have heard about a new application released by ServiceNow. You want to try it out, to see if it might be useful for your company's ServiceNow implementation. What would be the best way to get hands-on experience with the new application?",
+      "question": "<p>You have heard about a new application released by ServiceNow. You want to try it out, to see if it might be useful for your company's ServiceNow implementation. What would be the best way to get hands-on experience with the new application?</p>",
       "feedbacks": [],
       "answers": [
         "Search the wiki for the sales demo request form",
@@ -4581,7 +4581,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "<p>\nWhich path would you take to access the table configuration page from a form?</p><p><img src=\"https://img.examtopics.com/csa/image4.png\"></p>",
+      "question": "<p>Which path would you take to access the table configuration page from a form?</p><p><img src=\"https://img.examtopics.com/csa/image4.png\"></p>",
       "feedbacks": [],
       "answers": [
         "The Form Context menu > View > Show Table",
@@ -4591,12 +4591,12 @@
       ]
     },
     "correct_response": ["d"],
-    "question_plain": "\nWhich path would you take to access the table configuration page from a form?"
+    "question_plain": "Which path would you take to access the table configuration page from a form?"
   },
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "What is the purpose of a Related List?",
+      "question": "<p>What is the purpose of a Related List?</p>",
       "feedbacks": [],
       "answers": [
         "To create a one-to-many relationship",
@@ -4611,7 +4611,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "What is the name of the string that displays filter criteria?",
+      "question": "<p>What is the name of the string that displays filter criteria?</p>",
       "feedbacks": [],
       "answers": ["Breadcrumb", "Choice", "Menu", "Topic"]
     },
@@ -4621,7 +4621,7 @@
   {
     "assessment_type": "multi-select",
     "prompt": {
-      "question": "Access Control rules may be defined with which of the following permission requirements? (Choose three.)",
+      "question": "<p>Access Control rules may be defined with which of the following permission requirements? (Choose three.)</p>",
       "feedbacks": [],
       "answers": [
         "Roles",
@@ -4638,7 +4638,7 @@
   {
     "assessment_type": "multi-select",
     "prompt": {
-      "question": "What are advantages of using Flow Designer? (Choose three.)",
+      "question": "<p>What are advantages of using Flow Designer? (Choose three.)</p>",
       "feedbacks": [],
       "answers": [
         "Supports advanced developers",
@@ -4654,7 +4654,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "A colleague wants to rearrange the columns on their My Work List. Once the user has navigated to the list, where should they navigate to select and arrange the columns?",
+      "question": "<p>A colleague wants to rearrange the columns on their My Work List. Once the user has navigated to the list, where should they navigate to select and arrange the columns?</p>",
       "feedbacks": [],
       "answers": [
         "Right click on any column header, Context Menu > Configure > List Layout",
@@ -4669,7 +4669,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "Which set of steps is used to import spreadsheet data into a ServiceNow table?",
+      "question": "<p>Which set of steps is used to import spreadsheet data into a ServiceNow table?</p>",
       "feedbacks": [],
       "answers": [
         "Select Data Source, Schedule Transform",
@@ -4684,7 +4684,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "A knowledge article must be which of the following states to display to a user?",
+      "question": "<p>A knowledge article must be which of the following states to display to a user?</p>",
       "feedbacks": [],
       "answers": ["Published", "Drafted", "Retired", "Reviewed"]
     },
@@ -4694,7 +4694,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "Two departments (HR Onboarding and Facilities) have come to you, asking for a way for employees to request event room set up services. The requirements are the same for the form and the task routing to the Facilities' assignment group.\n✑ For HR, the item will be used primarily for the Onboarding coordinators, for employee orientation sessions.\n✑ For Facilities, the item will be used for anyone in the company who needs room set up services.\nHowever, both departments have their own service catalogs. What do you do, to support these requirements?",
+      "question": "<p>Two departments (HR Onboarding and Facilities) have come to you, asking for a way for employees to request event room set up services. The requirements are the same for the form and the task routing to the Facilities' assignment group.</p><ul><li><p>For HR, the item will be used primarily for the Onboarding coordinators, for employee orientation sessions.</p></li><li><p>For Facilities, the item will be used for anyone in the company who needs room set up services.</p></li></ul><p>However, both departments have their own service catalogs. What do you do, to support these requirements?</p>",
       "feedbacks": [],
       "answers": [
         "Create one Catalog Item for HR Event Room Set Up and one for Facilities Event Room Set Up; then publish each to the appropriate Catalog.",
@@ -4704,12 +4704,12 @@
       ]
     },
     "correct_response": ["b"],
-    "question_plain": "Two departments (HR Onboarding and Facilities) have come to you, asking for a way for employees to request event room set up services. The requirements are the same for the form and the task routing to the Facilities' assignment group.\n✑ For HR, the item will be used primarily for the Onboarding coordinators, for employee orientation sessions.\n✑ For Facilities, the item will be used for anyone in the company who needs room set up services.\nHowever, both departments have their own service catalogs. What do you do, to support these requirements?"
+    "question_plain": "Two departments (HR Onboarding and Facilities) have come to you, asking for a way for employees to request event room set up services. The requirements are the same for the form and the task routing to the Facilities' assignment group. ✑ For HR, the item will be used primarily for the Onboarding coordinators, for employee orientation sessions. ✑ For Facilities, the item will be used for anyone in the company who needs room set up services. However, both departments have their own service catalogs. What do you do, to support these requirements?"
   },
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "Which one of the following is NOT a type of Visual Task Board?",
+      "question": "<p>Which one of the following is NOT a type of Visual Task Board?</p>",
       "feedbacks": [],
       "answers": ["Flexible", "Freeform", "Feature", "Guided boards"]
     },
@@ -4719,7 +4719,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "Which one of the following statements best describes the purpose of an Update Set?",
+      "question": "<p>Which one of the following statements best describes the purpose of an Update Set?</p>",
       "feedbacks": [],
       "answers": [
         "An Update Set allows administrators to group a series of changes into a named set and then move this set as a unit to other systems",
@@ -4734,7 +4734,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "On what part of the ServiceNow instance, would you find the option to Impersonate User?",
+      "question": "<p>On what part of the ServiceNow instance, would you find the option to Impersonate User?</p>",
       "feedbacks": [],
       "answers": [
         "User Menu",
@@ -4749,7 +4749,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "Which helps to visualize configuration items and their relationships?",
+      "question": "<p>Which helps to visualize configuration items and their relationships?</p>",
       "feedbacks": [],
       "answers": [
         "Tables",
@@ -4765,7 +4765,7 @@
   {
     "assessment_type": "multi-select",
     "prompt": {
-      "question": "When building an extended table from a base table, which fields do you need to create? (Choose two.)",
+      "question": "<p>When building an extended table from a base table, which fields do you need to create? (Choose two.)</p>",
       "feedbacks": [],
       "answers": [
         "The fields that are not in the base table.",
@@ -4780,7 +4780,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "Which feature helps to automatically allocate a critical, high-priority, service request to the appropriate assignment group or team member?",
+      "question": "<p>Which feature helps to automatically allocate a critical, high-priority, service request to the appropriate assignment group or team member?</p>",
       "feedbacks": [],
       "answers": [
         "Assignment Rule",
@@ -4795,7 +4795,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "Which ServiceNow utility provides a modern interactive graphical interface to visualize configuration items and their relationships?",
+      "question": "<p>Which ServiceNow utility provides a modern interactive graphical interface to visualize configuration items and their relationships?</p>",
       "feedbacks": [],
       "answers": [
         "Flow Design",
@@ -4810,7 +4810,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "Which of the following protects applications by identifying and restricting access to available files and data?",
+      "question": "<p>Which of the following protects applications by identifying and restricting access to available files and data?</p>",
       "feedbacks": [],
       "answers": [
         "Application Configuration",
@@ -4825,7 +4825,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "Which term refers to application menus and modules which you may want to access quickly and often?",
+      "question": "<p>Which term refers to application menus and modules which you may want to access quickly and often?</p>",
       "feedbacks": [],
       "answers": ["Breadcrumb", "Favorite", "Tag", "Bookmark"]
     },
@@ -4835,7 +4835,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "What do you click when you have made modifications to your report, and you want to see the results without saving?",
+      "question": "<p>What do you click when you have made modifications to your report, and you want to see the results without saving?</p>",
       "feedbacks": [],
       "answers": ["Preview", "Test", "Run", "Try It", "Execute"]
     },
@@ -4845,7 +4845,7 @@
   {
     "assessment_type": "multi-select",
     "prompt": {
-      "question": "For your implementation, the following tables are extended from each other:\n• Incident table is extended from Task table.\n• Super Incident table is extended from Incident table.\n\nIn this situation, which table(s) are Parent, Child and Base tables? (Choose five.)",
+      "question": "<p>For your implementation, the following tables are extended from each other:</p><ul><li><p>Incident table is extended from Task table.</p></li><li><p>Super Incident table is extended from Incident table.</p></li></ul><p>In this situation, which table(s) are Parent, Child and Base tables? (Choose five.)</p>",
       "feedbacks": [],
       "answers": [
         "Super Incident table is a Parent table",
@@ -4859,12 +4859,12 @@
       ]
     },
     "correct_response": ["b", "f", "g", "h", "i"],
-    "question_plain": "For your implementation, the following tables are extended from each other:\n• Incident table is extended from Task table.\n• Super Incident table is extended from Incident table.\n\nIn this situation, which table(s) are Parent, Child and Base tables? (Choose five.)"
+    "question_plain": "For your implementation, the following tables are extended from each other: • Incident table is extended from Task table. • Super Incident table is extended from Incident table. In this situation, which table(s) are Parent, Child and Base tables? (Choose five.)"
   },
   {
     "assessment_type": "multi-select",
     "prompt": {
-      "question": "Which features allow you to update multiple records at one time? (Choose two.)",
+      "question": "<p>Which features allow you to update multiple records at one time? (Choose two.)</p>",
       "feedbacks": [],
       "answers": [
         "List Editor",
@@ -4880,7 +4880,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "What is the most common role that has access to almost all platform features, functions, and data?",
+      "question": "<p>What is the most common role that has access to almost all platform features, functions, and data?</p>",
       "feedbacks": [],
       "answers": [
         "Security Admin [security_admin]",
@@ -4896,7 +4896,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "Which type of scripts run in the browser?",
+      "question": "<p>Which type of scripts run in the browser?</p>",
       "feedbacks": [],
       "answers": [
         "Script Include Scripts",
@@ -4911,7 +4911,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "Which action enables a user to view and specify date and time formats in their instance?",
+      "question": "<p>Which action enables a user to view and specify date and time formats in their instance?</p>",
       "feedbacks": [],
       "answers": [
         "Select the User menu > Preferences > Time Settings > Toggle display time zone",
@@ -4927,7 +4927,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "What capability allows users to create dashboards with widgets to visualize data over time in order to identify areas of improvement?",
+      "question": "<p>What capability allows users to create dashboards with widgets to visualize data over time in order to identify areas of improvement?</p>",
       "feedbacks": [],
       "answers": [
         "Scheduled Reports",
@@ -4942,7 +4942,7 @@
   {
     "assessment_type": "multi-select",
     "prompt": {
-      "question": "When searching using the App Navigator search field, what can be returned? (Choose four.)",
+      "question": "<p>When searching using the App Navigator search field, what can be returned? (Choose four.)</p>",
       "feedbacks": [],
       "answers": [
         "Names of Applications and Modules",
@@ -4959,7 +4959,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "When you set a policy that is applied to all data entered into the platform (UI, Import Sets, or Web Services), where does this policy run by default?",
+      "question": "<p>When you set a policy that is applied to all data entered into the platform (UI, Import Sets, or Web Services), where does this policy run by default?</p>",
       "feedbacks": [],
       "answers": ["Client", "Network", "Browser", "Server"]
     },
@@ -4969,7 +4969,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "Which flow components allow you to specify when a flow should be run?",
+      "question": "<p>Which flow components allow you to specify when a flow should be run?</p>",
       "feedbacks": [],
       "answers": [
         "Trigger and Condition Pill",
@@ -4985,7 +4985,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "What import utility do you use when the field names on the import set match the name of the fields on the Target table?",
+      "question": "<p>What import utility do you use when the field names on the import set match the name of the fields on the Target table?</p>",
       "feedbacks": [],
       "answers": [
         "Schema Mapping",
@@ -5000,7 +5000,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "On what part of the ServiceNow instance, would you find the option to Impersonate User?",
+      "question": "<p>On what part of the ServiceNow instance, would you find the option to Impersonate User?</p>",
       "feedbacks": [],
       "answers": ["Module", "Content Frame", "Application Navigator", "Banner"]
     },
@@ -5010,7 +5010,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "What action will allow you to personalize layouts of columns in a list?",
+      "question": "<p>What action will allow you to personalize layouts of columns in a list?</p>",
       "feedbacks": [],
       "answers": [
         "Context Menu > View > Personalize",
@@ -5025,7 +5025,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "What is the first step in the process to import spreadsheet data into ServiceNow?",
+      "question": "<p>What is the first step in the process to import spreadsheet data into ServiceNow?</p>",
       "feedbacks": [],
       "answers": [
         "Select Import Set",
@@ -5041,7 +5041,7 @@
   {
     "assessment_type": "multi-select",
     "prompt": {
-      "question": "What are three security modules often used by the System Administrator? (Choose three.)",
+      "question": "<p>What are three security modules often used by the System Administrator? (Choose three.)</p>",
       "feedbacks": [],
       "answers": [
         "System Properties > Security",
@@ -5059,7 +5059,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "How would you distinguish between a Base Class table and a Parent Class table?",
+      "question": "<p>How would you distinguish between a Base Class table and a Parent Class table?</p>",
       "feedbacks": [],
       "answers": [
         "Extended tables are always extended from Parent tables. Extended tables are usually extended from Base tables.",
@@ -5074,7 +5074,7 @@
   {
     "assessment_type": "multi-select",
     "prompt": {
-      "question": "A customer wants to be able to identify and track components of their infrastructure that support their eCommerce service. What ServiceNow products could support this requirement? (Choose three.)",
+      "question": "<p>A customer wants to be able to identify and track components of their infrastructure that support their eCommerce service. What ServiceNow products could support this requirement? (Choose three.)</p>",
       "feedbacks": [],
       "answers": [
         "Asset Management",
@@ -5090,7 +5090,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "Which of the following is used to categorize, flag, and locate records?",
+      "question": "<p>Which of the following is used to categorize, flag, and locate records?</p>",
       "feedbacks": [],
       "answers": ["Search", "Favorites", "Tags", "Bookmarks"]
     },
@@ -5100,7 +5100,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "What is the purpose of an application scope?",
+      "question": "<p>What is the purpose of an application scope?</p>",
       "feedbacks": [],
       "answers": [
         "Scope determines which parts of an application are available for use by other applications In ServiceNow",
@@ -5115,7 +5115,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "Buttons, form links, and context menu items are all examples of what type of functionality?",
+      "question": "<p>Buttons, form links, and context menu items are all examples of what type of functionality?</p>",
       "feedbacks": [],
       "answers": ["Business Rule", "UI Action", "Client Script", "UI Policy"]
     },
@@ -5125,7 +5125,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "A customer requests the following data quality measures be added:\n• Incident numbers should be read only, on all lists and forms, for all users.\n• Short Description field should be mandatory, on all records, across all applications, on Insert.\n\nWhich type of policy would you use to meet this requirement?",
+      "question": "<p>A customer requests the following data quality measures be added:</p><ul><li><p>Incident numbers should be read only, on all lists and forms, for all users.</p></li><li><p>Short Description field should be mandatory, on all records, across all applications, on Insert.</p></li></ul><p>Which type of policy would you use to meet this requirement?</p>",
       "feedbacks": [],
       "answers": [
         "Data Quality Policy",
@@ -5135,12 +5135,12 @@
       ]
     },
     "correct_response": ["c"],
-    "question_plain": "A customer requests the following data quality measures be added:\n• Incident numbers should be read only, on all lists and forms, for all users.\n• Short Description field should be mandatory, on all records, across all applications, on Insert.\n\nWhich type of policy would you use to meet this requirement?"
+    "question_plain": "A customer requests the following data quality measures be added: • Incident numbers should be read only, on all lists and forms, for all users. • Short Description field should be mandatory, on all records, across all applications, on Insert. Which type of policy would you use to meet this requirement?"
   },
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "What component of the ServiceNow infrastructure defines every table and field in the system?",
+      "question": "<p>What component of the ServiceNow infrastructure defines every table and field in the system?</p>",
       "feedbacks": [],
       "answers": [
         "Schema",
@@ -5156,7 +5156,7 @@
   {
     "assessment_type": "multi-select",
     "prompt": {
-      "question": "On a related list, which buttons are commonly used for managing the records on the list? (Choose three.)",
+      "question": "<p>On a related list, which buttons are commonly used for managing the records on the list? (Choose three.)</p>",
       "feedbacks": [],
       "answers": ["Add", "Edit", "Publish", "Manage", "New"]
     },
@@ -5166,7 +5166,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "What would NOT appear in the Application Navigator if `service` is typed into the filter field?",
+      "question": "<p>What would NOT appear in the Application Navigator if `service` is typed into the filter field?</p>",
       "feedbacks": [],
       "answers": [
         "Configuration > Business Services",
@@ -5181,7 +5181,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "What contains the configuration changes made in an instance (i.e. changes in a form) and helps to implement the changes from the Dev environment to another environment?",
+      "question": "<p>What contains the configuration changes made in an instance (i.e. changes in a form) and helps to implement the changes from the Dev environment to another environment?</p>",
       "feedbacks": [],
       "answers": [
         "Transform maps",
@@ -5196,7 +5196,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "When using the Data Pill Picker, use which keys to dot-walk to fields in other tables?",
+      "question": "<p>When using the Data Pill Picker, use which keys to dot-walk to fields in other tables?</p>",
       "feedbacks": [],
       "answers": [
         "Plus, Minus",
@@ -5212,7 +5212,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "Which ServiceNow capability allows you to provide knowledge articles, via a conversational messaging interface?",
+      "question": "<p>Which ServiceNow capability allows you to provide knowledge articles, via a conversational messaging interface?</p>",
       "feedbacks": [],
       "answers": [
         "Agent Assist",
@@ -5227,7 +5227,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "Which displays the list of activities, or history, on a form?",
+      "question": "<p>Which displays the list of activities, or history, on a form?</p>",
       "feedbacks": [],
       "answers": ["Formatter", "Dictionary", "Sidebar", "History Menu"]
     },
@@ -5237,7 +5237,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "A Role is defined as what?",
+      "question": "<p>A Role is defined as what?</p>",
       "feedbacks": [],
       "answers": [
         "A collection of permissions",
@@ -5252,7 +5252,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "<p>\nYou are editing a new incident record and would like the \"Save\" button to be located on the Form header. Which action would need to be taken for that button to appear?</p><p><img src=\"https://img.examtopics.com/csa/image2.png\"></p>",
+      "question": "<p>You are editing a new incident record and would like the \"Save\" button to be located on the Form header. Which action would need to be taken for that button to appear?</p><p><img src=\"https://img.examtopics.com/csa/image2.png\"></p>",
       "feedbacks": [],
       "answers": [
         "Context Menu > Form Design > add the “Save” button.",
@@ -5262,12 +5262,12 @@
       ]
     },
     "correct_response": ["c"],
-    "question_plain": "\nYou are editing a new incident record and would like the \"Save\" button to be located on the Form header. Which action would need to be taken for that button to appear?"
+    "question_plain": "You are editing a new incident record and would like the \"Save\" button to be located on the Form header. Which action would need to be taken for that button to appear?"
   },
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "Which module would you use to customize your instances banner image, text and colors?",
+      "question": "<p>Which module would you use to customize your instances banner image, text and colors?</p>",
       "feedbacks": [],
       "answers": [
         "System UI > UI Pages > Branding",
@@ -5283,7 +5283,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "Security rules are defined to restrict the permissions of users from viewing and interacting with data. What are these security rules called?",
+      "question": "<p>Security rules are defined to restrict the permissions of users from viewing and interacting with data. What are these security rules called?</p>",
       "feedbacks": [],
       "answers": [
         "CRUD Rules",
@@ -5299,7 +5299,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "Which ServiceNow utility gives a Service Desk agent the ability to trace from a Service having an issue, to see which CIs supporting that service have active issues?",
+      "question": "<p>Which ServiceNow utility gives a Service Desk agent the ability to trace from a Service having an issue, to see which CIs supporting that service have active issues?</p>",
       "feedbacks": [],
       "answers": [
         "CI Dependency View",
@@ -5314,7 +5314,7 @@
   {
     "assessment_type": "multi-select",
     "prompt": {
-      "question": "What are examples of UI Actions relating to forms? (Choose three.)",
+      "question": "<p>What are examples of UI Actions relating to forms? (Choose three.)</p>",
       "feedbacks": [],
       "answers": [
         "Form Columns",
@@ -5330,7 +5330,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "Which best describes a field in a ServiceNow table?",
+      "question": "<p>Which best describes a field in a ServiceNow table?</p>",
       "feedbacks": [],
       "answers": [
         "A field is a table row.",
@@ -5345,7 +5345,7 @@
   {
     "assessment_type": "multi-select",
     "prompt": {
-      "question": "On Access Control Definitions, what are ways you can set the permissions on a Table? (Choose three.)",
+      "question": "<p>On Access Control Definitions, what are ways you can set the permissions on a Table? (Choose three.)</p>",
       "feedbacks": [],
       "answers": [
         "Conditional Expressions",
@@ -5361,7 +5361,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "What is the definition of a group?",
+      "question": "<p>What is the definition of a group?</p>",
       "feedbacks": [],
       "answers": [
         "A collection of subject matter experts",
