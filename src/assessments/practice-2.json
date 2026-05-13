@@ -4467,7 +4467,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "<p>Access Control rules are applied to a specific table, like the Incident table. What is the object name for a rule that is specific to the Incident table and the Major</p><p>Incident field?</p>",
+      "question": "<p>Access Control rules are applied to a specific table, like the Incident table. What is the object name for a rule that is specific to the Incident table and the Major Incident field?</p>",
       "feedbacks": [],
       "answers": [
         "Incident.Major_Incident",
@@ -4493,11 +4493,10 @@
         "Schedules",
         "Database changes",
         "Related Lists",
-        "Report Definitions",
-        "All"
+        "Report Definitions"
       ]
     },
-    "correct_response": ["a", "b", "e", "i"],
+    "correct_response": ["a", "b", "e", "f"],
     "question_plain": "Which of the following are not included in an Update Set, by default? (Choose four.)"
   },
   {
