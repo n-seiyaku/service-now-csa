@@ -1,0 +1,846 @@
+[
+  {
+    "question": "A new employee joins the IT department and needs to perform work assigned to Network and Hardware groups. How would you set up their access? (Choose three.)",
+    "feedbacks": [
+      "Việc thêm tài khoản người dùng vào nhóm Hardware sẽ cấp cho họ quyền truy cập để thực hiện công việc được giao cho nhóm Hardware, cho phép họ làm việc trên các nhiệm vụ liên quan đến phần cứng trong bộ phận CNTT.",
+      "Việc thêm tài khoản người dùng vào IT Knowledgebase là không cần thiết để cấp quyền truy cập thực hiện công việc được giao cho nhóm Network và Hardware. IT Knowledgebase thường được sử dụng cho mục đích tài liệu và tham khảo, không phải để cấp quyền truy cập cho các nhóm cụ thể.",
+      "Việc tạo tài khoản người dùng là điều thiết yếu để cung cấp cho nhân viên mới các thông tin đăng nhập và quyền truy cập cần thiết vào hệ thống và tài nguyên của bộ phận CNTT. Nếu không có tài khoản người dùng, nhân viên sẽ không thể thực hiện bất kỳ công việc nào được giao cho nhóm Network và Hardware.",
+      "Việc thêm tài khoản người dùng vào nhóm itil không liên quan đến việc cấp quyền thực hiện công việc cho nhóm Network và Hardware. Nhóm itil thường liên quan đến các quy trình quản lý dịch vụ CNTT, chứ không phải các nhóm kỹ thuật cụ thể như Network và Hardware.",
+      "Việc thêm tài khoản người dùng vào nhóm Network sẽ cấp cho họ quyền truy cập để thực hiện công việc được giao cho nhóm Network, cho phép họ xử lý các tác vụ liên quan đến mạng trong bộ phận CNTT.",
+      "Việc thêm tài khoản người dùng vào Danh sách kiểm soát truy cập (ACL) không phải là cách làm tiêu chuẩn để cấp quyền thực hiện công việc cho các nhóm cụ thể như Network và Hardware. ACL thường được sử dụng để định nghĩa và thực thi các chính sách bảo mật, chứ không phải để quản lý quyền truy cập nhóm."
+    ]
+  },
+  {
+    "question": "The customer has asked that you change the default layout of the Task list. They would like these columns, in this order:NumberTask TypeParentShort DescriptionAssignment GroupAssigneeUpdatedAfter navigating to the list, where would you click, to meet this requirement?",
+    "feedbacks": [
+      "Việc nhấp vào List Context Menu và chọn Personalize List không cung cấp tùy chọn cấu hình hoặc thay đổi các cột trong danh sách Task. Tùy chọn này tập trung nhiều hơn vào việc cá nhân hóa chế độ xem danh sách cho từng người dùng thay vì thay đổi bố cục mặc định.",
+      "Việc nhấp vào List Context Menu và chọn Configure > Columns không cung cấp tùy chọn cụ thể để thay đổi thứ tự các cột trong danh sách Task. Tùy chọn này liên quan nhiều hơn đến việc định cấu hình khả năng hiển thị của các cột thay vì thay đổi thứ tự của chúng.",
+      "Việc nhấp chuột phải vào biểu tượng List Gear và chọn Configure > Columns không cung cấp tùy chọn cụ thể để thay đổi thứ tự các cột trong danh sách Task. Tùy chọn này tập trung nhiều hơn vào việc cấu hình chính các cột thay vì thay đổi thứ tự của chúng.",
+      "Việc nhấp chuột phải vào bất kỳ tiêu đề cột nào và chọn Configure > List Layout cung cấp tùy chọn chính xác để thay đổi bố cục mặc định của danh sách Task bằng cách cho phép bạn định cấu hình thứ tự các cột. Tùy chọn này giải quyết trực tiếp yêu cầu của khách hàng về việc thay đổi thứ tự cột trong danh sách Task."
+    ]
+  },
+  {
+    "question": "Which ServiceNow capability allows you to provide knowledge articles, via a conversational messaging interface?",
+    "feedbacks": [
+      "Agent Assist là một khả năng của ServiceNow giúp hỗ trợ các tổng đài viên bằng cách đề xuất các bài viết kiến thức, các mục danh mục hoặc các bản ghi tương tự có liên quan dựa trên ngữ cảnh của cuộc trò chuyện. Mặc dù nó giúp các tổng đài viên cung cấp hỗ trợ tốt hơn thông qua việc đề xuất thông tin liên quan, nhưng nó không trực tiếp cung cấp các bài viết kiến thức qua giao diện nhắn tin đàm thoại như mô tả trong câu hỏi.",
+      "Virtual Agent là khả năng của ServiceNow cho phép bạn cung cấp các bài viết kiến thức qua giao diện nhắn tin đàm thoại. Nó cho phép người dùng tương tác với chatbot để nhận câu trả lời, yêu cầu dịch vụ hoặc truy cập thông tin qua giao diện đàm thoại, khiến nó trở thành lựa chọn chính xác cho kịch bản được mô tả.",
+      "Now Messenger là một tính năng trong ServiceNow cho phép người dùng giao tiếp với nhau qua tin nhắn tức thời trên nền tảng. Mặc dù nó tạo điều kiện giao tiếp giữa những người dùng, nhưng nó không đặc biệt tập trung vào việc cung cấp các bài viết kiến thức qua giao diện nhắn tin đàm thoại như Virtual Agent.",
+      "Instance Chat là một tính năng trong ServiceNow cho phép người dùng giao tiếp với nhau trong instance thông qua trò chuyện thời gian thực. Nó được thiết kế cho giao tiếp nội bộ trên nền tảng và không cung cấp chức năng hiển thị các bài viết kiến thức qua giao diện nhắn tin đàm thoại giống như Virtual Agent."
+    ]
+  },
+  {
+    "question": "On the Form header, which element you to access form templates?",
+    "feedbacks": [
+      "Stamp không phải là thành phần được sử dụng để truy cập các mẫu biểu mẫu trên tiêu đề Form trong ServiceNow. Nó thường được sử dụng để biểu thị sự phê duyệt hoặc đánh dấu tài liệu, không phải để truy cập các mẫu biểu mẫu.",
+      "More Options (...) là thành phần chính xác để truy cập các mẫu biểu mẫu trên tiêu đề Form trong ServiceNow. Bằng cách nhấp vào More Options (...), người dùng có thể truy cập menu thả xuống bao gồm các tùy chọn để chọn mẫu biểu mẫu.",
+      "Pages không phải là thành phần được sử dụng để truy cập các mẫu biểu mẫu trên tiêu đề Form trong ServiceNow. Pages thường đề cập đến các phần hoặc tab khác nhau trong một biểu mẫu, không liên quan đến việc truy cập mẫu biểu mẫu.",
+      "Paperclip không phải là thành phần được sử dụng để truy cập các mẫu biểu mẫu trên tiêu đề Form trong ServiceNow. Các biểu tượng kẹp giấy thường được sử dụng để chỉ định các tệp đính kèm hoặc tệp liên quan đến bản ghi, không dùng để truy cập các mẫu biểu mẫu."
+    ]
+  },
+  {
+    "question": "What is the definition of a group?",
+    "feedbacks": [
+      "Một nhóm trong ServiceNow không được định nghĩa cụ thể là một tập hợp các chuyên gia về một chủ đề. Mặc dù các chuyên gia có thể là một phần của nhóm, nhưng định nghĩa chính về nhóm trong ServiceNow thì khác.",
+      "Một nhóm trong ServiceNow không tương đương với một phòng ban trong tổ chức. Phòng ban thường là các cấu trúc tổ chức, trong khi các nhóm trong ServiceNow phục vụ một mục đích khác.",
+      "Escalation pod không phải là định nghĩa của một nhóm trong ServiceNow. Escalation pod được sử dụng để quản lý và giải quyết các sự cố hoặc vấn đề, trong khi một nhóm trong ServiceNow có chức năng khác.",
+      "Một nhóm trong ServiceNow được định nghĩa chính xác là một tập hợp người dùng. Các nhóm được sử dụng để quản lý quyền truy cập, phân công nhiệm vụ và hợp lý hóa giao tiếp trên nền tảng.",
+      "Một nhóm trong ServiceNow không được định nghĩa là một tập hợp các tác vụ. Tác vụ là các hành động hoặc nhiệm vụ cá nhân trong nền tảng, trong khi các nhóm được sử dụng để tổ chức và quản lý người dùng cho nhiều mục đích khác nhau."
+    ]
+  },
+  {
+    "question": "Which ServiceNow utility provides a modern interactive graphical interface to visualize configuration items and their relationships?",
+    "feedbacks": [
+      "Flow Design trong ServiceNow chủ yếu được sử dụng để thiết kế và tự động hóa các luồng công việc và quy trình trong nền tảng. Nó không cung cấp riêng một giao diện đồ họa để trực quan hóa các mục cấu hình và mối quan hệ của chúng.",
+      "CI Class Map trong ServiceNow được sử dụng để xem và quản lý các mục cấu hình (CI) trong Cơ sở dữ liệu quản lý cấu hình (CMDB). Mặc dù nó giúp hiểu được các mối quan hệ giữa các CI, nhưng nó không cung cấp giao diện đồ họa tương tác hiện đại để trực quan hóa.",
+      "Dependency View trong ServiceNow là tiện ích cung cấp giao diện đồ họa tương tác hiện đại để trực quan hóa các mục cấu hình và mối quan hệ của chúng. Nó cho phép người dùng dễ dàng nhìn thấy sự phụ thuộc và kết nối giữa các CI khác nhau trong CMDB.",
+      "Business Service Map trong ServiceNow được sử dụng để lập bản đồ các dịch vụ kinh doanh và sự phụ thuộc của chúng trong nền tảng. Mặc dù nó giúp hiểu các mối quan hệ giữa các dịch vụ, nhưng nó không được thiết kế cụ thể để trực quan hóa các mục cấu hình và mối quan hệ của chúng trong một giao diện đồ họa tương tác hiện đại."
+    ]
+  },
+  {
+    "question": "What icon do you use to change the label on a Favorite?",
+    "feedbacks": [
+      "Biểu tượng ngôi sao thường được sử dụng để đánh dấu một mục là mục yêu thích, không phải để thay đổi nhãn trên mục yêu thích. Nó không có chức năng nào liên quan đến việc chỉnh sửa nhãn của một mục yêu thích trong ServiceNow.",
+      "Biểu tượng đồng hồ thường liên quan đến các hành động thời gian hoặc theo dõi lịch sử, không dùng để thay đổi nhãn trên mục yêu thích. Nó không có chức năng nào liên quan đến việc chỉnh sửa nhãn của một mục yêu thích trong ServiceNow.",
+      "Biểu tượng hình tam giác thường được sử dụng để biểu thị cảnh báo hoặc cần sự chú ý, không dùng để thay đổi nhãn trên mục yêu thích. Nó không có bất kỳ chức năng nào liên quan đến việc chỉnh sửa nhãn của mục yêu thích trong ServiceNow.",
+      "Biểu tượng bút chì thường được sử dụng để đại diện cho việc chỉnh sửa hoặc sửa đổi nội dung. Trong ServiceNow, đây là biểu tượng bạn sẽ sử dụng để thay đổi nhãn trên mục yêu thích, vì nó biểu thị khả năng chỉnh sửa văn bản gắn với mục yêu thích đó."
+    ]
+  },
+  {
+    "question": "Which tool is used to define relationships between fields in an import set table and a target table?",
+    "feedbacks": [
+      "Schema Map được sử dụng để biểu diễn trực quan các bảng và mối quan hệ của chúng trong instance ServiceNow. Nó giúp hiểu cấu trúc của các bảng, nhưng không được sử dụng cụ thể để định nghĩa mối quan hệ giữa các trường trong bảng tập dữ liệu nhập (import set) và bảng đích.",
+      "Field Transformer được sử dụng để chuyển đổi các giá trị trường trong các thao tác nhập dữ liệu ở ServiceNow. Nó không được dùng cụ thể để xác định mối quan hệ giữa các trường trong bảng import set và bảng đích.",
+      "Transform Map là công cụ chính xác được sử dụng để xác định các mối quan hệ giữa các trường trong bảng import set và bảng đích ở ServiceNow. Nó ánh xạ các trường từ bảng import set sang các trường trong bảng đích, cho phép dữ liệu được chuyển đổi và tải chính xác.",
+      "Transform Schema không phải là công cụ hợp lệ trong ServiceNow để xác định mối quan hệ giữa các trường trong bảng import set và bảng đích. Công cụ chính xác cho mục đích này là Transform Map."
+    ]
+  },
+  {
+    "question": "When moving a homepage or dashboard between instances, what must you remember?",
+    "feedbacks": [
+      "Việc tải xuống dưới dạng tệp PDF và XML là không cần thiết cho việc di chuyển trang chủ hoặc bảng điều khiển giữa các instance. Tệp XML thường được sử dụng để xuất và nhập cấu hình trong ServiceNow, trong khi tệp PDF chỉ phục vụ mục đích xem.",
+      "Trang chủ và bảng điều khiển có thể được di chuyển giữa các instance bằng cách sử dụng update set trong ServiceNow. Lựa chọn này không chính xác vì nó tuyên bố rằng chúng không thể được di chuyển qua update set, điều này là sai.",
+      "Nền tảng không tự động thêm trang chủ hoặc bảng điều khiển vào update set khi di chuyển chúng giữa các instance trong ServiceNow. Người dùng cần thêm chúng theo cách thủ công vào update set để đảm bảo chúng được đưa vào quy trình di chuyển.",
+      "Việc thêm thủ công trang chủ hoặc bảng điều khiển vào update set là cách chính xác để đảm bảo chúng được bao gồm khi di chuyển giữa các instance trong ServiceNow. Lựa chọn này đúng vì nó nhấn mạnh bước cần thiết để di chuyển thành công."
+    ]
+  },
+  {
+    "question": "Which allows the creation of a task-based record from Service Catalog?",
+    "feedbacks": [
+      "Record Producers trong ServiceNow cho phép tạo các bản ghi dựa trên tác vụ từ Service Catalog. Chúng cho phép người dùng điền vào một biểu mẫu trong Service Catalog để yêu cầu một dịch vụ hoặc mục cụ thể, sau đó tạo ra một bản ghi tương ứng trong hệ thống để theo dõi và thực hiện.",
+      "UI Builder trong ServiceNow được sử dụng để tạo và tùy chỉnh giao diện người dùng, nhưng nó không cho phép tạo cụ thể các bản ghi dựa trên tác vụ từ Service Catalog. Nó tập trung nhiều hơn vào thiết kế trực quan và bố cục của các biểu mẫu và trang trong nền tảng.",
+      "Quy tắc phân công (Assignment Rules) trong ServiceNow được sử dụng để tự động phân công nhiệm vụ hoặc bản ghi cho người dùng hoặc nhóm cụ thể dựa trên các tiêu chí xác định trước. Mặc dù chúng đóng vai trò trong việc phân công và quản lý tác vụ, nhưng chúng không tạo điều kiện trực tiếp cho việc tạo các bản ghi dựa trên tác vụ từ Service Catalog.",
+      "UI Actions trong ServiceNow được sử dụng để thêm các hành động hoặc nút tùy chỉnh vào biểu mẫu và danh sách nhằm thực hiện các hành động cụ thể. Dù chúng tăng cường tương tác của người dùng với các bản ghi, nhưng chúng không trực tiếp cho phép tạo các bản ghi dựa trên tác vụ từ Service Catalog.",
+      "Flow Designer trong ServiceNow là một công cụ để tạo các quy trình và luồng công việc tự động trên nền tảng. Mặc dù nó có thể giúp hợp lý hóa và tự động hóa các tác vụ, nhưng nó không được thiết kế cụ thể để cho phép tạo các bản ghi dựa trên tác vụ từ Service Catalog."
+    ]
+  },
+  {
+    "question": "On the knowledge base record, which tab would you use to define which users are able to write articles to the knowledge base?",
+    "feedbacks": [
+      "Tab \"Can Contribute\" là nơi bạn có thể xác định người dùng nào có thể viết bài lên cơ sở kiến thức. Người dùng có quyền truy cập vào tab này có thể đóng góp nội dung cho cơ sở kiến thức và tạo bài viết mới.",
+      "Tab \"Cannot Author\" không cấp cho người dùng khả năng viết bài cho cơ sở kiến thức. Người dùng được chỉ định vào tab này bị hạn chế việc làm tác giả hoặc đóng góp nội dung vào cơ sở kiến thức.",
+      "Tab \"Can Read\" cho phép người dùng xem và đọc các bài viết trong cơ sở kiến thức nhưng không cấp cho họ quyền viết hoặc đóng góp các bài viết mới.",
+      "Tab \"Can Write\" có vẻ như là một lựa chọn đúng, nhưng trong ngữ cảnh của bản ghi cơ sở kiến thức ServiceNow, tab cụ thể được sử dụng để xác định những người dùng có thể viết bài là tab \"Can Contribute\".",
+      "Tab \"Can Author\" thường không tồn tại trong các bản ghi cơ sở kiến thức của ServiceNow. Tab đúng để xác định những người dùng có thể viết bài là tab \"Can Contribute\"."
+    ]
+  },
+  {
+    "question": "Which type of scripts run in the browser?",
+    "feedbacks": [
+      "UI Policies là các tập lệnh chạy trên trình duyệt để kiểm soát hành vi của các thành phần biểu mẫu và thực thi tính nhất quán của dữ liệu. Chúng là các tập lệnh phía máy khách thực thi trên trình duyệt của người dùng, khiến chúng trở nên lý tưởng để xử lý các tương tác của người dùng và xác thực trực tiếp trên giao diện người dùng.",
+      "Script Includes Scripts là các tập lệnh phía máy chủ được thực thi trên máy chủ, không phải trên trình duyệt. Chúng là các tập lệnh có thể tái sử dụng, có thể được gọi từ các tập lệnh khác hoặc các quy tắc nghiệp vụ để thực hiện các chức năng chung.",
+      "Access Control Scripts là các tập lệnh phía máy chủ kiểm soát quyền truy cập vào dữ liệu và chức năng của ServiceNow. Chúng được thực thi trên máy chủ, không phải trong trình duyệt, để áp dụng các quy tắc bảo mật và quyền trong nền tảng.",
+      "Business Rule Scripts là các tập lệnh phía máy chủ tự động hóa các quy trình nghiệp vụ và thực thi tính nhất quán của dữ liệu. Chúng được thực thi trên máy chủ, không phải trên trình duyệt, để kích hoạt các hành động dựa trên các điều kiện hoặc sự kiện cụ thể trong nền tảng."
+    ]
+  },
+  {
+    "question": "What enables you to trace the connection from an infrastructure item, like a Server, to the Services that are dependent on that Server?",
+    "feedbacks": [
+      "Automapping Utility trong ServiceNow được sử dụng để tự động khám phá và lập bản đồ các mối quan hệ giữa các mục cơ sở hạ tầng, chẳng hạn như máy chủ, và các dịch vụ phụ thuộc vào chúng. Dù nó giúp trực quan hóa các mối quan hệ, nhưng nó không được thiết kế cụ thể để theo dõi kết nối từ máy chủ đến các dịch vụ phụ thuộc.",
+      "Relationships trong ServiceNow cho phép bạn thiết lập và trực quan hóa các kết nối giữa các mục cấu hình khác nhau, chẳng hạn như máy chủ và dịch vụ. Bằng cách xác định mối quan hệ, bạn có thể dễ dàng theo dõi sự phụ thuộc của một máy chủ đối với các dịch vụ phụ thuộc vào nó, làm cho nó trở thành lựa chọn chính xác để theo dõi các kết nối trong tình huống này.",
+      "Service Tracer trong ServiceNow được sử dụng để theo dõi luồng yêu cầu dịch vụ qua nhiều thành phần và hệ thống khác nhau để xác định các tắc nghẽn và vấn đề. Mặc dù nó giúp hiểu được quy trình cung cấp dịch vụ, nó không chủ yếu được dùng để theo dõi kết nối từ máy chủ đến các dịch vụ phụ thuộc.",
+      "Transform Map trong ServiceNow được sử dụng để ánh xạ và chuyển đổi dữ liệu trong quá trình xuất nhập. Nó không liên quan trực tiếp đến việc theo dõi kết nối từ một mục hạ tầng, như máy chủ, đến các dịch vụ phụ thuộc vào nó."
+    ]
+  },
+  {
+    "question": "What section on a task record is used to see the most recent updates made to a record?",
+    "feedbacks": [
+      "Phần Timeline trên bản ghi tác vụ thường hiển thị danh sách thứ tự thời gian của các sự kiện và cập nhật liên quan đến bản ghi. Dù nó có thể hiển thị cập nhật, nhưng nó không được thiết kế cụ thể để hiển thị các cập nhật gần nhất được thực hiện cho bản ghi.",
+      "Phần Related List trên một bản ghi tác vụ thường hiển thị các bản ghi liên quan hoặc thông tin liên kết với bản ghi hiện tại. Nó không hiển thị cụ thể các bản cập nhật gần đây nhất được thực hiện cho bản ghi.",
+      "Phần Activity Stream trên một bản ghi tác vụ được thiết kế đặc biệt để hiển thị các bản cập nhật và hoạt động gần đây nhất liên quan đến bản ghi. Nó cung cấp một luồng trực tiếp các thay đổi, nhận xét và tương tác được thực hiện trên bản ghi, làm cho nó trở thành lựa chọn chính xác để xem các bản cập nhật gần nhất.",
+      "Phần Audit Log trên bản ghi tác vụ thường ghi lại tất cả các thay đổi được thực hiện đối với bản ghi, bao gồm ai đã thực hiện thay đổi và khi nào chúng được thực hiện. Dù nó cung cấp một lịch sử cập nhật chi tiết, nhưng nó có thể không hiển thị các cập nhật gần nhất theo định dạng nhanh và dễ truy cập so với Activity Stream."
+    ]
+  },
+  {
+    "question": "While using the CMDB, what do you call the component that needs to be managed in order to deliver services?",
+    "feedbacks": [
+      "Trong ngữ cảnh của CMDB (Cơ sở dữ liệu quản lý cấu hình), thành phần cần được quản lý để cung cấp dịch vụ được gọi là Mục cấu hình (CI). Các CI là các khối xây dựng của CMDB và đại diện cho bất kỳ thành phần nào cần được quản lý, theo dõi hoặc kiểm soát để cung cấp dịch vụ CNTT hiệu quả.",
+      "Tài sản (Assets) là các tài nguyên vật lý hoặc ảo thuộc sở hữu hoặc dưới sự kiểm soát của tổ chức. Dù các tài sản có thể được theo dõi trong CMDB, chúng không phải là các thành phần đặc biệt cần được quản lý để cung cấp dịch vụ. Tài sản thường được quản lý vì mục đích tài chính hoặc kiểm kê thay vì để cung cấp dịch vụ.",
+      "Catalog Items là các mục có sẵn cho người dùng yêu cầu hoặc sử dụng thông qua danh mục dịch vụ. Mặc dù các mục danh mục có thể liên quan đến dịch vụ, nhưng chúng không phải là các thành phần cần được quản lý để cung cấp dịch vụ. Các mục danh mục tập trung nhiều hơn vào việc cung cấp giao diện thân thiện với người dùng để yêu cầu dịch vụ.",
+      "Data Flow (Luồng dữ liệu) đề cập đến sự di chuyển của dữ liệu giữa các hệ thống hoặc thành phần trong môi trường CNTT. Mặc dù luồng dữ liệu đóng vai trò quan trọng trong việc hiểu cách thông tin được xử lý và chia sẻ, nhưng nó không phải là thành phần cần quản lý để cung cấp dịch vụ. Luồng dữ liệu liên quan nhiều hơn đến việc quản lý và tích hợp dữ liệu chứ không phải là việc cung cấp dịch vụ.",
+      "Service Offerings (Dịch vụ cung cấp) là các dịch vụ được cung cấp hoặc khả dụng cho người dùng hoặc khách hàng. Mặc dù việc cung cấp dịch vụ rất quan trọng đối với việc định nghĩa và phân phối dịch vụ, nhưng chúng không phải là các thành phần cụ thể cần được quản lý để cung cấp dịch vụ. Service Offerings đại diện cho chính các dịch vụ thay vì các thành phần riêng lẻ trong CMDB."
+    ]
+  },
+  {
+    "question": "What is the first step in the process to import spreadsheet data into ServiceNow?",
+    "feedbacks": [
+      "Chọn Import Set không phải là bước đầu tiên trong quy trình nhập dữ liệu bảng tính vào ServiceNow. Import Set là một bảng nơi dữ liệu được lưu tạm thời trước khi được chuyển đổi và đưa vào bảng đích.",
+      "Chạy Data Scrubber không phải là bước đầu tiên trong quy trình nhập dữ liệu bảng tính vào ServiceNow. Data Scrubber được sử dụng để làm sạch và chuẩn hóa dữ liệu sau khi nó đã được nhập vào Import Set.",
+      "Xác định Data Source là bước đầu tiên trong quá trình nhập dữ liệu bảng tính vào ServiceNow. Điều này bao gồm việc chỉ định dữ liệu đến từ đâu, chẳng hạn như tệp bảng tính, và thiết lập kết nối để truy xuất dữ liệu.",
+      "Tạo Import Set không phải là bước đầu tiên trong quy trình nhập dữ liệu bảng tính vào ServiceNow. Import Set được tạo sau khi xác định nguồn dữ liệu và thiết lập kết nối để truy xuất dữ liệu.",
+      "Thiết lập Coalesce không phải là bước đầu tiên trong quy trình nhập dữ liệu bảng tính vào ServiceNow. Coalesce được sử dụng để xác định cách xử lý các bản ghi trùng lặp trong quá trình nhập và nó được định cấu hình sau khi nguồn dữ liệu đã được xác định."
+    ]
+  },
+  {
+    "question": "What are the steps for importing data using an import set?",
+    "feedbacks": [
+      "Trình tự các bước chính xác để nhập dữ liệu bằng một import set bao gồm việc tạo Import Set để định nghĩa nguồn nhập, tạo Transform Map để ánh xạ các trường từ import set sang bảng đích, chuyển đổi dữ liệu trong quá trình nhập, và cuối cùng là dọn dẹp bảng nhập sau khi dữ liệu đã được nhập thành công.",
+      "Trình tự này không chính xác vì nó không theo các bước tiêu chuẩn để nhập dữ liệu bằng import set. Việc tải dữ liệu trước khi tạo Import Set và không dọn dẹp bảng nhập ở bước cuối là những bước cốt lõi bị thiếu trong trình tự này.",
+      "Trình tự này sai vì nó không phản ánh chính xác các bước cần thiết để nhập dữ liệu bằng một import set. Nó thiếu bước quan trọng là tạo Import Set để xác định nguồn dữ liệu trước khi tiến hành quy trình chuyển đổi và nhập dữ liệu.",
+      "Trình tự này không chính xác vì nó không tuân theo các bước tiêu chuẩn để nhập dữ liệu bằng import set. Chạy AutoMap và chọn tệp nguồn trước khi tạo Import Set và Transform Map có thể dẫn đến lỗi trong quá trình nhập. Ngoài ra, việc dọn dẹp bảng đích nên được thực hiện sau khi nhập dữ liệu, không phải trước đó."
+    ]
+  },
+  {
+    "question": "If users would like to locate and assign a task to themselves in the Platform, what action could they perform from the list view to make the assignment? (Choose two.)",
+    "feedbacks": [
+      "Việc chọn bản ghi bằng hộp kiểm và sau đó chọn biểu tượng Person không phải là hành động hợp lệ để tự phân công tác vụ trong Nền tảng. Biểu tượng Person thường được sử dụng cho các hành động liên quan đến người dùng, nhưng nó không có chức năng trực tiếp để tự phân công tác vụ cho chính mình.",
+      "Việc chọn bản ghi bằng hộp kiểm và sau đó chọn UI action Assign To Me trên Tiêu đề Danh sách (List Header) không phải là hành động hợp lệ để tự phân công tác vụ trong Nền tảng. UI action Assign To Me thường được sử dụng để phân công tác vụ cho người dùng hiện tại, không phải cho chính mình.",
+      "Nhấp đúp vào giá trị Assigned to, nhập tên người dùng và chọn dấu kiểm màu xanh lá cây là một hành động hợp lệ để tự phân công tác vụ trong Nền tảng. Phương pháp này cho phép người dùng trực tiếp phân công tác vụ cho chính họ bằng cách nhập tên của chính mình và xác nhận việc phân công.",
+      "Nhấp chuột phải vào số Task và chọn tùy chọn Assign to me trong menu là một hành động hợp lệ để tự phân công tác vụ trong Nền tảng. Tùy chọn này cung cấp một cách trực tiếp và hiệu quả để người dùng tự phân công các tác vụ mà không cần các bước bổ sung.",
+      "Việc chọn số Task và sau đó chọn UI action Assign to me trên biểu mẫu không phải là hành động hợp lệ để tự phân công tác vụ cho chính mình trong Nền tảng. UI action Assign to me trên biểu mẫu thường được sử dụng để phân công tác vụ cho người dùng hiện tại, không dành riêng cho chính mình."
+    ]
+  },
+  {
+    "question": "What module enables an administrator to define destinations for imported data on any ServiceNow table?",
+    "feedbacks": [
+      "Module Load Data trong ServiceNow được sử dụng để bắt đầu quá trình nhập dữ liệu vào nền tảng. Nó không đặc biệt cho phép quản trị viên xác định đích đến cho dữ liệu được nhập trên bất kỳ bảng ServiceNow nào.",
+      "Module Field Transform trong ServiceNow được sử dụng để ánh xạ và chuyển đổi các giá trị trường trong quá trình nhập dữ liệu. Mặc dù nó liên quan đến việc chuyển đổi dữ liệu, nó không đặc biệt cho phép quản trị viên xác định đích đến cho dữ liệu được nhập trên bất kỳ bảng ServiceNow nào.",
+      "Module Schema Map trong ServiceNow được sử dụng để trực quan hóa và quản lý mối quan hệ giữa các bảng trong nền tảng. Nó không đặc biệt cho phép quản trị viên xác định đích đến cho dữ liệu được nhập trên bất kỳ bảng ServiceNow nào.",
+      "Module Transform Map trong ServiceNow cho phép quản trị viên xác định đích đến cho dữ liệu được nhập trên bất kỳ bảng ServiceNow nào. Nó cho phép ánh xạ các trường từ dữ liệu nguồn sang bảng đích, đảm bảo rằng dữ liệu được nhập được đặt chính xác vào đích mong muốn trong nền tảng."
+    ]
+  },
+  {
+    "question": "Which ServiceNow capability provides assistance to help users obtain information, make decisions, and perform common work tasks via a messaging interface?",
+    "feedbacks": [
+      "Now Support là khả năng của ServiceNow tập trung vào việc cung cấp hỗ trợ và trợ giúp cho người dùng thông qua nhiều kênh khác nhau như điện thoại, trò chuyện và email. Nó hướng tới việc giải quyết các vấn đề và sự cố kỹ thuật thay vì cung cấp thông tin và thực hiện các tác vụ qua giao diện nhắn tin.",
+      "ServiceNow Messenger là một công cụ giao tiếp trong nền tảng ServiceNow cho phép người dùng giao tiếp với nhau, cộng tác trên các tác vụ và chia sẻ thông tin. Mặc dù nó tạo điều kiện cho giao tiếp, nhưng nó không được thiết kế đặc biệt để hỗ trợ người dùng nhận thông tin, đưa ra quyết định và thực hiện các tác vụ qua giao diện nhắn tin.",
+      "Agent Workspace là một tính năng trong ServiceNow cung cấp giao diện thống nhất cho các tổng đài viên để quản lý và giải quyết hiệu quả các vấn đề của khách hàng. Nó tập trung nhiều hơn vào dịch vụ và hỗ trợ khách hàng thay vì hỗ trợ người dùng lấy thông tin và thực hiện các tác vụ thông qua giao diện nhắn tin.",
+      "Virtual Agent là khả năng của ServiceNow sử dụng tính năng hiểu ngôn ngữ tự nhiên và học máy để cung cấp hỗ trợ tự động cho người dùng thông qua giao diện nhắn tin. Nó giúp người dùng có được thông tin, đưa ra quyết định và thực hiện các tác vụ công việc phổ biến bằng cách mô phỏng cuộc trò chuyện với một tổng đài viên ảo.",
+      "Knowledge Chat là một tính năng trong ServiceNow cho phép người dùng truy cập các bài viết kiến thức và thông tin thông qua giao diện trò chuyện. Dù nó cung cấp thông tin cho người dùng, nhưng nó không được thiết kế đặc biệt để hỗ trợ người dùng đưa ra quyết định và thực hiện các tác vụ qua giao diện nhắn tin như Virtual Agent."
+    ]
+  },
+  {
+    "question": "What instance resource allows you to access guided tours, information about actions, and instructions on how to use inputs and outputs in your flow?",
+    "feedbacks": [
+      "Now Support là một tài nguyên cung cấp trợ giúp và hỗ trợ cho các vấn đề kỹ thuật và sự cố liên quan đến nền tảng ServiceNow. Nó không tập trung cụ thể vào việc cung cấp các chuyến tham quan có hướng dẫn, thông tin về các hành động hoặc hướng dẫn sử dụng đầu vào và đầu ra trong các luồng.",
+      "Tài nguyên Community là một nền tảng nơi người dùng có thể tương tác, đặt câu hỏi, chia sẻ kiến thức và kinh nghiệm liên quan đến nền tảng ServiceNow. Dù nó có thể là một nguồn thông tin có giá trị, nhưng nó không phải là tài nguyên chính để truy cập các chuyến tham quan có hướng dẫn, thông tin hành động hoặc hướng dẫn luồng.",
+      "Docs, viết tắt của tài liệu (documentation), là một tài nguyên chứa thông tin chi tiết, hướng dẫn và tham chiếu để sử dụng nền tảng ServiceNow. Dù nó có thể bao gồm hướng dẫn về các tính năng và chức năng khác nhau, nhưng nó có thể không đặc biệt tập trung vào việc cung cấp các chuyến tham quan có hướng dẫn, thông tin hành động hoặc hướng dẫn luồng.",
+      "Bảng điều khiển Help (Help Panel), được biểu thị bằng biểu tượng dấu hỏi, là tài nguyên instance cho phép người dùng truy cập các chuyến tham quan có hướng dẫn, thông tin về các hành động và hướng dẫn về cách sử dụng đầu vào và đầu ra trong luồng của họ. Nó đóng vai trò là một công cụ có giá trị để người dùng điều hướng và hiểu các khía cạnh khác nhau của nền tảng ServiceNow."
+    ]
+  },
+  {
+    "question": "When importing data from a spreadsheet, which step defines where the incoming data columns will be written in the receiving table?",
+    "feedbacks": [
+      "Chọn nguồn dữ liệu (selecting the data source) là bước ban đầu trong quá trình nhập dữ liệu, nơi bạn chọn tệp hoặc bảng tính mà từ đó dữ liệu sẽ được nhập. Bước này không xác định nơi các cột dữ liệu đầu vào sẽ được ghi trong bảng nhận.",
+      "Lên lịch chuyển đổi (Scheduling the transform) là bước bạn có thể thiết lập lịch trình cho quá trình chuyển đổi dữ liệu. Nó không xác định cụ thể nơi các cột dữ liệu đầu vào sẽ được ghi vào bảng nhận.",
+      "Tải dữ liệu (Loading the data) là bước diễn ra quá trình nhập dữ liệu thực tế. Nó liên quan đến việc chuyển dữ liệu từ tệp nguồn sang instance ServiceNow nhưng không xác định nơi các cột dữ liệu đầu vào sẽ được ghi vào bảng nhận.",
+      "Tạo bản đồ chuyển đổi (Creating a transform map) là bước trong quá trình nhập dữ liệu nơi bạn định nghĩa ánh xạ giữa các cột dữ liệu đầu vào và các trường trong bảng nhận. Bước này xác định cụ thể nơi các cột dữ liệu đầu vào sẽ được ghi vào bảng nhận.",
+      "Căn chỉnh trường (Field alignment) không phải là bước tiêu chuẩn trong quy trình nhập dữ liệu ở ServiceNow. Nó không đóng vai trò trong việc xác định nơi các cột dữ liệu đầu vào sẽ được ghi vào bảng nhận."
+    ]
+  },
+  {
+    "question": "On a form header, what icon would you click to access Template features?",
+    "feedbacks": [
+      "Biểu tượng Context Menu thường cung cấp các tùy chọn liên quan đến biểu mẫu hoặc bản ghi cụ thể, chẳng hạn như chỉnh sửa, xóa hoặc chia sẻ. Nó thường không chứa các tùy chọn liên quan đến việc truy cập các tính năng của mẫu (template).",
+      "Biểu tượng kẹp giấy (Paper clip) thường được sử dụng để chỉ định các tệp đính kèm hoặc tệp được liên kết với một bản ghi. Nó thường không được sử dụng để truy cập các tính năng của mẫu trên tiêu đề biểu mẫu.",
+      "Biểu tượng con dấu (Stamp) thường được sử dụng để biểu thị trạng thái phê duyệt hoặc chứng nhận trên bản ghi. Nó thường không được sử dụng để truy cập các tính năng mẫu trên tiêu đề biểu mẫu.",
+      "Biểu tượng tùy chọn khác (... / More options) thường chứa các tính năng và cài đặt bổ sung không hiển thị trực tiếp trên tiêu đề biểu mẫu. Việc nhấp vào biểu tượng này có khả năng làm hiển thị các tùy chọn liên quan đến việc truy cập các mẫu hoặc các tính năng nâng cao khác."
+    ]
+  },
+  {
+    "question": "Access Control rules are applied to a specific table, like the Incident table. What is the object name for a rule that applies to the entire Incident table (all rows and fields)?",
+    "feedbacks": [
+      "Tên đối tượng \"incident.*\" không đại diện cho toàn bộ bảng Incident. Ký tự đại diện dấu hoa thị (*) thường đại diện cho tất cả các trường trong một bảng, nhưng nó không bao gồm tất cả các hàng trong ngữ cảnh này.",
+      "Tên đối tượng \"incident.all\" không đại diện chính xác cho toàn bộ bảng Incident. Việc sử dụng \"all\" trong ngữ cảnh này không chỉ định tất cả các hàng và trường trong bảng.",
+      "Tên đối tượng \"incident.!\" không phải là biểu diễn hợp lệ cho toàn bộ bảng Incident. Dấu chấm than (!) không phải là ký tự đại diện được công nhận trong các quy tắc Kiểm soát Truy cập của ServiceNow.",
+      "Tên đối tượng \"incident.None\" đại diện chính xác cho toàn bộ bảng Incident, bao gồm tất cả các hàng và trường. Sử dụng \"None\" làm tên đối tượng biểu thị rằng quy tắc áp dụng cho tất cả các bản ghi và trường trong bảng được chỉ định."
+    ]
+  },
+  {
+    "question": "On a list, what does each row show?",
+    "feedbacks": [
+      "Bộ lọc (filter) là một tập hợp các điều kiện xác định bản ghi nào được hiển thị trong danh sách. Nó được sử dụng để thu hẹp dữ liệu được hiển thị dựa trên các tiêu chí cụ thể nhưng không phải là những gì mỗi hàng trong danh sách đại diện.",
+      "Mỗi hàng trong một danh sách đại diện cho một bản ghi, là một phiên bản dữ liệu duy nhất trong một bảng. Các hàng hiển thị các mục dữ liệu riêng lẻ đáp ứng các tiêu chí được xác định bởi bộ lọc áp dụng cho danh sách.",
+      "Một bảng (table) trong ServiceNow đại diện cho một tập hợp các bản ghi có chung cấu trúc và có liên quan với nhau. Mỗi hàng trong danh sách hiển thị một bản ghi duy nhất từ bảng, không phải toàn bộ bảng.",
+      "Một trường (field) trong ServiceNow đề cập đến một phần dữ liệu cụ thể trong một bản ghi. Mỗi hàng trong danh sách hiển thị một bản ghi hoàn chỉnh, bao gồm nhiều trường chứa các loại thông tin khác nhau liên quan đến bản ghi đó."
+    ]
+  },
+  {
+    "question": "Which action enables personalization in a form for the admin role, only?",
+    "feedbacks": [
+      "Đặt thuộc tính glide.ui.enable_personalize_form.admin thành true trong sys_form_properties.list cho phép cá nhân hóa trong biểu mẫu chỉ dành cho vai trò admin. Thuộc tính này nhắm mục tiêu cụ thể đến vai trò admin để cá nhân hóa biểu mẫu.",
+      "Cho phép cá nhân hóa trong biểu mẫu thông qua Context Menu > Configure > Form Layout và chọn vai trò 'admin' không cung cấp giới hạn cụ thể chỉ dành cho vai trò admin. Nó cho phép bất kỳ người dùng nào có vai trò 'admin' cá nhân hóa biểu mẫu, không chỉ riêng vai trò admin.",
+      "Thêm vai trò 'Admin' vào hộp danh sách 'Available User' trong Context Menu > Configure > Table không cho phép cá nhân hóa chỉ dành cho vai trò admin. Nó cấp quyền truy cập cho vai trò 'Admin', nhưng không giới hạn cá nhân hóa chỉ dành cho vai trò admin.",
+      "Đặt thuộc tính glide.ui.personalize_form.role thành 'admin' trong sys_properties.list cho phép cụ thể việc cá nhân hóa trong biểu mẫu chỉ dành cho vai trò admin. Thuộc tính này giới hạn cá nhân hóa biểu mẫu cho những người dùng có vai trò 'admin', đảm bảo rằng chỉ quản trị viên mới có thể cá nhân hóa biểu mẫu."
+    ]
+  },
+  {
+    "question": "Which element is used to track items not saved with a field, in a record?",
+    "feedbacks": [
+      "Phần tử Sidebar trong ServiceNow thường được sử dụng để hiển thị thông tin liên quan hoặc các thao tác nhanh liên quan đến một bản ghi. Nó không theo dõi cụ thể các mục không được lưu với một trường trong bản ghi, vì vậy đây không phải là lựa chọn đúng cho tình huống này.",
+      "Phần tử List Editor trong ServiceNow được sử dụng để chỉnh sửa và quản lý danh sách các bản ghi. Nó không được thiết kế cụ thể để theo dõi các mục không được lưu cùng với một trường trong bản ghi, do đó không phải là lựa chọn đúng.",
+      "Phần tử Activity formatter trong ServiceNow được sử dụng để theo dõi và hiển thị các hoạt động liên quan đến một bản ghi không được lưu với một trường cụ thể. Nó cung cấp dòng thời gian của các hoạt động và cập nhật trên bản ghi, làm cho nó trở thành lựa chọn chính xác để theo dõi các mục không được lưu cùng một trường.",
+      "Phần tử Dictionary trong ServiceNow được sử dụng để định nghĩa cấu trúc và thuộc tính của các bảng và trường trong nền tảng. Nó không được sử dụng cụ thể để theo dõi các mục không được lưu với một trường trong bản ghi, vì vậy đây không phải là lựa chọn đúng."
+    ]
+  },
+  {
+    "question": "What does ServiceNow recommend as a best practice regarding data imports?",
+    "feedbacks": [
+      "Việc điều chỉnh Transform maps sau khi dữ liệu được tải vào bảng đích có thể dẫn đến sự không nhất quán và lỗi trong quá trình ánh xạ dữ liệu. Khuyến nghị là định cấu hình chính xác Transform maps trước khi nhập dữ liệu để đảm bảo việc tải dữ liệu chính xác và hiệu quả.",
+      "Việc sử dụng các Import Set cực lớn có thể gây ra các vấn đề về hiệu suất và gây khó khăn cho việc quản lý, khắc phục sự cố nhập dữ liệu. Tốt hơn là chia các tập dữ liệu lớn thành nhiều Import Set có thể quản lý để cải thiện hiệu suất và duy trì tính toàn vẹn của dữ liệu.",
+      "Việc tạo bảng Import set mới cho mỗi lần tải dữ liệu mới có thể dẫn đến trùng lặp dữ liệu và nhầm lẫn trong việc quản lý dữ liệu được nhập. Nên sử dụng cùng một bảng Import set cho các lần tải dữ liệu liên quan và định cấu hình các ánh xạ cho phù hợp.",
+      "Việc lên kế hoạch thời gian trước khi nhập để loại bỏ dữ liệu lỗi thời hoặc không chính xác là một thực tiễn tốt nhất được ServiceNow khuyến nghị. Điều này giúp đảm bảo rằng dữ liệu được nhập sạch, chính xác và có liên quan đến bảng đích, giảm nguy cơ xảy ra lỗi và không nhất quán dữ liệu.",
+      "Theo dõi chất lượng dữ liệu và làm sạch dữ liệu đã nhập bằng Data Scrub Workspace là một cách thực hành tốt, nhưng ServiceNow không khuyến nghị đặc biệt đây là phương pháp thực hành tốt nhất (best practice) cho việc nhập dữ liệu. Dù việc làm sạch dữ liệu rất quan trọng, việc lên kế hoạch thời gian để loại bỏ dữ liệu lỗi thời hoặc không chính xác trước khi nhập là một bước quan trọng hơn trong quy trình nhập dữ liệu."
+    ]
+  },
+  {
+    "question": "When an administrator sets a policy that is applied to all data entered into the Platform (UI, Import Sets, or Web Services), where does this policy run by default?",
+    "feedbacks": [
+      "Các chính sách áp dụng cho tất cả dữ liệu được nhập vào Nền tảng, dù thông qua UI, Import Sets hay Web Services, thường chạy trên phía máy chủ chứ không phải trên mạng. Mạng chịu trách nhiệm truyền dữ liệu giữa máy khách và máy chủ, nhưng việc thực thi và xác thực chính sách thường diễn ra trên máy chủ nơi dữ liệu được xử lý.",
+      "Lựa chọn đúng. Khi quản trị viên thiết lập một chính sách áp dụng cho tất cả dữ liệu được nhập vào Nền tảng, mặc định nó sẽ chạy trên máy chủ. Điều này đảm bảo rằng chính sách được thực thi nhất quán đối với tất cả các đầu vào dữ liệu, bất kể nguồn gốc hay phương thức nhập. Việc chạy chính sách ở phía máy chủ cho phép kiểm soát tập trung và xác thực tính toàn vẹn của dữ liệu.",
+      "Các chính sách quản lý việc nhập và xác thực dữ liệu thường được thực thi ở phía máy chủ thay vì phía máy khách. Mặc dù máy khách có thể thực hiện một số xác thực dữ liệu ban đầu cho mục đích trải nghiệm người dùng, nhưng việc thực thi tối cao các chính sách áp dụng cho tất cả các đầu vào dữ liệu được thực hiện trên máy chủ để đảm bảo tính nhất quán và bảo mật.",
+      "Các chính sách áp dụng cho tất cả dữ liệu được nhập vào Nền tảng thường được xử lý trên máy chủ thay vì trong trình duyệt. Trình duyệt chịu trách nhiệm hiển thị giao diện người dùng và tương tác với người dùng, nhưng máy chủ là nơi diễn ra các quá trình xử lý dữ liệu, xác thực và thực thi chính sách để duy trì tính toàn vẹn và bảo mật dữ liệu."
+    ]
+  },
+  {
+    "question": "If a user is on an Incident form and is alerted when they change the value of the Priority field, which type of script executes in the Platform?",
+    "feedbacks": [
+      "Server script (tập lệnh máy chủ) thực thi trên phía máy chủ của nền tảng ServiceNow, thường được kích hoạt bởi các sự kiện phía máy chủ như chèn, cập nhật hoặc xóa bản ghi. Trong trường hợp này, khi người dùng đang tương tác với biểu mẫu và nhận được cảnh báo, server script sẽ không chịu trách nhiệm cho hành vi này.",
+      "Client script (tập lệnh máy khách) thực thi trên phía máy khách của nền tảng ServiceNow, nghĩa là nó chạy trong trình duyệt của người dùng. Các client script được sử dụng để tăng cường tương tác của người dùng, xác thực dữ liệu đầu vào và cung cấp hành vi động trên các biểu mẫu. Trong trường hợp này, client script là lựa chọn đúng vì nó kích hoạt cảnh báo khi người dùng thay đổi trường Priority trên biểu mẫu Incident.",
+      "Không có loại script cụ thể nào gọi là \"fix script\" dùng cho trường hợp này trên nền tảng ServiceNow. Nó không phải là loại script được công nhận để thực thi logic dựa trên tương tác của người dùng với các biểu mẫu hoặc bản ghi.",
+      "Business rule là một tập lệnh phía máy chủ chạy khi một bản ghi được chèn, cập nhật, xóa, hiển thị hoặc truy vấn. Mặc dù các quy tắc nghiệp vụ có thể được sử dụng để thực thi tính toàn vẹn của dữ liệu và tự động hóa các quy trình, nhưng chúng thường không được sử dụng để kích hoạt các cảnh báo dựa trên tương tác của người dùng với các trường biểu mẫu cụ thể như trường Priority trong kịch bản này."
+    ]
+  },
+  {
+    "question": "Which feature can be used to categorize a set of records from a list and make them visible to other users?",
+    "feedbacks": [
+      "Thẻ (Tags) có thể được sử dụng để phân loại một tập hợp các bản ghi từ một danh sách và làm cho chúng hiển thị với những người dùng khác. Bằng cách gán thẻ cho các bản ghi, người dùng có thể dễ dàng lọc và tìm kiếm các tập hợp bản ghi cụ thể dựa trên các thẻ được gán, cho phép tổ chức và hiển thị tốt hơn.",
+      "Lịch sử (History) theo dõi các thay đổi và tương tác được thực hiện đối với bản ghi theo thời gian, nhưng nó không phân loại các bản ghi hoặc làm cho chúng hiển thị với những người dùng khác. Nó tập trung nhiều hơn vào việc cung cấp một cái nhìn theo trình tự thời gian về các hành động được thực hiện trên một bản ghi cụ thể.",
+      "Mục yêu thích (Favorites) cho phép người dùng đánh dấu các bản ghi cụ thể là mục yêu thích để truy cập nhanh, nhưng chúng không phân loại các bản ghi hoặc làm cho chúng hiển thị với người dùng khác. Mục yêu thích hướng đến sự thuận tiện cá nhân hơn là tổ chức hồ sơ cho người khác xem.",
+      "Activity Formatter được sử dụng để tùy chỉnh việc hiển thị nhật ký hoạt động và tương tác trong ServiceNow, nhưng nó không phân loại các bản ghi hoặc làm cho chúng hiển thị với những người dùng khác. Nó tập trung vào việc định dạng việc trình bày dữ liệu hoạt động thay vì sắp xếp các bản ghi cho khả năng hiển thị."
+    ]
+  },
+  {
+    "question": "The testing team needs to be able to perform activities in the test instance, as though they are a member of the Service Desk group. What role would they need to be able to switch between user accounts, without logging out and back in?",
+    "feedbacks": [
+      "Vai trò service_desk tập trung vào việc cung cấp quyền truy cập vào các chức năng liên quan đến bàn dịch vụ (service desk) trong ServiceNow. Dù nó cho phép người dùng thực hiện các tác vụ liên quan đến nhóm Service Desk, nó không cấp quyền chuyển đổi giữa các tài khoản người dùng mà không cần phải đăng xuất và đăng nhập lại.",
+      "Vai trò impersonator được thiết kế đặc biệt để cho phép người dùng chuyển đổi liền mạch giữa các tài khoản người dùng mà không cần yêu cầu đăng xuất và đăng nhập lại. Vai trò này lý tưởng cho các tình huống mà các nhóm thử nghiệm cần hoạt động như là thành viên của các nhóm khác nhau, chẳng hạn như nhóm Service Desk, vì mục đích thử nghiệm.",
+      "Vai trò admin trong ServiceNow cấp các đặc quyền sâu rộng để cấu hình nền tảng, tùy chỉnh và quản trị. Tuy nhiên, vai trò admin vốn dĩ không cung cấp khả năng chuyển đổi giữa các tài khoản người dùng mà không cần đăng xuất và đăng nhập lại.",
+      "Vai trò incognito không phải là vai trò được công nhận trong nền tảng ServiceNow. Lựa chọn này không chính xác vì nó không tương ứng với bất kỳ vai trò hợp lệ nào cho phép người dùng chuyển đổi giữa các tài khoản người dùng mà không cần thiết phải đăng xuất và đăng nhập lại."
+    ]
+  },
+  {
+    "question": "What are the benefits of building flows using Flow Designer? (Choose three.)",
+    "feedbacks": [
+      "Việc xây dựng các luồng bằng Flow Designer không cung cấp một IDE cho việc lập trình phức tạp. Thay vào đó, nó tập trung vào việc phát triển trực quan, ít mã (low-code) để đơn giản hóa quá trình tạo luồng công việc và tự động hóa.",
+      "Flow Designer không cung cấp các thư viện hoặc API tích hợp cho việc lập trình phức tạp. Nó được thiết kế để hợp lý hóa việc tạo ra các quy trình công việc và tự động hóa thông qua một giao diện trực quan, giảm bớt nhu cầu phải viết mã mở rộng.",
+      "Flow Designer không tự động điền các bản ghi SLA. Mặc dù nó có thể được sử dụng để tự động hóa các quy trình và luồng công việc, nhưng nó không đặc biệt xử lý việc tự động điền bản ghi SLA.",
+      "Flow Designer cung cấp các mô tả bằng ngôn ngữ tự nhiên về logic luồng, giúp người dùng dễ dàng hiểu và quản lý logic đằng sau các luồng công việc của họ. Tính năng này tăng cường khả năng đọc và bảo trì của các luồng được tạo bằng Flow Designer.",
+      "Flow Designer hỗ trợ phát triển ứng dụng Không mã (No-Code), cho phép người dùng tạo các luồng công việc và tự động hóa phức tạp mà không cần kiến thức lập trình chuyên sâu. Tính năng này đơn giản hóa quá trình phát triển và trao quyền cho người dùng với nhiều nền tảng kỹ thuật khác nhau để tạo ra các luồng công việc hiệu quả.",
+      "Flow Designer hỗ trợ tích hợp dễ dàng với các hệ thống bên thứ 3, cho phép giao tiếp và trao đổi dữ liệu liền mạch giữa ServiceNow và các ứng dụng hoặc dịch vụ bên ngoài. Khả năng này tăng cường chức năng và tính linh hoạt của các luồng được tạo bằng Flow Designer."
+    ]
+  },
+  {
+    "question": "Which helps to visualize configuration items and their relationships?",
+    "feedbacks": [
+      "Các bảng (Tables) trong ServiceNow thể hiện cấu trúc dữ liệu trong nền tảng và không giúp trực quan hóa cụ thể các mục cấu hình và mối quan hệ của chúng. Dù các bảng rất cần thiết để lưu trữ và tổ chức dữ liệu, chúng không cung cấp biểu diễn đồ họa về mối quan hệ giữa các mục cấu hình.",
+      "Schema Map trong ServiceNow hiển thị trực quan các mối quan hệ giữa các bảng và các trường của chúng, giúp người dùng hiểu lược đồ cơ sở dữ liệu. Tuy nhiên, nó không đặc biệt tập trung vào việc trực quan hóa các mục cấu hình và mối quan hệ của chúng, khiến nó ít phù hợp hơn cho mục đích này.",
+      "Flow Design trong ServiceNow được sử dụng để tạo các luồng công việc trực quan và tự động hóa các quy trình trong nền tảng. Dù nó giúp thiết kế và tự động hóa quy trình công việc, nó không đặc biệt tập trung vào việc trực quan hóa các mục cấu hình và mối quan hệ của chúng.",
+      "Transform Map trong ServiceNow được sử dụng để ánh xạ và chuyển đổi dữ liệu trong các hoạt động nhập hoặc xuất. Nó không tập trung chủ yếu vào việc trực quan hóa các mục cấu hình và mối quan hệ của chúng, khiến nó ít liên quan hơn cho tác vụ cụ thể này.",
+      "Dependency View trong ServiceNow giúp trực quan hóa các mục cấu hình và mối quan hệ của chúng, hiển thị cách các mục khác nhau kết nối và phụ thuộc vào nhau. Nó cung cấp một biểu diễn đồ họa hỗ trợ sự hiểu biết về các mối quan hệ phụ thuộc trong cơ sở dữ liệu quản lý cấu hình (CMDB)."
+    ]
+  },
+  {
+    "question": "Which tables are children of the Task table and come with the base system? (Choose three.)",
+    "feedbacks": [
+      "Bảng Config không phải là bảng con của bảng Task trong hệ thống cơ sở ServiceNow. Nó được sử dụng để quản lý cấu hình và không liên quan trực tiếp đến các hoạt động của bảng Task.",
+      "Bảng Problem là một bảng con của bảng Task trong hệ thống cơ sở ServiceNow. Nó được sử dụng để quản lý và theo dõi các bản ghi vấn đề liên quan đến sự cố và thay đổi.",
+      "Bảng Dictionary không phải là bảng con của bảng Task trong hệ thống cơ sở ServiceNow. Nó được sử dụng để lưu trữ siêu dữ liệu và định nghĩa cho các trường và bảng trong nền tảng.",
+      "Bảng cmdb không phải là bảng con của bảng Task trong hệ thống cơ sở ServiceNow. Nó được sử dụng cho các hoạt động cơ sở dữ liệu quản lý cấu hình và không liên quan trực tiếp đến các hoạt động của bảng Task.",
+      "Bảng Incident là bảng con của bảng Task trong hệ thống cơ sở ServiceNow. Nó được sử dụng để quản lý và theo dõi các bản ghi sự cố liên quan đến các vấn đề CNTT và gián đoạn dịch vụ khác nhau.",
+      "Bảng Change Request là một bảng con của bảng Task trong hệ thống cơ sở ServiceNow. Nó được sử dụng để quản lý và theo dõi các yêu cầu thay đổi cho các sửa đổi và cải tiến đối với các dịch vụ và cơ sở hạ tầng CNTT."
+    ]
+  },
+  {
+    "question": "Which role(s) are required to impersonate a user? (Choose two.)",
+    "feedbacks": [
+      "Vai trò 'security_admin' trong ServiceNow chịu trách nhiệm quản lý an ninh và kiểm soát truy cập trong nền tảng. Mặc dù vai trò này có các quyền hạn sâu rộng, nó không đặc biệt cấp quyền đóng giả (impersonate) người dùng.",
+      "Vai trò 'sys_admin' trong ServiceNow là cấp truy cập quản trị cao nhất và cung cấp toàn quyền kiểm soát nền tảng. Tuy nhiên, khả năng đóng giả người dùng không bị ràng buộc trực tiếp vào vai trò này.",
+      "Vai trò 'impersonator' trong ServiceNow được thiết kế đặc biệt để cấp cho người dùng khả năng đóng giả những người dùng khác trong nền tảng. Vai trò này rất cần thiết để thực hiện các hành động thay mặt cho người dùng khác với mục đích khắc phục sự cố hoặc kiểm tra.",
+      "Vai trò 'sys_user' trong ServiceNow là vai trò tiêu chuẩn cung cấp các quyền người dùng cơ bản trong nền tảng. Dù vai trò này cho phép người dùng tương tác với hệ thống, nó không bao gồm khả năng đóng giả người dùng khác.",
+      "Vai trò 'admin' trong ServiceNow là vai trò rộng rãi bao gồm các chức năng quản trị khác nhau trong nền tảng. Vai trò này bao gồm khả năng đóng giả những người dùng khác, điều này rất cần thiết cho những người dùng cần thực hiện hành động thay mặt cho người khác."
+    ]
+  },
+  {
+    "question": "Which set of steps is used to import spreadsheet data into a ServiceNow table?",
+    "feedbacks": [
+      "Chọn một nguồn dữ liệu và lên lịch chuyển đổi không phải là các bước chính xác để nhập dữ liệu bảng tính vào bảng ServiceNow. Các bước này không liên quan đến việc tải dữ liệu thực tế hoặc tạo bản đồ chuyển đổi (transform map), những yếu tố rất cần thiết để nhập dữ liệu thành công.",
+      "Tải dữ liệu (Loading data), tạo bản đồ chuyển đổi (creating a transform map), và chạy chuyển đổi (running the transform) là các bước chính xác để nhập dữ liệu bảng tính vào bảng ServiceNow. Tải dữ liệu liên quan đến việc đưa dữ liệu bảng tính vào hệ thống, tạo bản đồ chuyển đổi ánh xạ các cột bảng tính tới các trường ServiceNow, và chạy chuyển đổi thực thi quá trình nhập.",
+      "Xác định nguồn dữ liệu, chọn bản đồ chuyển đổi và chạy chuyển đổi không phải là các bước chính xác để nhập dữ liệu bảng tính vào bảng ServiceNow. Các bước này không bao gồm việc tải dữ liệu hoặc tạo bản đồ chuyển đổi, những bước cần thiết cho một quy trình nhập thành công.",
+      "Chọn một import set, chọn một transform map và chạy chuyển đổi không phải là các bước chính xác để nhập dữ liệu bảng tính vào bảng ServiceNow. Các bước này bỏ qua bước quan trọng là tải dữ liệu vào hệ thống, điều rất cần thiết để nhập dữ liệu bảng tính thành công."
+    ]
+  },
+  {
+    "question": "What contains the configuration changes made in an instance (i.e. changes in a form) and helps to implement the changes from the Dev environment to another environment?",
+    "feedbacks": [
+      "Transform maps được sử dụng để ánh xạ các trường giữa hai bảng khi nhập dữ liệu vào ServiceNow. Chúng không chứa các thay đổi cấu hình được thực hiện trong một instance hoặc giúp triển khai các thay đổi từ môi trường này sang môi trường khác.",
+      "Update sets được sử dụng để thu thập các thay đổi cấu hình được thực hiện trong một instance, chẳng hạn như thay đổi trong biểu mẫu, bảng, tập lệnh, v.v. Chúng giúp triển khai các thay đổi này từ môi trường này sang môi trường khác bằng cách đóng gói và di chuyển các thay đổi cùng nhau.",
+      "Import sets được sử dụng để nhập dữ liệu vào ServiceNow từ nhiều nguồn khác nhau. Chúng không chứa các thay đổi cấu hình được thực hiện trong một instance hoặc giúp triển khai các thay đổi từ môi trường này sang môi trường khác.",
+      "System dictionaries được sử dụng để định nghĩa các thuộc tính của một trường, chẳng hạn như kiểu dữ liệu, giá trị mặc định, v.v. Chúng không chứa các thay đổi cấu hình được thực hiện trong một instance hoặc giúp triển khai các thay đổi từ môi trường này sang môi trường khác."
+    ]
+  },
+  {
+    "question": "An administrator creates “customer_table_admin” and “customer_table_user” roles for the newly created \"Customer Table”. Which ACL rule would grant access to all rows and all fields to both the customer_table_admin and customer_table_user roles?",
+    "feedbacks": [
+      "Quy tắc ACL \"customer.none\" cấp quyền truy cập vào tất cả các hàng và tất cả các trường, nghĩa là nó cho phép truy cập đầy đủ vào \"Customer Table\" cho cả hai vai trò \"customer_table_admin\" và \"customer_table_user\". Quy tắc này thực sự ghi đè mọi hạn chế và cung cấp quyền truy cập hoàn toàn vào bảng.",
+      "Quy tắc ACL \"customer.all\" cấp quyền truy cập vào tất cả các trường nhưng không nhất thiết phải vào tất cả các hàng. Nó không cung cấp mức độ truy cập cần thiết trong tình huống này, vì nó có thể hạn chế quyền truy cập vào một số hàng nhất định dựa trên các điều kiện được thiết lập trong quy tắc ACL.",
+      "Quy tắc ACL \"customer.field\" cấp quyền truy cập vào các trường cụ thể nhưng không cấp quyền truy cập vào tất cả các hàng. Nó không cung cấp mức độ truy cập bắt buộc cho cả hai vai trò đối với tất cả các hàng và tất cả các trường trong \"Customer Table\".",
+      "Quy tắc ACL \"customer.*\" cấp quyền truy cập vào tất cả các trường thỏa mãn một điều kiện cụ thể, nhưng không cấp quyền truy cập vào tất cả các hàng. Nó không cung cấp mức truy cập cần thiết cho cả hai vai trò đối với tất cả các hàng và tất cả các trường trong \"Customer Table\"."
+    ]
+  },
+  {
+    "question": "Which tables are available by default in a ServiceNow instance? (Choose three.)",
+    "feedbacks": [
+      "Bảng User có sẵn theo mặc định trong một instance ServiceNow để lưu trữ thông tin người dùng, bao gồm tên người dùng, mật khẩu, vai trò và dữ liệu liên quan khác.",
+      "Bảng Issue không có sẵn theo mặc định trong một instance ServiceNow. Nó thường được tạo hoặc tùy chỉnh dựa trên các yêu cầu cụ thể để theo dõi và quản lý các sự cố hoặc vé yêu cầu (tickets).",
+      "Bảng Incident có sẵn theo mặc định trong một instance ServiceNow và thường được sử dụng để theo dõi và quản lý các sự cố, chẳng hạn như gián đoạn dịch vụ hoặc mất kết nối.",
+      "Bảng Project không có sẵn theo mặc định trong một instance ServiceNow. Nó thường được tạo hoặc tùy chỉnh cho mục đích quản lý dự án để theo dõi các nhiệm vụ, lịch trình và nguồn lực.",
+      "Bảng Task có sẵn theo mặc định trong một instance ServiceNow và được sử dụng để quản lý các tác vụ, phân công và luồng công việc trong nền tảng.",
+      "Bảng Item không có sẵn theo mặc định trong một instance ServiceNow. Nó thường được tạo hoặc tùy chỉnh dựa trên các nhu cầu cụ thể để theo dõi và quản lý các mục hàng hoặc kho lưu trữ."
+    ]
+  },
+  {
+    "question": "In a Knowledge Base record, where can an administrator find the User Criteria for who can read the articles?",
+    "feedbacks": [
+      "Tab Accessible to trong một bản ghi Cơ sở Kiến thức thường đề cập đến những người dùng hoặc nhóm có quyền truy cập để xem hoặc chỉnh sửa nội dung bài viết, không đặc biệt chỉ đến User Criteria để đọc bài viết.",
+      "Tab Available to trong một bản ghi Cơ sở Kiến thức thường liên quan đến tính khả dụng của bài viết cho người dùng hoặc nhóm cụ thể, không nhất thiết chỉ đến User Criteria cho những người có thể đọc bài viết.",
+      "Tab Can Access trong một bản ghi Cơ sở Kiến thức nói chung liên quan đến các quyền hoặc cấp độ truy cập được cấp cho người dùng hoặc nhóm để truy cập nội dung bài viết, thay vì chỉ định cụ thể User Criteria để đọc bài viết.",
+      "Tab Can Read trong một bản ghi Cơ sở Kiến thức là nơi quản trị viên có thể tìm User Criteria cho những người có thể đọc bài viết. Tab này xác định các điều kiện hoặc tiêu chí xác định những người dùng hoặc nhóm nào được phép đọc nội dung bài viết."
+    ]
+  },
+  {
+    "question": "What action helps to see which modules are visible to a user?",
+    "feedbacks": [
+      "Việc cài đặt plug-in Bomgar không liên quan đến việc xem các module hiển thị đối với người dùng. Plug-in Bomgar thường được sử dụng để hỗ trợ từ xa và khắc phục sự cố, không phải để kiểm tra khả năng hiển thị của module.",
+      "Khởi tạo phiên Connect Chat không phải là phương pháp để xem các module nào hiển thị với người dùng. Connect Chat là công cụ liên lạc và không cung cấp thông tin chi tiết về khả năng hiển thị của module.",
+      "Mở cửa sổ NowChat không phải là cách để xác định các module nào hiển thị với một người dùng. NowChat là ứng dụng trò chuyện trong nền tảng ServiceNow và không cung cấp thông tin hiển thị module.",
+      "Đóng giả người dùng (Impersonating the user) là hành động chính xác cần thực hiện để xem các module nào được hiển thị đối với người dùng cụ thể đó. Bằng cách đóng giả người dùng, bạn có thể nhìn thấy nền tảng từ góc độ của họ và xác định các module họ có quyền truy cập."
+    ]
+  },
+  {
+    "question": "What are the different Notification methods that can be used to alert users when events that concern them have occurred? (Choose three.)",
+    "feedbacks": [
+      "Meeting Invitation (Lời mời họp) không phải là phương thức thông báo thường được sử dụng để cảnh báo người dùng khi có sự kiện xảy ra. Nó thường được sử dụng để lên lịch và mời người dùng tham dự các cuộc họp hoặc sự kiện, thay vì để cảnh báo họ về những diễn biến cụ thể.",
+      "Email là một phương thức thông báo phổ biến và được sử dụng rộng rãi để cảnh báo người dùng về các sự kiện liên quan đến họ. Nó cho phép gửi thông tin chi tiết trực tiếp đến hộp thư đến của người dùng, làm cho nó trở thành một cách hiệu quả để truyền đạt các cập nhật quan trọng.",
+      "Browser Pop ups (Cửa sổ bật lên trên trình duyệt) là một phương thức thông báo hiệu quả khác để cảnh báo người dùng khi các sự kiện xảy ra. Chúng cung cấp cảnh báo theo thời gian thực ngay trên màn hình người dùng, đảm bảo thông tin quan trọng được họ chú ý ngay lập tức.",
+      "Messenger thường không được sử dụng làm phương thức thông báo để cảnh báo người dùng về các sự kiện. Mặc dù nó có thể được sử dụng để liên lạc, nhưng nó không phổ biến cho cảnh báo sự kiện trong bối cảnh ServiceNow.",
+      "SMS (Dịch vụ tin nhắn ngắn) là một phương thức thông báo phổ biến để cảnh báo người dùng về các sự kiện liên quan đến họ. Nó cung cấp giao tiếp ngay lập tức và trực tiếp tới thiết bị di động của người dùng, đảm bảo các cập nhật quan trọng được nhận kịp thời."
+    ]
+  },
+  {
+    "question": "What are the steps to apply an update set retrieved from another instance?",
+    "feedbacks": [
+      "Tải Update Set, nhập nó và sau đó cài đặt có thể dẫn đến lỗi hoặc việc áp dụng không đầy đủ các thay đổi được truy xuất từ instance khác. Việc làm theo quy trình chi tiết và kỹ lưỡng hơn là cực kỳ quan trọng để đảm bảo Update Set được áp dụng đúng cách.",
+      "Kiểm tra tính đầy đủ của Update Set, truy xuất, xem trước các thay đổi và sau đó cam kết (commit) Update Set là chuỗi các bước được khuyến nghị để áp dụng một Update Set được lấy từ instance khác. Phương pháp này giúp đảm bảo tính toàn vẹn và độ chính xác của các thay đổi được áp dụng.",
+      "Chỉ cần kiểm tra tính đầy đủ của Update Set, kiểm tra kết nối và áp dụng nó có thể là không đủ để áp dụng thành công một Update Set từ instance khác. Các bước bổ sung như xem trước các thay đổi và cam kết chúng là rất cần thiết để quá trình áp dụng Update Set diễn ra suôn sẻ.",
+      "Nhập Update Set, kiểm tra tính đầy đủ, liên kết và sau đó xuất bản có thể bỏ sót các bước quan trọng trong quá trình áp dụng Update Set được lấy từ instance khác. Việc làm theo một quy trình toàn diện hơn bao gồm xem trước và cam kết các thay đổi là rất quan trọng để tránh bất kỳ sự cố nào."
+    ]
+  },
+  {
+    "question": "After finishing your work on High Security Settings, what is a possible way to return to normal admin security levels?",
+    "feedbacks": [
+      "",
+      "Đăng xuất và đăng nhập lại (Logging out and back in) là cách chính xác để quay lại mức bảo mật admin bình thường sau khi làm việc trên High Security Settings. Hành động này làm mới phiên người dùng và áp dụng mọi thay đổi về cấp độ bảo mật được thực hiện trong suốt phiên đó.",
+      "Kết thúc đóng giả (Ending Impersonation) không phải là cách chính xác để quay lại mức bảo mật admin bình thường sau khi làm việc với High Security Settings. Việc đóng giả cho phép admin tạm thời đảm nhận danh tính của người dùng khác vì mục đích khắc phục sự cố hoặc kiểm tra, nhưng nó không ảnh hưởng đến mức bảo mật tổng thể.",
+      "Chọn vai trò Normal không phải là cách đúng để trở lại mức bảo mật admin bình thường sau khi thao tác trên High Security Settings. Các vai trò trong ServiceNow quyết định các quyền và cấp độ truy cập của người dùng, nhưng chỉ thay đổi vai trò sẽ không hoàn nguyên các thiết lập bảo mật.",
+      "Sử dụng module System Administration > Normal Security không phải là cách đúng để khôi phục mức bảo mật admin bình thường sau khi làm việc trên High Security Settings. Module Normal Security không phải là một tính năng tiêu chuẩn trong ServiceNow, và không có module cụ thể nào để điều chỉnh các mức độ bảo mật trở lại bình thường."
+    ]
+  },
+  {
+    "question": "Which feature can be used to give users the choice to easily populate the most-used fields for a specific table?",
+    "feedbacks": [
+      "Các Thẻ (Tags) được sử dụng để phân loại và sắp xếp bản ghi trong bảng, nhưng chúng không trực tiếp giúp người dùng điền thông tin vào các trường trong bảng. Chúng phục vụ nhiều cho mục đích phân loại và tìm kiếm hơn là nhập liệu.",
+      "Formatters được sử dụng để kiểm soát định dạng hiển thị của các giá trị trường trong biểu mẫu và danh sách, nhưng chúng không hỗ trợ người dùng điền dữ liệu vào trường. Chúng tập trung vào cách trình bày dữ liệu hơn là nhập dữ liệu.",
+      "Mẫu (Templates) có thể được sử dụng để xác định trước và điền giá trị mặc định cho các trường của một bảng cụ thể. Tính năng này cho phép người dùng dễ dàng điền vào các trường thường xuyên được sử dụng, đơn giản hóa quá trình nhập liệu và cải thiện hiệu suất.",
+      "Các trường Reference type được dùng để thiết lập mối quan hệ giữa các bảng bằng cách tham chiếu bản ghi từ bảng khác. Mặc dù chúng có thể giúp điền thông tin bằng dữ liệu liên quan, nhưng chúng không trực tiếp cung cấp cho người dùng tùy chọn điền dễ dàng vào các trường sử dụng nhiều nhất trên một bảng cụ thể."
+    ]
+  },
+  {
+    "question": "What protects applications by restricting access to data in another application, in the same instance?",
+    "feedbacks": [
+      "",
+      "Access Control Rules xác định các điều kiện theo đó các bản ghi có thể được truy cập hoặc sửa đổi trong một ứng dụng. Dù chúng rất cần thiết để kiểm soát quyền truy cập trong ứng dụng, chúng không đặc biệt giới hạn việc truy cập vào dữ liệu của ứng dụng khác trong cùng instance.",
+      "Assignment Rules được sử dụng để tự động phân công tác vụ hoặc bản ghi cho người dùng dựa trên các tiêu chí cụ thể. Chúng không liên quan trực tiếp đến việc hạn chế truy cập vào dữ liệu trong ứng dụng khác trên cùng một instance, do đó không mang lại sự bảo vệ như mô tả trong câu hỏi.",
+      "Application Scope (Phạm vi ứng dụng) trong ServiceNow là cơ chế bảo vệ ứng dụng bằng cách cách ly chúng với nhau trong cùng một instance. Nó đảm bảo rằng dữ liệu, cấu hình và tùy chỉnh trong một ứng dụng không can thiệp hoặc tác động lên ứng dụng khác. Sự cách ly này giúp duy trì tính toàn vẹn và bảo mật dữ liệu, khiến nó trở thành lựa chọn đúng đắn để bảo vệ ứng dụng thông qua việc hạn chế truy cập vào dữ liệu của ứng dụng khác trong cùng một instance."
+    ]
+  },
+  {
+    "question": "Which module in the Service Catalog application is used to create a new catalog item?",
+    "feedbacks": [
+      "Configuration Items trong ứng dụng Service Catalog được sử dụng để quản lý và theo dõi các mục cấu hình trong danh mục, chẳng hạn như phần cứng, phần mềm, hoặc các tài sản khác. Chúng không được sử dụng để tạo mới các catalog item.",
+      "Module Maintain Items trong ứng dụng Service Catalog được thiết kế đặc biệt để tạo và quản lý các catalog item mới. Module này cho phép quản trị viên định nghĩa chi tiết, định giá và các thuộc tính khác của catalog item được cung cấp cho người dùng.",
+      "Content Items trong ứng dụng Service Catalog được sử dụng để quản lý và hiển thị nội dung trong danh mục, chẳng hạn như mô tả, hình ảnh hoặc thông tin bổ sung liên quan đến catalog item. Chúng không được sử dụng để tạo catalog item mới.",
+      "Module Catalog Items trong ứng dụng Service Catalog được sử dụng để xem và quản lý các catalog item hiện tại, chứ không phải để tạo mới. Việc tạo các catalog item mới được thực hiện thông qua module Maintain Items."
+    ]
+  },
+  {
+    "question": "What helps to define the structure of a catalog item form that is displayed to the customer?",
+    "feedbacks": [
+      "Biến số (Variables) giúp xác định cấu trúc của biểu mẫu catalog item bằng cách cho phép quản trị viên thu thập thông tin cụ thể từ khách hàng trong quá trình đặt hàng. Chúng có thể được sử dụng để lấy dữ liệu đầu vào, thực hiện lựa chọn hoặc cung cấp thông tin bổ sung cần thiết cho việc thực hiện catalog item.",
+      "Catalog Description cung cấp thông tin về catalog item cho khách hàng, chẳng hạn như tổng quan ngắn gọn, tính năng và lợi ích. Mặc dù điều quan trọng là để thông báo cho khách hàng về mặt hàng, nó không trực tiếp định nghĩa cấu trúc của biểu mẫu hiển thị cho khách hàng.",
+      "Catalog Definition phác thảo toàn bộ cấu hình và cài đặt của catalog item, chẳng hạn như giá cả, tình trạng sẵn có và chi tiết thực hiện. Mặc dù rất cần thiết để thiết lập catalog item, nó không định nghĩa cụ thể cấu trúc của biểu mẫu hiển thị cho khách hàng.",
+      "Order Guides là một bộ sưu tập các catalog item được nhóm lại với nhau để hướng dẫn khách hàng thông qua một quy trình hoặc luồng công việc cụ thể. Mặc dù chúng có thể giúp hợp lý hóa quy trình đặt hàng, chúng không trực tiếp định nghĩa cấu trúc của một biểu mẫu catalog item riêng lẻ."
+    ]
+  },
+  {
+    "question": "Which displays the list of activities, or history, on a form?",
+    "feedbacks": [
+      "Formatter được sử dụng để hiển thị danh sách các hoạt động hoặc lịch sử trên một biểu mẫu trong ServiceNow. Nó cho phép người dùng xem danh sách thứ tự thời gian của các hành động được thực hiện trên một bản ghi, cung cấp tính minh bạch và khả năng kiểm toán các thay đổi đã được tạo.",
+      "Dictionary trong ServiceNow được sử dụng để định nghĩa cấu trúc và hành vi của các bảng, bao gồm các trường và mối quan hệ. Nó không liên quan trực tiếp đến việc hiển thị danh sách các hoạt động hoặc lịch sử trên một biểu mẫu.",
+      "Sidebar trong ServiceNow thường chứa các phím tắt, liên kết và tiện ích (widget) để truy cập nhanh vào các module và chức năng khác nhau. Nó không hiển thị danh sách các hoạt động hoặc lịch sử trên một biểu mẫu.",
+      "History Menu trong ServiceNow cung cấp danh sách các bản ghi đã xem gần đây và cho phép người dùng điều hướng trở lại các mục đã truy cập trước đó. Nó không đặc biệt hiển thị danh sách các hoạt động hoặc lịch sử trên một biểu mẫu."
+    ]
+  },
+  {
+    "question": "Where should an administrator navigate to add the \"Save\" button in the form header?",
+    "feedbacks": [
+      "Việc điều hướng tới Context Menu > Form Design cho phép quản trị viên tùy chỉnh bố cục, các trường và danh sách liên quan. Tuy nhiên, việc thêm nút \"Save\" trên tiêu đề biểu mẫu liên quan nhiều hơn đến UI properties thay vì thiết kế biểu mẫu (form design).",
+      "Truy cập vào All > System Properties > UI Action Settings là nơi quản trị viên có thể định cấu hình các UI action, chẳng hạn như nút, liên kết và các mục menu ngữ cảnh. Tuy nhiên, việc thêm nút \"Save\" vào tiêu đề biểu mẫu liên quan nhiều đến UI properties hơn là UI actions.",
+      "Bằng cách điều hướng đến All > System Properties > UI Properties, quản trị viên có thể tùy chỉnh các thuộc tính giao diện người dùng, bao gồm tiêu đề, chân trang và các nút. Đây là vị trí chính xác để thêm nút \"Save\" trong tiêu đề biểu mẫu.",
+      "Truy cập vào Context Menu > Form Layout cho phép quản trị viên điều chỉnh bố cục biểu mẫu, bao gồm các phần, cột và danh sách liên quan. Tuy nhiên, việc thêm nút \"Save\" trên tiêu đề biểu mẫu liên quan nhiều hơn đến UI properties chứ không phải form layout."
+    ]
+  },
+  {
+    "question": "What are the options that can be set to determine when a Business Rule executes? (Choose four.)",
+    "feedbacks": [
+      "Thiết lập Business Rule chạy không đồng bộ (asynchronously) cho phép nó chạy ngầm mà không chặn giao diện người dùng, cải thiện hiệu suất và trải nghiệm người dùng.",
+      "Tùy chọn Load xác định rằng Business Rule sẽ thực thi khi bản ghi được tải, phù hợp cho các hành động cần được thực hiện khi bản ghi được truy cập.",
+      "Tùy chọn Change chỉ định rằng Business Rule sẽ chạy khi một thay đổi được thực hiện đối với bản ghi, lý tưởng để kích hoạt hành động dựa trên việc sửa đổi dữ liệu.",
+      "Tùy chọn Display đảm bảo rằng Business Rule sẽ chạy khi biểu mẫu hiển thị, cho phép các hành động được thực hiện trước khi biểu mẫu trình bày cho người dùng.",
+      "Thiết lập Business Rule thực thi sau (after) một số điều kiện được đáp ứng cho phép các hành động được thực hiện sau một sự kiện hoặc quy trình cụ thể đã xảy ra, mang lại sự linh hoạt trong việc thực thi quy tắc.",
+      "Việc thực thi Business Rule trước (before) khi một số điều kiện nhất định được thỏa mãn cho phép tiến hành các hành động trước khi một sự kiện hoặc quy trình cụ thể diễn ra, mang lại khả năng thực hiện các hành động ưu tiên."
+    ]
+  },
+  {
+    "question": "Which path is used on the Filter Navigator to display the list of records from the sys_user table?",
+    "feedbacks": [
+      "Đường dẫn \"sys_user.display\" không phải là đường dẫn đúng để hiển thị danh sách bản ghi từ bảng sys_user. Hậu tố \".display\" thường chỉ định đến một trang hiển thị bản ghi cụ thể, không phải là danh sách bản ghi.",
+      "Đường dẫn \"sys_user.do\" không phải là đường dẫn đúng để hiển thị danh sách các bản ghi từ bảng sys_user. Hậu tố \".do\" thường được sử dụng để thực hiện các hành động hoặc thao tác trên bản ghi cụ thể, không phải để hiển thị danh sách bản ghi.",
+      "Đường dẫn \"sys_user.list\" là đường dẫn chính xác để hiển thị danh sách các bản ghi từ bảng sys_user. Hậu tố \".list\" được sử dụng phổ biến trong ServiceNow để truy cập chế độ xem danh sách của các bản ghi trong một bảng cụ thể, cho phép người dùng xem và tương tác với nhiều bản ghi cùng một lúc.",
+      "Đường dẫn \"sys_user.view\" không phải là đường dẫn chính xác để hiển thị danh sách bản ghi từ bảng sys_user. Hậu tố \".view\" thường đề cập đến một trang chế độ xem bản ghi cụ thể, chứ không phải chế độ xem danh sách các bản ghi."
+    ]
+  },
+  {
+    "question": "Which access control rule applies to every field in the incident table?",
+    "feedbacks": [
+      "Quy tắc kiểm soát truy cập \"incident<=>* \" không áp dụng cho mọi trường trong bảng incident. Quy tắc này chỉ định mối quan hệ hai chiều giữa bảng incident và một bảng khác, chứ không phải là kiểm soát truy cập cho tất cả các trường trong bảng incident.",
+      "Quy tắc kiểm soát truy cập \"incident.all\" không áp dụng cho mọi trường trong bảng incident. Quy tắc này cấp toàn quyền truy cập vào bảng incident, nhưng nó không nhắm mục tiêu cụ thể đến mọi trường trong bảng.",
+      "Quy tắc kiểm soát truy cập \"incident. *\" áp dụng cho mọi trường trong bảng incident. Quy tắc này cấp quyền truy cập vào tất cả các trường trong bảng incident, đảm bảo rằng mọi trường đều được quy tắc kiểm soát truy cập bao phủ.",
+      "Quy tắc kiểm soát truy cập \"incident||* \" không áp dụng cho mọi trường trong bảng incident. Quy tắc này chỉ định một mối quan hệ giữa bảng incident và một bảng khác bằng cách sử dụng toán tử \"||\", nhưng nó không cung cấp kiểm soát truy cập cho tất cả các trường trong bảng incident."
+    ]
+  },
+  {
+    "question": "What is the purpose of an application scope?",
+    "feedbacks": [
+      "Phạm vi ứng dụng (Application scope) trong ServiceNow xác định các phần nào của một ứng dụng được hiển thị và có thể truy cập bởi các ứng dụng khác. Nó giúp trong việc tổ chức và cách ly các thành phần ứng dụng, như các bảng, tập lệnh và phần tử giao diện người dùng, nhằm ngăn ngừa xung đột và đảm bảo chức năng phù hợp trên các ứng dụng khác nhau.",
+      "Phạm vi ứng dụng không được sử dụng chủ yếu để ngăn chặn các ứng dụng tự thay đổi các bảng và logic nghiệp vụ của chính chúng. Thay vào đó, nó tập trung vào việc định nghĩa ranh giới và khả năng hiển thị của các thành phần ứng dụng trong nền tảng.",
+      "Phạm vi ứng dụng không trực tiếp xác định chức năng của các dịch vụ lõi trong nền tảng. Dù nó có thể ảnh hưởng đến cách ứng dụng tương tác với dịch vụ lõi, mục đích chính của nó là quản lý khả năng hiển thị và truy cập của các thành phần ứng dụng.",
+      "Phạm vi ứng dụng không xác định cách tất cả các ứng dụng truy cập vào bảng và logic nghiệp vụ của nhau. Nó thiên về việc định nghĩa ranh giới và quyền cho từng ứng dụng tương tác với các thành phần của nhau trong nền tảng."
+    ]
+  },
+  {
+    "question": "On a Catalog Task record, how would an administrator change the priority choice options?",
+    "feedbacks": [
+      "Trong menu Context của biểu mẫu, chọn Configure Options không đặc biệt liên quan đến việc thay đổi các tùy chọn lựa chọn ưu tiên (priority choice) trên bản ghi Catalog Task. Tùy chọn này thường được dùng để cấu hình các tùy chọn biểu mẫu chung hơn là các lựa chọn trường cụ thể.",
+      "Nhấp chuột phải vào Priority Label và chọn Configure Lists không liên quan trực tiếp đến việc thay đổi các lựa chọn ưu tiên trên bản ghi Catalog Task. Lựa chọn này thường dùng để cấu hình các danh sách giá trị thay vì các lựa chọn trường cá nhân.",
+      "Nhấp chuột phải vào Priority Label và chọn Configure Choices là cách chính xác để thay đổi các tùy chọn ưu tiên trên bản ghi Catalog Task. Hành động này cho phép quản trị viên sửa đổi các tùy chọn ưu tiên có sẵn để người dùng lựa chọn khi điền vào tác vụ.",
+      "Mở Data Dictionary và chọn Values không phải là phương pháp thích hợp để thay đổi các tùy chọn ưu tiên trên bản ghi Catalog Task. Lựa chọn này phù hợp hơn để quản lý các giá trị dữ liệu và mối quan hệ cơ bản trong nền tảng ServiceNow."
+    ]
+  },
+  {
+    "question": "Which sequence of actions applies an update set to an instance?",
+    "feedbacks": [
+      "Previewing (xem trước) một update set cho phép bạn xem những thay đổi sẽ được áp dụng cho instance mà không thực sự cam kết chúng. Lưu (Saving) update set sẽ lưu trữ các thay đổi một cách tạm thời. Tuy nhiên, cam kết (committing) update set mới là bước cuối cùng áp dụng vĩnh viễn các thay đổi vào instance.",
+      "Retrieving (truy xuất) một update set là quá trình đưa các thay đổi từ instance này sang instance khác, chứ không phải áp dụng chúng vào instance hiện tại. Previewing update set cho phép bạn xem những thay đổi sẽ được áp dụng, nhưng nó không thực sự áp dụng chúng. Committing update set là bước cuối cùng áp dụng các thay đổi.",
+      "Retrieving một update set là quá trình đưa các thay đổi từ instance này sang instance khác, không phải là áp dụng chúng vào instance hiện tại. Committing update set là bước cuối cùng để áp dụng các thay đổi, nhưng bạn nên preview (xem trước) trước khi cam kết để đảm bảo các thay đổi đúng như mong đợi.",
+      "Retrieving (truy xuất) update set là bước đầu tiên để đưa các thay đổi vào instance hiện tại. Previewing (xem trước) update set cho phép bạn xem các thay đổi sẽ được áp dụng trước khi cam kết. Cuối cùng, committing (cam kết) update set sẽ áp dụng các thay đổi vĩnh viễn vào instance."
+    ]
+  },
+  {
+    "question": "A customer asks you to make the following updates to a form:1. When Caller field is populated, automatically look up caller location and load it in the Location field.2. Add notice at the top of the page when the record is submitted.What type of script would you use to meet this requirement?",
+    "feedbacks": [
+      "UI scripts được sử dụng để tùy chỉnh giao diện người dùng của các biểu mẫu, danh sách và phần tử khác trong ServiceNow. Chúng thường không được sử dụng để thực hiện thay đổi tính năng hay hành vi của biểu mẫu, vì vậy lựa chọn này không phù hợp nhất cho tình huống đưa ra.",
+      "Server scripts được sử dụng để chạy tập lệnh trên phía máy chủ trong ServiceNow, thường dành cho thao tác dữ liệu hoặc logic nghiệp vụ. Chúng không liên quan trực tiếp đến việc cập nhật hành vi hoặc chức năng biểu mẫu, vì vậy lựa chọn này không phải là phương án tốt nhất cho các yêu cầu đã nêu.",
+      "JavaScript là ngôn ngữ lập trình thường được sử dụng trong ServiceNow cho kịch bản và tùy chỉnh. Mặc dù JavaScript có thể dùng cho nhiều mục đích, bao gồm kịch bản phía máy khách, nhưng nó không đủ cụ thể cho các cập nhật biểu mẫu theo yêu cầu trong tình huống này.",
+      "Client scripts trong ServiceNow được sử dụng để tùy chỉnh hành vi của biểu mẫu và các trường phía máy khách. Chúng lý tưởng để cập nhật chức năng biểu mẫu, chẳng hạn như xác thực trường, tự động điền trường động, và hành động gửi biểu mẫu. Trong trường hợp này, sử dụng client script là lựa chọn đúng nhất cho các bản cập nhật trên biểu mẫu được yêu cầu."
+    ]
+  },
+  {
+    "question": "When does a Business Rule execute in ServiceNow?",
+    "feedbacks": [
+      "Business Rules không thực thi khi người dùng tải xuống một báo cáo trong ServiceNow. Chúng được kích hoạt bởi các sự kiện cụ thể liên quan đến thao tác dữ liệu trong nền tảng.",
+      "Business Rules không thực thi dựa trên các sự kiện đăng nhập của người dùng trong ServiceNow. Chúng chủ yếu được thiết kế để tự động hóa và thực thi tính nhất quán của dữ liệu cũng như các quy trình nghiệp vụ trong nền tảng.",
+      "Business Rules trong ServiceNow có thể được định cấu hình để thực thi trước (before) hoặc sau (after) khi bản ghi được lưu vào cơ sở dữ liệu. Điều này cho phép diễn ra các hoạt động xác thực, thao tác và tự động hóa dữ liệu ở các điểm quan trọng trong vòng đời dữ liệu.",
+      "Business Rules không chỉ thực thi khi bản ghi bị xóa trong ServiceNow. Chúng được thiết kế để kích hoạt dựa trên nhiều sự kiện liên quan đến dữ liệu khác nhau để thực thi logic nghiệp vụ và tính nhất quán của dữ liệu."
+    ]
+  },
+  {
+    "question": "Where do UI Policies run?",
+    "feedbacks": [
+      "UI Policies chạy trên phía máy khách (trình duyệt) trong ServiceNow. Chúng được sử dụng để thay đổi động hành vi của các phần tử biểu mẫu dựa trên các điều kiện do quản trị viên xác định. Điều này mang lại trải nghiệm tương tác và thân thiện hơn cho người dùng khi thao tác với các biểu mẫu trên nền tảng ServiceNow.",
+      "Knowledge Base không phải là nơi UI Policies chạy trong ServiceNow. Knowledge Base là kho lưu trữ các bài viết, câu hỏi thường gặp và thông tin khác mà người dùng có thể truy cập. UI Policies được thiết kế riêng để điều khiển hành vi của các phần tử biểu mẫu và không liên quan đến chức năng Knowledge Base.",
+      "UI Policies không chạy ở phía máy chủ (cơ sở dữ liệu) trong ServiceNow. Chúng được thiết kế đặc biệt để chạy trên phía máy khách (trình duyệt) để cung cấp tương tác theo thời gian thực và thay đổi đối với các phần tử biểu mẫu dựa trên các điều kiện xác định trước. Chạy UI Policies trên phía máy chủ sẽ không mang lại trải nghiệm và chức năng theo như mong muốn cho người dùng.",
+      "UI Policies không chạy trong các tập lệnh phía máy chủ ở ServiceNow. Server-side scripts (tập lệnh máy chủ) thường được sử dụng cho các logic nghiệp vụ và thao tác dữ liệu phức tạp hơn trong nền tảng ServiceNow. Ngược lại, UI Policies tập trung vào phía máy khách (trình duyệt) để cung cấp hành vi biểu mẫu linh hoạt theo điều kiện đã định."
+    ]
+  },
+  {
+    "question": "You are creating a catalog item for ordering a new desktop computer. The computers have these options:Color: Black or SilverRAM: 32 MB or 64MBKeyboard: Standard or ErgonomicMonitor: 24 inch or 32 inchHow would you add these options to the catalog item form?",
+    "feedbacks": [
+      "Adding choices (Thêm lựa chọn) thường chỉ đến việc cung cấp các tùy chọn đã xác định trước để chọn trong catalog item. Mặc dù choices có thể hữu ích cho một số loại câu hỏi hoặc lựa chọn nhất định, chúng không phải là tùy chọn phù hợp nhất để lấy thông tin chi tiết về việc đặt một máy tính để bàn mới.",
+      "Adding variables (Thêm biến số) cho phép bạn thu thập thông tin cụ thể từ người dùng khi họ yêu cầu catalog item. Trong trường hợp đặt một máy tính để bàn mới, các biến số có thể dùng để nắm bắt các chi tiết như loại bộ xử lý, kích thước bộ nhớ, dung lượng lưu trữ, v.v., làm cho nó trở thành lựa chọn chính xác cho tình huống này.",
+      "Adding UI options (Thêm tùy chọn UI) thường liên quan đến việc tùy chỉnh các thành phần giao diện người dùng của catalog item, chẳng hạn như thay đổi bố cục hoặc thiết kế. Dù tùy chọn UI có thể nâng cao trải nghiệm người dùng, chúng không liên quan trực tiếp đến việc thu thập các chi tiết cụ thể về việc đặt mua máy tính để bàn.",
+      "Adding fields (Thêm trường) thường chỉ việc bổ sung thêm các trường dữ liệu vào biểu mẫu hoặc bản ghi. Mặc dù các trường rất cần thiết để nắm bắt thông tin, việc sử dụng các biến số (variables) trong ServiceNow catalog item là cách tiếp cận có cấu trúc và thân thiện hơn với người dùng để thu thập thông tin đặt mua máy tính để bàn mới."
+    ]
+  },
+  {
+    "question": "Which action launches the Form Design interface?",
+    "feedbacks": [
+      "Trong menu ngữ cảnh của Biểu mẫu (Form context menu), việc chọn Configure > Form Design sẽ mở giao diện Form Design, cho phép người dùng tùy chỉnh và thiết kế bố cục biểu mẫu cũng như các trường theo yêu cầu. Tùy chọn này dẫn trực tiếp đến giao diện nơi có thể thực hiện sửa đổi thiết kế biểu mẫu.",
+      "Trong menu ngữ cảnh của Biểu mẫu, việc chọn Configure > Form Layout > Designer không khởi chạy trực tiếp giao diện Form Design. Lựa chọn này liên quan đến bố cục của biểu mẫu thay vì thiết kế các trường và thành phần biểu mẫu.",
+      "Trong menu ngữ cảnh của Biểu mẫu, việc chọn User Experience > UX Dashboard không mở giao diện Form Design. UX Dashboard tập trung cung cấp các hiểu biết và phân tích về trải nghiệm người dùng và có thể không liên quan đến thiết kế biểu mẫu.",
+      "Trong menu ngữ cảnh của Biểu mẫu, việc chọn Configure > Forms > Developer không mở giao diện Form Design. Tùy chọn này có khả năng liên quan nhiều hơn đến việc cấu hình các thiết lập và thuộc tính biểu mẫu thay vì truy cập trực tiếp vào giao diện thiết kế biểu mẫu.",
+      "Trong menu ngữ cảnh của Biểu mẫu, việc chọn Pages > Page Design không mở giao diện Form Design. Tùy chọn này liên quan đến thiết kế và tùy chỉnh các trang trong nền tảng ServiceNow, không đặc biệt tập trung vào thiết kế biểu mẫu."
+    ]
+  },
+  {
+    "question": "Which form element displays the list of activities, or history, on a task form?",
+    "feedbacks": [
+      "Action Formatter chủ yếu được dùng để tùy chỉnh giao diện và hành vi của các nút hoặc liên kết hành động trên biểu mẫu, cho phép người dùng tương tác với tác vụ. Nó không có chức năng hiển thị lịch sử hoạt động trên biểu mẫu tác vụ, khiến nó là một lựa chọn sai cho trường hợp này.",
+      "Activity Formatter được thiết kế đặc biệt để trình bày danh sách theo trình tự thời gian các hoạt động hoặc lịch sử liên quan đến tác vụ trên biểu mẫu. Nó cho phép người dùng theo dõi chuỗi hành động được thực hiện trên tác vụ theo thời gian, làm cho nó trở thành phần tử biểu mẫu thích hợp để hiển thị loại thông tin đó.",
+      "Action Stream là thành phần biểu mẫu thường cung cấp nguồn cấp dữ liệu thời gian thực cho các bản cập nhật, thông báo hoặc sự kiện liên quan đến tác vụ. Dù nó cung cấp thông tin động về các hành động đang diễn ra, nhưng nó không phục vụ mục đích hiển thị bản ghi lịch sử hoạt động trên biểu mẫu tác vụ.",
+      "Phần tử Sidebar thường được sử dụng để trình bày thông tin bổ sung, các liên kết hoặc nội dung liên quan bên cạnh biểu mẫu tác vụ chính. Tuy nhiên, nó không được thiết kế cụ thể để hiển thị danh sách hoạt động hoặc lịch sử gắn liền với tác vụ. Do đó, đây không phải là lựa chọn đúng để hiển thị nhật ký hoạt động của tác vụ."
+    ]
+  },
+  {
+    "question": "Which feature helps to define the rules to restrict the permissions of users from viewing and interacting with data?",
+    "feedbacks": [
+      "CRUD Rules được sử dụng để xác định quyền Tạo, Đọc, Cập nhật và Xóa cho các bảng cụ thể trong ServiceNow. Mặc dù chúng kiểm soát các hoạt động cơ bản trên dữ liệu, chúng không giới hạn quyền của người dùng hoặc tương tác với dữ liệu một cách cụ thể.",
+      "Access Control Rules (Các quy tắc kiểm soát truy cập) được sử dụng để xác định các quy tắc hạn chế quyền của người dùng trong việc xem và tương tác với dữ liệu trên ServiceNow. Chúng cho phép quản trị viên kiểm soát quyền truy cập vào các bản ghi, trường hoặc bảng cụ thể dựa trên các điều kiện và tiêu chí.",
+      "Role Assignment Rules (Quy tắc phân công vai trò) được sử dụng để gán vai trò cho người dùng dựa trên các điều kiện cụ thể. Dù các vai trò đóng phần cốt yếu trong việc xác định quyền hạn người dùng, chúng không hạn chế trực tiếp tương tác của người dùng với dữ liệu theo cùng cách thức mà Access Control Rules làm.",
+      "Scripted User Rules được sử dụng để định nghĩa logic hoặc các điều kiện tùy chỉnh cho tương tác của người dùng trong ServiceNow. Mặc dù chúng có thể được dùng để nâng cao trải nghiệm và tự động hóa các quy trình, chúng không đặc biệt tập trung vào việc hạn chế quyền của người dùng để xem và tương tác với dữ liệu.",
+      "User Authentication Rules được sử dụng để xác định phương thức xác thực và các yêu cầu đối với người dùng truy cập nền tảng ServiceNow. Dù xác thực rất quan trọng cho vấn đề bảo mật, nó không liên quan trực tiếp đến việc hạn chế quyền tương tác dữ liệu của người dùng giống như Access Control Rules."
+    ]
+  },
+  {
+    "question": "Which actions can you take to open the Context Menu on a list, form, or column? (Choose two.)",
+    "feedbacks": [
+      "Chọn liên kết liên quan (related link) Context Menu không phải là hành động hợp lệ để mở Context Menu trên danh sách, biểu mẫu hoặc cột trong ServiceNow. Hành động này không kích hoạt tính năng Context Menu.",
+      "Nhấp đúp vào biểu mẫu danh sách hoặc tiêu đề cột không mở Context Menu trong ServiceNow. Nhấp đúp thường kích hoạt các hành động khác, ví dụ như chỉnh sửa trường hoặc điều hướng tới bản ghi liên quan.",
+      "Nhấp chuột phải vào tiêu đề danh sách, biểu mẫu hoặc cột là hành động hợp lệ để mở Context Menu trong ServiceNow. Nhấp chuột phải thường làm hiển thị menu tùy chọn, bao gồm cả Context Menu, để thực hiện các hành động tiếp theo.",
+      "Sử dụng lệnh Ctrl+M không phải là hành động hợp lệ để mở Context Menu trên danh sách, biểu mẫu hoặc cột trong ServiceNow. Tổ hợp phím này không được liên kết đặc biệt với việc mở Context Menu.",
+      "Chọn biểu tượng Context Menu là hành động hợp lệ để mở Context Menu trên danh sách, biểu mẫu hoặc cột trong ServiceNow. Biểu tượng Context Menu được thiết kế riêng biệt để kích hoạt danh sách các tùy chọn cho các hành động xa hơn đối với mục được chọn."
+    ]
+  },
+  {
+    "question": "Your customer wants to update a notification so it is sent to the Caller's Manager.Which action supports this requirement?",
+    "feedbacks": [
+      "Lựa chọn này mô tả chính xác quá trình cập nhật thông báo để gửi cho Người quản lý của Người gọi (Caller's Manager). Bằng cách thêm trường Caller trong tab 'Who will receive' và sau đó điều hướng dạng chấm (dot walking) đến trường Caller's Manager, thông báo sẽ được chuyển đến người quản lý như yêu cầu.",
+      "Tạo luồng và bao gồm thông báo cho \"All receivers\" không đặc biệt nhắm mục tiêu đến Caller's Manager. Lựa chọn này không hỗ trợ trực tiếp cho yêu cầu cập nhật thông báo được gửi tới Caller's Manager.",
+      "Thêm trường Caller vào tab 'Send to' sau đó dùng lệnh dot walking tới trường Caller’s Manager không phải là quy trình đúng để cập nhật thông báo gửi tới Caller's Manager. Trường chính xác cần cập nhật nằm trên tab 'Who will receive', không phải tab 'Send to'.",
+      "Thiết lập \"Who will receive\" thành Subscribable ở tab 'Send to' không trực tiếp giải quyết yêu cầu cập nhật thông báo để gửi tới Caller's Manager. Lựa chọn này không hỗ trợ yêu cầu cụ thể mà khách hàng đưa ra."
+    ]
+  },
+  {
+    "question": "What attributes of a field can a UI Policy Action change on a form? (Choose three.)",
+    "feedbacks": [
+      "UI Policy Actions không thể thay đổi chiều dài (length) của trường trên một biểu mẫu. Thuộc tính này thường được đặt ở cấp cơ sở dữ liệu và không bị ảnh hưởng bởi UI Policies.",
+      "UI Policy Actions có thể thay đổi thuộc tính bắt buộc (mandatory) của một trường trên biểu mẫu. Điều này cho phép UI Policy quy định trường đó là bắt buộc hoặc tùy chọn dựa trên một số điều kiện nhất định.",
+      "UI Policy Actions có thể thay đổi khả năng hiển thị (visibility) của một trường trên biểu mẫu, làm cho nó hiện ra hoặc ẩn đi theo các điều kiện cụ thể. Điều này giúp hiển thị hoặc ẩn động các trường nhằm nâng cao trải nghiệm người dùng.",
+      "UI Policy Actions không thể thay đổi định dạng (format) của trường trên biểu mẫu. Định dạng trường thường được đặt trước và không thể thay đổi bởi UI Policies.",
+      "UI Policy Actions có thể thay đổi thuộc tính chỉ đọc (read-only) của trường trên biểu mẫu. Điều này cho phép UI Policy chỉ định một trường là có thể chỉnh sửa hay chỉ đọc tùy theo các điều kiện nhất định, cải thiện khả năng kiểm soát và bảo mật dữ liệu."
+    ]
+  },
+  {
+    "question": "Where do you navigate to add a list of Incidents created by a user to the bottom of their user record?",
+    "feedbacks": [
+      "Điều hướng đến Context Menu và chọn Configure > Related Records không dẫn trực tiếp đến việc thêm danh sách Incident vào bản ghi của người dùng. Tùy chọn này không cung cấp đường dẫn cụ thể để đạt được kết quả mong muốn.",
+      "Nhấp chuột phải vào Biểu mẫu và chọn Configure > Related Cases không dẫn đến việc thêm danh sách Incident vào bản ghi của người dùng. Lựa chọn này không phải là đường dẫn đúng cho nhiệm vụ cụ thể này.",
+      "Điều hướng tới Context Menu và sau đó chọn Configure > Related Lists là đường dẫn chính xác để thêm danh sách Incident được tạo bởi người dùng vào phần dưới cùng bản ghi của họ. Tùy chọn này cung cấp các bước thích hợp để đạt được kết quả mong đợi.",
+      "Nhấp chuột phải vào Form và chọn Configure > Add Lists không phải là đường dẫn đúng để thêm danh sách Incident vào bản ghi của người dùng. Tùy chọn này không dẫn tới hành động cụ thể theo yêu cầu của tình huống."
+    ]
+  },
+  {
+    "question": "If you want to manage your personal tasks through a visual, drag-and-drop interface, what application would you use?",
+    "feedbacks": [
+      "Service Desk chủ yếu được dùng để quản lý và giải quyết các yêu cầu và sự cố liên quan đến dịch vụ CNTT. Nó không được thiết kế cho việc quản lý tác vụ cá nhân thông qua giao diện kéo và thả trực quan.",
+      "Virtual Agent Homepage được sử dụng để tạo và quản lý tổng đài viên ảo nhằm tự động hóa các cuộc trò chuyện và nhiệm vụ. Nó không dùng để quản lý nhiệm vụ cá nhân qua giao diện trực quan kéo và thả.",
+      "Visual Task Boards trong ServiceNow cung cấp phần biểu diễn hình ảnh cho các tác vụ, có thể dễ dàng quản lý thông qua giao diện kéo-thả. Ứng dụng này được thiết kế đặc biệt cho mục đích quản lý công việc cá nhân và mang lại cách tổ chức, ưu tiên nhiệm vụ thân thiện với người dùng.",
+      "Personal Task Tracker không phải là ứng dụng tiêu chuẩn trong ServiceNow. Nó không cung cấp giao diện trực quan, kéo và thả cho việc quản lý các tác vụ cá nhân giống như ứng dụng Visual Task Boards."
+    ]
+  },
+  {
+    "question": "Which action enables a user to view and specify date and time formats in their instance?",
+    "feedbacks": [
+      "Chọn User menu > Preferences > Time Settings cho phép người dùng xem và chỉ định định dạng ngày và giờ, nhưng không cung cấp tùy chọn đặt múi giờ. Việc chuyển đổi múi giờ hiển thị chỉ thay đổi cách hiển thị múi giờ chứ không thay đổi cài đặt múi giờ thực tế.",
+      "Yêu cầu người dùng điều chỉnh múi giờ trên máy tính cá nhân của họ không giúp họ có thể chỉ định định dạng ngày giờ trong instance ServiceNow. Cài đặt múi giờ trên máy tính cá nhân không ảnh hưởng đến thiết lập của instance.",
+      "Sử dụng system properties để điều chỉnh lại múi giờ của instance không phải là thao tác đúng để cho phép người dùng xem và thiết lập định dạng ngày, giờ trong instance của họ. Các system properties thường được dùng cho những cấu hình toàn cục, không phải cho sở thích riêng của từng người dùng.",
+      "Chọn User menu > Preferences > Language & Region > Set date and time format and time zone là thao tác chính xác cho phép người dùng xem và thiết lập định dạng ngày giờ trên instance của họ. Lựa chọn này cho phép người dùng tùy chỉnh các cấu hình ngày và giờ theo yêu cầu cá nhân.",
+      "Tạo UI Script để đặt múi giờ mặc định không phải là hành động thích hợp để cho phép người dùng xem và thiết lập định dạng ngày, giờ trên instance của họ. UI Script thường được dùng để tùy chỉnh hành vi giao diện người dùng chứ không phải để thiết lập sở thích riêng như định dạng ngày và giờ."
+    ]
+  },
+  {
+    "question": "A manager is complaining that they can't get the data they need on a report, because the data resides in two different tables. This data is used for many different reports in their department. You have checked to see if dot-walking will meet the requirement, and it is not possible. What else might you try to help this manager?",
+    "feedbacks": [
+      "Việc xuất các bảng sang định dạng bảng tính có thể mang đến một giải pháp tạm thời để người quản lý truy cập dữ liệu từ nhiều bảng khác nhau, nhưng nó không phải là phương pháp bền vững hay hiệu quả cho việc xuất báo cáo về lâu dài.",
+      "Tạo một Database View cho phép bạn kết hợp dữ liệu từ nhiều bảng thành một bảng ảo duy nhất, sau đó có thể được dùng để xuất các báo cáo yêu cầu dữ liệu từ nhiều nguồn khác nhau. Đây là một cách tiếp cận có hệ thống và hiệu quả hơn so với dot-walking.",
+      "Tạo một Report Template rất hữu ích cho việc định dạng và hiển thị dữ liệu một cách đồng nhất trên nhiều báo cáo, nhưng nó không giải quyết được vấn đề kết hợp dữ liệu từ nhiều bảng khác nhau thành một báo cáo duy nhất.",
+      "Tạo một Report Source là cách để xác định nguồn dữ liệu cho một báo cáo, nhưng nó không trực tiếp giải quyết thách thức lấy dữ liệu từ nhiều bảng và kết hợp chúng vào một báo cáo duy nhất.",
+      "Tạo một bảng tùy chỉnh có thể giúp tổ chức và lưu trữ dữ liệu cụ thể, nhưng nó không giải quyết được vấn đề truy cập dữ liệu từ nhiều bảng khác nhau cho mục đích báo cáo."
+    ]
+  },
+  {
+    "question": "Which script can run when a record is displayed, inserted, updated, deleted, or when a table is queried?",
+    "feedbacks": [
+      "Business rule (Quy tắc nghiệp vụ) trong ServiceNow có thể chạy khi một bản ghi được hiển thị, chèn, cập nhật, xóa hoặc khi một bảng bị truy vấn. Nó cho phép bạn xác định các hành động tự động xảy ra dựa trên những điều kiện nhất định, khiến nó trở thành sự lựa chọn phù hợp nhất cho tình huống này.",
+      "Không có thứ gì được gọi là \"Cheat script\" ở trong ServiceNow. Lựa chọn này hoàn toàn sai và không tương ứng với bất kỳ tính năng tự động hóa hay kịch bản lập trình nào được biết đến trong nền tảng.",
+      "Record rules trong ServiceNow được sử dụng để thực thi tính thống nhất và toàn vẹn của dữ liệu bằng cách xác định các điều kiện bắt buộc phải thỏa mãn khi các bản ghi được chèn hoặc cập nhật. Chúng không tự động chạy khi bản ghi được hiển thị, xóa hoặc khi một bảng được truy vấn, vì vậy sự lựa chọn này là sai.",
+      "UI scripts trong ServiceNow được dùng để tùy biến biểu hiện, chức năng và giao diện của các biểu mẫu, danh sách và UI page. Chúng không chạy khi một bản ghi được hiển thị, chèn, cập nhật, xóa, hay khi một bảng được truy vấn, nên sự lựa chọn này không phù hợp cho trường hợp được đưa ra.",
+      "Scheduled jobs trong ServiceNow được sử dụng để chạy các tập lệnh hoặc tiến hành các tác vụ cụ thể dựa theo lịch trình định sẵn. Chúng không tự động chạy trong thời gian thực khi một bản ghi được hiển thị, chèn, cập nhật, xóa hay khi bảng bị truy vấn, điều này khiến cho lựa chọn này không chính xác cho câu hỏi đưa ra."
+    ]
+  },
+  {
+    "question": "When you are viewing a record, like an incident, how can you detect if someone else is also actively working on the Incident? (Choose two.)",
+    "feedbacks": [
+      "Một thông báo hiện ra hỏi người dùng mới về việc cộng tác không phải là một tính năng tiêu chuẩn của ServiceNow để nhận biết xem có người nào đó đang thực sự xử lý bản ghi như sự cố (incident) hay không. Tính năng này không có sự liên kết với việc nhận ra có những người sử dụng khác đang xem xét bản ghi.",
+      "Một cửa sổ chat tự động khởi chạy để cộng tác không phải là hành vi mặc định trong ServiceNow nhằm chỉ định có ai khác đang làm việc trên một bản ghi giống incident. Tính năng này không được dùng thông thường để nhận biết những người dùng khác đang xem bản ghi.",
+      "Danh sách ghi chú công việc (Work notes) chứa tên của những người dùng khác không phải là phương pháp tin cậy để nhận biết xem ai khác đang trực tiếp làm việc trên bản ghi sự cố. Việc tên xuất hiện ở phần work notes không nhất thiết có nghĩa là các người dùng này đang tích cực xem bản ghi.",
+      "Biểu tượng hiển thị sự hiện diện của người dùng (user presence icon) chỉ ra tên viết tắt của các người dùng đang trực tiếp xem bản ghi là một biện pháp hợp lệ để nhận định có những người nào khác cũng đang tích cực tham gia xử lý sự cố. Tính năng này mang đến tầm nhìn theo thời gian thực về những người hiện tại đang theo dõi bản ghi, tạo sự phối hợp và hợp tác nhịp nhàng.",
+      "Một biểu tượng nổi lên ở phía bên trái của các trường đã được người dùng khác cập nhật là một phương pháp chính xác nhằm theo dõi có những ai đó đang thao tác giải quyết sự cố đó. Chỉ báo hiển thị hình ảnh này có tác dụng giúp người sử dụng xác định được những trường nào đã bị người khác thao tác thay đổi dữ liệu, là dấu hiệu liên đới tích cực cho bản ghi."
+    ]
+  },
+  {
+    "question": "Which storefront is a single location for accessing pre-built spokes, to quickly integrate with third party services to build and share content?",
+    "feedbacks": [
+      "ServiceNow Store là một lựa chọn hoàn toàn đúng bởi vì nó là thị trường chính thức cho ServiceNow, nơi mà người dùng có thể tải và sử dụng các spokes dựng sẵn để cấu hình kết nối ứng dụng với các bên dịch vụ thứ ba. Nó vận hành như một nơi chứa vị trí lưu trữ tập trung để người sử dụng tự do tìm kiếm ứng dụng và phân phát tài nguyên nội dung, qua đó tăng năng lực hiệu năng hệ thống ServiceNow.",
+      "Integration Spoke Store không phải lựa chọn chính xác do nó không tồn tại thành một tổ hợp độc lập ở phạm vi sinh thái của hệ thống ServiceNow. Đặc biệt lưu ý hãy nhắc lại một vị trí như ServiceNow Store được cấp bản quyền khi cần truy tìm sử dụng kết nối các giao diện spoke và tích hợp hệ thống.",
+      "Spoke Store không phải lựa chọn đứng đắn vì định danh trên quá mức bao quát cũng như không chỉ ra cụ thể nền tảng sử dụng liên kết cho phạm vi những spoke có sẵn. ServiceNow Store là ứng dụng lưu trữ thiết yếu có trong máy chủ nền tảng phần mềm ServiceNow mục đích hỗ trợ tải xuống những chức năng hữu dụng trên.",
+      "<p>Phần chọn này không biểu đạt cửa hàng trực tuyến hiện diện hợp pháp. \"ServiceNow Spoke Store\" đúng bản chất là một <strong>yếu tố gây phân tâm</strong> truyền thống (kiểu đáp án nhắm vào việc đánh lừa)</p>"
+    ]
+  },
+  {
+    "question": "What policies are applied to all data entered into the platform (i.e. through a record form (UI), Import Sets, or Web Services)?",
+    "feedbacks": [
+      "Data Policies (Chính sách dữ liệu) được áp dụng cho mọi dữ liệu đưa vào nền tảng, không phân biệt loại hình phương thức nào tạo ra và đưa đầu vào cho dữ liệu. Những quy tắc nền tảng này góp phần đảm bảo mức độ chất lượng dữ liệu, tính ổn định không thay đổi, cũng như đảm bảo sự hợp chuẩn bởi vì có quy định và sự kiểm chứng vào tất cả thông tin trong quá trình chúng được nhập.",
+      "Write Policies được sử dụng đặc biệt để nắm quyền viết dữ liệu truy cập đưa cho những hệ bảng mẫu và thông tin thuộc khu vực nền tảng ServiceNow. Dù có khả năng chặn người truy cập cung cấp dữ liệu, chúng không chắc cần áp dụng vào những thông tin được thiết lập cấu hình đưa vào môi trường từ những cách làm riêng biệt.",
+      "Data Integrity Policies tập trung chú ý đặc biệt hướng tới công đoạn luôn bảo quản tính chuẩn xác nhất, tính phù hợp một cách trọn vẹn và một nguồn dữ liệu không rủi ro cho khu vực cơ sở hệ thống. Mặc dù nó nắm vai trò chủ chốt trong kết quả dữ liệu được tốt, chúng dĩ nhiên không cụ thể trình bày giải quyết về các chính sách cần ứng dụng vào mọi trường hợp nhập lượng dữ liệu bên trong phạm vi cơ sở.",
+      "Data Submission Policies không phải một khái niệm định kiến hay thuật ngữ thiết kế hiện có của những gì cung cấp trên môi trường phần mềm ServiceNow. Cứ cho rằng thao tác gửi và nhận đưa ra của quá trình xử lý sẽ chịu rà soát điểu khiển, đây nói chung không từng được đánh dấu dưới tư cách của một khái niệm luật lệ thiết yếu về công tác quy trình đưa nhập thêm lượng thông tin số."
+    ]
+  },
+  {
+    "question": "Which actions would you take to edit the title on an application menu?",
+    "feedbacks": [
+      "Chọn tên Application trên Navigator và tiếp theo ấn chọn vào hình cái bút chì sẽ đưa bạn phép hiệu chỉnh trực tiếp tên tiêu đề ứng dụng menu. Việc làm đó dĩ nhiên thiết thực và cực kì tối giản để trực tiếp điều chỉnh trực diện tên danh mục menu.",
+      "Chọn qua phần System Definition > Dictionary > Application thì sẽ không thực sự dẫn tới sự liên kết thẳng với hành vi cho chỉnh sửa lại hạng mục của thư mục chương trình menu. Quá trình chọn lệnh trên đi hướng vào yếu tố cụ thể nội dung danh mục bên trên bộ máy chung chung nên chẳng hề có phần thực hiện những hướng dẫn các giai đoạn đòi hỏi nhằm biên tập hiệu đính định danh hệ danh mục.",
+      "Việc chọn System Definitions > Application Menus và sau đấy tích chọn hướng tới hệ ứng dụng phân vùng cụ thể đưa ra cho phép có khả năng đăng nhập vào thay đổi tên hệ chương trình nằm trên trình mục. Chọn định dạng như thế trực tiếp giải pháp phần câu hỏi quy chiếu nhiệm vụ cho biên dịch sửa cái tên menu, điều đó thể hiện một đường đi đúng cách sửa chữa chỉnh sửa giống như trên.",
+      "Thao tác Configuration > Applications, tiếp sau đấy tìm lấy nội dung application đó sẽ chả trao đúng các chỉ dẫn thao tác giúp cho việc thay một danh mục biểu thị theo thiết đặt menu được đề ra. Bước lựa chọn ấy chỉ nhắm định dạng với những kiểu đặt chung tùy chỉnh toàn bộ cho chương trình chung chung nếu như so đo việc trực tiếp chỉnh sửa đúng vị trí cho tên gọi trình tự kia.",
+      "Lựa chọn phần khung quy định (form) của Application rồi click ấn chuột qua nút bên phải để hướng vào truy cập cấu hình chức năng Configure > Form Designer chưa phải là một hướng làm đúng để sửa phần định danh trong chuỗi Application menu. Biện pháp trên xoay vào kiểu mẫu kiến tạo cùng khuôn khổ trình bày cấu hình nằm lọt vào thiết kế của hệ cơ sở, tránh nói thay cho việc thay văn bản ở tên của mục danh sách chọn."
+    ]
+  },
+  {
+    "question": "Which field on every record contains a unique identifier for that record?",
+    "feedbacks": [
+      "Trường 'sys_id' chính là định danh duy nhất đối với mỗi bản ghi được cấu hình hoạt động trong hệ điều hành ServiceNow. Thuật toán này sử dụng một giá trị duy nhất toàn cầu, nó tự động tái thiết lập từ lúc một bản lưu được thiết kế mới và chắc chắn chúng chưa bao giờ bị điều chỉnh thay thế được. Nền tảng trường yếu tố ở trên mang năng lực vô biên cho nhiệm vụ tự chứng thực bản ghi kèm việc viện dẫn hệ ghi trong một loạt tổng hòa các chức năng.",
+      "Trường 'sys_number_jd' không hề biểu trưng ở loại định dạng trường chuẩn thường dùng cho ServiceNow và chức năng nó không gánh tác vụ định danh khác biệt cho hồ sơ. Xác suất nhiều hơn vì là loại ô hệ cơ sở hư cấu hay chỉ định riêng trong duy nhất vùng khu vực môi trường phần mềm, việc đấy tất yếu không đáp ứng được yêu cầu về một dữ kiện không lặp lại giữa các kho tàng thiết lập.",
+      "Trường 'sys_number' trong hệ sinh thái của ServiceNow thường đảm nhận cơ chế sinh số không trùng cho các ghi chép ở dữ liệu, tương tự đánh số báo sự cố hay đếm theo trình tự văn bản đổi thông tin cập nhật. Tuy vậy đây chẳng mang tính năng của khu trường trung tâm lưu một định dạng định danh thông tin mà riêng có theo mỗi mẫu bộ ghi thiết đặt. Thuộc tính của biến trường 'sys_id' mang năng lực thực tiễn định danh đơn nhất trong mọi nền cấu trúc ServiceNow.",
+      "Trường yếu tố 'sc_req_item' được gắn đặc biệt phục vụ cho định hướng catalog mục chi tiết dịch vụ cung ứng có ở trong ServiceNow, tuy nhiên nó không được tính vào định danh phổ biến toàn hệ thống đại diện riêng trong vô số tất thảy dạng thông tin cấu tạo lại. Miễn là nó duy trì độc đáo của bối cảnh bên trong lĩnh vực thuộc tính các dịch vụ liệt kê, cơ bản là yếu tố đấy chẳng thể coi là định dạng đặc trưng không lặp cho mọi dòng nội dung. Thuộc tính 'sys_id' hoàn thiện trọn vẹn các yêu cầu ấy."
+    ]
+  },
+  {
+    "question": "What type of table has a name, starting with u_ or x_?",
+    "feedbacks": [
+      "Base tables (Các bảng cơ sở) là các bảng được định nghĩa trước trong hệ thống của cấu trúc ServiceNow do hệ điều hành nền tảng chịu sự quản lý giao và thông thường không mang hậu tố u_ và x_. Nó thuộc về kiểu những bảng thành phần cốt yếu cấu tạo vào các công cụ thực tế bên trong nền bộ máy chung.",
+      "Custom tables (Các bảng tùy biến) là danh mục dạng bảng thiết lập từ phía tư cách cá nhân hay bên phát triển chương trình tại ServiceNow với đầu danh mục thông thường là bắt đầu với chữ u_ hay cấu trúc x_. Chủng loại bảng danh mục kiểu như thế này sử dụng việc chứa những kiểu dữ liệu khác lạ duy nhất tới một nhóm cơ sở cá thể và mang năng lực tính linh động cao nhằm tối đa thỏa tiêu chí cho kế hoạch thao tác chức năng riêng rẽ.",
+      "Parent tables là tên gọi của bảng quy chuẩn có quan hệ tạo liên kết chuỗi sở hữu với các bảng dưới hệ phân nhánh. Tính đặc trưng trong kết cấu danh mục biểu bản cho dạng này chẳng định nghĩa bởi chữ đầu có dạng u_ hay có thể hiểu x_, mà quy đổi nhờ yếu tố phụ thuộc mang liên quan các bảng thuộc quy chuẩn sơ đồ trong kết cấu hệ cơ sở dữ liệu.",
+      "Core tables là dòng các bảng thành phần cấu trúc cốt lõi ở trong cỗ máy môi trường của ServiceNow bởi vì chứa nội dung lõi của thiết kế điều hành cũng như phân hệ phân phối được cho từ tổ chức. Định dạng trên về chuẩn thường thấy sẽ không có cái tên khởi sự đi với biến thể kiểu u_ hoặc giả như x_, đây là thành tố không tách rời thuộc quy trình vận hành hoạt động trong hệ cơ sở chung."
+    ]
+  },
+  {
+    "question": "What action can be performed by selecting the Additional actions menu in Table Builder?",
+    "feedbacks": [
+      "Menu Additional actions tại hệ điều khiển Table Builder thường không đem lại thuộc tính chức năng khả năng điều phối lập lịch của các công việc. Chuỗi danh mục chức năng kia hướng vào điều độ hệ công việc chỉ cấu hình thao tác điều phối quản trị vào bảng dữ liệu.",
+      "Sao chép dạng thể hiện trình biểu mẫu không đúng phần thiết lập quen thuộc sẽ phải thao tác thực thi được từ cách sử dụng bảng danh sách lệnh Additional actions nằm trên cửa sổ Table Builder. Danh mục tương tự thông thường tập trung vào vài thiết lập chức năng chi tiết cho mục lục tính năng bảng cơ sở.",
+      "Bổ sung một module chức năng kiểu cấu trúc mới chẳng đại diện làm hoạt động thông lệ cho khả năng hành quyết được với thao tác chọn biểu bảng từ phần Additional actions trên khuôn khổ của Table Builder. Chức năng hệ điều khiển phía trên phần nhiều ưu ái tập trung đối với vài nhiệm vụ cơ cấu lại cấu hình ứng theo dạng biểu bảng dữ liệu.",
+      "Việc cho sinh ra chức năng chỉ số cơ sở cho tệp dữ liệu tạo thành hành vi thực hiện có chuẩn lý năng lực dùng bằng lệnh tích chọn qua các tính năng của dòng điều hướng Additional actions ở chế độ Table Builder. Tác vụ đó chiếm năng lực tối quan trọng ở mục tối đa hiệu năng hệ cấu trúc truy cập với gia tăng hiệu tốc thực thi khi chạy lượng thông tin đồ sộ giữa ServiceNow."
+    ]
+  },
+  {
+    "question": "Typically, based on Best Practice, which of the following interactions is used to make fields mandatory, read only, and/or hidden?",
+    "feedbacks": [
+      "Client Scripts bên trong ServiceNow hay thường được tận dụng ở chức năng thiết định lại thao tác của hệ trường trong mục hiển thị bản mẫu, bao gồm quá trình nhập dữ liệu, làm tính năng yêu cầu buộc có cho biến, hoặc giả là giám định hiệu năng lượng chứa cho loại trường dữ kiện. Nhưng mà chúng vốn không bao giờ chịu tác động chỉ sử dụng chức năng để tạo ra yêu cầu ép buộc, không sửa (đọc nguyên) với việc che giấu đi xét theo nguyên tắc của tiêu chí các đề cử làm hoạt động tốt nhất.",
+      "Business Rules bên trong phần mềm của ServiceNow được dùng chức năng hệ tự động vào hành vi thực thi lệnh cho những dòng dữ liệu cũng như cấu trúc trường con, dạng tương tự như cài đặt lưu thông tin đối với trường hay hệ khởi chạy từ trên script bên thiết bị chủ. Cho dù những luật lệ khả thi trong đảm bảo không xảy ra lỏng lẻo cho phần nguồn lượng cũng như quản trị quy trình, chúng nó hiếm hoi thường xuyên lấy đi mục đích cung cấp năng lực khiến việc thao tác chuyển ở bắt buộc, đọc thông thường, không được hiện lên (che lấp).",
+      "UI Actions hệ thống trên mặt bằng thiết bị của ServiceNow chuyên cung cấp dùng tính năng lắp cấu hình phím tùy biến không cũng được hệ đường gắn cho trong kiểu biểu bảng nhằm phục vụ yêu cầu giải quyết những thao tác theo tính chất. Không theo quy tắc chỉ có nhiệm vụ yêu cầu biến trở nên tính cưỡng bức làm đầy, phần nội bộ đọc thông hay che mất mà ưu tiên hơn tại chức năng bổ nghĩa nâng cao hệ điều hướng có ở trình mẫu.",
+      "UI Policies được đặc dụng thiết đặt vào các mục đích trong điều tiết yếu tố làm lộ hiện, việc quy ra tính chất đòi buộc tham gia, và loại tính năng đọc theo trạng thái tĩnh trên thiết kế từng đối tượng khu vực mẫu do các tiền đề đã vạch ra. Đó được xem tương tự hành vi thực hiện được đề xuất cho các lĩnh vực dùng cài làm điều phải bắt buộc ghi, hiện ở chế độ được cấp xem không chỉnh và cất lấp đi dựa ở tính năng quy mô đề bạt thao tác tốt nhất áp dụng trên cấu hình môi trường ServiceNow."
+    ]
+  },
+  {
+    "question": "Which applications allow administrators to create and distribute data visualizations? (Choose two.)",
+    "feedbacks": [
+      "Performance Analytics đại diện cho tên ứng dụng nằm ở hệ cơ sở phần mềm ServiceNow nơi cung cấp năng quyền hỗ trợ admin khả năng khởi tạo cùng phân nhánh cho định dạng thông số hiện thị theo hình ảnh hóa. Cung ứng đầy đủ giải pháp với tính năng hệ cơ cấu sinh bản đối chứng thiết kế điểm đo đếm số liệu, bản hiện điều khiển chức năng hệ trình biểu thống kê nhằm giám định và hiển hiện chiều xu thế hệ dữ kiện tại bộ máy trung tâm.",
+      "Data Visualizations tuyệt nhiên chẳng phải danh định phần mềm riêng trong hệ điều hành ServiceNow ứng với chuyện điều phối viên có năng lực quyền sinh tính tạo và chuyển phát điều mô phỏng dạng biểu thị số. Khả năng lựa chọn thế này có lỗi do nó không đồng điệu tương đương ở vị trí bất kể chương trình quen thuộc từng nhắc tại cấu trúc của khu vực không gian công nghệ ServiceNow.",
+      "Indicators thường xuyên áp dụng dùng làm đánh giá đo lường chỉ số khả năng xử lý tính tình trạng cho bao trùm nhiều tiêu chí không thể thiếu ở trong lòng ứng dụng nền tảng của ServiceNow, ngoài ra hệ không trao quyền năng quản lý sinh tạo, chuyển quyền phân chia định dạng hiện diện kiểu quy đổi ảnh mô phỏng lượng tin. Phần này được cho vì bị lỗi và làm không giống đồng điệu thuộc công dụng làm sản sinh hiển hiện những phần hình ảnh.",
+      "Reports đại diện như là phần ứng dụng được dùng làm nền cơ sở hệ máy cho phép chức năng hỗ trợ phía nhà giám đốc năng lượng cấu tạo ra đồng thời phát tán loại trực quan biểu hiện hệ cơ sở lượng dữ kiện. Các Reports có sự tin cậy áp dụng sinh đồ họa, hình dạng mô phỏng biểu hay hình bản tính trên cơ chế tính dựa dữ liệu tập hợp bảo tồn thiết bị máy ở khu ứng dụng cho người điều hành đem vào kết luận nhận định cho chuỗi các quyết định được đưa qua xử lý phân bổ.",
+      "Analytics Center chẳng mang danh tiếng tên phần mềm trong phần ServiceNow điều có phép được giới quản trị chuyên quyền cấp xây nên với chu trình tung rải định dạng hình biểu cho số lượng dữ kiện. Không cho cái khả năng là việc chọn vì không hợp chuẩn ăn khớp thuộc cái biết tới cho những chương trình tương tự trên lòng cơ sở ứng dụng."
+    ]
+  },
+  {
+    "question": "When working on a task, which field do you use to share knowledge and other customer visible details?",
+    "feedbacks": [
+      "Caller note là cấu trúc thuộc ô chứa thông tin có chuyên dụng thực hiện việc chép những lượng thông số cụ thể theo phần người kết nối cho chức năng hoặc là nhân sự tiến hành phát hiện trình lên trường hợp lỗi ở hoạt động hệ điều hành. Tuy nhiên thông thường chức năng này sẽ chẳng áp dụng vô quá trình gửi đi tin tức với mọi phần thuộc loại dữ liệu chi tiết công khai hiện đến khách trên thông báo thuộc mảng yêu cầu giải quyết.",
+      "Customer notes cơ bản tập trung cho thao tác lấy nội dung chi tiết rõ ràng ứng theo đối tượng mua hoặc loại cá nhân dùng đầu đuôi cuối, mô tả được những ưu ái thuộc điểm cá nhân hoặc dạng loại cung cấp rõ khác nữa. Do dĩ nhiên điều có khả năng ôm chứa bộ cụ thể nội dung rành rọt đến cả người xài, đây chưa xác suất lấy ứng với cấu hình riêng rẽ có cấu thành dùng công năng rải cho việc cấp dữ kiện tin nằm chung tác vụ trên.",
+      "Description field sẽ được mang để dùng truyền phần mô phỏng quy mô nhỏ rút gọn thay thế toàn diện tình tiết những phần báo cáo hiện thực làm tác vụ hay vụ việc ở mục hiện trình. Việc của thuộc tính thì chẳng mang vị trí tính phân định sử dụng chia thông tin, tri thức đến tay người xem rõ trong khách theo các chi tiết nhỏ lẻ.",
+      "Additional comments field (Trường bình luận bổ sung) mang chức năng đích xác nhằm tận dụng vô khu làm việc gửi đến quá trình thông tri hay cung cấp bao bộ phận thông tin nhỏ mọn chi tiết trực tiếp làm rõ ở phía của khách ứng vào công việc vận hành thao tác. Đặc tính cho phép có tính năng nhập các yếu tố phụ trợ cập nhật hoặc sự nắm rõ chuyên sâu đưa đến tận khách hàng cũng như cả lượng cổ đông đóng góp theo chức năng quy trình hệ làm việc."
+    ]
+  },
+  {
+    "question": "Which ServiceNow resource can be used as a blueprint to map your IT services to ServiceNow?",
+    "feedbacks": [
+      "ServiceNow Wiki là một cơ sở tri thức cung cấp thông tin và tài liệu về các tính năng, chức năng và phương pháp hay nhất khác nhau của ServiceNow. Mặc dù đây có thể là một tài nguyên hữu ích để tìm hiểu về ServiceNow, nhưng nó không được thiết kế riêng để làm bản thiết kế (blueprint) cho việc ánh xạ các dịch vụ CNTT vào ServiceNow.",
+      "Cơ sở dữ liệu quản lý cấu hình (CMDB) trong ServiceNow là một kho lưu trữ tập trung lưu trữ thông tin về tất cả tài sản, cấu hình và mối quan hệ CNTT trong cơ sở hạ tầng CNTT của một tổ chức. Mặc dù CMDB rất quan trọng đối với việc quản lý dịch vụ CNTT, nhưng nó không được sử dụng cụ thể làm bản thiết kế để ánh xạ các dịch vụ CNTT vào ServiceNow.",
+      "Mô hình dữ liệu dịch vụ chung (CSDM) trong ServiceNow là một khuôn khổ cung cấp cách tiếp cận tiêu chuẩn hóa để tổ chức và cấu trúc các dịch vụ CNTT trong nền tảng. Nó đóng vai trò là bản thiết kế để ánh xạ các dịch vụ, mối quan hệ và sự phụ thuộc của CNTT vào ServiceNow, làm cho nó trở thành lựa chọn chính xác cho tình huống này.",
+      "Quản lý dịch vụ CNTT (ITSM) trong ServiceNow đề cập đến một tập hợp các quy trình, chính sách và thủ tục được sử dụng để thiết kế, cung cấp, quản lý và cải thiện các dịch vụ CNTT trong một tổ chức. Mặc dù ITSM có liên quan chặt chẽ đến việc ánh xạ các dịch vụ CNTT, nhưng đây không phải là tài nguyên cụ thể được sử dụng làm bản thiết kế cho mục đích này trong ServiceNow."
+    ]
+  },
+  {
+    "question": "How can an administrator modify the layout of a form using Table Builder?",
+    "feedbacks": [
+      "Bằng cách định cấu hình các phần của biểu mẫu trong Table Builder, quản trị viên có thể sửa đổi bố cục của biểu mẫu bằng cách sắp xếp các trường thành các phần, cột và tab khác nhau. Điều này cho phép hiển thị thông tin trên biểu mẫu có cấu trúc và thân thiện với người dùng hơn.",
+      "Chỉnh sửa các tập lệnh hệ thống không phải là cách chính xác để sửa đổi bố cục của biểu mẫu bằng Table Builder. Các tập lệnh hệ thống thường được sử dụng để tự động hóa các quy trình, thực thi các quy tắc kinh doanh hoặc tùy chỉnh chức năng, nhưng chúng không ảnh hưởng trực tiếp đến bố cục biểu mẫu.",
+      "Thay đổi lược đồ cơ sở dữ liệu không ảnh hưởng trực tiếp đến bố cục của biểu mẫu trong Table Builder. Lược đồ cơ sở dữ liệu xác định cấu trúc của các bảng cơ sở dữ liệu và mối quan hệ giữa chúng, nhưng nó không kiểm soát việc trình bày trực quan dữ liệu trên một biểu mẫu.",
+      "Thay đổi chủ đề tiêu đề trang không liên quan đến việc sửa đổi bố cục của biểu mẫu bằng Table Builder. Việc tùy chỉnh chủ đề tiêu đề trang liên quan đến giao diện tổng thể của phiên bản ServiceNow, chẳng hạn như màu sắc, logo và các yếu tố xây dựng thương hiệu, nhưng nó không ảnh hưởng đến bố cục biểu mẫu trong Table Builder."
+    ]
+  },
+  {
+    "question": "What actions are required to refine the number of records displayed in a list view?",
+    "feedbacks": [
+      "Thêm các danh sách nhúng và chú thích biểu mẫu không ảnh hưởng trực tiếp đến số lượng bản ghi được hiển thị trong chế độ xem danh sách. Những hành động này liên quan nhiều hơn đến việc tùy chỉnh bố cục và thiết kế của các biểu mẫu và danh sách liên quan trong ServiceNow, thay vì tinh chỉnh số lượng bản ghi được hiển thị trong chế độ xem danh sách.",
+      "Chọn biểu tượng bộ lọc và áp dụng các điều kiện là hành động chính xác để tinh chỉnh số lượng bản ghi được hiển thị trong chế độ xem danh sách. Bằng cách chỉ định các điều kiện lọc, người dùng có thể thu hẹp dữ liệu được hiển thị trong chế độ xem danh sách để chỉ hiển thị các bản ghi đáp ứng các tiêu chí đã chỉ định, giúp giảm hiệu quả số lượng bản ghi được hiển thị.",
+      "Việc sửa đổi các thuộc tính trường và nhân bản các chế độ xem biểu mẫu không ảnh hưởng trực tiếp đến số lượng bản ghi được hiển thị trong chế độ xem danh sách. Những hành động này liên quan nhiều hơn đến việc tùy chỉnh các trường và bố cục của các biểu mẫu trong ServiceNow, thay vì kiểm soát số lượng bản ghi được hiển thị trong chế độ xem danh sách.",
+      "Nhấp chuột phải để định cấu hình các danh sách quan hệ không phải là hành động chính xác để tinh chỉnh số lượng bản ghi được hiển thị trong chế độ xem danh sách. Danh sách quan hệ được sử dụng để hiển thị các bản ghi liên quan từ một bảng khác và việc định cấu hình chúng không ảnh hưởng trực tiếp đến số lượng bản ghi được hiển thị trong chế độ xem danh sách chính."
+    ]
+  },
+  {
+    "question": "How can you visually rearrange fields within a form view in Table Builder?",
+    "feedbacks": [
+      "Nhân bản chế độ xem biểu mẫu không cho phép bạn sắp xếp lại trực quan các trường trong chế độ xem biểu mẫu trong Table Builder. Nó tạo ra một bản sao của chế độ xem biểu mẫu hiện có mà không thay đổi cách sắp xếp trường.",
+      "Thêm các danh sách nhúng không giúp ích trực tiếp trong việc sắp xếp lại trực quan các trường trong một chế độ xem biểu mẫu trong Table Builder. Danh sách nhúng được sử dụng để hiển thị các bản ghi liên quan trong một biểu mẫu, không phải để sắp xếp lại các trường.",
+      "Kéo các trường vào trình chỉnh sửa biểu mẫu là phương pháp chính xác để sắp xếp lại trực quan các trường trong một chế độ xem biểu mẫu trong Table Builder. Hành động này cho phép bạn dễ dàng di chuyển các trường xung quanh và tùy chỉnh bố cục của biểu mẫu theo sở thích của bạn.",
+      "Việc sửa đổi các thuộc tính trường không đặc biệt cho phép bạn sắp xếp lại trực quan các trường trong một chế độ xem biểu mẫu trong Table Builder. Các thuộc tính trường được sử dụng để xác định các đặc điểm và hành vi của từng trường, không phải để sắp xếp lại vị trí trực quan của chúng trong chế độ xem biểu mẫu."
+    ]
+  },
+  {
+    "question": "Which is used to configure access to Applications and Modules?",
+    "feedbacks": [
+      "Các vai trò (Roles) trong ServiceNow được sử dụng để xác định các tập hợp quyền và kiểm soát truy cập cho người dùng. Chúng rất cần thiết để cấu hình quyền truy cập vào các Ứng dụng và Mô-đun bằng cách gán các vai trò cụ thể cho người dùng hoặc nhóm, cho phép hoặc hạn chế quyền truy cập của họ dựa trên các quyền của vai trò đó.",
+      "Người dùng (Users) trong ServiceNow đại diện cho từng cá nhân tương tác với nền tảng. Mặc dù người dùng rất quan trọng trong việc truy cập các ứng dụng và mô-đun, họ không trực tiếp cấu hình quyền truy cập vào chúng. Người dùng thường được gán các vai trò để xác định mức độ truy cập của họ.",
+      "Nhóm (Groups) trong ServiceNow là các tập hợp người dùng có thể được sử dụng để đơn giản hóa việc quản lý các kiểm soát truy cập. Mặc dù các nhóm có thể được sử dụng để gán vai trò và quyền, chúng không phải là phương pháp chính để cấu hình quyền truy cập vào các ứng dụng và mô-đun.",
+      "Phòng ban (Departments) trong ServiceNow là các đơn vị tổ chức được sử dụng để cấu trúc và quản lý các bộ phận khác nhau của tổ chức. Chúng không liên quan trực tiếp đến việc cấu hình quyền truy cập vào các ứng dụng và mô-đun, vì kiểm soát truy cập thường được quản lý thông qua các vai trò được gán cho người dùng."
+    ]
+  },
+  {
+    "question": "Which options are available in the Data Visualization configuration panel, for how the data will be presented? (Choose two.)",
+    "feedbacks": [
+      "Time maps (Bản đồ thời gian) không có sẵn trong bảng cấu hình Trực quan hóa dữ liệu (Data Visualization) cho cách trình bày dữ liệu. Bản đồ thời gian thường được sử dụng để trực quan hóa dữ liệu theo thời gian và không liên quan trực tiếp đến việc trình bày dữ liệu dưới dạng biểu đồ hoặc đồ thị trong cấu hình Trực quan hóa dữ liệu của ServiceNow.",
+      "Data sources (Nguồn dữ liệu) có sẵn trong bảng cấu hình Trực quan hóa dữ liệu cho cách trình bày dữ liệu. Nguồn dữ liệu cho phép người dùng kết nối và trích xuất dữ liệu từ nhiều nguồn khác nhau để điền vào các biểu đồ và đồ thị trong bảng trực quan hóa, khiến chúng trở thành một khía cạnh quan trọng của việc trình bày dữ liệu.",
+      "Configuration items (Mục cấu hình) không có sẵn trong bảng cấu hình Trực quan hóa dữ liệu cho cách trình bày dữ liệu. Các mục cấu hình thường được sử dụng để quản lý và theo dõi dữ liệu cấu hình trong nền tảng ServiceNow và không liên quan trực tiếp đến việc trình bày dữ liệu trong các trực quan hóa.",
+      "Chart mapping (Ánh xạ biểu đồ) có sẵn trong bảng cấu hình Trực quan hóa dữ liệu cho cách trình bày dữ liệu. Ánh xạ biểu đồ cho phép người dùng xác định cách các trường dữ liệu được ánh xạ tới các thành phần biểu đồ cụ thể, chẳng hạn như trục, chú giải và điểm dữ liệu, để tạo ra các trực quan hóa có ý nghĩa và cung cấp thông tin.",
+      "Metrics (Chỉ số) không có sẵn trong bảng cấu hình Trực quan hóa dữ liệu cho cách trình bày dữ liệu. Các chỉ số thường được sử dụng để đo lường và theo dõi các chỉ số hiệu suất trong nền tảng ServiceNow và không liên quan trực tiếp đến việc trình bày dữ liệu trong các trực quan hóa."
+    ]
+  },
+  {
+    "question": "What is the role of form annotations within Table Builder?",
+    "feedbacks": [
+      "Các chú thích biểu mẫu (form annotations) trong Table Builder không được sử dụng để tạo các chế độ xem biểu mẫu mới. Chúng chủ yếu được sử dụng để tăng cường thông tin được hiển thị trên các chế độ xem biểu mẫu hiện có trong ServiceNow.",
+      "Vai trò chính xác của các chú thích biểu mẫu trong Table Builder là cung cấp thông tin bổ sung cho từng trường. Thông tin bổ sung này có thể bao gồm các mô tả, hướng dẫn hoặc các chi tiết liên quan khác để giúp người dùng hiểu rõ mục đích hoặc cách sử dụng của các trường.",
+      "Các chú thích biểu mẫu trong Table Builder không được sử dụng để sắp xếp lại các trường trong một biểu mẫu. Chúng tập trung vào việc cung cấp thông tin bổ sung thay vì thay đổi bố cục hoặc cấu trúc của biểu mẫu.",
+      "Các chú thích biểu mẫu trong Table Builder không làm tăng sức hấp dẫn trực quan bằng màu sắc trong trình thiết kế. Mục đích chính của chúng là tăng cường thông tin được cung cấp cho từng trường, thay vì tập trung vào tính thẩm mỹ trực quan."
+    ]
+  },
+  {
+    "question": "Which interface allows users to search articles, submit requests. and browse communication notices?",
+    "feedbacks": [
+      "Service Portal là lựa chọn chính xác vì đây là giao diện trong ServiceNow cho phép người dùng tìm kiếm bài viết, gửi yêu cầu và duyệt các thông báo liên lạc. Nó cung cấp một nền tảng tập trung để người dùng truy cập các dịch vụ và thông tin khác nhau trong nền tảng ServiceNow.",
+      "Employee Self Service không phải là lựa chọn chính xác cho câu hỏi này. Mặc dù nó cho phép nhân viên truy cập các dịch vụ và thông tin liên quan đến nhân sự, nó không đặc biệt phục vụ cho việc tìm kiếm bài viết, gửi yêu cầu hoặc duyệt các thông báo liên lạc.",
+      "Customer Service Management không phải là lựa chọn chính xác cho câu hỏi này. Đây là một mô-đun trong ServiceNow tập trung vào việc quản lý các tương tác và trường hợp của khách hàng, thay vì cung cấp một nền tảng để tìm kiếm bài viết, gửi yêu cầu và duyệt các thông báo liên lạc.",
+      "One Stop Shop không phải là lựa chọn chính xác cho câu hỏi này. Đây là một thuật ngữ chung dùng để chỉ một nền tảng hoặc dịch vụ cung cấp nhiều loại sản phẩm hoặc dịch vụ ở cùng một nơi, nhưng nó không phải là một giao diện cụ thể trong nền tảng ServiceNow."
+    ]
+  }
+]

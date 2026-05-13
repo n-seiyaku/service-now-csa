@@ -3413,7 +3413,7 @@
         "Avoid using the Default Update set as an Update Set for moving customizations from instance to instance",
         "Before moving customizations from instance to instance with Update Sets, ensure that both instances are different versions",
         "Use the Baseline Update Set to store the contents of items after they are changed the first time",
-        "Once an Update Set is closed as ג€Completeג€, change it back to ג€In Progressג€ until it is applied to another instance"
+        "Once an Update Set is closed as Complete, change it back to In Progress until it is applied to another instance"
       ]
     },
     "correct_response": ["a"],

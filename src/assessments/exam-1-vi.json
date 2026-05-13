@@ -1,0 +1,539 @@
+[
+  {
+    "question": "A Service Catalog may include which of the following components?",
+    "feedbacks": [
+      "Hướng dẫn đặt hàng (Order Guides), Tỷ giá hối đoái và Lịch thường không được bao gồm trong Service Catalog. Tỷ giá hối đoái và Lịch liên quan nhiều hơn đến các khía cạnh tài chính và lập lịch trình, thay vì các dịch vụ cung cấp.",
+      "Interceptors không thường được tìm thấy trong Service Catalog. Hướng dẫn đặt hàng và Mục danh mục (Catalog Items) thường được sử dụng nhiều hơn để xác định và yêu cầu các dịch vụ trong danh mục.",
+      "Hợp đồng tài sản và Khảo sát nhiệm vụ không phải là các thành phần tiêu chuẩn của Service Catalog. Mục danh mục được sử dụng để xác định các dịch vụ được cung cấp, nhưng Hợp đồng tài sản và Khảo sát nhiệm vụ thường không thuộc cấu trúc của danh mục.",
+      "Trình tạo bản ghi (Record Producers), Hướng dẫn đặt hàng và Mục danh mục là các thành phần thường được bao gồm trong Service Catalog. Trình tạo bản ghi được sử dụng để tạo bản ghi mới, Hướng dẫn đặt hàng giúp người dùng điều hướng qua danh mục và Mục danh mục đại diện cho các dịch vụ có sẵn để yêu cầu."
+    ]
+  },
+  {
+    "question": "Which one of the following statements applies to a set of fields when they are coalesced during an import?",
+    "feedbacks": [
+      "Khi tìm thấy một kết quả khớp bằng cách sử dụng các trường coalesce (gộp) trong quá trình nhập, bản ghi hiện có trong hệ thống sẽ được cập nhật bằng thông tin đang được nhập. Điều này đảm bảo rằng dữ liệu được đồng bộ hóa và cập nhật mà không tạo ra các bản ghi trùng lặp.",
+      "Nếu không tìm thấy kết quả khớp bằng cách sử dụng các trường coalesce, điều đó không ảnh hưởng đến việc tạo Transform Map (Bản đồ chuyển đổi). Transform Map được sử dụng để xác định các ánh xạ trường giữa dữ liệu nguồn và bảng đích trong quá trình nhập, bất kể các trường coalesce là gì.",
+      "Khi tìm thấy kết quả khớp bằng cách sử dụng các trường coalesce, hệ thống không tạo bản ghi mới. Thay vào đó, nó cập nhật bản ghi hiện có bằng thông tin được nhập để duy trì tính toàn vẹn của dữ liệu và ngăn chặn sự trùng lặp.",
+      "Nếu không tìm thấy kết quả khớp bằng cách sử dụng các trường coalesce trong quá trình nhập, hệ thống sẽ không cập nhật bản ghi hiện có bằng thông tin đang được nhập. Thay vào đó, nó có thể tạo một bản ghi mới nếu quá trình nhập cho phép tạo bản ghi trong những trường hợp như vậy."
+    ]
+  },
+  {
+    "question": "As it relates to ServiceNow reporting, which of the following statements describes what a metric can do?",
+    "feedbacks": [
+      "Trong bối cảnh báo cáo của ServiceNow, các chỉ số (metrics) phục vụ một mục đích khác với việc làm thước đo báo cáo trên trang chủ để hiển thị dữ liệu theo thời gian thực. Các chỉ số được sử dụng để cung cấp thông tin chi tiết về hiệu suất và hiệu quả của các quy trình quản lý dịch vụ CNTT.",
+      "Mặc dù các phép đo thời gian là rất cần thiết để đánh giá quy trình làm việc và SLA, nhưng một chỉ số trong báo cáo ServiceNow còn vượt xa các đánh giá chỉ dựa trên thời gian. Nó tập trung vào việc định lượng và phân tích hiệu quả của toàn bộ các quy trình quản lý dịch vụ CNTT.",
+      "Tuyên bố này nhấn mạnh chính xác vai trò của một chỉ số trong báo cáo ServiceNow. Chỉ số là công cụ quan trọng để đo lường và đánh giá hiệu quả cũng như sự thành công của các quy trình quản lý dịch vụ CNTT, cho phép các tổ chức theo dõi hiệu suất và đưa ra quyết định sáng suốt.",
+      "Việc mô tả chỉ số như một phép đo so sánh để đánh giá các luồng và SLA không hoàn toàn chính xác trong bối cảnh báo cáo ServiceNow. Các chỉ số chủ yếu được sử dụng để đánh giá và phân tích hiệu quả của các quy trình quản lý dịch vụ CNTT, cung cấp những thông tin chi tiết có giá trị để cải tiến và ra quyết định."
+    ]
+  },
+  {
+    "question": "The display sequence is controlled in a Service Catalog Item using which of the following?",
+    "feedbacks": [
+      "Trường Giá trị mặc định (Default Value) trong biểu mẫu Mục danh mục (Catalog Item) được sử dụng để đặt giá trị mặc định cho một biến trong Mục danh mục dịch vụ. Nó không kiểm soát trình tự hiển thị của các mục trong danh mục.",
+      "Trường Trình tự (Sequence) trong biểu mẫu Mục danh mục được sử dụng để thiết lập thứ tự hiển thị các mục danh mục trong danh mục, nhưng nó không kiểm soát trình tự hiển thị của các biến trong một mục danh mục cụ thể.",
+      "Trường Thứ tự (Order) trong biểu mẫu Biến (Variable) được sử dụng để kiểm soát trình tự hiển thị của các biến trong Mục danh mục dịch vụ. Bằng cách đặt giá trị thứ tự cho mỗi biến, bạn có thể xác định trình tự chúng hiển thị cho người dùng cuối.",
+      "Trường Lựa chọn (Choice) trong biểu mẫu Biến được sử dụng để xác định các lựa chọn có sẵn cho một biến, chẳng hạn như tùy chọn thả xuống hoặc hộp kiểm. Nó không kiểm soát trình tự hiển thị của các biến trong mục danh mục."
+    ]
+  },
+  {
+    "question": "Reports can be created from which different places in the platform? (Choose two.)",
+    "feedbacks": [
+      "Báo cáo có thể được tạo từ tiêu đề cột Danh sách (List column heading) trong nền tảng, cho phép người dùng tạo báo cáo dựa trên dữ liệu được hiển thị trong chế độ xem danh sách. Tính năng này cung cấp một cách nhanh chóng và thuận tiện để tạo báo cáo trực tiếp từ giao diện danh sách.",
+      "Mô-đun Chỉ số (Metrics) trong nền tảng không phải là vị trí có thể tạo báo cáo. Mô-đun này thường được sử dụng để theo dõi và phân tích các chỉ số hiệu suất chính (KPI) và các metrics, thay vì tạo các báo cáo chi tiết.",
+      "Mô-đun Thống kê (Statistics) trong nền tảng không phải là vị trí có thể tạo báo cáo. Mô-đun này thường được sử dụng để hiển thị dữ liệu và trực quan hóa thống kê, thay vì tạo các báo cáo toàn diện.",
+      "Báo cáo có thể được tạo từ mô-đun View / Run trong nền tảng, cho phép người dùng tạo các báo cáo chi tiết dựa trên các chế độ xem hoặc truy vấn cụ thể. Mô-đun này cung cấp một cách linh hoạt và có thể tùy chỉnh để tạo và chạy báo cáo trong nền tảng."
+    ]
+  },
+  {
+    "question": "Knowledge Base Search results can be sorted by which of the following? (Choose three.)",
+    "feedbacks": ["", "", "", "", ""]
+  },
+  {
+    "question": "What is the path an Administrator could take to view the fulfillment stage task list for an order placed by a user?",
+    "feedbacks": [
+      "Đường dẫn này bắt đầu bằng số Mục Yêu cầu (RITM), sau đó chuyển đến số Yêu cầu (REQ) và cuối cùng là giai đoạn PROCUREMENT (MUA SẮM). Tuy nhiên, nó không dẫn đến danh sách nhiệm vụ của giai đoạn thực hiện (fulfillment) đối với đơn hàng do người dùng đặt.",
+      "Đường dẫn này bắt đầu bằng số Yêu cầu (REQ), sau đó chuyển đến số Mục Yêu cầu (RITM) và cuối cùng là giai đoạn PROCUREMENT. Nó không dẫn đến danh sách nhiệm vụ của giai đoạn thực hiện đối với đơn hàng do người dùng đặt.",
+      "Đường dẫn này bắt đầu bằng số Yêu cầu (REQ), sau đó chuyển đến số Mục Yêu cầu (RITM) và cuối cùng là giai đoạn TASK (NHIỆM VỤ). Đây là đường dẫn chính xác mà Quản trị viên có thể đi theo để xem danh sách nhiệm vụ của giai đoạn thực hiện đối với đơn hàng do người dùng đặt.",
+      "Đường dẫn này bắt đầu bằng số giai đoạn FULFILLMENT, sau đó chuyển đến số Mục Yêu cầu (RITM) và cuối cùng là giai đoạn TASK. Nó không dẫn đến danh sách nhiệm vụ của giai đoạn thực hiện đối với đơn hàng do người dùng đặt."
+    ]
+  },
+  {
+    "question": "Which term refers to application menus and modules which you may want to access quickly and often?",
+    "feedbacks": ["", "", "", ""]
+  },
+  {
+    "question": "What is generated from the Service Catalog once a user places an order for an item or service?",
+    "feedbacks": [
+      "Một yêu cầu thay đổi (change request) thường được tạo ra khi có nhu cầu sửa đổi hoặc thay đổi một mục cấu hình hoặc dịch vụ hiện có. Nó không liên quan trực tiếp đến hành động đặt hàng từ Service Catalog.",
+      "Hướng dẫn đặt hàng (Order Guide) là một tập hợp các mặt hàng hoặc dịch vụ mà người dùng có thể đặt hàng cùng nhau dưới dạng một gói. Nó không được tạo ra cụ thể khi người dùng đặt hàng cho một mặt hàng hoặc dịch vụ duy nhất từ Service Catalog.",
+      "Một yêu cầu (request) được tạo từ Service Catalog sau khi người dùng đặt hàng cho một mặt hàng hoặc dịch vụ. Yêu cầu này kích hoạt quy trình làm việc để thực hiện đơn đặt hàng và đảm bảo rằng các hành động cần thiết được thực hiện để cung cấp mặt hàng hoặc dịch vụ được yêu cầu.",
+      "SLA (Thỏa thuận cấp độ dịch vụ) là một cam kết giữa nhà cung cấp dịch vụ và khách hàng xác định mức độ dịch vụ mong đợi. Nó không được tạo ra trực tiếp từ Service Catalog khi người dùng đặt hàng."
+    ]
+  },
+  {
+    "question": "From the User menu, which actions can a user select? (Choose three.)",
+    "feedbacks": [
+      "Gửi thông báo thường không phải là hành động mà người dùng có thể chọn từ menu Người dùng (User menu) trong ServiceNow. Hành động này thường được liên kết với các vai trò hoặc quyền cụ thể trong nền tảng và không phải là tùy chọn menu tiêu chuẩn của người dùng.",
+      "Đăng xuất (Logging out) khỏi ServiceNow là một hành động phổ biến mà người dùng có thể chọn từ menu Người dùng. Nó cho phép người dùng đăng xuất an toàn khỏi phiên làm việc hiện tại và bảo vệ thông tin tài khoản của họ.",
+      "Nâng cao vai trò (Elevating roles) là một tính năng cho phép người dùng có các quyền cần thiết tạm thời tăng quyền truy cập của họ trong ServiceNow. Điều này có thể hữu ích cho việc khắc phục sự cố hoặc thực hiện các tác vụ cụ thể yêu cầu đặc quyền nâng cao.",
+      "Mạo danh người dùng (Impersonating users) là một chức năng cho phép người dùng được ủy quyền tạm thời giả định danh tính của người dùng khác trong ServiceNow. Điều này có thể hữu ích để khắc phục sự cố, kiểm tra các tính năng dành riêng cho người dùng hoặc cung cấp hỗ trợ.",
+      "Đặt hàng từ Service Catalog thường không phải là hành động mà người dùng có thể chọn từ menu Người dùng. Chức năng này thường được truy cập thông qua mô-đun Service Catalog hoặc các mục danh mục cụ thể trong ServiceNow.",
+      "Phê duyệt bản ghi không phải là hành động tiêu chuẩn mà người dùng có thể chọn từ menu Người dùng trong ServiceNow. Chức năng này thường được liên kết với các vai trò hoặc quyền cụ thể liên quan đến quy trình phê duyệt trong nền tảng."
+    ]
+  },
+  {
+    "question": "Buttons, form links, and context menu items are all examples of what type of functionality?",
+    "feedbacks": [
+      "Quy tắc kinh doanh (Business Rules) trong ServiceNow được sử dụng để tự động hóa các quy trình và thực thi tính toàn vẹn của dữ liệu ở phía máy chủ. Chúng không liên quan trực tiếp đến việc tạo nút, liên kết biểu mẫu hoặc các mục menu ngữ cảnh trên giao diện người dùng.",
+      "Hành động giao diện người dùng (UI Actions) trong ServiceNow cho phép người dùng thực hiện các hành động cụ thể như mở một bản ghi liên quan hoặc chạy tập lệnh khi tương tác với các nút, liên kết biểu mẫu hoặc các mục menu ngữ cảnh. Chúng nâng cao trải nghiệm người dùng và cung cấp chức năng bổ sung trong giao diện ServiceNow.",
+      "Tập lệnh máy khách (Client Scripts) trong ServiceNow được sử dụng để thêm logic phía máy khách vào biểu mẫu, chẳng hạn như xác thực trường hoặc hành vi động. Mặc dù chúng nâng cao trải nghiệm giao diện người dùng, nhưng chúng không đặc biệt chịu trách nhiệm tạo các nút, liên kết biểu mẫu hoặc các mục menu ngữ cảnh.",
+      "Chính sách giao diện người dùng (UI Policies) trong ServiceNow được sử dụng để kiểm soát khả năng hiển thị và quyền truy cập đọc/ghi của các trường biểu mẫu dựa trên các điều kiện được chỉ định. Chúng không trực tiếp tham gia vào việc tạo các nút, liên kết biểu mẫu hoặc mục menu ngữ cảnh, đây là những chức năng thường được liên kết với Hành động giao diện người dùng (UI Actions) trong ServiceNow."
+    ]
+  },
+  {
+    "question": "Which of the following is true of Service Catalog Items in relation to the Service Catalog?",
+    "feedbacks": [
+      "Các mục danh mục dịch vụ (Service Catalog Items) không bị ẩn hoặc chạy ngầm; chúng là các thành phần hiển thị và có thể truy cập được trong Service Catalog mà người dùng tương tác để yêu cầu các dịch vụ hoặc sản phẩm.",
+      "Các mục danh mục dịch vụ thực sự là các khối xây dựng của Service Catalog. Chúng đại diện cho các dịch vụ, sản phẩm hoặc dịch vụ riêng lẻ mà người dùng có thể yêu cầu thông qua danh mục, biến chúng thành các thành phần thiết yếu của cấu trúc danh mục tổng thể.",
+      "Các mục danh mục dịch vụ không phải là tùy chọn; chúng là các thành phần thiết yếu của Service Catalog xác định các dịch vụ hoặc sản phẩm có sẵn để người dùng yêu cầu. Nếu không có những mục này, danh mục sẽ không hoạt động hoặc không hữu ích.",
+      "Mặc dù Các mục danh mục dịch vụ cung cấp các tùy chọn để người dùng lựa chọn khi yêu cầu dịch vụ, nhưng chức năng chính của chúng là đại diện cho các dịch vụ hoặc sản phẩm cụ thể trong danh mục chứ không chỉ đơn thuần là cung cấp các tùy chọn."
+    ]
+  },
+  {
+    "question": "Table Access Control rules are processed in the following order:",
+    "feedbacks": [
+      "Thứ tự này không chính xác vì nó bắt đầu bằng ký tự đại diện cho bất kỳ tên bảng nào, điều này sẽ không cung cấp khả năng kiểm soát cụ thể đối với từng bảng riêng lẻ. Nó nên tuân theo hệ thống phân cấp từ cụ thể đến tổng quát hơn.",
+      "Thứ tự này là chính xác vì nó bắt đầu bằng tên bảng cụ thể, tiếp theo là tên bảng cha và sau đó cho phép mọi tên bảng (ký tự đại diện) ở cuối. Trình tự này đảm bảo rằng các quy tắc kiểm soát truy cập được áp dụng theo cách có cấu trúc và phân cấp.",
+      "Thứ tự này không chính xác vì nó bắt đầu bằng tên bảng cha, có thể không cung cấp mức độ chi tiết cần thiết để kiểm soát quyền truy cập vào các bảng cụ thể. Nó nên bắt đầu bằng tên bảng cụ thể để kiểm soát chính xác hơn.",
+      "Thứ tự này không chính xác vì nó bắt đầu bằng ký tự đại diện cho bất kỳ tên bảng nào, điều này không cung cấp điểm bắt đầu cụ thể cho các quy tắc kiểm soát truy cập. Nó nên bắt đầu với tên bảng cụ thể để đảm bảo kiểm soát có mục tiêu đối với quyền truy cập bảng."
+    ]
+  },
+  {
+    "question": "What is the platform name for the User table?",
+    "feedbacks": [
+      "Tên nền tảng của bảng Người dùng (User) không phải là \"u_users.\" Quy ước đặt tên này không chuẩn trong ServiceNow và không tương ứng với tên bảng thực tế cho người dùng.",
+      "Tên nền tảng cho bảng Người dùng không phải là \"sys_users.\" Mặc dù lựa chọn này bao gồm tiền tố chính xác \"sys_\" thường được sử dụng trong các tên bảng ServiceNow, nhưng nó không đại diện cho bảng cụ thể của người dùng.",
+      "Tên nền tảng cho bảng Người dùng không phải là \"x_users.\" Tiền tố \"x_\" thường được sử dụng cho các bảng tùy chỉnh trong ServiceNow và bảng Người dùng tiêu chuẩn không tuân theo quy ước đặt tên này.",
+      "Tên nền tảng cho bảng Người dùng là \"sys_user.\" Đây là quy ước đặt tên chính xác cho bảng Người dùng trong ServiceNow, tuân theo tiền tố chuẩn \"sys_\" đối với các bảng hệ thống và số nhận dạng \"user\" cụ thể cho bảng Người dùng."
+    ]
+  },
+  {
+    "question": "A REQ number in the Service Catalog represents…",
+    "feedbacks": [
+      "Số REQ trong Service Catalog đóng vai trò là mã định danh duy nhất cho mỗi đơn hàng do người dùng đặt. Nó giúp theo dõi và quản lý các yêu cầu cụ thể được thực hiện thông qua hệ thống danh mục.",
+      "Giai đoạn (stage) trong Service Catalog cho biết trạng thái hoặc giai đoạn hiện tại của yêu cầu, chẳng hạn như phê duyệt, thực hiện hoặc đóng. Nó khác biệt với số REQ, số này được gán riêng cho từng đơn hàng nhằm mục đích tham chiếu.",
+      "Nhiệm vụ cần hoàn thành trong Service Catalog đề cập đến các hành động hoặc hoạt động cụ thể cần thiết để đáp ứng yêu cầu của người dùng. Mặt khác, số REQ được sử dụng để phân biệt giữa các đơn đặt hàng khác nhau và không đại diện cho các nhiệm vụ riêng lẻ.",
+      "Mặt hàng riêng lẻ trong đơn hàng đề cập đến dịch vụ hoặc sản phẩm cụ thể mà người dùng yêu cầu trong một đơn hàng. Mặc dù mỗi mặt hàng có thể có thông tin chi tiết và thông số kỹ thuật riêng, nhưng số REQ được sử dụng để xác định và quản lý toàn bộ đơn hàng như một tổng thể."
+    ]
+  },
+  {
+    "question": "Which would NOT appear in the History section of the Application Navigator?",
+    "feedbacks": [
+      "Các bản ghi (Records) sẽ xuất hiện trong phần Lịch sử của Application Navigator vì chúng đại diện cho các mục nhập dữ liệu hoặc các thực thể trong ứng dụng đã được truy cập hoặc sửa đổi.",
+      "Trang giao diện người dùng (UI Pages) sẽ KHÔNG xuất hiện trong phần Lịch sử của Application Navigator vì chúng được sử dụng để thiết kế giao diện người dùng và không liên quan trực tiếp đến các mục nhập dữ liệu hoặc các thực thể sẽ được theo dõi trong lịch sử.",
+      "Danh sách (Lists) sẽ xuất hiện trong phần Lịch sử của Application Navigator vì chúng đại diện cho các tập hợp bản ghi hoặc mục nhập dữ liệu đã được truy cập hoặc sửa đổi.",
+      "Biểu mẫu (Forms) sẽ xuất hiện trong phần Lịch sử của Application Navigator vì chúng được sử dụng để hiển thị và thu thập dữ liệu liên quan đến các bản ghi trong ứng dụng."
+    ]
+  },
+  {
+    "question": "Which one of the following statements is a recommendation from ServiceNow about Update Sets?",
+    "feedbacks": [
+      "ServiceNow khuyên bạn nên tránh sử dụng Bộ cập nhật mặc định (Default Update Set) để di chuyển các tùy chỉnh giữa các phiên bản (instances) vì nó là một bộ cập nhật do hệ thống tạo ra, có thể gây ra xung đột và sự cố khi chuyển giao tùy chỉnh. Phương pháp tốt nhất là tạo một bộ cập nhật mới dành riêng cho các tùy chỉnh đang được di chuyển.",
+      "ServiceNow không yêu cầu cả hai phiên bản phải ở các bản phát hành khác nhau trước khi di chuyển các tùy chỉnh bằng Bộ cập nhật. Bộ cập nhật có thể được sử dụng để chuyển các tùy chỉnh giữa các phiên bản bất kể phiên bản phát hành của chúng, miễn là các tùy chỉnh đó tương thích.",
+      "Bộ cập nhật cơ sở (Baseline Update Set) không được sử dụng để lưu trữ nội dung của các mục sau khi chúng được thay đổi lần đầu tiên. Nó được sử dụng làm điểm tham chiếu để so sánh các thay đổi được thực hiện trong các bộ cập nhật tiếp theo, nhưng nó không lưu trữ nội dung của các mục một cách vĩnh viễn.",
+      "Khi một Bộ cập nhật được đóng dưới dạng \"Complete\" (Hoàn thành), không nên thay đổi lại trạng thái thành \"In Progress\" (Đang tiến hành) trừ khi có các thay đổi hoặc cập nhật bổ sung cần thực hiện. Việc thay đổi lại trạng thái thành \"In Progress\" sau khi đã đóng có thể dẫn đến nhầm lẫn và các vấn đề tiềm ẩn trong quá trình áp dụng bộ cập nhật."
+    ]
+  },
+  {
+    "question": "Which of the following is used to initiate a flow?",
+    "feedbacks": [
+      "Bộ kích hoạt (Trigger) được sử dụng để bắt đầu một luồng (flow) trong ServiceNow. Bộ kích hoạt là các điều kiện được xác định để bắt đầu luồng khi chúng được đáp ứng, chẳng hạn như một sự kiện cụ thể hoặc thay đổi dữ liệu.",
+      "Hành động cốt lõi (Core Action) đề cập đến các hành động được thực hiện trong một luồng, chẳng hạn như tạo bản ghi, gửi thông báo hoặc cập nhật dữ liệu. Hành động cốt lõi không được sử dụng để bắt đầu một luồng mà là để thực hiện các nhiệm vụ cụ thể bên trong luồng đó.",
+      "Spoke trong ServiceNow là một thuật ngữ được sử dụng để chỉ sự tích hợp với một hệ thống hoặc ứng dụng bên ngoài. Các spoke không được sử dụng để bắt đầu một luồng mà để tạo điều kiện thuận lợi cho việc giao tiếp và trao đổi dữ liệu giữa ServiceNow và các hệ thống bên ngoài.",
+      "Một Sự kiện (Event) trong ServiceNow đại diện cho một sự cố hoặc tình huống xảy ra kích hoạt các hành động hoặc quy trình cụ thể. Mặc dù các sự kiện có thể được sử dụng như một phần của luồng để phản hồi các điều kiện nhất định, nhưng chúng không được sử dụng cụ thể để bắt đầu một luồng giống như Trình kích hoạt (Trigger)."
+    ]
+  },
+  {
+    "question": "For Administrators creating new Service Catalog items, what is a characteristic they should know about Service Catalog variables?",
+    "feedbacks": [
+      "Biến của Service Catalog có thể được sử dụng trong cả Trình tạo bản ghi (Record Producers) và Hướng dẫn đặt hàng (Order Guides), không giới hạn ở chỉ một trong hai. Chúng cung cấp sự linh hoạt trong việc thu thập và xử lý đầu vào của người dùng cho các loại mục danh mục khác nhau.",
+      "Biến của Service Catalog không bị hạn chế chỉ được sử dụng trong Hướng dẫn đặt hàng. Chúng cũng có thể được sử dụng trong Trình tạo bản ghi để thu thập thông tin từ người dùng trong quá trình gửi yêu cầu.",
+      "Biến của Service Catalog có thể tác động đến giá đặt hàng dựa trên các cấu hình do quản trị viên thiết lập. Chúng có thể được sử dụng để tính toán chi phí, áp dụng chiết khấu hoặc điều chỉnh giá linh hoạt dựa trên đầu vào của người dùng.",
+      "Biến của Service Catalog mặc định có tính toàn cầu, nghĩa là chúng có thể được truy cập và sử dụng trên các mục danh mục và danh mục khác nhau trong Service Catalog. Bản chất toàn cầu này cho phép khả năng tái sử dụng và tính nhất quán trong việc thu thập đầu vào của người dùng."
+    ]
+  },
+  {
+    "question": "Which one of the following statements is true about Column Context Menus?",
+    "feedbacks": [
+      "Menu Ngữ cảnh Cột (Column Context Menus) thường hiển thị các hành động liên quan đến việc quản lý dữ liệu được hiển thị trong danh sách. Điều này bao gồm các tùy chọn như tạo báo cáo nhanh, định cấu hình bố cục danh sách và xuất dữ liệu để phân tích thêm. Những hành động này tập trung vào việc thao tác dữ liệu bên trong chính danh sách.",
+      "Menu Ngữ cảnh Cột thường không được sử dụng cho các tùy chọn lọc, gán thẻ hoặc tiến hành tìm kiếm. Các hành động này thường liên quan đến quản lý danh sách tổng thể hoặc quản lý bản ghi riêng lẻ, thay vì ngữ cảnh cột cụ thể.",
+      "Mặc dù Menu Ngữ cảnh Cột có thể bao gồm các hành động để xem và lọc danh sách, nhưng chúng tập trung nhiều hơn vào các hành động có thể được thực hiện trên dữ liệu bên trong chính các cột. Các hành động liên quan đến toàn bộ danh sách nói chung thường được tìm thấy ở các phần khác của giao diện người dùng.",
+      "Các hành động như xem một biểu mẫu, các tác vụ liên quan hoặc thêm mối quan hệ liên quan nhiều hơn đến việc quản lý bản ghi riêng lẻ thay vì ngữ cảnh cột. Menu Ngữ cảnh Cột được thiết kế đặc biệt để cung cấp các hành động có liên quan đến dữ liệu được hiển thị trong các cột của danh sách."
+    ]
+  },
+  {
+    "question": "Which ServiceNow products can be used to discover and populate the CMDB? (Choose two.)",
+    "feedbacks": [
+      "Discovery là một sản phẩm ServiceNow được thiết kế đặc biệt để khám phá và đưa dữ liệu vào CMDB bằng cách xác định và ánh xạ các tài sản CNTT và mục cấu hình trong cơ sở hạ tầng của một tổ chức. Nó tự động hóa quá trình thu thập dữ liệu và duy trì thông tin chính xác trong CMDB.",
+      "IntegrationHub ETL là một sản phẩm khác của ServiceNow có thể được sử dụng để khám phá và đưa dữ liệu vào CMDB. Nó cho phép các quy trình tích hợp và chuyển đổi dữ liệu để trích xuất, chuyển đổi và tải dữ liệu từ nhiều nguồn khác nhau vào CMDB, đảm bảo độ chính xác và tính nhất quán của dữ liệu.",
+      "Finder không phải là một sản phẩm ServiceNow được sử dụng để khám phá và đưa dữ liệu vào CMDB. Nó không có chức năng hoặc khả năng thực hiện tự động khám phá và ánh xạ các tài sản CNTT cũng như mục cấu hình.",
+      "CMDB Plug-in không phải là một sản phẩm ServiceNow được thiết kế đặc biệt để khám phá và đưa dữ liệu vào CMDB. Nó không có chức năng tự động hóa quá trình thu thập dữ liệu và duy trì thông tin chính xác trong CMDB.",
+      "CMDB Integration Dashboard không phải là một sản phẩm ServiceNow được sử dụng để khám phá và đưa dữ liệu vào CMDB. Nó không có khả năng tự động hóa quá trình xác định và ánh xạ các tài sản CNTT và mục cấu hình trong cơ sở hạ tầng của tổ chức."
+    ]
+  },
+  {
+    "question": "When using the Load Data and Transform Map process, what is the Mapping Assist used for?",
+    "feedbacks": [
+      "Ánh xạ các trường bằng cách sử dụng Import Log không phải là trường hợp sử dụng hợp lệ cho tính năng Mapping Assist trong quá trình Load Data (Tải Dữ liệu) và Transform Map. Import Log được sử dụng để theo dõi quá trình nhập và mọi lỗi có thể xảy ra trong quá trình tải dữ liệu, không phải để ánh xạ trường.",
+      "Ánh xạ các trường bằng cách sử dụng Transform History không phải là trường hợp sử dụng hợp lệ cho tính năng Mapping Assist trong quá trình Load Data và Transform Map. Transform History được sử dụng để theo dõi lịch sử của các phép chuyển đổi được áp dụng cho dữ liệu, không phải để ánh xạ trường.",
+      "Ánh xạ các trường bằng cách sử dụng SLA (Thỏa thuận cấp độ dịch vụ) không phải là trường hợp sử dụng hợp lệ cho tính năng Mapping Assist trong quá trình Load Data và Transform Map. SLA được sử dụng để xác định mức độ dịch vụ mong đợi từ nhà cung cấp, không phải để ánh xạ các trường trong quá trình tải dữ liệu.",
+      "Ánh xạ các trường bằng cách sử dụng Field Map (Bản đồ trường) là trường hợp sử dụng chính xác cho tính năng Mapping Assist trong quá trình Load Data và Transform Map. Field Map cho phép người dùng xác định cách các trường từ dữ liệu nguồn ánh xạ đến các trường trong bảng đích, đảm bảo chuyển đổi dữ liệu chính xác trong quá trình nhập."
+    ]
+  },
+  {
+    "question": "Which one of the following statements describes the contents of the Configuration Management Database (CMDB)?",
+    "feedbacks": [
+      "CMDB chứa dữ liệu về cả tài sản hữu hình, chẳng hạn như phần cứng và phần mềm, và tài sản vô hình, chẳng hạn như mối quan hệ giữa các tài sản, sự phụ thuộc và cấu hình. Nó đóng vai trò là kho lưu trữ tập trung cho tất cả các mục cấu hình và các mối quan hệ của chúng trong một tổ chức.",
+      "Các Quy tắc kinh doanh (Business Rules) không được lưu trữ trong CMDB. Các Quy tắc kinh doanh thường được định nghĩa trong nền tảng ServiceNow để tự động hóa các quy trình và thực thi các chính sách. CMDB tập trung vào việc lưu trữ dữ liệu mục cấu hình thay vì các quy tắc.",
+      "CMDB không đặc biệt lưu trữ siêu dữ liệu thiết bị PaaS Quản lý Dịch vụ và số liệu thống kê sử dụng. Mặc dù nó có thể chứa thông tin về thiết bị PaaS dưới dạng các mục cấu hình, nhưng mục đích chính của nó là lưu trữ dữ liệu cấu hình chứ không phải thống kê sử dụng.",
+      "CMDB không chỉ chứa dữ liệu quy trình ITIL liên quan đến các mục cấu hình. Mặc dù các quy trình ITIL có thể được liên kết với các mục cấu hình được lưu trữ trong CMDB, nhưng chức năng chính của CMDB là lưu trữ dữ liệu mục cấu hình và mối quan hệ của chúng trong tổ chức."
+    ]
+  },
+  {
+    "question": "In what order should filter elements be specified?",
+    "feedbacks": [
+      "Trong ServiceNow, khi chỉ định các phần tử bộ lọc, điều quan trọng trước tiên là phải xác định trường (field) mà bộ lọc sẽ được áp dụng, tiếp theo là toán tử (operator) xác định mối quan hệ giữa trường và giá trị được so sánh, và cuối cùng là giá trị (value) cụ thể mà trường phải khớp hoặc được so sánh. Thứ tự này đảm bảo rằng bộ lọc được xác định chính xác và lọc hiệu quả các bản ghi mong muốn.",
+      "Trong ServiceNow, thứ tự đúng để chỉ định các phần tử bộ lọc là trước tiên xác định trường, sau đó là toán tử xác định mối quan hệ giữa trường và giá trị, và cuối cùng là điều kiện xác định cách bộ lọc sẽ được áp dụng. Điều kiện xuất hiện sau toán tử và được sử dụng để tinh chỉnh thêm các tiêu chí bộ lọc.",
+      "Thứ tự chỉ định các phần tử bộ lọc trong ServiceNow là đầu tiên xác định toán tử xác định mối quan hệ giữa trường và giá trị được so sánh, tiếp theo là điều kiện xác định cách áp dụng bộ lọc, và cuối cùng là giá trị cụ thể mà trường phải khớp hoặc so sánh. Thứ tự này có thể dẫn đến sự không chính xác trong việc lọc bản ghi vì trường không được chỉ định trước.",
+      "Trong ServiceNow, việc chỉ định các thành phần bộ lọc theo thứ tự giá trị, toán tử, và sau đó là trường không phải là cách tiếp cận chính xác. Trường phải được xác định đầu tiên để xác định ngữ cảnh của bộ lọc, tiếp theo là toán tử xác định mối quan hệ và cuối cùng là giá trị cụ thể mà trường phải khớp hoặc so sánh với. Thứ tự này đảm bảo rằng các tiêu chí bộ lọc được xác định và áp dụng một cách chính xác."
+    ]
+  },
+  {
+    "question": "Which statement is true about business rules?",
+    "feedbacks": [
+      "Tuyên bố này không chính xác. Một quy tắc kinh doanh (business rule) trong ServiceNow có thể chạy trước hoặc sau khi hành động cơ sở dữ liệu xảy ra, tùy thuộc vào cấu hình và yêu cầu của quy tắc. Không bắt buộc một quy tắc kinh doanh phải chạy trước hành động cơ sở dữ liệu.",
+      "Tuyên bố này là chính xác. Trong ServiceNow, một quy tắc kinh doanh có thể được viết bằng JavaScript. Các quy tắc kinh doanh được sử dụng để xác định các hành động tự động sẽ xảy ra khi một bản ghi được chèn, cập nhật, xóa, hiển thị hoặc truy vấn trong một bảng.",
+      "Tuyên bố này không chính xác. Như đã đề cập trước đó, một quy tắc kinh doanh trong ServiceNow có thể chạy trước hoặc sau khi hành động cơ sở dữ liệu xảy ra. Thời điểm mà một quy tắc kinh doanh nên chạy có thể định cấu hình dựa trên logic kinh doanh và yêu cầu cụ thể.",
+      "Tuyên bố này không chính xác. Mặc dù một quy tắc kinh doanh trong ServiceNow có thể giám sát các trường trên biểu mẫu và kích hoạt các hành động dựa trên các thay đổi của trường, nó không giới hạn ở việc chỉ giám sát các trường. Quy tắc kinh doanh cũng có thể được kích hoạt bởi các hành động cơ sở dữ liệu, điều kiện hoặc các sự kiện khác trong hệ thống."
+    ]
+  },
+  {
+    "question": "Which of the following are a type of client scripts supported in ServiceNow? (Choose four.)",
+    "feedbacks": [
+      "Tập lệnh máy khách onSubmit trong ServiceNow được kích hoạt khi một biểu mẫu được gửi (submit). Nó thường được sử dụng để xác thực dữ liệu biểu mẫu trước khi gửi và ngăn chặn việc lưu dữ liệu không hợp lệ.",
+      "Tập lệnh máy khách onUpdate trong ServiceNow được kích hoạt khi một bản ghi được cập nhật. Nó được sử dụng để thực hiện các hành động hoặc xác thực khi một bản ghi được sửa đổi.",
+      "Tập lệnh máy khách onCellEdit trong ServiceNow được kích hoạt khi một ô (cell) trong danh sách được chỉnh sửa. Nó cho phép thực hiện các hành động tùy chỉnh khi giá trị ô bị thay đổi.",
+      "Tập lệnh máy khách onLoad trong ServiceNow được kích hoạt khi một biểu mẫu hoặc bản ghi được tải lên. Nó thường được sử dụng để đặt giá trị mặc định cho trường, thực hiện các phép tính toán hoặc hiển thị thông báo khi bản ghi được mở ra.",
+      "Tập lệnh máy khách onEdit không phải là một loại tập lệnh máy khách được hỗ trợ trong ServiceNow. Nó không phải là một tùy chọn hợp lệ để tùy chỉnh hành vi trong biểu mẫu hoặc bản ghi của ServiceNow.",
+      "Tập lệnh máy khách onChange trong ServiceNow được kích hoạt khi một giá trị trường bị thay đổi. Nó cho phép hành vi động dựa trên đầu vào của người dùng và thường được sử dụng để xác thực trường và cập nhật các trường phụ thuộc."
+    ]
+  },
+  {
+    "question": "Which type of tables may be extended by other tables, but do not extend another table?",
+    "feedbacks": [
+      "Base Tables (Bảng cơ sở) là các bảng nền tảng trong ServiceNow có thể được mở rộng bởi các bảng khác để kế thừa các trường và chức năng của chúng. Tuy nhiên, chính bản thân Bảng cơ sở không mở rộng bất kỳ bảng nào khác, khiến chúng trở thành điểm khởi đầu cho việc mở rộng bảng trong ServiceNow.",
+      "Core Tables (Bảng cốt lõi) là các bảng được xác định sẵn trong ServiceNow và rất cần thiết cho chức năng của nền tảng. Chúng đóng vai trò là xương sống của hệ thống nhưng không nhất thiết phải mở rộng từ các bảng khác hoặc được mở rộng bởi các bảng tùy chỉnh.",
+      "Extended Tables (Bảng mở rộng) là các bảng kế thừa các trường và chức năng từ các bảng khác, bao gồm cả Bảng cơ sở. Mặc dù Bảng mở rộng có thể được các bảng khác tiếp tục mở rộng, nhưng bản thân chúng không phải là điểm bắt đầu cho các phần mở rộng bảng và không trực tiếp mở rộng các bảng khác.",
+      "Custom Tables (Bảng tùy chỉnh) là các bảng do người dùng tạo để lưu trữ dữ liệu cụ thể duy nhất cho tổ chức hoặc yêu cầu của họ. Mặc dù Bảng tùy chỉnh có thể mở rộng Bảng cơ sở hoặc các bảng khác, nhưng chúng không giới hạn ở việc chỉ mở rộng các bảng mà còn có thể được các bảng khác mở rộng."
+    ]
+  },
+  {
+    "question": "Which of the following statement describes the purpose of an Order Guide?",
+    "feedbacks": [
+      "Hướng dẫn Đặt hàng (Order Guides) không giới hạn số lượng mục trong một đơn hàng chỉ một mục cho mỗi yêu cầu. Thực tế chúng cung cấp khả năng đặt nhiều mặt hàng như một yêu cầu, đơn giản hóa quy trình đặt hàng cho người dùng.",
+      "Hướng dẫn Đặt hàng không cung cấp danh sách hướng dẫn cho Quản trị viên về cách thiết lập các biến mục. Chúng được sử dụng để hợp lý hóa quy trình đặt hàng bằng cách cho phép người dùng đặt hàng nhiều mặt hàng liên quan cùng nhau.",
+      "Tuyên bố này mô tả chính xác mục đích của Hướng dẫn Đặt hàng. Hướng dẫn Đặt hàng cung cấp khả năng đặt nhiều mặt hàng có liên quan thành một yêu cầu, giúp người dùng dễ dàng yêu cầu nhiều mặt hàng cùng lúc.",
+      "Hướng dẫn Đặt hàng không đưa người dùng trực tiếp đến trang thanh toán mà không nhắc nhập thông tin. Chúng giúp người dùng chọn và đặt hàng nhiều mặt hàng liên quan cùng nhau, nhưng quá trình thanh toán vẫn yêu cầu thông tin cần thiết trước khi hoàn tất đơn hàng."
+    ]
+  },
+  {
+    "question": "Which tool is used to have conversations with logged-in users in real-time?",
+    "feedbacks": [
+      "Connect Chat là lựa chọn chính xác vì nó là công cụ được sử dụng trong ServiceNow để trò chuyện theo thời gian thực với những người dùng đã đăng nhập. Nó cho phép người dùng giao tiếp tức thì, chia sẻ thông tin và cộng tác hiệu quả trong nền tảng.",
+      "Now Messenger không phải là công cụ được sử dụng để trò chuyện theo thời gian thực với người dùng đã đăng nhập trong ServiceNow. Nó chủ yếu được sử dụng cho các thông báo, cảnh báo và cập nhật, thay vì chức năng trò chuyện tương tác.",
+      "User Presence (Sự hiện diện của người dùng) không phải là công cụ được sử dụng để trò chuyện theo thời gian thực với những người dùng đã đăng nhập trong ServiceNow. Đó là một tính năng cho biết người dùng hiện đang hoạt động hay trực tuyến trong nền tảng, nhưng nó không cung cấp chức năng trò chuyện.",
+      "Comments (Bình luận) không phải là công cụ được sử dụng để trò chuyện theo thời gian thực với những người dùng đã đăng nhập trong ServiceNow. Bình luận thường được sử dụng để thêm ghi chú, phản hồi hoặc ngữ cảnh vào các bản ghi hoặc tác vụ trong nền tảng, thay vì giao tiếp trực tiếp giữa những người dùng theo thời gian thực."
+    ]
+  },
+  {
+    "question": "Which of the following concepts are associated with the ServiceNow CMDB? (Choose four.)",
+    "feedbacks": [
+      "Quy trình Dịch vụ (Service Processes) có liên quan chặt chẽ đến ServiceNow CMDB vì chúng giúp xác định và quản lý vòng đời của các dịch vụ trong cơ sở dữ liệu quản lý cấu hình. Chúng cung cấp một cách tiếp cận có cấu trúc để quản lý các dịch vụ và mối quan hệ của chúng trong CMDB.",
+      "Quyền của Người dùng (User Permissions), mặc dù quan trọng để kiểm soát quyền truy cập vào nền tảng ServiceNow, nhưng không liên quan trực tiếp đến bản thân CMDB. Quyền của người dùng liên quan nhiều hơn đến kiểm soát truy cập và bảo mật trong nền tảng thay vì cơ sở dữ liệu quản lý cấu hình.",
+      "Bảng và Trường (Tables and Fields) là các thành phần cơ bản của ServiceNow CMDB. Các bảng xác định cấu trúc dữ liệu được lưu trữ trong CMDB, trong khi các trường đại diện cho các thuộc tính của mục cấu hình. Việc hiểu và quản lý bảng và trường là rất cần thiết để quản lý cấu hình hiệu quả.",
+      "ServiceNow CMDB về cơ bản là một cơ sở dữ liệu lưu trữ các mục cấu hình và các mối quan hệ của chúng. Nó đóng vai trò là kho lưu trữ thông tin trung tâm về môi trường CNTT, cho phép các tổ chức theo dõi, quản lý và phân tích dữ liệu cấu hình. Việc hiểu cấu trúc cơ sở dữ liệu là rất quan trọng để quản lý CMDB hiệu quả.",
+      "Chế độ xem Sự phụ thuộc (Dependency View) là một tính năng trong ServiceNow CMDB cho phép người dùng trực quan hóa và hiểu được mối quan hệ giữa các mục cấu hình. Nó cung cấp một biểu diễn đồ họa về các sự phụ thuộc, giúp người dùng xác định tác động của các thay đổi và đưa ra quyết định sáng suốt về các dịch vụ và cơ sở hạ tầng CNTT."
+    ]
+  },
+  {
+    "question": "What is a formatter? Select one of the following.",
+    "feedbacks": [
+      "Lựa chọn này không chính xác vì formatter không được sử dụng để định cấu hình các ứng dụng trên instance của bạn. Formatter đặc biệt liên quan đến việc hiển thị thông tin theo một cách cụ thể trong biểu mẫu.",
+      "Lựa chọn này là chính xác vì formatter thực sự là một thành phần biểu mẫu được sử dụng để hiển thị thông tin không phải là một trường trong bản ghi. Nó cho phép tùy chỉnh cách dữ liệu được trình bày trên biểu mẫu.",
+      "Lựa chọn này không chính xác vì formatter không tự động điền trực tiếp vào các trường. Chúng được sử dụng để hiển thị thông tin ở một định dạng cụ thể thay vì đưa dữ liệu vào các trường.",
+      "Lựa chọn này không chính xác vì formatter không phải là một tập hợp các điều kiện được áp dụng cho bảng để giúp tìm và xử lý dữ liệu. Formatter tập trung vào việc trình bày dữ liệu trong các biểu mẫu chứ không phải vào việc truy xuất hoặc thao tác dữ liệu."
+    ]
+  },
+  {
+    "question": "When searching using the App Navigator search field, what can be returned? (Choose four.)",
+    "feedbacks": [
+      "Tên của Ứng dụng và Mô-đun (Names of Applications and Modules) có thể được trả về khi tìm kiếm bằng trường tìm kiếm App Navigator. Điều này cho phép người dùng nhanh chóng truy cập các ứng dụng và mô-đun cụ thể trong nền tảng ServiceNow.",
+      "Tên của Mô-đun (Names of Modules) có thể được trả về trong kết quả tìm kiếm khi sử dụng trường tìm kiếm App Navigator. Điều này giúp người dùng xác định vị trí và điều hướng đến các mô-đun cụ thể trong nền tảng.",
+      "Tên của Ứng dụng (Names of Applications) có thể được trả về trong kết quả tìm kiếm khi sử dụng trường tìm kiếm App Navigator. Tính năng này cho phép người dùng dễ dàng tìm và truy cập các ứng dụng khác nhau có sẵn trong môi trường ServiceNow.",
+      "Mục yêu thích (Favorites) có thể được trả về trong kết quả tìm kiếm khi sử dụng trường tìm kiếm App Navigator. Điều này cho phép người dùng truy cập nhanh vào các mục ưa thích hoặc thường dùng của họ trong nền tảng.",
+      "Bản ghi Lịch sử (History Records) thường không được trả về trong kết quả tìm kiếm khi sử dụng trường tìm kiếm App Navigator. Trường tìm kiếm chủ yếu được thiết kế để giúp người dùng tìm các ứng dụng, mô-đun và mục yêu thích cụ thể, thay vì các bản ghi lịch sử.",
+      "Tiêu đề của Thước đo Bảng điều khiển (Titles of Dashboard Gauges) thường không được trả về trong kết quả tìm kiếm khi sử dụng trường tìm kiếm App Navigator. Trường tìm kiếm tập trung vào việc định vị các ứng dụng, mô-đun và mục yêu thích trong nền tảng ServiceNow, thay vì các thành phần bảng điều khiển."
+    ]
+  },
+  {
+    "question": "Which technique is used to get information from a series of referenced fields from different tables?",
+    "feedbacks": [
+      "Table-Walking không phải là kỹ thuật chính xác để lấy thông tin từ các trường được tham chiếu từ các bảng khác nhau. Table-Walking đề cập đến quá trình di chuyển qua các bản ghi có liên quan trong cùng một bảng, không phải trên các bảng khác nhau.",
+      "Sys_ID Pulling không phải là một kỹ thuật được công nhận trong ServiceNow để lấy thông tin từ các trường được tham chiếu từ các bảng khác nhau. Sys_ID là các số nhận dạng duy nhất cho các bản ghi trong ServiceNow nhưng không đặc biệt được sử dụng để truy xuất thông tin từ các trường được tham chiếu.",
+      "Dot-Walking là kỹ thuật chính xác được sử dụng trong ServiceNow để truy cập thông tin từ các trường được tham chiếu trên các bảng khác nhau. Bằng cách sử dụng ký hiệu dot-walking (ví dụ: table.field), bạn có thể dễ dàng điều hướng qua các bản ghi có liên quan và truy xuất thông tin mong muốn.",
+      "Record-Hopping không phải là một thuật ngữ hoặc kỹ thuật hợp lệ trong ServiceNow để truy cập thông tin từ các trường được tham chiếu từ các bảng khác nhau. Nó không mô tả quá trình đi qua các mối quan hệ giữa các bảng để thu thập dữ liệu."
+    ]
+  },
+  {
+    "question": "What is a schema map?",
+    "feedbacks": [
+      "Bản đồ lược đồ (schema map) không đặc biệt liên quan đến việc xác định các bản ghi từ các bảng cụ thể là nguồn sự cố cho các Mục cấu hình (Configuration Items). Chức năng này phù hợp hơn với các tính năng khác của ServiceNow thay vì mục đích của bản đồ lược đồ.",
+      "Bản đồ lược đồ không tổ chức các bảng tác vụ trực quan (visual task boards) cho CMDB. Các bảng tác vụ trực quan thường được sử dụng để theo dõi và quản lý các tác vụ, trong khi bản đồ lược đồ tập trung vào việc hiển thị các chi tiết lược đồ cơ sở dữ liệu.",
+      "Mặc dù bản đồ lược đồ có thể hiển thị các Mục cấu hình liên quan đến dịch vụ kinh doanh, nhưng chức năng chính của nó không phải là biểu diễn đồ họa các mối quan hệ này. Mục đích chính của bản đồ lược đồ là hiển thị trực quan chi tiết bảng và các mối quan hệ bên trong lược đồ cơ sở dữ liệu.",
+      "Giải thích này mô tả chính xác bản đồ lược đồ là gì trong bối cảnh của ServiceNow. Nó cung cấp sự thể hiện trực quan của các bảng và các mối quan hệ của chúng, giúp quản trị viên điều hướng và hiểu lược đồ cơ sở dữ liệu một cách hiệu quả hơn."
+    ]
+  },
+  {
+    "question": "Which one of the following statements best describes the purpose of an Update Set?",
+    "feedbacks": [
+      "Bộ cập nhật (Update Set) trong ServiceNow cho phép quản trị viên tập hợp một loạt các thay đổi, chẳng hạn như cấu hình, tùy chỉnh và quá trình phát triển, thành một tập hợp có tên. Tập hợp này sau đó có thể được di chuyển như một khối thống nhất sang các phiên bản khác, giúp dễ dàng hơn trong việc quản lý và triển khai các thay đổi trên các môi trường khác nhau.",
+      "Mặc dù Bộ cập nhật có thể bao gồm các tùy chỉnh, Quy tắc kinh doanh (Business Rules) và trang chủ, nhưng đó không phải là mục đích chính của Bộ cập nhật. Mục đích chính là nhóm các thay đổi lại và di chuyển chúng thành một đơn vị tới các hệ thống khác, thay vì chỉ rõ những thành phần được bao gồm mặc định.",
+      "Bộ cập nhật thường được sử dụng để di chuyển các thay đổi từ Phát triển (Development) sang Sản xuất (Production), chứ không phải ngược lại. Nó cho phép quản trị viên đóng gói các tùy chỉnh và cấu hình được thực hiện trong phiên bản phát triển và triển khai chúng vào phiên bản sản xuất.",
+      "Các thay đổi có trong Bộ cập nhật sẽ hiển thị trong phiên bản mà chúng được áp dụng vào, không bị hạn chế chỉ hiển thị trong phiên bản đó. Các bộ cập nhật được sử dụng để di chuyển các thay đổi giữa các phiên bản, cho phép các thay đổi được hiển thị và áp dụng trong phiên bản đích."
+    ]
+  },
+  {
+    "question": "Which of the following can be customized through the Basic Configuration UI 16 module? (Choose three.)",
+    "feedbacks": [
+      "Hình ảnh Biểu ngữ (Banner Image) có thể được tùy chỉnh thông qua mô-đun Basic Configuration UI 16, cho phép người dùng cá nhân hóa giao diện phiên bản ServiceNow của họ bằng cách thêm hình ảnh biểu ngữ tùy chỉnh.",
+      "Định dạng Số bản ghi (Record Number Format) không thể được tùy chỉnh thông qua mô-đun Basic Configuration UI 16. Cài đặt này thường được quản lý thông qua Thuộc tính Hệ thống (System Properties) hoặc cài đặt Trình tạo Bản ghi (Record Producer) trong ServiceNow.",
+      "Tiêu đề Tab Trình duyệt (Browser Tab Title) có thể được tùy chỉnh thông qua mô-đun Basic Configuration UI 16, cho phép người dùng thay đổi tiêu đề xuất hiện trên tab trình duyệt khi truy cập vào phiên bản ServiceNow.",
+      "Định dạng Ngày Hệ thống (System Date Format) có thể được tùy chỉnh thông qua mô-đun Basic Configuration UI 16, mang lại cho người dùng khả năng xác định cách hiển thị ngày tháng trên toàn nền tảng ServiceNow.",
+      "Kích thước Tiêu đề Biểu mẫu (Form Header Size) không thể được tùy chỉnh thông qua mô-đun Basic Configuration UI 16. Cài đặt này thường được kiểm soát thông qua cài đặt Bố cục Biểu mẫu (Form Layout) hoặc tùy chỉnh CSS trong ServiceNow."
+    ]
+  },
+  {
+    "question": "What is the function of user impersonation?",
+    "feedbacks": [
+      "Tính năng mạo danh người dùng (user impersonation) cho phép quản trị viên kiểm tra và khắc phục các sự cố dành riêng cho người dùng bằng cách tạm thời giả định danh tính của một người dùng khác. Nó giúp hiểu và giải quyết các vấn đề liên quan đến quyền truy cập, quyền hạn và khả năng hiển thị của người dùng trong nền tảng ServiceNow.",
+      "Kích hoạt ghi nhật ký chi tiết (verbose logging) không phải là chức năng của việc mạo danh người dùng. Ghi nhật ký chi tiết được sử dụng để cung cấp nhật ký phong phú và cụ thể nhằm mục đích gỡ lỗi, nhưng nó không liên quan trực tiếp đến việc mạo danh người dùng và các chức năng của tính năng này.",
+      "Xem các góc nhìn tùy chỉnh (custom perspectives) không phải là chức năng chính của việc mạo danh người dùng. Các góc nhìn tùy chỉnh là các chế độ xem hoặc cấu hình được cá nhân hóa trong nền tảng ServiceNow dành riêng cho từng cá nhân người dùng, nhưng việc mạo danh người dùng lại tập trung nhiều hơn vào các khía cạnh kiểm tra và khả năng hiển thị.",
+      "Mở khóa danh sách chính của Ứng dụng (Application master list) không liên quan đến việc mạo danh người dùng. Danh sách chính của Ứng dụng thường đề cập đến danh sách tất cả các ứng dụng hoặc mô-đun trong nền tảng ServiceNow và việc mạo danh người dùng không bao gồm việc mở khóa hay quản lý danh sách này."
+    ]
+  },
+  {
+    "question": "What information does the System Dictionary contain?",
+    "feedbacks": [
+      "Từ điển Hệ thống (System Dictionary) không chứa các nhãn có thể đọc được cho người và cài đặt ngôn ngữ. Chúng thường được quản lý trong giao diện người dùng (UI) hoặc cài đặt cấu hình của nền tảng ServiceNow.",
+      "Từ điển Hệ thống chứa định nghĩa cho mỗi bảng và cột trong nền tảng ServiceNow. Nó là một kho lưu trữ tập trung để quản lý siêu dữ liệu về các bảng và các cột của chúng.",
+      "Từ điển Hệ thống không chứa thông tin về cách các bảng liên hệ với nhau. Mối quan hệ giữa các bảng thường được xác định trong lược đồ cơ sở dữ liệu hoặc thông qua các mối quan hệ được thiết lập trong nền tảng.",
+      "Từ điển Hệ thống không chứa từ điển ngôn ngữ được sử dụng để kiểm tra lỗi chính tả. Các từ điển ngôn ngữ là các thành phần riêng biệt xử lý các chức năng dành riêng cho ngôn ngữ như kiểm tra lỗi chính tả trong ServiceNow."
+    ]
+  },
+  {
+    "question": "When working on a form, what is the difference between Insert and Update operations?",
+    "feedbacks": [
+      "Các thao tác Chèn (Insert) và Cập nhật (Update) có những mục đích riêng biệt khi làm việc trên một biểu mẫu. Lệnh Chèn đặc biệt tạo ra một bản ghi mới trong cơ sở dữ liệu, trong khi lệnh Cập nhật lưu các thay đổi vào một bản ghi hiện có. Cả hai thao tác thường thoát khỏi biểu mẫu sau khi hoàn thành nhiệm vụ tương ứng của chúng, cho phép người dùng tiếp tục với các hành động khác.",
+      "Lựa chọn đúng là B vì thao tác Chèn được sử dụng để tạo một bản ghi mới trong cơ sở dữ liệu và thao tác Cập nhật được sử dụng để lưu các thay đổi cho một bản ghi hiện có. Cả hai thao tác thường thoát khỏi biểu mẫu sau khi hoàn thành nhiệm vụ của chúng, mang lại sự tách biệt rõ ràng giữa việc tạo bản ghi mới và cập nhật bản ghi hiện có.",
+      "Lựa chọn này không chính xác vì nó mô tả sai sự khác biệt giữa các thao tác Chèn và Cập nhật. Lệnh Chèn đặc biệt được sử dụng để tạo bản ghi mới, không phải để lưu thay đổi và lệnh Cập nhật được sử dụng để lưu các thay đổi cho một bản ghi hiện có. Cả hai thao tác thường thoát khỏi biểu mẫu sau khi hoàn tất, bất kể những thay đổi đã được thực hiện.",
+      "Lựa chọn này không chính xác vì nó mô tả không đúng sự khác biệt giữa các thao tác Chèn và Cập nhật. Lệnh Chèn được sử dụng để tạo một bản ghi mới và thường thoát khỏi biểu mẫu sau khi hoàn tất, trong khi lệnh Cập nhật được sử dụng để lưu thay đổi cho một bản ghi hiện có và thông thường cũng sẽ thoát khỏi biểu mẫu."
+    ]
+  },
+  {
+    "question": "How is the Event Log different from the Event Registry?",
+    "feedbacks": [
+      "Nhật ký sự kiện (Event Log) chứa các sự kiện thực tế được tạo ra đã xảy ra, chẳng hạn như sự kiện hệ thống hoặc hành động của người dùng, trong khi Sổ đăng ký sự kiện (Event Registry) là một bảng lưu trữ các định nghĩa về các sự kiện khác nhau có thể được kích hoạt. Nhật ký sự kiện là bản ghi về những gì đã xảy ra, trong khi Sổ đăng ký sự kiện là tài liệu tham khảo cho những sự kiện nào có thể được kích hoạt trong hệ thống.",
+      "Nhật ký sự kiện và Sổ đăng ký sự kiện phục vụ các mục đích khác nhau. Nhật ký sự kiện là bản ghi theo trình tự thời gian của các sự kiện ở định dạng nhật ký, hiển thị thời điểm xảy ra sự kiện và sự kiện đó là gì, trong khi Sổ đăng ký sự kiện là một bảng có cấu trúc hiển thị các trường khác nhau liên quan đến định nghĩa sự kiện, chẳng hạn như tên sự kiện, mô tả và điều kiện kích hoạt sự kiện.",
+      "Nhật ký sự kiện thu thập các sự kiện được tạo ra bởi quá trình tích hợp, quy trình hệ thống hoặc hành động của người dùng, cung cấp một bản ghi lịch sử về các sự kiện. Mặt khác, Sổ đăng ký sự kiện là kho lưu trữ các định nghĩa sự kiện đã được xác định trước có thể được kích hoạt dựa trên các điều kiện hoặc tiêu chí cụ thể, bất kể chúng xảy ra khi nào trong ngày.",
+      "Nhật ký sự kiện và Sổ đăng ký sự kiện là các thực thể riêng biệt trong hệ thống ServiceNow. Nhật ký sự kiện ghi lại các sự kiện thực tế đã diễn ra, trong khi Sổ đăng ký sự kiện lưu trữ định nghĩa về các sự kiện có thể được kích hoạt. Chúng phục vụ các mục đích khác nhau và chứa các loại thông tin khác nhau liên quan đến các sự kiện trong hệ thống."
+    ]
+  },
+  {
+    "question": "What is a Dictionary Override?",
+    "feedbacks": [
+      "Lựa chọn này không định nghĩa chính xác Ghi đè Từ điển (Dictionary Override) là gì trong bối cảnh của ServiceNow. Ghi đè Từ điển không đặc biệt liên quan đến các bản cập nhật gửi đến của khách hàng trong Bộ cập nhật (Update Set).",
+      "Lựa chọn này mô tả một khái niệm rộng hơn về các thay đổi có thể tác động đến các dịch vụ CNTT, khái niệm này không đặc biệt liên quan đến khái niệm Ghi đè Từ điển trong bối cảnh ServiceNow.",
+      "Lựa chọn này mô tả một nhiệm vụ bên trong một luồng nhằm yêu cầu một hành động, nó không liên quan đến khái niệm Ghi đè Từ điển trong ServiceNow.",
+      "Lựa chọn này xác định chính xác Ghi đè Từ điển trong bối cảnh của ServiceNow. Nó đặc biệt đề cập đến việc thiết lập thuộc tính trường trong các bảng mở rộng, đây là trường hợp sử dụng phổ biến cho Ghi đè Từ điển trong cấu hình ServiceNow."
+    ]
+  },
+  {
+    "question": "Which group of permissions is used to control Application and Module access?",
+    "feedbacks": [
+      "Quy tắc Kiểm soát Truy cập (Access Control Rules) được sử dụng để kiểm soát quyền truy cập vào các bản ghi và trường cụ thể trong ServiceNow, không phải để kiểm soát quyền truy cập ứng dụng và mô-đun. Chúng có mức độ chi tiết hơn và tập trung vào quyền truy cập dữ liệu thay vì quyền truy cập toàn bộ ứng dụng.",
+      "Chính sách Giao diện Người dùng (UI Policies) được sử dụng để tự động thay đổi hành vi của các trường trên biểu mẫu dựa trên các điều kiện nhất định, chẳng hạn như làm cho trường trở nên bắt buộc hoặc chỉ đọc. Chúng không được sử dụng để kiểm soát quyền truy cập ứng dụng và mô-đun.",
+      "Vai trò (Roles) trong ServiceNow được sử dụng để kiểm soát quyền truy cập ứng dụng và mô-đun bằng cách xác định những hành động mà người dùng có vai trò đó có thể thực hiện trong hệ thống. Vai trò xác định các đặc quyền và cấp độ truy cập cho người dùng, làm cho chúng trở thành lựa chọn chính xác để kiểm soát quyền truy cập ứng dụng và mô-đun.",
+      "Quy tắc Chỉ định (Assignment Rules) được sử dụng để tự động chỉ định các bản ghi cho người dùng hoặc nhóm dựa trên các tiêu chí nhất định, chẳng hạn như danh mục hoặc mức độ ưu tiên. Chúng không được sử dụng để kiểm soát quyền truy cập ứng dụng và mô-đun trong ServiceNow."
+    ]
+  },
+  {
+    "question": "What is a Record Producer?",
+    "feedbacks": [
+      "Trình tạo bản ghi (Record Producer) không bị giới hạn chỉ với các yêu cầu; nó cũng có thể được sử dụng cho các dịch vụ. Nó cho phép người dùng tạo các bản ghi dựa trên nhiệm vụ, không chỉ là các yêu cầu.",
+      "Trình tạo bản ghi không tạo bản ghi người dùng; nó cho phép người dùng tạo các bản ghi dựa trên nhiệm vụ từ Service Catalog.",
+      "Mặc dù Trình tạo bản ghi mang đến sự dễ dàng cho việc đặt hàng bằng cách gộp nhóm các yêu cầu, nó không chỉ giới hạn ở các yêu cầu; nó còn bao gồm các bản ghi dựa trên nhiệm vụ.",
+      "Trình tạo bản ghi là một loại Mục danh mục (Catalog Item) đặc biệt cho phép người dùng tạo các bản ghi dựa trên nhiệm vụ từ Service Catalog. Nó cho phép người dùng nhập thông tin cụ thể và tạo bản ghi dựa trên các mẫu hoặc quy trình làm việc đã được xác định trước."
+    ]
+  },
+  {
+    "question": "Create Incident, Password Reset, and Report outage: what do these services in the Service Catalog have in common?",
+    "feedbacks": [
+      "Những dịch vụ này trong Service Catalog có điểm chung là chúng hướng người dùng đến một Trình tạo bản ghi (Record Producer). Trình tạo bản ghi là một loại mục danh mục cho phép người dùng tạo bản ghi trong các bảng thông qua một quy trình có hướng dẫn, khiến nó phù hợp với các dịch vụ như tạo sự cố, đặt lại mật khẩu và báo cáo sự cố gián đoạn.",
+      "Chúng không hướng người dùng đến một thuộc tính danh mục. Các thuộc tính danh mục được sử dụng để xác định hành vi và hình thức của các mục danh mục, không phải để chuyển hướng người dùng đến các dịch vụ cụ thể như tạo sự cố, đặt lại mật khẩu hoặc báo cáo sự cố gián đoạn.",
+      "Chúng không hướng người dùng đến một chính sách giao diện người dùng danh mục. Các chính sách giao diện người dùng danh mục được sử dụng để tự động thay đổi hành vi của các mục danh mục dựa trên các điều kiện, nhưng chúng không liên quan trực tiếp đến việc chuyển hướng người dùng đến các dịch vụ cụ thể như tạo sự cố, đặt lại mật khẩu hoặc báo cáo sự cố gián đoạn.",
+      "Chúng không hướng người dùng đến một tập lệnh máy khách danh mục. Tập lệnh máy khách danh mục được sử dụng để tùy chỉnh hành vi của các mục danh mục dựa trên các điều kiện phía máy khách, nhưng chúng không liên quan trực tiếp đến việc hướng người dùng đến các dịch vụ cụ thể như tạo sự cố, đặt lại mật khẩu hoặc báo cáo sự cố gián đoạn."
+    ]
+  },
+  {
+    "question": "What is the Import Set Table?",
+    "feedbacks": ["", "", "", ""]
+  },
+  {
+    "question": "What is a characteristic of importing data into ServiceNow?",
+    "feedbacks": [
+      "Việc sử dụng một Bản đồ Chuyển đổi (Transform Map) hiện có nhiều lần trên cùng một tập dữ liệu nhập là một thực tiễn phổ biến trong ServiceNow để ánh xạ và chuyển đổi dữ liệu một cách nhất quán. Điều này cho phép khả năng tái sử dụng và hiệu quả trong quy trình nhập dữ liệu.",
+      "Các trường Coalesce (gộp) thường được cấu hình trước khi chạy Bản đồ Chuyển đổi. Chúng được sử dụng để xác định các bản ghi trùng lặp trong quá trình nhập và hợp nhất chúng dựa trên các tiêu chí được chỉ định. Các trường Coalesce là một phần thiết yếu của cấu hình nhập dữ liệu trong ServiceNow.",
+      "Không phải mọi người dùng trong ServiceNow đều có khả năng quản lý và thiết lập các tập dữ liệu nhập. Quyền truy cập vào chức năng nhập thường được hạn chế ở những người dùng có vai trò và quyền hạn cụ thể, đảm bảo tính toàn vẹn và bảo mật của dữ liệu trong nền tảng.",
+      "Một Bản đồ Chuyển đổi hiện có thực sự có thể được sử dụng nhiều lần trên cùng một tập dữ liệu nhập trong ServiceNow. Tính năng này cho phép người dùng áp dụng cùng một quy tắc ánh xạ và chuyển đổi dữ liệu cho các bộ dữ liệu nhập khác nhau, tăng cường tính nhất quán và hợp lý hóa quy trình nhập."
+    ]
+  },
+  {
+    "question": "What module in the Service Catalog application does an Administrator access to begin creating a new item?",
+    "feedbacks": [
+      "Mô-đun Maintain Categories (Duy trì Danh mục) trong ứng dụng Service Catalog được sử dụng để quản lý và tổ chức các hạng mục chứa những mục được gộp nhóm. Nó không phải là mô-đun mà Quản trị viên sẽ truy cập để bắt đầu tạo một mục mới.",
+      "Mô-đun Maintain Items (Duy trì Mục) là mô-đun chính xác trong ứng dụng Service Catalog mà Quản trị viên sẽ truy cập để bắt đầu tạo một mục mới. Mô-đun này cho phép Quản trị viên xác định và định cấu hình các chi tiết của mục mới sẽ được thêm vào danh mục.",
+      "Content Items (Các Mục Nội dung) trong ứng dụng Service Catalog thường đề cập đến các mục hoặc dịch vụ thực tế có sẵn cho người dùng yêu cầu. Nó không phải là mô-đun mà Quản trị viên sẽ truy cập để tạo một mục mới.",
+      "Items (Mục) là một thuật ngữ chung có thể chỉ các mục được liệt kê trong Service Catalog, nhưng nó không phải là mô-đun cụ thể mà Quản trị viên sẽ truy cập để bắt đầu tạo một mục mới. Mô-đun chính xác cho nhiệm vụ này là Maintain Items."
+    ]
+  },
+  {
+    "question": "Which of the following allows a user to edit field values in a list without opening the form?",
+    "feedbacks": [
+      "Trình chỉnh sửa Dữ liệu (Data Editor) không phải là lựa chọn đúng để cho phép người dùng chỉnh sửa giá trị trường trong danh sách mà không cần mở biểu mẫu. Trình chỉnh sửa Dữ liệu thường được sử dụng để quản lý các bản ghi và trường của chúng trong một biểu mẫu, không phải để chỉnh sửa trực tiếp các giá trị trong dạng xem danh sách.",
+      "Menu Chỉnh sửa (Edit Menu) không cho phép người dùng chỉnh sửa các giá trị trường trong danh sách mà không cần mở biểu mẫu. Menu Chỉnh sửa thường cung cấp các tùy chọn để chỉnh sửa bố cục biểu mẫu hoặc chi tiết bản ghi, nhưng nó không cho phép chỉnh sửa trực tiếp các giá trị trường trong chế độ xem danh sách.",
+      "Trình chỉnh sửa Danh sách (List Editor) là lựa chọn chính xác vì nó cho phép người dùng chỉnh sửa trực tiếp các giá trị trường trong một danh sách mà không cần phải mở biểu mẫu. Tính năng này rất hữu ích để cập nhật nhanh chóng nhiều bản ghi mà không cần phải điều hướng đến từng bản ghi riêng lẻ.",
+      "Trình thiết kế Biểu mẫu (Form Designer) không phải là lựa chọn đúng để chỉnh sửa giá trị trường trong danh sách mà không cần mở biểu mẫu. Trình thiết kế Biểu mẫu thường được sử dụng để tùy chỉnh bố cục và thiết kế của biểu mẫu, không phải để chỉnh sửa giá trị trường trong chế độ xem danh sách."
+    ]
+  },
+  {
+    "question": "Which three Variable Types can be added to a Service Catalog Item?",
+    "feedbacks": [
+      "True/False (Đúng/Sai), Multiple Choice (Nhiều lựa chọn), và Ordered (Đã sắp xếp) không phải là các loại biến có thể được thêm vào một Mục Service Catalog trong ServiceNow. Những loại này thường không được sử dụng để thu thập thông tin đầu vào của người dùng trong một mục danh mục.",
+      "True/False, Checkbox (Hộp kiểm), và Number List (Danh sách số) không phải là các loại biến có thể được thêm vào một Mục Service Catalog trong ServiceNow. Các loại này thường không được sử dụng để thu thập thông tin đầu vào của người dùng trong một mục danh mục.",
+      "Number List (Danh sách Số), Single Line Text (Văn bản một dòng), và Reference (Tham chiếu) không phải là các loại biến có thể được thêm vào một Mục Service Catalog trong ServiceNow. Những loại này thường không được sử dụng để thu thập thông tin đầu vào của người dùng trong một mục danh mục.",
+      "Multiple Choice (Nhiều lựa chọn), Select Box (Hộp chọn), và Checkbox (Hộp kiểm) là các loại biến hợp lệ có thể được thêm vào một Mục Service Catalog trong ServiceNow. Các loại này thường được sử dụng để hiển thị các tùy chọn và ghi lại lựa chọn của người dùng trong một mục danh mục."
+    ]
+  },
+  {
+    "question": "How are Workflows moved between instances?",
+    "feedbacks": [
+      "Luồng công việc (Workflows) được di chuyển giữa các phiên bản bằng cách sử dụng các Bộ cập nhật (Update Sets) trong ServiceNow. Các Bộ cập nhật cho phép nhà phát triển đóng gói các thay đổi cấu hình, bao gồm cả các luồng công việc và di chuyển chúng từ phiên bản này sang phiên bản khác, đảm bảo tính nhất quán và hiệu quả trong việc quản lý luồng công việc trên các môi trường khác nhau.",
+      "Bản đồ chuyển đổi (Transform Maps) được sử dụng trong ServiceNow để nhập và xuất dữ liệu, ánh xạ các trường giữa các bảng. Chúng không được sử dụng để di chuyển các luồng công việc giữa các phiên bản, vì chức năng chính của chúng là hỗ trợ các quy trình chuyển đổi và tích hợp dữ liệu.",
+      "Bộ ứng dụng (Application Sets) trong ServiceNow được sử dụng để nhóm các ứng dụng và dữ liệu cấu hình để di chuyển giữa các phiên bản. Mặc dù chúng có thể trợ giúp trong việc quản lý ứng dụng, nhưng chúng không được thiết kế đặc biệt để di chuyển các luồng công việc giữa các phiên bản.",
+      "Luồng công việc (Workflows) thực sự có thể được di chuyển giữa các phiên bản trong ServiceNow bằng cách sử dụng Bộ cập nhật (Update Sets). Quá trình này cho phép chuyển giao trơn tru các cấu hình và định nghĩa của luồng công việc nhằm duy trì tính nhất quán và hợp lý hóa việc quản lý luồng công việc trên các phiên bản ServiceNow khác nhau."
+    ]
+  },
+  {
+    "question": "The baseline Service Catalog homepage contains links to which of the following components?",
+    "feedbacks": [
+      "Trang chủ Service Catalog cơ sở (baseline) thường bao gồm các liên kết đến Trình tạo bản ghi (Record Producers), Hướng dẫn đặt hàng (Order Guides) và Mục danh mục (Catalog Items). Những thành phần này rất cần thiết để người dùng yêu cầu dịch vụ, điều hướng qua các tùy chọn có sẵn và gửi yêu cầu của họ một cách hiệu quả.",
+      "Mặc dù Hướng dẫn đặt hàng và Biến của Mục (Item Variables) là các thành phần quan trọng của Service Catalog, các luồng (flows) thường không được bao gồm trong trang chủ Service Catalog cơ sở. Luồng được sử dụng để tự động hóa quy trình và hướng dẫn người dùng qua các yêu cầu dịch vụ phức tạp, nhưng chúng không thường được hiển thị trên trang chủ.",
+      "Hướng dẫn đặt hàng và Mục danh mục thường nổi bật trên trang chủ Service Catalog, nhưng các luồng thường không được đưa vào bố cục cơ sở. Luồng được sử dụng để hợp lý hóa và tự động hóa các quy trình yêu cầu dịch vụ, nhưng chúng thường không phải là một phần của giao diện trang chủ ban đầu.",
+      "Trình tạo bản ghi, Hướng dẫn đặt hàng và Biến của Mục đều là các thành phần quan trọng của Service Catalog, nhưng Biến của Mục thường không được hiển thị trên trang chủ Service Catalog cơ sở. Trình tạo bản ghi cho phép người dùng tạo bản ghi mới, Hướng dẫn đặt hàng giúp người dùng điều hướng các tùy chọn dịch vụ, và Biến của Mục tùy chỉnh các yêu cầu dịch vụ, nhưng không phải tất cả chúng thường hiển thị trên trang chủ."
+    ]
+  },
+  {
+    "question": "Which of the following statements is true when a new table is created by extending another table?",
+    "feedbacks": [
+      "Tuyên bố này không chính xác. Khi một bảng mới được tạo bằng cách mở rộng một bảng khác, nó không lưu trữ (archive) bảng cha hoặc tiếp nhận các vai trò của nó trong cơ sở dữ liệu. Mỗi bảng duy trì dữ liệu và cấu trúc của riêng nó một cách độc lập.",
+      "Tuyên bố này không chính xác. Mặc dù bảng mới kế thừa một số đặc điểm như Quy tắc Kinh doanh, Tập lệnh Máy khách và Chính sách Giao diện Người dùng từ bảng cha, nó cũng kế thừa tất cả các trường hiện có của bảng cha. Nó không loại trừ các trường hiện có.",
+      "Tuyên bố này là chính xác. Khi một bảng mới được tạo bằng cách mở rộng một bảng khác, nó kế thừa tất cả các trường của bảng cha. Ngoài ra, bảng mới có thể có các trường độc đáo của riêng nó ngoài các trường được kế thừa.",
+      "Tuyên bố này không chính xác. Bảng mới được tạo bằng cách mở rộng bảng khác sẽ kế thừa tất cả các trường từ bảng cha, bao gồm cả các quy tắc Kiểm soát Truy cập, Tập lệnh Máy khách và Chính sách Giao diện Người dùng. Nó không loại trừ các yếu tố này khỏi việc kế thừa."
+    ]
+  },
+  {
+    "question": "Where can Admins check which release is running on an ServiceNow instance?",
+    "feedbacks": [
+      "Mô-đun Memory Stats trong ServiceNow cung cấp thông tin liên quan đến thống kê và sử dụng bộ nhớ, nhưng nó không hiển thị bản phát hành hiện tại đang chạy trên phiên bản. Đó không phải là vị trí chính xác để Quản trị viên kiểm tra bản phát hành ServiceNow.",
+      "Mô-đun Stats trong ServiceNow là nơi Quản trị viên có thể kiểm tra xem bản phát hành nào hiện đang chạy trên phiên bản đó. Mô-đun này cung cấp thông tin chi tiết về phiên bản, bao gồm chi tiết về phiên bản (version) và bản phát hành (release), làm cho nó trở thành lựa chọn chính xác cho tác vụ này.",
+      "Bảng System.upgraded trong ServiceNow lưu trữ thông tin về các bản nâng cấp và thay đổi được thực hiện đối với phiên bản, nhưng nó không đặc biệt hiển thị bản phát hành hiện tại đang chạy trên phiên bản đó. Quản trị viên thường không kiểm tra phiên bản phát hành trong bảng này.",
+      "Nhật ký Transactions (Giao dịch) trong ServiceNow ghi lại dữ liệu giao dịch liên quan đến các hoạt động và quy trình được thực hiện trên phiên bản, nhưng nó không cung cấp thông tin về bản phát hành hiện tại đang chạy trên phiên bản. Quản trị viên sẽ không tìm thấy phiên bản phát hành trong nhật ký Giao dịch."
+    ]
+  },
+  {
+    "question": "A knowledge article must be which of the following states to display to a user?",
+    "feedbacks": [
+      "Một bài viết cơ sở tri thức phải ở trạng thái \"Published\" (Đã xuất bản) để được hiển thị cho người dùng. Trạng thái này chỉ ra rằng bài viết đã được xem xét, phê duyệt và được cung cấp sẵn để người dùng truy cập và đọc.",
+      "Trạng thái \"Drafted\" (Bản nháp) được sử dụng cho các bài viết cơ sở tri thức vẫn đang được thực hiện và chưa sẵn sàng để xuất bản. Các bài viết ở trạng thái này sẽ không hiển thị với người dùng cho đến khi chúng được hoàn thiện và xuất bản.",
+      "Trạng thái \"Retired\" (Đã gỡ bỏ) được sử dụng cho các bài viết cơ sở tri thức không còn phù hợp hoặc chính xác nữa và cần bị xóa khỏi chế độ xem của người dùng. Các bài viết ở trạng thái này không được hiển thị cho người dùng vì chúng được coi là lỗi thời.",
+      "Trạng thái \"Reviewed\" (Đã xem xét) thường được sử dụng như một bước trung gian trong quá trình phê duyệt bài viết. Các bài viết ở trạng thái này có thể đã được xem xét về độ chính xác và tính đầy đủ nhưng chưa sẵn sàng để xuất bản và cho người dùng truy cập."
+    ]
+  },
+  {
+    "question": "What is the name of the conversational bot platform that provides assistance to help users obtain information, make decisions, and perform common tasks?",
+    "feedbacks": [
+      "Answer Agent không phải là tên chính xác cho nền tảng bot đàm thoại trong hệ sinh thái ServiceNow. Lựa chọn này không phù hợp với nền tảng cung cấp hỗ trợ cho người dùng trong việc lấy thông tin, đưa ra quyết định và thực hiện các tác vụ phổ biến.",
+      "Live Feed không phải là tên chính xác cho nền tảng bot đàm thoại trong hệ sinh thái ServiceNow. Lựa chọn này không phù hợp với nền tảng cung cấp hỗ trợ cho người dùng trong việc lấy thông tin, đưa ra quyết định và thực hiện các tác vụ phổ biến.",
+      "Virtual Agent là lựa chọn chính xác vì đây là tên của nền tảng bot đàm thoại trong hệ sinh thái ServiceNow. Virtual Agent cung cấp hỗ trợ cho người dùng trong việc lấy thông tin, đưa ra quyết định và thực hiện các tác vụ phổ biến, khiến nó trở thành tùy chọn phù hợp cho câu hỏi này.",
+      "Connect Chat không phải là tên chính xác cho nền tảng bot đàm thoại trong hệ sinh thái ServiceNow. Lựa chọn này không phù hợp với nền tảng cung cấp hỗ trợ cho người dùng trong việc lấy thông tin, đưa ra quyết định và thực hiện các tác vụ phổ biến."
+    ]
+  },
+  {
+    "question": "What is the purpose of a Related List?",
+    "feedbacks": [
+      "Việc tạo mối quan hệ một-nhiều thường được thực hiện thông qua các trường tham chiếu trong ServiceNow, chứ không phải qua Danh sách Liên quan (Related List). Danh sách Liên quan được sử dụng để hiển thị các bản ghi có liên quan đến bản ghi hiện tại, thay vì thiết lập mối quan hệ giữa các bảng.",
+      "Sử dụng kỹ thuật dot-walking tới một bảng cốt lõi liên quan đến việc điều hướng qua các bảng có liên quan thông qua các trường tham chiếu, chứ không phải thông qua một Danh sách Liên quan. Danh sách Liên quan được sử dụng để hiển thị các bản ghi liên quan, không phải để điều hướng đến các bảng cốt lõi.",
+      "Danh sách Liên quan được sử dụng để trình bày các trường từ các bản ghi có liên quan, không chỉ các trường liên quan. Chúng cung cấp một cách để xem và tương tác với dữ liệu từ các bản ghi có liên quan trực tiếp trên biểu mẫu bản ghi hiện tại.",
+      "Mục đích chính của Danh sách Liên quan trong ServiceNow là trình bày các bản ghi có liên quan được liên kết với bản ghi hiện tại. Điều này cho phép người dùng dễ dàng xem, truy cập và quản lý dữ liệu liên quan mà không cần rời khỏi biểu mẫu bản ghi hiện tại."
+    ]
+  },
+  {
+    "question": "Which one of the following statements describes the purpose of a Service Catalog flow?",
+    "feedbacks": [
+      "Tuyên bố này không chính xác. Luồng Service Catalog không tạo ra các loại biến mục, nhiệm vụ và phê duyệt. Các thành phần này thường được liên kết với các mục danh mục và việc thực hiện chúng, không phải là bản thân luồng đó.",
+      "Tuyên bố này không chính xác. Luồng Service Catalog thực sự có thể gửi thông báo như một phần của quá trình thực hiện. Nó được thiết kế để thúc đẩy các quy trình thực hiện phức tạp, bao gồm việc gửi thông báo đến người dùng hoặc nhóm có liên quan.",
+      "Tuyên bố này là chính xác. Luồng Service Catalog được sử dụng đặc biệt để thúc đẩy các quy trình thực hiện phức tạp trong nền tảng ServiceNow. Nó cho phép tự động hóa các nhiệm vụ, phê duyệt và thông báo để đảm bảo trải nghiệm cung cấp dịch vụ liền mạch.",
+      "Tuyên bố này không chính xác. Mặc dù luồng Service Catalog có thể bao gồm các tác vụ và thông báo, nó không tạo ra các loại biến mục. Các loại biến mục thường được định nghĩa bên trong các mục danh mục để thu thập thông tin cụ thể trong quá trình yêu cầu."
+    ]
+  },
+  {
+    "question": "Which term best describes something that is created, has worked performed upon it, and is eventually moved to a state of closed?",
+    "feedbacks": [
+      "Một báo cáo là một tài liệu trình bày thông tin ở định dạng có tổ chức. Nó thường không phải là một cái gì đó trải qua quá trình được tạo ra, được thực hiện và sau đó chuyển sang trạng thái đóng.",
+      "Một luồng đề cập đến trình tự các bước hoặc hành động trong một quá trình. Mặc dù một luồng có thể liên quan đến việc tạo ra, thực hiện công việc và hoàn thành nhiệm vụ, nhưng nó không đặc biệt liên quan đến khái niệm di chuyển một cái gì đó đến trạng thái đóng.",
+      "Một sự kiện là một sự việc hoặc tình cố xảy ra sẽ kích hoạt một phản hồi hoặc hành động. Sự kiện thường không phải là các thực thể được tạo ra, được thực hiện công việc và sau đó bị đóng lại.",
+      "Một nhiệm vụ (task) là một thực thể được tạo ra, được giao công việc cần thực hiện và cuối cùng chuyển sang trạng thái đóng sau khi hoàn thành. Nhiệm vụ thường được sử dụng trong các quy trình quản lý dịch vụ để theo dõi và quản lý các hạng mục công việc từ khi tạo đến khi đóng."
+    ]
+  },
+  {
+    "question": "Which are valid Service Now User Authentication Methods? (Choose three.)",
+    "feedbacks": [
+      "XML feed không phải là một Phương pháp Xác thực Người dùng hợp lệ của ServiceNow. Nó được sử dụng để trao đổi và tích hợp dữ liệu, không phải để xác thực người dùng trong hệ thống.",
+      "Cơ sở dữ liệu cục bộ (Local database) là một Phương pháp Xác thực Người dùng hợp lệ của ServiceNow. Nó cho phép người dùng xác thực trực tiếp dựa vào cơ sở dữ liệu cục bộ của phiên bản ServiceNow.",
+      "LDAP (Lightweight Directory Access Protocol) là một Phương pháp Xác thực Người dùng hợp lệ của ServiceNow. Nó cho phép người dùng xác thực với một máy chủ LDAP bên ngoài để quản lý người dùng tập trung.",
+      "SSO (Single Sign-On) là một Phương pháp Xác thực Người dùng hợp lệ của ServiceNow. Nó cho phép người dùng đăng nhập một lần và truy cập nhiều ứng dụng mà không cần phải đăng nhập lại.",
+      "Xác thực FTP không phải là một Phương pháp Xác thực Người dùng hợp lệ của ServiceNow. FTP (File Transfer Protocol) được sử dụng để truyền các tệp, không phải để xác thực người dùng trong hệ thống."
+    ]
+  },
+  {
+    "question": "Access Control rules may be defined with which of the following permission requirements? (Choose three.)",
+    "feedbacks": [
+      "Quy tắc Kiểm soát Truy cập có thể được xác định dựa trên các vai trò (roles), cho phép cấp hoặc hạn chế các quyền cụ thể đối với người dùng dựa trên vai trò được gán của họ trong hệ thống. Vai trò đóng một phần quan trọng trong việc xác định quyền truy cập và các hạn chế đối với những người dùng khác nhau.",
+      "Biểu thức điều kiện (Conditional expressions) có thể được sử dụng để xác định các quy tắc kiểm soát truy cập dựa trên các điều kiện hoặc tiêu chí cụ thể. Điều này cho phép tạo ra các yêu cầu về quyền linh hoạt và năng động hơn, có thể điều chỉnh phù hợp với nhiều tình huống hoặc thuộc tính người dùng khác nhau.",
+      "Các quy tắc chỉ định (Assignment rules) thường không được sử dụng để xác định các yêu cầu về quyền trong các quy tắc Kiểm soát Truy cập. Chúng được sử dụng phổ biến hơn để tự động hóa việc gán tác vụ hoặc bản ghi cho người dùng dựa trên các tiêu chí được xác định trước, thay vì xác định quyền truy cập.",
+      "Tập lệnh (Scripts) có thể được sử dụng để xác định các yêu cầu quyền phức tạp trong các quy tắc Kiểm soát Truy cập. Bằng cách sử dụng các tập lệnh, quản trị viên có thể triển khai logic tùy chỉnh để xác định quyền truy cập dựa trên nhiều yếu tố khác nhau, cung cấp mức độ tùy chỉnh và kiểm soát cao đối với các quyền.",
+      "Tiêu chí người dùng (User criteria) thường không được sử dụng để xác định các yêu cầu về quyền trong các quy tắc Kiểm soát Truy cập. Mặc dù tiêu chí người dùng có thể được xem xét trong việc xác định quyền truy cập, nó không phải là phương pháp chính để định nghĩa các yêu cầu về quyền trong quy tắc Kiểm soát Truy cập.",
+      "Nhóm (Groups) có thể được sử dụng để xác định các quy tắc kiểm soát truy cập dựa trên thành viên người dùng trong các nhóm cụ thể. Bằng cách gán quyền cho các nhóm, quản trị viên có thể dễ dàng quản lý quyền truy cập cho nhiều người dùng cùng một lúc, đơn giản hóa quy trình quản lý quyền hạn."
+    ]
+  }
+]
