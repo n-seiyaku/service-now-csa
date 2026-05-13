@@ -4550,7 +4550,7 @@
   {
     "assessment_type": "multiple-choice",
     "prompt": {
-      "question": "<>Which core table in the ServiceNow platform provides a series of standard fields used on each of the tables that extend it, such as the Incident [incident] and Problem [problem] tables?</p>",
+      "question": "<p>Which core table in the ServiceNow platform provides a series of standard fields used on each of the tables that extend it, such as the Incident [incident] and Problem [problem] tables?</p>",
       "feedbacks": [],
       "answers": [
         "Task [task]",
