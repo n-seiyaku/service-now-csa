@@ -2881,7 +2881,7 @@
         "Timing"
       ]
     },
-    "correct_response": ["b", "e", "h", "i"],
+    "correct_response": ["b", "e", "f", "h"],
     "question_plain": "What needs to be specified, when creating a Business Rule? (Choose four.)"
   },
   {
