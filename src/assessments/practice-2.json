@@ -4854,7 +4854,8 @@
         "Task table is a Child table",
         "Incident table is a Parent table",
         "Super Incident table is a Child table",
-        "Task table is a Parent table"
+        "Task table is a Parent table",
+        "Task table is a Base table"
       ]
     },
     "correct_response": ["b", "f", "g", "h", "i"],
